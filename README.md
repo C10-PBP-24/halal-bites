@@ -18,6 +18,8 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 [Produk Makanan Halal di Bandung](https://opendata.bandung.go.id/dataset/daftar-fasilitasi-sertifikasi-halal-umkm)
 
 ### v. Role Pengguna
+- **User**
+- **Admin**
 
 ### vi. Tautan Deployment Aplikasi
 [HalalBites' Website]()
