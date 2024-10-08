@@ -22,5 +22,5 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 - **Admin**
 
 ### vi. Tautan Deployment Aplikasi
-[HalalBites' Website]()
+[HalalBites' Website](http://erdafa-andikri-halalbites.pbp.cs.ui.ac.id)
 
