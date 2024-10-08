@@ -13,6 +13,13 @@ HalalBites adalah aplikasi yang dirancang khusus untuk membantu wisatawan yang b
 Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung yang menyediakan makanan dan minuman halal di berbagai daerah Bandung. Aplikasi ini juga menampilkan ulasan pengguna, peta lokasi, serta rekomendasi menu terbaik. Selain itu, HalalBites menyediakan filter berdasarkan kategori makanan (misalnya: makanan khas Sunda, Timur Tengah, atau makanan cepat saji), lokasi terdekat, dan harga yang sesuai dengan budget.
 
 ### iii. Daftar Modul
+1. **Ulasan Pengguna**
+2. **Peta Lokasi**
+3. **Rekomendasi Menu**
+4. **Lokasi Terdekat**
+5. **Filter berdasarkan Kategori Makanan**
+6. **Filter berdasarkan Budget**
+
 
 ### iv. Initial Dataset
 [Produk Makanan Halal di Bandung](https://opendata.bandung.go.id/dataset/daftar-fasilitasi-sertifikasi-halal-umkm)
