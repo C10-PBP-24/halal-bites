@@ -17,19 +17,19 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 
     Dikerjakan oleh: ...
 
--   **Food Tracker**: Menampilkan makanan yang pernah dimakan.
+-   **Food Tracker**: Pengguna dapat melihat history makanan yang pernah dimakan.
 
     Dikerjakan oleh: ...
 
--   **Forum**: Berbincang dengan user lain.
+-   **Forum**: Pengguna dapat berbincang dengan user lain.
 
     Dikerjakan oleh: ...
 
--   **Resto**: Menampilkan resto.
+-   **Resto**: Pengguna dapat menemukan tempat makan halal terdekat dari lokasi pengguna.
 
     Dikerjakan oleh: ...
 
--   **Makanan**: Menampilkan makanan.
+-   **Makanan**: Pengguna dapat menyaring makanan berdasarkan lokasi.
 
     Dikerjakan oleh: ...
 
@@ -43,11 +43,11 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 
 | No. | Modul                      | _Permission User_                                                                                              | _Permission Admin_                                                                                                                   |
 | --- | -------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | Ulasan Pengguna            | Pengguna dapat memberikan rating dan ulasan berdasarkan pengalaman mereka.                                     | Admin dapat melihat dan mengelola ulasan pengguna.                                                                                   |
-| 2   | food tracker(history)              | Pengguna dapat melihat history makan yang pernah dimakan.                                              | Admin dapat mengelola data lokasi tempat makan halal.                                                                                |
-| 3   | forum          | Pengguna dapat melihat rekomendasi menu terbaik berdasarkan ulasan pengguna dan berbincang dengan user lain.                                   | Admin dapat menambahkan dan mengelola rekomendasi menu.                                                                              |
-| 4   | resto           | Pengguna dapat menemukan tempat makan halal terdekat dari lokasi pengguna.                      | Admin dapat mengelola data lokasi tempat makan halal.                                                                                |
-| 5   | food            | Pengguna dapat menyaring makanan berdasarkan lokasi.                                            | Admin dapat menambahkan dan mengelola kategori makanan.                              |
+| 1   | Ulasan Pengguna            | Pengguna dapat memberikan rating dan ulasan berdasarkan pengalaman mereka.                                     | Admin dapat menghapus ulasan yang tidak sesuai.                                                                                      |
+| 2   | Food Tracker (history)     | Pengguna dapat melihat history makanan yang pernah dimakan.                                                    | Admin dapat mengelola data history makanan pengguna.                                                                                 |
+| 3   | Forum                      | Pengguna dapat melihat rekomendasi menu terbaik berdasarkan ulasan pengguna dan berbincang dengan user lain.   | Admin dapat mengelola dan menghapus postingan yang tidak sesuai.                                                                     |
+| 4   | Resto                      | Pengguna dapat menemukan tempat makan halal terdekat dari lokasi pengguna.                                     | Admin dapat menambahkan, mengelola, dan menghapus data lokasi tempat makan halal.                                                    |
+| 5   | Food                       | Pengguna dapat menyaring makanan berdasarkan budget                                                            | Admin dapat menambahkan, mengelola, dan menghapus harga                                                                              |
 
 ## vi. Tautan _Deployment_ Aplikasi
 [_HalalBites' Website_](http://erdafa-andikri-halalbites.pbp.cs.ui.ac.id)
