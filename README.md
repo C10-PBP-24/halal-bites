@@ -53,3 +53,9 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 ## vi. Tautan _Deployment_ Aplikasi
 [_HalalBites' Website_](http://erdafa-andikri-halalbites.pbp.cs.ui.ac.id)
 
+- list of food
+- list of resto
+- food
+- resto
+- food tracker(history)
+- forum
