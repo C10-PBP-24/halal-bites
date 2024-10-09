@@ -17,19 +17,19 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 
     Dikerjakan oleh: ...
 
--   **Peta Lokasi**: Menampilkan peta lokasi tempat makan halal di Bandung.
+-   **Food Tracker**: Menampilkan makanan yang pernah dimakan.
 
     Dikerjakan oleh: ...
 
--   **_Budget_ & Harga**: 
+-   **Forum**: Berbincang dengan user lain.
 
     Dikerjakan oleh: ...
 
--   **Promo**: 
+-   **Resto**: Menampilkan resto.
 
     Dikerjakan oleh: ...
 
--   ****:
+-   **Makanan**: Menampilkan makanan.
 
     Dikerjakan oleh: ...
 
@@ -44,18 +44,11 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 | No. | Modul                      | _Permission User_                                                                                              | _Permission Admin_                                                                                                                   |
 | --- | -------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | 1   | Ulasan Pengguna            | Pengguna dapat memberikan rating dan ulasan berdasarkan pengalaman mereka.                                     | Admin dapat melihat dan mengelola ulasan pengguna.                                                                                   |
-| 2   | Peta Lokasi                | Pengguna dapat melihat peta lokasi tempat makan halal di Bandung.                                              | Admin dapat mengelola data lokasi tempat makan halal.                                                                                |
-| 3   | Rekomendasi Menu           | Pengguna dapat melihat rekomendasi menu terbaik berdasarkan ulasan pengguna.                                   | Admin dapat menambahkan dan mengelola rekomendasi menu.                                                                              |
-| 4   | Lokasi Terdekat            | Pengguna dapat menemukan tempat makan halal terdekat dari lokasi pengguna.                                     | Admin dapat mengelola data lokasi tempat makan halal.                                                                                |
-| 5   | Filter Kategori Makanan    | Pengguna dapat menyaring tempat makan berdasarkan kategori makanan.                                            | Admin dapat menambahkan dan mengelola kategori makanan.                                                                              |
-| 6   | Filter Budget              | Pengguna dapat menyaring tempat makan berdasarkan kisaran harga yang sesuai dengan budget pengguna.            | Admin dapat mengelola data harga tempat makan.                                                                                       |
+| 2   | food tracker(history)              | Pengguna dapat melihat history makan yang pernah dimakan.                                              | Admin dapat mengelola data lokasi tempat makan halal.                                                                                |
+| 3   | forum          | Pengguna dapat melihat rekomendasi menu terbaik berdasarkan ulasan pengguna dan berbincang dengan user lain.                                   | Admin dapat menambahkan dan mengelola rekomendasi menu.                                                                              |
+| 4   | resto           | Pengguna dapat menemukan tempat makan halal terdekat dari lokasi pengguna.                      | Admin dapat mengelola data lokasi tempat makan halal.                                                                                |
+| 5   | food            | Pengguna dapat menyaring makanan berdasarkan lokasi.                                            | Admin dapat menambahkan dan mengelola kategori makanan.                              |
 
 ## vi. Tautan _Deployment_ Aplikasi
 [_HalalBites' Website_](http://erdafa-andikri-halalbites.pbp.cs.ui.ac.id)
 
-- list of food
-- list of resto
-- food
-- resto
-- food tracker(history)
-- forum
