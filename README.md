@@ -15,23 +15,23 @@ Saat menggunakan HalalBites, pengguna dapat mencari restoran, kafe, atau warung 
 ## iii. Daftar Modul
 -   **Ulasan Pengguna**: Pengguna dapat memberikan ulasan berdasarkan pengalaman mereka.
 
-    Dikerjakan oleh: ...
+    Dikerjakan oleh: **Erdafa Andikri**
 
 -   **Food Tracker**: Pengguna dapat melihat history makanan yang pernah dimakan.
 
-    Dikerjakan oleh: ...
+    Dikerjakan oleh: **Syahirah Putri Aisyah**
 
 -   **Forum**: Pengguna dapat berbincang dengan user lain.
 
-    Dikerjakan oleh: ...
+    Dikerjakan oleh: **Christopher Matthew Hendarson**
 
 -   **Resto**: Pengguna dapat menemukan tempat makan halal terdekat dari lokasi pengguna.
 
-    Dikerjakan oleh: ...
+    Dikerjakan oleh: **Emanuella Abygail Rotua Siahaan**
 
 -   **Makanan**: Pengguna dapat menyaring makanan berdasarkan lokasi.
 
-    Dikerjakan oleh: ...
+    Dikerjakan oleh: **Imam Fajri**
 
 
 ## iv. Initial Dataset
