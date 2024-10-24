@@ -3,7 +3,7 @@
     "id": 1,
     "model": "food.food",
     "fields": {
-      "name": "BOLU KEJU, BROWNIES, BOLNIZ, BROLEN, PIE : DURIAN, KEJU, SUSU, NASTAR,\n  KASTANGEL, SEMPRIT, SAGU KEJU, TRIPLE CHOCOLATE CAKE, BOLU PEUYEUM, BANANA\n  BREAD",
+      "name": "BOLU KEJU, BROWNIES, BOLNIZ, BROLEN, PIE : DURIAN, KEJU, SUSU, NASTAR, KASTANGEL, SEMPRIT, SAGU KEJU, TRIPLE CHOCOLATE CAKE, BOLU PEUYEUM, BANANA BREAD",
       "price": 22140,
       "promo": "Discount 10%"
     }
@@ -12,7 +12,7 @@
     "id": 2,
     "model": "food.food",
     "fields": {
-      "name": "BAWANG  GORENG RASA ORIGINAL DAN\n  PEDAS",
+      "name": "BAWANG GORENG RASA ORIGINAL DAN PEDAS",
       "price": 70269,
       "promo": "No Promo"
     }
@@ -111,7 +111,7 @@
     "id": 13,
     "model": "food.food",
     "fields": {
-      "name": "ROTI TAWAR BAKAR/KUKUS",
+      "name": "ROTI TAWAR KUKUS",
       "price": 13127,
       "promo": "Buy 1 Get 1"
     }
@@ -120,7 +120,7 @@
     "id": 14,
     "model": "food.food",
     "fields": {
-      "name": "BATAGOR, PEMPEK, LUMPIA, OTAK – OTAK",
+      "name": "BATAGOR, PEMPEK, LUMPIA, OTAK OTAK",
       "price": 50896,
       "promo": "No Promo"
     }
@@ -309,7 +309,7 @@
     "id": 35,
     "model": "food.food",
     "fields": {
-      "name": "RISOLES, ROTI, CAKE, BROWNIES, MAKRONI \n  SCHOTEL, LASAGNA, KUE SUS, KUE KERING",
+      "name": "RISOLES, ROTI, CAKE, BROWNIES, MAKRONI, SCHOTEL, LASAGNA, KUE SUS, KUE KERING",
       "price": 25510,
       "promo": "No Promo"
     }
@@ -318,7 +318,7 @@
     "id": 36,
     "model": "food.food",
     "fields": {
-      "name": "KERING KENTANG, KERIPIK KENTANG, \n  SAMBEL TERI KACANG",
+      "name": "KERING KENTANG, KERIPIK KENTANG, SAMBEL TERI KACANG",
       "price": 79954,
       "promo": "Discount 10%"
     }
@@ -345,7 +345,7 @@
     "id": 39,
     "model": "food.food",
     "fields": {
-      "name": "TAHU BASO ISI AYAM UDANG, TAHU BASO ISI SAPI, CILOK KRISPI MOZARELA, AYAM\n  TANPA TULANG",
+      "name": "TAHU BASO ISI AYAM UDANG, TAHU BASO ISI SAPI, CILOK KRISPI MOZARELA, AYAM TANPA TULANG",
       "price": 35864,
       "promo": "Discount 10%"
     }
@@ -552,7 +552,7 @@
     "id": 62,
     "model": "food.food",
     "fields": {
-      "name": "OTAK-OTAK BUMBU RUJAK, CIRENG BUMBU RUJAK RASA ORIGINAL, CIRENG BUMBU\n  RUJAK RASA REBON, PEMPEK SUTRA, TEKWAN",
+      "name": "OTAK-OTAK BUMBU RUJAK, CIRENG BUMBU RUJAK RASA ORIGINAL, CIRENG BUMBU  RUJAK RASA REBON, PEMPEK SUTRA, TEKWAN",
       "price": 90535,
       "promo": "Cashback 20%"
     }
@@ -597,7 +597,7 @@
     "id": 67,
     "model": "food.food",
     "fields": {
-      "name": "FRUITY JELLY RASA LECI, FRUITY JELLY RASA STRAWBERRY, FRUITY JELLY RASA\n  MOCCA, FRUITY JELLY RASA MELON",
+      "name": "FRUITY JELLY RASA LECI, FRUITY JELLY RASA STRAWBERRY, FRUITY JELLY RASA MOCCA, FRUITY JELLY RASA MELON",
       "price": 19952,
       "promo": "Discount 10%"
     }
@@ -615,7 +615,7 @@
     "id": 69,
     "model": "food.food",
     "fields": {
-      "name": "APPLE PINEAPPLE LEMON, CARROT ORANGE PEAR LEMON, BEETROOT CARROT  APPLE LEMON, BOKCHOI APPLE PINEAPPLE LEMON,\n  ROMAINE RED DRAGON CUCUMBER APPLE PINRAPPLE LEMON",
+      "name": "APPLE PINEAPPLE LEMON, CARROT ORANGE PEAR LEMON, BEETROOT CARROT APPLE LEMON, BOKCHOI APPLE PINEAPPLE LEMON,  ROMAINE RED DRAGON CUCUMBER APPLE PINRAPPLE LEMON",
       "price": 21110,
       "promo": "Cashback 20%"
     }
@@ -687,7 +687,7 @@
     "id": 77,
     "model": "food.food",
     "fields": {
-      "name": "MAKARONI GORENG RASA : SOTO LEVEL 1-3, KARE LEVEL 1-3, RENDANG LEVEL 1-3\n  DAN BAWANG LEVEL 1-3",
+      "name": "MAKARONI GORENG RASA : SOTO LEVEL 1-3, KARE LEVEL 1-3, RENDANG LEVEL 1-3  DAN BAWANG LEVEL 1-3",
       "price": 85532,
       "promo": "Free Shipping"
     }
@@ -750,7 +750,7 @@
     "id": 84,
     "model": "food.food",
     "fields": {
-      "name": "MACARONI SCHOTEL, MACARONI BOLOGNASE, BAKED POTATO, BAKED POTATO,\n  LASAGNA, SPICY MAC MOZA",
+      "name": "MACARONI SCHOTEL, MACARONI BOLOGNASE, BAKED POTATO, BAKED POTATO,  LASAGNA, SPICY MAC MOZA",
       "price": 48050,
       "promo": "Cashback 20%"
     }
@@ -759,7 +759,7 @@
     "id": 85,
     "model": "food.food",
     "fields": {
-      "name": "PIE PISANG, COKLAT KURMA, BOLU KUKUS, KETAN HITAM, BOLU PISANG, BOLU\n  PEUYEUM",
+      "name": "PIE PISANG, COKLAT KURMA, BOLU KUKUS, KETAN HITAM, BOLU PISANG, BOLU  PEUYEUM",
       "price": 69672,
       "promo": "Cashback 20%"
     }
@@ -795,7 +795,7 @@
     "id": 89,
     "model": "food.food",
     "fields": {
-      "name": "RENDANG SUIR DAGING SAPI, RENDANG DAGING SAPI, RENDANG PARU SAPI, RENDANG\n  HATI SAPI, RENDANG DAGING AYAM, RENDANG TELUR",
+      "name": "RENDANG SUIR DAGING SAPI, RENDANG DAGING SAPI, RENDANG PARU SAPI, RENDANG  HATI SAPI, RENDANG DAGING AYAM, RENDANG TELUR",
       "price": 51509,
       "promo": "Discount 10%"
     }
@@ -804,7 +804,7 @@
     "id": 90,
     "model": "food.food",
     "fields": {
-      "name": "BAGELEN ORIGINAL, BAGELEN KEJU, ROTI MANIS KEJU, ROTI MANIS COKLAT, ROTI\n  MANIS SELAI STRAWBERRY, ROTI MANIS BUTTER CREAM, ROTI MANIS PISANG",
+      "name": "BAGELEN ORIGINAL, BAGELEN KEJU, ROTI MANIS KEJU, ROTI MANIS COKLAT, ROTI  MANIS SELAI STRAWBERRY, ROTI MANIS BUTTER CREAM, ROTI MANIS PISANG",
       "price": 12962,
       "promo": "Buy 1 Get 1"
     }
@@ -813,7 +813,7 @@
     "id": 91,
     "model": "food.food",
     "fields": {
-      "name": "ROTI COKLAT, ROTI KEJU, ROTI KELAPA, ROTI KACANG IJO, ROTI GORENG PISANG\n  COKLAT",
+      "name": "ROTI COKLAT, ROTI KEJU, ROTI KELAPA, ROTI KACANG IJO, ROTI GORENG PISANG  COKLAT",
       "price": 53800,
       "promo": "Buy 1 Get 1"
     }
@@ -849,7 +849,7 @@
     "id": 95,
     "model": "food.food",
     "fields": {
-      "name": "JAMUR CRISPY RASA : ORIGINAL, KEJU, JAGUNG BAKAR, BARBEQUE, BALADO,\n  PEDAS, JAGUNG MANIS, MANIS PEDAS",
+      "name": "JAMUR CRISPY RASA : ORIGINAL, KEJU, JAGUNG BAKAR, BARBEQUE, BALADO,  PEDAS, JAGUNG MANIS, MANIS PEDAS",
       "price": 31401,
       "promo": "Free Shipping"
     }
@@ -903,7 +903,7 @@
     "id": 101,
     "model": "food.food",
     "fields": {
-      "name": "BANDREK, BAJIGUR, TEH BUNGA ROSELLA, JUS SARANG BURUNG, JUS BUAH\n  CEPLUKAN, MINUMAN AIR KELAPA MUDA, JUS COKLAT, LATTE, TEA FUSSION, MILK TEA",
+      "name": "BANDREK, BAJIGUR, TEH BUNGA ROSELLA, JUS SARANG BURUNG, JUS BUAH  CEPLUKAN, MINUMAN AIR KELAPA MUDA, JUS COKLAT, LATTE, TEA FUSSION, MILK TEA",
       "price": 47697,
       "promo": "Buy 1 Get 1"
     }
@@ -939,7 +939,7 @@
     "id": 105,
     "model": "food.food",
     "fields": {
-      "name": "SUMPIA RASA ORIGINAL & PEDAS, REMPEYEK : KACANG, UDANG, REBON,\n  BASRENG : ORIGINAL & PEDAS",
+      "name": "SUMPIA RASA ORIGINAL & PEDAS, REMPEYEK : KACANG, UDANG, REBON,  BASRENG : ORIGINAL & PEDAS",
       "price": 67699,
       "promo": "Free Shipping"
     }
@@ -1002,7 +1002,7 @@
     "id": 112,
     "model": "food.food",
     "fields": {
-      "name": "BOLU MAWAR, BOLU RAINBOW, NASTAR, PUDING SUSU, PUDING COKLAT, DONAT TABUR\n  KACANG, DONAT COKLAT, DONAT MEISES, BOLA NUTRISARI, BROWNIES KEJU, BROWNIES\n  COKLAT, BROWNIES MEISES, KASTENGEL, SAGU, KUE KACANG",
+      "name": "BOLU MAWAR, BOLU RAINBOW, NASTAR, PUDING SUSU, PUDING COKLAT, DONAT TABUR  KACANG, DONAT COKLAT, DONAT MEISES, BOLA NUTRISARI, BROWNIES KEJU, BROWNIES  COKLAT, BROWNIES MEISES, KASTENGEL, SAGU, KUE KACANG",
       "price": 81782,
       "promo": "No Promo"
     }
@@ -1011,7 +1011,7 @@
     "id": 113,
     "model": "food.food",
     "fields": {
-      "name": "REMPEYEK KACANG TANAH, REMPEYEK KACANG KEDELAI,REMPEYEK REBON, SISTIK\n  BAYAM ORIGINAL,SISTIK BAYAM RASA KEJU PEDAS, SISTIK BAYAM RASA SAUS\n  SAMBAL",
+      "name": "REMPEYEK KACANG TANAH, REMPEYEK KACANG KEDELAI,REMPEYEK REBON, SISTIK  BAYAM ORIGINAL,SISTIK BAYAM RASA KEJU PEDAS, SISTIK BAYAM RASA SAUS  SAMBAL",
       "price": 20771,
       "promo": "No Promo"
     }
@@ -1083,7 +1083,7 @@
     "id": 121,
     "model": "food.food",
     "fields": {
-      "name": "BOLLEN PISANG, BOLLEN PISANG KEJU, CHEESE ROLL, CHEESE ROLL COKELAT,\n  PISANG ROLL, PISANG ROLL COKELAT",
+      "name": "BOLLEN PISANG, BOLLEN PISANG KEJU, CHEESE ROLL, CHEESE ROLL COKELAT,  PISANG ROLL, PISANG ROLL COKELAT",
       "price": 28762,
       "promo": "Buy 1 Get 1"
     }
@@ -1155,7 +1155,7 @@
     "id": 129,
     "model": "food.food",
     "fields": {
-      "name": "YOGHURT RASA LECI, STRAWBERRY, BLUEBERRY, MANGGA, ANGGUR, MELON, SIRSAK,\n  DURIAN, VANILLA, MOCCA, BUBBLE GUM",
+      "name": "YOGHURT RASA LECI, STRAWBERRY, BLUEBERRY, MANGGA, ANGGUR, MELON, SIRSAK,  DURIAN, VANILLA, MOCCA, BUBBLE GUM",
       "price": 51795,
       "promo": "Cashback 20%"
     }
@@ -1173,7 +1173,7 @@
     "id": 131,
     "model": "food.food",
     "fields": {
-      "name": "SUSHI CHICKEN CRISPY ROLL, SUSHI CHICKEN ROLL, SUSHI SHRIMP ROLL,\n  SALMONIGIRI, TUNA LOVER",
+      "name": "SUSHI CHICKEN CRISPY ROLL, SUSHI CHICKEN ROLL, SUSHI SHRIMP ROLL,  SALMONIGIRI, TUNA LOVER",
       "price": 61565,
       "promo": "Free Shipping"
     }
@@ -1182,7 +1182,7 @@
     "id": 132,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK KENTANG RASA : BALADO, BALADO PEDAS, BBQ, AYAM BAWANG, RUMPUT\n  LAUT, KEJU ASIN, KEJU MANIS",
+      "name": "KERIPIK KENTANG RASA : BALADO, BALADO PEDAS, BBQ, AYAM BAWANG, RUMPUT  LAUT, KEJU ASIN, KEJU MANIS",
       "price": 27093,
       "promo": "Buy 1 Get 1"
     }
@@ -1362,7 +1362,7 @@
     "id": 152,
     "model": "food.food",
     "fields": {
-      "name": "RISOL SMOKE BEEF REGULER, RISOL SMOKED BEEF MOZARELLA, RISOL CHICKEN\n  ROUGUT MOZARELLA, RISOL SOSIS AYAM MOZARELLA, RISOL SOSIS SAPI MOZARELLA",
+      "name": "RISOL SMOKE BEEF REGULER, RISOL SMOKED BEEF MOZARELLA, RISOL CHICKEN  ROUGUT MOZARELLA, RISOL SOSIS AYAM MOZARELLA, RISOL SOSIS SAPI MOZARELLA",
       "price": 57410,
       "promo": "Cashback 20%"
     }
@@ -1389,7 +1389,7 @@
     "id": 155,
     "model": "food.food",
     "fields": {
-      "name": "RESOUL RAGAUT SAYUR, RESOUL RAGOUT AYAM, RESOUL RAGAUT SAYUR TUNA, RESOUL\n  SMOKED BEEF",
+      "name": "RESOUL RAGAUT SAYUR, RESOUL RAGOUT AYAM, RESOUL RAGAUT SAYUR TUNA, RESOUL  SMOKED BEEF",
       "price": 21108,
       "promo": "Free Shipping"
     }
@@ -1425,7 +1425,7 @@
     "id": 159,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK PISANG RASA : ORIGINAL, COKLAT, GREEN TEA, JAGUNG MANIS, BALADO,\n  BALADO IJO, KEJU ASIN, BARBEQUE",
+      "name": "KERIPIK PISANG RASA : ORIGINAL, COKLAT, GREEN TEA, JAGUNG MANIS, BALADO,  BALADO IJO, KEJU ASIN, BARBEQUE",
       "price": 86658,
       "promo": "Discount 10%"
     }
@@ -1443,7 +1443,7 @@
     "id": 161,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK PISANG RASA ASIN, KERIPIK PISANG RASA MANIS, KERIPIK SINGKONG\n  RASA ASIN, KERIPIK SINGKONG RASA MANIS PEDAS",
+      "name": "KERIPIK PISANG RASA ASIN, KERIPIK PISANG RASA MANIS, KERIPIK SINGKONG  RASA ASIN, KERIPIK SINGKONG RASA MANIS PEDAS",
       "price": 29597,
       "promo": "Free Shipping"
     }
@@ -1623,7 +1623,7 @@
     "id": 181,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK SINGKONG, KERING REBON, MUSTOPA, KERIPIK KENTANG, SISTIK, CHEESE\n  STICK",
+      "name": "KERIPIK SINGKONG, KERING REBON, MUSTOPA, KERIPIK KENTANG, SISTIK, CHEESE  STICK",
       "price": 65443,
       "promo": "Buy 1 Get 1"
     }
@@ -1650,7 +1650,7 @@
     "id": 184,
     "model": "food.food",
     "fields": {
-      "name": "BOLU ORIGINAL, BOLU KUKUS, BOLU KETAN, BOLU PEUYEUM, BOLU KEJU, BOLU\n  MEISES, BOLU GULA MERAH",
+      "name": "BOLU ORIGINAL, BOLU KUKUS, BOLU KETAN, BOLU PEUYEUM, BOLU KEJU, BOLU  MEISES, BOLU GULA MERAH",
       "price": 76465,
       "promo": "No Promo"
     }
@@ -1686,7 +1686,7 @@
     "id": 188,
     "model": "food.food",
     "fields": {
-      "name": "ROTI MANIS, ISI : (COKLAT, STRAWBERRY, KEJU), DONAT TOPPING COKLAT, MOLEN\n  PISANG KEJU",
+      "name": "ROTI MANIS, ISI : (COKLAT, STRAWBERRY, KEJU), DONAT TOPPING COKLAT, MOLEN  PISANG KEJU",
       "price": 76973,
       "promo": "No Promo"
     }
@@ -1695,7 +1695,7 @@
     "id": 189,
     "model": "food.food",
     "fields": {
-      "name": "YOGHURT RASA :LECI, MELON, MANGGA, JERUK, NANAS, DURIAN, APEL, SIRSAK,\n  BLUEBERRY, STRAWBERRY, ANGGUR",
+      "name": "YOGHURT RASA :LECI, MELON, MANGGA, JERUK, NANAS, DURIAN, APEL, SIRSAK,  BLUEBERRY, STRAWBERRY, ANGGUR",
       "price": 94531,
       "promo": "Buy 1 Get 1"
     }
@@ -1722,7 +1722,7 @@
     "id": 192,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING  : SAGU KEJU SPESIAL,\n  NASTAR, KASTENGEL, LIDAH BUAYA, SEMPRIT",
+      "name": "KUE KERING  : SAGU KEJU SPESIAL,  NASTAR, KASTENGEL, LIDAH BUAYA, SEMPRIT",
       "price": 15844,
       "promo": "Cashback 20%"
     }
@@ -1731,7 +1731,7 @@
     "id": 193,
     "model": "food.food",
     "fields": {
-      "name": "CUANKI INSTAN RASA : (ORIGINAL, KARI AYAM, PEDAS RAMEN, BASO KEJU),\n  SEBLAK AYAM PEDAS ORIGINAL, MIE BAKWAN RASA : (BLACKPAPPER, TOM YAM)",
+      "name": "CUANKI INSTAN RASA : (ORIGINAL, KARI AYAM, PEDAS RAMEN, BASO KEJU),  SEBLAK AYAM PEDAS ORIGINAL, MIE BAKWAN RASA : (BLACKPAPPER, TOM YAM)",
       "price": 25109,
       "promo": "Cashback 20%"
     }
@@ -1749,7 +1749,7 @@
     "id": 195,
     "model": "food.food",
     "fields": {
-      "name": "PEPES IKAN PATIN,  IKAN MAS, IKAN\n  KAKAP, IKAN BAWAL LAUT",
+      "name": "PEPES IKAN PATIN,  IKAN MAS, IKAN  KAKAP, IKAN BAWAL LAUT",
       "price": 50777,
       "promo": "Cashback 20%"
     }
@@ -1776,7 +1776,7 @@
     "id": 198,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK UBI RASA : KEJU, JAGUNG BAKAR, BBQ, PEDAS, COKLAT MANIS, KENCUR\n  PEDAS",
+      "name": "KERIPIK UBI RASA : KEJU, JAGUNG BAKAR, BBQ, PEDAS, COKLAT MANIS, KENCUR  PEDAS",
       "price": 47998,
       "promo": "No Promo"
     }
@@ -1830,7 +1830,7 @@
     "id": 204,
     "model": "food.food",
     "fields": {
-      "name": "MADU MURNI KALIANDRA, MADU MURNI ODENG, MADU MURNI KLANCENG, MADU MURNI\n  PAHIT, MADU MURNI LENGKENG, MADU MURNI CENGKEH, NIPIS MADU, KOPI MADU, SUSU\n  JAHE MADU",
+      "name": "MADU MURNI KALIANDRA, MADU MURNI ODENG, MADU MURNI KLANCENG, MADU MURNI  PAHIT, MADU MURNI LENGKENG, MADU MURNI CENGKEH, NIPIS MADU, KOPI MADU, SUSU  JAHE MADU",
       "price": 87968,
       "promo": "Free Shipping"
     }
@@ -1884,7 +1884,7 @@
     "id": 210,
     "model": "food.food",
     "fields": {
-      "name": "BANDENG ISI, PEPES IKAN  MAS,\n  PINDANG ECHO",
+      "name": "BANDENG ISI, PEPES IKAN  MAS,  PINDANG ECHO",
       "price": 12196,
       "promo": "Cashback 20%"
     }
@@ -2046,7 +2046,7 @@
     "id": 228,
     "model": "food.food",
     "fields": {
-      "name": "BAWANG GORENG ORIGINAL, BAWANG GORENG PEDAS, BAWANG GORENG TERI, BAWANG\n  GORENG TERI PEDAS",
+      "name": "BAWANG GORENG ORIGINAL, BAWANG GORENG PEDAS, BAWANG GORENG TERI, BAWANG  GORENG TERI PEDAS",
       "price": 70286,
       "promo": "Free Shipping"
     }
@@ -2082,7 +2082,7 @@
     "id": 232,
     "model": "food.food",
     "fields": {
-      "name": "CEKER PEDAS, AYAM UNGKEP, NUGGET AYAM, SOSIS AYAM, SEMPOL AYAM, AYAM\n  SAMBAL, AYAM SAUS, SEBLAK CEKER, AYAM KRISPI BUMBU",
+      "name": "CEKER PEDAS, AYAM UNGKEP, NUGGET AYAM, SOSIS AYAM, SEMPOL AYAM, AYAM  SAMBAL, AYAM SAUS, SEBLAK CEKER, AYAM KRISPI BUMBU",
       "price": 55550,
       "promo": "No Promo"
     }
@@ -2172,7 +2172,7 @@
     "id": 242,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK BASRENG, STIK SAYURAN (BROKOLI / SAWIHIJAU / KENTANG / WORTEL)",
+      "name": "KERIPIK BASRENG, STIK SAYURAN",
       "price": 29769,
       "promo": "Free Shipping"
     }
@@ -2208,7 +2208,7 @@
     "id": 246,
     "model": "food.food",
     "fields": {
-      "name": "BASO SAPI,  ISI : CINCANG, TELUR,\n  BERANAK, POLOS",
+      "name": "BASO SAPI,  ISI : CINCANG, TELUR,  BERANAK, POLOS",
       "price": 50077,
       "promo": "Free Shipping"
     }
@@ -2226,7 +2226,7 @@
     "id": 248,
     "model": "food.food",
     "fields": {
-      "name": "CHOC GREEN TEA BAR, CHOC COOKIES BAR, CHOC PEANUT BUTTER PRALINE, CHOC\n  STRAWBERRY PRALINE, CHOC GREEN TEA PRALINE, CHOC MINT PRALINE, CHOC GINGER\n  PRALINE, CHOC ORANGE PRALINE, CHOC COFFEE PRALINE, HOT CHOCOLATE POPS\n  CHOCOLATE, HOT CHOCOLATE POPS GREEN TEA",
+      "name": "CHOC GREEN TEA BAR, CHOC COOKIES BAR, CHOC PEANUT BUTTER PRALINE, CHOC  STRAWBERRY PRALINE, CHOC GREEN TEA PRALINE, CHOC MINT PRALINE, CHOC GINGER  PRALINE, CHOC ORANGE PRALINE, CHOC COFFEE PRALINE, HOT CHOCOLATE POPS  CHOCOLATE, HOT CHOCOLATE POPS GREEN TEA",
       "price": 14382,
       "promo": "Free Shipping"
     }
@@ -2271,7 +2271,7 @@
     "id": 253,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK PANGSIT RASA : ORIGINAL, PEDAS, KEJU, BBQ, BALADO, PIZZA, RUMPUT\n  LAUT",
+      "name": "KERIPIK PANGSIT RASA : ORIGINAL, PEDAS, KEJU, BBQ, BALADO, PIZZA, RUMPUT  LAUT",
       "price": 37915,
       "promo": "Cashback 20%"
     }
@@ -2298,7 +2298,7 @@
     "id": 256,
     "model": "food.food",
     "fields": {
-      "name": "PUDING RASA : (COKLAT HAZELNUT, STRAWBERRY, MELON, MANGO, PASSION FRUIT,\n  TARO, BUBLE GUM, MATCHA, OGURA, CAPPUCINO, TIRAMISU, CARAMEL, COFFEE\n  MATCHIATO, VANILLA)",
+      "name": "PUDING RASA : (COKLAT HAZELNUT, STRAWBERRY, MELON, MANGO, PASSION FRUIT,  TARO, BUBLE GUM, MATCHA, OGURA, CAPPUCINO, TIRAMISU, CARAMEL, COFFEE  MATCHIATO, VANILLA)",
       "price": 96148,
       "promo": "Buy 1 Get 1"
     }
@@ -2325,7 +2325,7 @@
     "id": 259,
     "model": "food.food",
     "fields": {
-      "name": "CHEESTICK (KEJU, KORNEDSAPI), SISTIK, STICK RASA : (UBI, SINGKONG,\n  PISANG, PENYEUM)",
+      "name": "CHEESTICK (KEJU, KORNEDSAPI), SISTIK, STICK RASA : (UBI, SINGKONG,  PISANG, PENYEUM)",
       "price": 56823,
       "promo": "Discount 10%"
     }
@@ -2343,7 +2343,7 @@
     "id": 261,
     "model": "food.food",
     "fields": {
-      "name": "KALDU BUBUK RASA IKAN BANDENG, SAOS SARI BANDENG, KECAP ASIN RASA IKAN,\n  KECAP RASA IKAN",
+      "name": "KALDU BUBUK RASA IKAN BANDENG, SAOS SARI BANDENG, KECAP ASIN RASA IKAN,  KECAP RASA IKAN",
       "price": 82229,
       "promo": "Discount 10%"
     }
@@ -2379,7 +2379,7 @@
     "id": 265,
     "model": "food.food",
     "fields": {
-      "name": "ANGGRI BIRD, DORA EMON, SPONGE BOB, HELLO KITTY, PANDA, KELINCI, PENGUIN,\n  BUNGA, MOBIL, BEBEK, BERUANG, BURUNG, SMILE, PETRIK, SMILE PANJANG, HATI\n  PANJANG",
+      "name": "ANGGRI BIRD, DORA EMON, SPONGE BOB, HELLO KITTY, PANDA, KELINCI, PENGUIN,  BUNGA, MOBIL, BEBEK, BERUANG, BURUNG, SMILE, PETRIK, SMILE PANJANG, HATI  PANJANG",
       "price": 63270,
       "promo": "Discount 10%"
     }
@@ -2496,7 +2496,7 @@
     "id": 278,
     "model": "food.food",
     "fields": {
-      "name": "DENDENG AYAM MERK PURWARASA, ABON AYAM MERK DUA PUTRI, GEPUK AYAM MERK\n  DUA PUTRI",
+      "name": "DENDENG AYAM MERK PURWARASA, ABON AYAM MERK DUA PUTRI, GEPUK AYAM MERK  DUA PUTRI",
       "price": 86135,
       "promo": "Cashback 20%"
     }
@@ -2514,7 +2514,7 @@
     "id": 280,
     "model": "food.food",
     "fields": {
-      "name": "BLACK FOREST, RED VELVET, CHEESE CAKE, TIRAMISU, OPERA, CHOCOLATE\n  TRUFFLE, TRIPLE CHOCOLATE, PINKY LADY, MOCCA NOUGAT ROLL CAKE, CHEESE ROLL\n  CAKE, CHOCO ROLL CAKE, SMOKE BEEF MOZARELA ORIGINAL, SMOKE BEEF MOZARELA\n  SPICY, CHICKEN ONCOM MOZARELA SPICY, CHICKEN RAGOUT, BEEF BLACK PAPER, TUNA\n  MAYO ORIGINAL, TUNA MAYO SPICY, CHEESE PUFF, BLACK AND WHITE CHEESE, CHOCO\n  PEARL CHEESE, NEIMAS (PALM SUIKER, MEDE, CHOCOCHIP), CHOCO BUTTON, COFFEE\n  CRISPY CHEESE, KASTENGEL, CHEESE NASTAR, CHEESE ALMOND",
+      "name": "BLACK FOREST, RED VELVET, CHEESE CAKE, TIRAMISU, OPERA, CHOCOLATE  TRUFFLE, TRIPLE CHOCOLATE, PINKY LADY, MOCCA NOUGAT ROLL CAKE, CHEESE ROLL  CAKE, CHOCO ROLL CAKE, SMOKE BEEF MOZARELA ORIGINAL, SMOKE BEEF MOZARELA  SPICY, CHICKEN ONCOM MOZARELA SPICY, CHICKEN RAGOUT, BEEF BLACK PAPER, TUNA  MAYO ORIGINAL, TUNA MAYO SPICY, CHEESE PUFF, BLACK AND WHITE CHEESE, CHOCO  PEARL CHEESE, NEIMAS (PALM SUIKER, MEDE, CHOCOCHIP), CHOCO BUTTON, COFFEE  CRISPY CHEESE, KASTENGEL, CHEESE NASTAR, CHEESE ALMOND",
       "price": 40442,
       "promo": "Buy 1 Get 1"
     }
@@ -2523,7 +2523,7 @@
     "id": 281,
     "model": "food.food",
     "fields": {
-      "name": "AYAM KODOK, RENDANG DAGING SAPI, RENDANG DAGING AYAM, DENDENG SAPI\n  RAGI",
+      "name": "AYAM KODOK, RENDANG DAGING SAPI, RENDANG DAGING AYAM, DENDENG SAPI  RAGI",
       "price": 32184,
       "promo": "No Promo"
     }
@@ -2604,7 +2604,7 @@
     "id": 290,
     "model": "food.food",
     "fields": {
-      "name": "BUMBU KALDU SAPI, BUMBU KALDU AYAM, BUMBU KALDU AYAM KAMPUNG, BUMBU KALDU\n  JAMUR",
+      "name": "BUMBU KALDU SAPI, BUMBU KALDU AYAM, BUMBU KALDU AYAM KAMPUNG, BUMBU KALDU  JAMUR",
       "price": 81281,
       "promo": "Discount 10%"
     }
@@ -2685,7 +2685,7 @@
     "id": 299,
     "model": "food.food",
     "fields": {
-      "name": "ROTI, BOLU KERING, OMBEKUK, SOES KERING, LAPIS MALANG, BOLU GULUNG, LAPIS\n  LEGIT, BAGELEN MANIS, BAGELEN ASIN, BOLU KETAN",
+      "name": "ROTI, BOLU KERING, OMBEKUK, SOES KERING, LAPIS MALANG, BOLU GULUNG, LAPIS  LEGIT, BAGELEN MANIS, BAGELEN ASIN, BOLU KETAN",
       "price": 62312,
       "promo": "Buy 1 Get 1"
     }
@@ -3009,7 +3009,7 @@
     "id": 335,
     "model": "food.food",
     "fields": {
-      "name": "KULINER/SOTO INSTAN",
+      "name": "SOTO INSTAN",
       "price": 75176,
       "promo": "Buy 1 Get 1"
     }
@@ -3072,7 +3072,7 @@
     "id": 342,
     "model": "food.food",
     "fields": {
-      "name": "MAKANAN/CIRENG KATSU",
+      "name": "CIRENG KATSU",
       "price": 96399,
       "promo": "Free Shipping"
     }
@@ -3198,7 +3198,7 @@
     "id": 356,
     "model": "food.food",
     "fields": {
-      "name": "OLAHAN SUSU / YOGURT",
+      "name": "OLAHAN SUSU",
       "price": 65413,
       "promo": "Discount 10%"
     }
@@ -3495,7 +3495,7 @@
     "id": 389,
     "model": "food.food",
     "fields": {
-      "name": "ABON/SERUNDENG",
+      "name": "ABON",
       "price": 98357,
       "promo": "No Promo"
     }
@@ -3711,7 +3711,7 @@
     "id": 413,
     "model": "food.food",
     "fields": {
-      "name": "OLAHAN SUSU / YOGURT",
+      "name": "OLAHAN SUSU",
       "price": 45205,
       "promo": "Free Shipping"
     }
@@ -4854,7 +4854,7 @@
     "id": 540,
     "model": "food.food",
     "fields": {
-      "name": "NUGET AYAM / KOPI",
+      "name": "NUGET AYAM",
       "price": 58393,
       "promo": "No Promo"
     }
@@ -5079,7 +5079,7 @@
     "id": 565,
     "model": "food.food",
     "fields": {
-      "name": "SNACK/KERIPIK",
+      "name": "KERIPIK",
       "price": 95085,
       "promo": "Cashback 20%"
     }
@@ -5223,7 +5223,7 @@
     "id": 581,
     "model": "food.food",
     "fields": {
-      "name": "BUTTEER SCOTCH/         MINUMAN",
+      "name": "BUTTEER SCOTCH MINUMAN",
       "price": 62909,
       "promo": "No Promo"
     }
@@ -5376,7 +5376,7 @@
     "id": 598,
     "model": "food.food",
     "fields": {
-      "name": "OLAHAN MINUMAN HERBAL / SERBUK",
+      "name": "OLAHAN MINUMAN HERBAL",
       "price": 20303,
       "promo": "Buy 1 Get 1"
     }
@@ -5430,7 +5430,7 @@
     "id": 604,
     "model": "food.food",
     "fields": {
-      "name": "MAKANAN/KUE",
+      "name": "MAKANAN KUE",
       "price": 75825,
       "promo": "No Promo"
     }
@@ -5529,7 +5529,7 @@
     "id": 615,
     "model": "food.food",
     "fields": {
-      "name": "KULINER( SIOMAY)",
+      "name": "SIOMAY",
       "price": 89707,
       "promo": "Buy 1 Get 1"
     }
@@ -5538,7 +5538,7 @@
     "id": 616,
     "model": "food.food",
     "fields": {
-      "name": "CAKE/KUE KERING/BOLU",
+      "name": "CAKE, KUE KERING, BOLU",
       "price": 19839,
       "promo": "Discount 10%"
     }
@@ -5583,7 +5583,7 @@
     "id": 621,
     "model": "food.food",
     "fields": {
-      "name": "CHEESTIK, KUE KERING, RENGGINANG",
+      "name": "CHEESTIK",
       "price": 23645,
       "promo": "No Promo"
     }
@@ -5610,7 +5610,7 @@
     "id": 624,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING / KUE BASAH",
+      "name": "KUE BASAH",
       "price": 52522,
       "promo": "Free Shipping"
     }
@@ -5628,7 +5628,7 @@
     "id": 626,
     "model": "food.food",
     "fields": {
-      "name": "ROTI & KUE",
+      "name": "ROTI",
       "price": 20766,
       "promo": "Cashback 20%"
     }
@@ -5682,7 +5682,7 @@
     "id": 632,
     "model": "food.food",
     "fields": {
-      "name": "T E H",
+      "name": "TEH",
       "price": 86357,
       "promo": "Cashback 20%"
     }
