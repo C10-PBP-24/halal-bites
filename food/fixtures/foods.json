@@ -1,0 +1,5852 @@
+[
+  {
+    "id": 1,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU KEJU, BROWNIES, BOLNIZ, BROLEN, PIE : DURIAN, KEJU, SUSU, NASTAR,\n  KASTANGEL, SEMPRIT, SAGU KEJU, TRIPLE CHOCOLATE CAKE, BOLU PEUYEUM, BANANA\n  BREAD",
+      "price": 22140,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 2,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG  GORENG RASA ORIGINAL DAN\n  PEDAS",
+      "price": 70269,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 3,
+    "model": "food.food",
+    "fields": {
+      "name": "SNOW MOONCAKE",
+      "price": 58087,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 4,
+    "model": "food.food",
+    "fields": {
+      "name": "MINYAK GORENG",
+      "price": 61849,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 5,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU, KUE KERING",
+      "price": 21449,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 6,
+    "model": "food.food",
+    "fields": {
+      "name": "CINCAU HITAM",
+      "price": 42911,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 7,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO TAHU GORENG DAN SIOMAY",
+      "price": 51775,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 8,
+    "model": "food.food",
+    "fields": {
+      "name": "SUMPIA ISI, SUMPIA RASA",
+      "price": 44236,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 9,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG GORENG",
+      "price": 62392,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 10,
+    "model": "food.food",
+    "fields": {
+      "name": "BATAGOR KERING RASA",
+      "price": 39500,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 11,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 71918,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 12,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE SEMPRONG, KUE JEPIT MANIS, SIMPING UDANG",
+      "price": 90743,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 13,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI TAWAR BAKAR/KUKUS",
+      "price": 13127,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 14,
+    "model": "food.food",
+    "fields": {
+      "name": "BATAGOR, PEMPEK, LUMPIA, OTAK – OTAK",
+      "price": 50896,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 15,
+    "model": "food.food",
+    "fields": {
+      "name": "CHISTIK BAWANG, KACANG BAWANG",
+      "price": 56589,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 16,
+    "model": "food.food",
+    "fields": {
+      "name": "FROZEN BARBEQUE",
+      "price": 41706,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 17,
+    "model": "food.food",
+    "fields": {
+      "name": "OSENG TUNA",
+      "price": 46457,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 18,
+    "model": "food.food",
+    "fields": {
+      "name": "PEMPEK",
+      "price": 35607,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 19,
+    "model": "food.food",
+    "fields": {
+      "name": "PEMPEK",
+      "price": 32395,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 20,
+    "model": "food.food",
+    "fields": {
+      "name": "TEMPE",
+      "price": 59908,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 21,
+    "model": "food.food",
+    "fields": {
+      "name": "COMRING (RASA : ORIGINAL, PEDAS), KERIPIK SINGKONG, SISTIK SINGKONG",
+      "price": 46962,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 22,
+    "model": "food.food",
+    "fields": {
+      "name": "AMDK DEMINERAL",
+      "price": 23997,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 23,
+    "model": "food.food",
+    "fields": {
+      "name": "RUJAK ASINAN",
+      "price": 47310,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 24,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON IKAN, BANDENG ISI, OTAK-OTAK, BANDENG PRESTO, NUGGET IKAN",
+      "price": 64185,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 25,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK, KUE BAWANG",
+      "price": 59327,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 26,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK, SALE PISANG",
+      "price": 82402,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 27,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 68756,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 28,
+    "model": "food.food",
+    "fields": {
+      "name": "ALIAGREM, PISANG KRISPI, ULEN KRISPI, SURABI UBI UNGU, BOLU, PUDING, AWUG",
+      "price": 15971,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 29,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 35012,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 30,
+    "model": "food.food",
+    "fields": {
+      "name": "ALMOND CRISPY, BOLU, KUE KERING, TIRAMISU CAKE",
+      "price": 17973,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 31,
+    "model": "food.food",
+    "fields": {
+      "name": "SHA’E BOLSUS, SHA’E BOLSUS GALAXI, BROWNIES LUMER",
+      "price": 30906,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 32,
+    "model": "food.food",
+    "fields": {
+      "name": "JAHE INSTAN, BANDREK, BAJIGUR, JAHE, MERAH INSTAN",
+      "price": 10252,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 33,
+    "model": "food.food",
+    "fields": {
+      "name": "TEPUNG PISANG",
+      "price": 56088,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 34,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG DAGING, RENDANG AYAM, RENDANG ATI, RENDANG PARU, DENDENG BALADO",
+      "price": 41823,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 35,
+    "model": "food.food",
+    "fields": {
+      "name": "RISOLES, ROTI, CAKE, BROWNIES, MAKRONI \n  SCHOTEL, LASAGNA, KUE SUS, KUE KERING",
+      "price": 25510,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 36,
+    "model": "food.food",
+    "fields": {
+      "name": "KERING KENTANG, KERIPIK KENTANG, \n  SAMBEL TERI KACANG",
+      "price": 79954,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 37,
+    "model": "food.food",
+    "fields": {
+      "name": "KUNYIT ASAM INSTAN, JAHE INSTAN, BERAS KENCUR INSTAN, UBI UNGU INSTAN",
+      "price": 64312,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 38,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 67713,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 39,
+    "model": "food.food",
+    "fields": {
+      "name": "TAHU BASO ISI AYAM UDANG, TAHU BASO ISI SAPI, CILOK KRISPI MOZARELA, AYAM\n  TANPA TULANG",
+      "price": 35864,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 40,
+    "model": "food.food",
+    "fields": {
+      "name": "KREMES, KERING TEMPE",
+      "price": 42931,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 41,
+    "model": "food.food",
+    "fields": {
+      "name": "PEMPEK KAPAL SELAM, PEMPEK LENJER, PEMPEK ADAAN",
+      "price": 50003,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 42,
+    "model": "food.food",
+    "fields": {
+      "name": "NUGET AYAM, NUGET SAYUR, AYAM LAPIS KEJU",
+      "price": 30864,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 43,
+    "model": "food.food",
+    "fields": {
+      "name": "GABUS KEJU, SUMPIA",
+      "price": 87404,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 44,
+    "model": "food.food",
+    "fields": {
+      "name": "PROLL TAPE, BOLU KUKUS",
+      "price": 26155,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 45,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 83047,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 46,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES",
+      "price": 20717,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 47,
+    "model": "food.food",
+    "fields": {
+      "name": "MUSHROOM OAT COOKIES",
+      "price": 63849,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 48,
+    "model": "food.food",
+    "fields": {
+      "name": "CUANKIE",
+      "price": 97493,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 49,
+    "model": "food.food",
+    "fields": {
+      "name": "SUMPIA ORIGINAL, SUMPIA BALADO, SUMPIA PEDAS",
+      "price": 76246,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 50,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI BUBUK ARABICA, KOPI BUBUK ROBUSTA",
+      "price": 69484,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 51,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, KERIPIK",
+      "price": 11698,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 52,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK PISANG, SALE PISANG, SUMPIA",
+      "price": 67988,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 53,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN TEMULAWAK, MINUMAN TEH, MINUMAN TEH TARIK",
+      "price": 13596,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 54,
+    "model": "food.food",
+    "fields": {
+      "name": "CHEESE STICK, KACANG UMPET",
+      "price": 89653,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 55,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 48519,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 56,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, BROWNIES, CAKE",
+      "price": 74678,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 57,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE, BROWNIES, BOLU",
+      "price": 31128,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 58,
+    "model": "food.food",
+    "fields": {
+      "name": "PEPES IKAN MAS DURI LUNAK",
+      "price": 80644,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 59,
+    "model": "food.food",
+    "fields": {
+      "name": "KIRIHUCI RASA ORIGINAL, KIRIHUCI RASA PEDAS",
+      "price": 15046,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 60,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES",
+      "price": 85399,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 61,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKARONI",
+      "price": 31978,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 62,
+    "model": "food.food",
+    "fields": {
+      "name": "OTAK-OTAK BUMBU RUJAK, CIRENG BUMBU RUJAK RASA ORIGINAL, CIRENG BUMBU\n  RUJAK RASA REBON, PEMPEK SUTRA, TEKWAN",
+      "price": 90535,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 63,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE, BOLU, BROWNIES, KUE KERING",
+      "price": 33343,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 64,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, BROWNIES, BOLU",
+      "price": 47388,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 65,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI TAWAR, ROTI BAGELEN",
+      "price": 44234,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 66,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT, MILK TEA, SNOWHITE DESSERT",
+      "price": 15860,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 67,
+    "model": "food.food",
+    "fields": {
+      "name": "FRUITY JELLY RASA LECI, FRUITY JELLY RASA STRAWBERRY, FRUITY JELLY RASA\n  MOCCA, FRUITY JELLY RASA MELON",
+      "price": 19952,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 68,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, CAKE",
+      "price": 13928,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 69,
+    "model": "food.food",
+    "fields": {
+      "name": "APPLE PINEAPPLE LEMON, CARROT ORANGE PEAR LEMON, BEETROOT CARROT  APPLE LEMON, BOKCHOI APPLE PINEAPPLE LEMON,\n  ROMAINE RED DRAGON CUCUMBER APPLE PINRAPPLE LEMON",
+      "price": 21110,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 70,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 43601,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 71,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN SERBUK",
+      "price": 38880,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 72,
+    "model": "food.food",
+    "fields": {
+      "name": "PISANG KEJU, PISANG AROMA, PISANG COKELAT, PISANG SELIMUT KEJU",
+      "price": 86084,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 73,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL LADA HITAM, SAMBAL IJO, SAMBAL GORENG KENTANG, SAMBAL GORENG TEMPE",
+      "price": 18991,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 74,
+    "model": "food.food",
+    "fields": {
+      "name": "ROCKET SEBLAK, GAGAL PEDAS, PEDAS MINIMAL, PEDAS MAKSIMAL",
+      "price": 20508,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 75,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG (DENGAN TEPUNG), BAWANG GORENG MURNI",
+      "price": 22414,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 76,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL BAWANG, SAMBAL CABE IJO, SAMBAL TERASI, SAMBAL TERI, SAMBAL CUMI",
+      "price": 31865,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 77,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKARONI GORENG RASA : SOTO LEVEL 1-3, KARE LEVEL 1-3, RENDANG LEVEL 1-3\n  DAN BAWANG LEVEL 1-3",
+      "price": 85532,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 78,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, BROWNIES",
+      "price": 80931,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 79,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK TALAS",
+      "price": 10863,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 80,
+    "model": "food.food",
+    "fields": {
+      "name": "RED GINGER, JUS BIOLA, MADU MERAH PUTIH, MADU LEMON, MADU KRISTAL",
+      "price": 98554,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 81,
+    "model": "food.food",
+    "fields": {
+      "name": "TEPUNG KACANG HIJAU, TEPUNG KACANG KEDELAI, TEPUNG BERAS MERAH",
+      "price": 45866,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 82,
+    "model": "food.food",
+    "fields": {
+      "name": "PISANG GORENG ACEH, MOLEN PISANG ACEH, SARIKAYA PISANG ACEH",
+      "price": 81766,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 83,
+    "model": "food.food",
+    "fields": {
+      "name": "ULEN, CIRENG BUMBU",
+      "price": 62810,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 84,
+    "model": "food.food",
+    "fields": {
+      "name": "MACARONI SCHOTEL, MACARONI BOLOGNASE, BAKED POTATO, BAKED POTATO,\n  LASAGNA, SPICY MAC MOZA",
+      "price": 48050,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 85,
+    "model": "food.food",
+    "fields": {
+      "name": "PIE PISANG, COKLAT KURMA, BOLU KUKUS, KETAN HITAM, BOLU PISANG, BOLU\n  PEUYEUM",
+      "price": 69672,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 86,
+    "model": "food.food",
+    "fields": {
+      "name": "TENTENG EMPING, SALE PISANG GORENG",
+      "price": 26701,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 87,
+    "model": "food.food",
+    "fields": {
+      "name": "EGG ROLL ORIGINAL, EGG ROLL WIJEN",
+      "price": 87038,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 88,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 55721,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 89,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG SUIR DAGING SAPI, RENDANG DAGING SAPI, RENDANG PARU SAPI, RENDANG\n  HATI SAPI, RENDANG DAGING AYAM, RENDANG TELUR",
+      "price": 51509,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 90,
+    "model": "food.food",
+    "fields": {
+      "name": "BAGELEN ORIGINAL, BAGELEN KEJU, ROTI MANIS KEJU, ROTI MANIS COKLAT, ROTI\n  MANIS SELAI STRAWBERRY, ROTI MANIS BUTTER CREAM, ROTI MANIS PISANG",
+      "price": 12962,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 91,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI COKLAT, ROTI KEJU, ROTI KELAPA, ROTI KACANG IJO, ROTI GORENG PISANG\n  COKLAT",
+      "price": 53800,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 92,
+    "model": "food.food",
+    "fields": {
+      "name": "LAPIS LEGIT, BROWNIES, KUE KERING",
+      "price": 77030,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 93,
+    "model": "food.food",
+    "fields": {
+      "name": "MADU",
+      "price": 58494,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 94,
+    "model": "food.food",
+    "fields": {
+      "name": "DENDENG BALADO BASAH, DENDENG BALADO KERING, SAMBAL BALADO",
+      "price": 19863,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 95,
+    "model": "food.food",
+    "fields": {
+      "name": "JAMUR CRISPY RASA : ORIGINAL, KEJU, JAGUNG BAKAR, BARBEQUE, BALADO,\n  PEDAS, JAGUNG MANIS, MANIS PEDAS",
+      "price": 31401,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 96,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE, BOLU, KUE KERING",
+      "price": 28996,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 97,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, STICK",
+      "price": 92868,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 98,
+    "model": "food.food",
+    "fields": {
+      "name": "SUSU PASTEURISASI, YOGHURT",
+      "price": 78876,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 99,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN JAHE",
+      "price": 58272,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 100,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES, BOLU, PASTRY, RISOLES",
+      "price": 99900,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 101,
+    "model": "food.food",
+    "fields": {
+      "name": "BANDREK, BAJIGUR, TEH BUNGA ROSELLA, JUS SARANG BURUNG, JUS BUAH\n  CEPLUKAN, MINUMAN AIR KELAPA MUDA, JUS COKLAT, LATTE, TEA FUSSION, MILK TEA",
+      "price": 47697,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 102,
+    "model": "food.food",
+    "fields": {
+      "name": "ALMOND CRISPY",
+      "price": 63900,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 103,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES, KUE KERING",
+      "price": 94374,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 104,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 15456,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 105,
+    "model": "food.food",
+    "fields": {
+      "name": "SUMPIA RASA ORIGINAL & PEDAS, REMPEYEK : KACANG, UDANG, REBON,\n  BASRENG : ORIGINAL & PEDAS",
+      "price": 67699,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 106,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG BAWANG, KACANG GORENG, KACANG TELUR",
+      "price": 45284,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 107,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL BAWANG",
+      "price": 58897,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 108,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKARONI GORENG , KERUPUK GURILEM ,MAKARONI TELOR",
+      "price": 61063,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 109,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL BAWANG DAN SAMBAL TERI",
+      "price": 36379,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 110,
+    "model": "food.food",
+    "fields": {
+      "name": "COKLAT JAR",
+      "price": 57653,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 111,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG, AYAM BAKAR",
+      "price": 50266,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 112,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU MAWAR, BOLU RAINBOW, NASTAR, PUDING SUSU, PUDING COKLAT, DONAT TABUR\n  KACANG, DONAT COKLAT, DONAT MEISES, BOLA NUTRISARI, BROWNIES KEJU, BROWNIES\n  COKLAT, BROWNIES MEISES, KASTENGEL, SAGU, KUE KACANG",
+      "price": 81782,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 113,
+    "model": "food.food",
+    "fields": {
+      "name": "REMPEYEK KACANG TANAH, REMPEYEK KACANG KEDELAI,REMPEYEK REBON, SISTIK\n  BAYAM ORIGINAL,SISTIK BAYAM RASA KEJU PEDAS, SISTIK BAYAM RASA SAUS\n  SAMBAL",
+      "price": 20771,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 114,
+    "model": "food.food",
+    "fields": {
+      "name": "EGG ROLL RASA : WIJEN, PISANG, UBI UNGU, UBI KUNING",
+      "price": 45051,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 115,
+    "model": "food.food",
+    "fields": {
+      "name": "STICK SINGKONG RASA : ORIGINAL, KEJU, BALADO",
+      "price": 99592,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 116,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU, DONAT, BROWNIES, KUE BASAH, KUE KERING",
+      "price": 74544,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 117,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK, KACANG GORENG, SISTIK",
+      "price": 78409,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 118,
+    "model": "food.food",
+    "fields": {
+      "name": "SOES, BROWNIES, CAKE, PIE, LAPIS LEGIT, LAPIS SURABAYA",
+      "price": 73928,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 119,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI, BOLU",
+      "price": 29794,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 120,
+    "model": "food.food",
+    "fields": {
+      "name": "MARTABAK",
+      "price": 96217,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 121,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLLEN PISANG, BOLLEN PISANG KEJU, CHEESE ROLL, CHEESE ROLL COKELAT,\n  PISANG ROLL, PISANG ROLL COKELAT",
+      "price": 28762,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 122,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG, SAMBAL ATI, DENDENG",
+      "price": 30005,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 123,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKARONI",
+      "price": 55630,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 124,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, KUE BASAH, PUDING, BROWNIES",
+      "price": 34244,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 125,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU, KUE KERING",
+      "price": 33526,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 126,
+    "model": "food.food",
+    "fields": {
+      "name": "TAHU BASO, BOLU, KUE KERING, KUE BASAH, KETAN BUMBU",
+      "price": 76249,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 127,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG HIJAU GORENG",
+      "price": 96958,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 128,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI, BOLU, BROWNIES, MUFFIN",
+      "price": 78545,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 129,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT RASA LECI, STRAWBERRY, BLUEBERRY, MANGGA, ANGGUR, MELON, SIRSAK,\n  DURIAN, VANILLA, MOCCA, BUBBLE GUM",
+      "price": 51795,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 130,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK, LUMPIA GULUNG, KUE BAWANG, SISTIK, COMRING, SALE PISANG GORENG",
+      "price": 95362,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 131,
+    "model": "food.food",
+    "fields": {
+      "name": "SUSHI CHICKEN CRISPY ROLL, SUSHI CHICKEN ROLL, SUSHI SHRIMP ROLL,\n  SALMONIGIRI, TUNA LOVER",
+      "price": 61565,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 132,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK KENTANG RASA : BALADO, BALADO PEDAS, BBQ, AYAM BAWANG, RUMPUT\n  LAUT, KEJU ASIN, KEJU MANIS",
+      "price": 27093,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 133,
+    "model": "food.food",
+    "fields": {
+      "name": "PUFF PASTRY, BOLU PISANG, BROWNIES, CILOK",
+      "price": 67416,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 134,
+    "model": "food.food",
+    "fields": {
+      "name": "PIA, SOPIA, NASTAR, BROWNIES BAKAR",
+      "price": 28981,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 135,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 66596,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 136,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE, CROISSANT, ÉCLAIR, PASTA, MUFFIN, KUE KERING",
+      "price": 38349,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 137,
+    "model": "food.food",
+    "fields": {
+      "name": "PEMPEK",
+      "price": 39309,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 138,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK TORTILLA, TORTILLA RASA",
+      "price": 40523,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 139,
+    "model": "food.food",
+    "fields": {
+      "name": "MABIKA ENTEN ORIGINAL, MABIKA ENTEN PEDAS, MABIKAN ENTEN SUPER PEDAS",
+      "price": 40851,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 140,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL JAMBAL, SAMBAL TERI, SAMBAL CUMI, SAMBAL JENGKOL, SAMBAL PEUTEUY",
+      "price": 75781,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 141,
+    "model": "food.food",
+    "fields": {
+      "name": "DONAT",
+      "price": 15764,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 142,
+    "model": "food.food",
+    "fields": {
+      "name": "JUS, AIR KELAPA MUDA",
+      "price": 22264,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 143,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 79497,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 144,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, COOKIES",
+      "price": 72645,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 145,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 65864,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 146,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL : TERI MERAH, TERI IJO, BAJAK, BALADO MERAH, BALADO IJO",
+      "price": 59821,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 147,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES MOCAF, KUE KERING MOCAF, KUE BASAH, PUDING",
+      "price": 67594,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 148,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE PUKIS, KUE KERING, KUE BASAH",
+      "price": 60581,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 149,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, PASTRY, CAKE",
+      "price": 25965,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 150,
+    "model": "food.food",
+    "fields": {
+      "name": "RISOLES, PASTEL, BITTER BALLEN, PROLL TAPE",
+      "price": 84509,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 151,
+    "model": "food.food",
+    "fields": {
+      "name": "GREEN TEA, THAI TEA, LIANG TEA",
+      "price": 64937,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 152,
+    "model": "food.food",
+    "fields": {
+      "name": "RISOL SMOKE BEEF REGULER, RISOL SMOKED BEEF MOZARELLA, RISOL CHICKEN\n  ROUGUT MOZARELLA, RISOL SOSIS AYAM MOZARELLA, RISOL SOSIS SAPI MOZARELLA",
+      "price": 57410,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 153,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG",
+      "price": 23499,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 154,
+    "model": "food.food",
+    "fields": {
+      "name": "SISTIK, REMPEYEK",
+      "price": 10995,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 155,
+    "model": "food.food",
+    "fields": {
+      "name": "RESOUL RAGAUT SAYUR, RESOUL RAGOUT AYAM, RESOUL RAGAUT SAYUR TUNA, RESOUL\n  SMOKED BEEF",
+      "price": 21108,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 156,
+    "model": "food.food",
+    "fields": {
+      "name": "BEER PLETOK CAIR, BEER PLETOK SERBUK",
+      "price": 76806,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 157,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU MASAK, BAWANG GORENG, SAMBEL",
+      "price": 90078,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 158,
+    "model": "food.food",
+    "fields": {
+      "name": "CHEESE STICK, KUE TAMBANG, COOKIES",
+      "price": 62430,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 159,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK PISANG RASA : ORIGINAL, COKLAT, GREEN TEA, JAGUNG MANIS, BALADO,\n  BALADO IJO, KEJU ASIN, BARBEQUE",
+      "price": 86658,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 160,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON IKAN",
+      "price": 84975,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 161,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK PISANG RASA ASIN, KERIPIK PISANG RASA MANIS, KERIPIK SINGKONG\n  RASA ASIN, KERIPIK SINGKONG RASA MANIS PEDAS",
+      "price": 29597,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 162,
+    "model": "food.food",
+    "fields": {
+      "name": "TEA RASA BUBBLE GUM",
+      "price": 43809,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 163,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON SAPI RASA ORIGINAL, ABON SAPI RASA PEDAS",
+      "price": 38897,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 164,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN SERBUK, KUNIR ASEM, BERAS KENCUR, TEH ROSELLA",
+      "price": 60986,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 165,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 33753,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 166,
+    "model": "food.food",
+    "fields": {
+      "name": "SISTIK BAWANG, CHEESE STICK",
+      "price": 26488,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 167,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI MARYAM, DONAT PASTRY, COOKIES, BISCOLATO",
+      "price": 82836,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 168,
+    "model": "food.food",
+    "fields": {
+      "name": "TELUR ASIN",
+      "price": 80480,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 169,
+    "model": "food.food",
+    "fields": {
+      "name": "JELLY",
+      "price": 98247,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 170,
+    "model": "food.food",
+    "fields": {
+      "name": "EGGROLL",
+      "price": 62881,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 171,
+    "model": "food.food",
+    "fields": {
+      "name": "CILOK, CIRENG",
+      "price": 87419,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 172,
+    "model": "food.food",
+    "fields": {
+      "name": "SOERABI",
+      "price": 80590,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 173,
+    "model": "food.food",
+    "fields": {
+      "name": "SOSIS SAPI",
+      "price": 39321,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 174,
+    "model": "food.food",
+    "fields": {
+      "name": "KASRENG, KENTANG EBI",
+      "price": 26584,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 175,
+    "model": "food.food",
+    "fields": {
+      "name": "BATAGOR, OTAK-OTAK",
+      "price": 93925,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 176,
+    "model": "food.food",
+    "fields": {
+      "name": "MADU HUTAN",
+      "price": 52550,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 177,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON AYAM",
+      "price": 79197,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 178,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG MEDE",
+      "price": 24420,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 179,
+    "model": "food.food",
+    "fields": {
+      "name": "BATAGOR PANGSIT ORIGINAL DAN PEDAS",
+      "price": 62591,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 180,
+    "model": "food.food",
+    "fields": {
+      "name": "LENJER, KAPAL SELAM, ADAAN, KULIT, KERITING, TEKWAN, MODEL",
+      "price": 85765,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 181,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK SINGKONG, KERING REBON, MUSTOPA, KERIPIK KENTANG, SISTIK, CHEESE\n  STICK",
+      "price": 65443,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 182,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK BAYAM",
+      "price": 68406,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 183,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE, CARABIKANG",
+      "price": 31594,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 184,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU ORIGINAL, BOLU KUKUS, BOLU KETAN, BOLU PEUYEUM, BOLU KEJU, BOLU\n  MEISES, BOLU GULA MERAH",
+      "price": 76465,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 185,
+    "model": "food.food",
+    "fields": {
+      "name": "MIE BASAH",
+      "price": 60293,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 186,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBEL TERI BAWANG, ABON IKAN, BASO IKAN, SISTIK IKAN, BATAGOR IKAN",
+      "price": 66223,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 187,
+    "model": "food.food",
+    "fields": {
+      "name": "SUMPIA, ISI : UDANG ORIGINAL, UDANG PEDAS, ABON SAPI, KEJU, COKLAT",
+      "price": 37257,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 188,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI MANIS, ISI : (COKLAT, STRAWBERRY, KEJU), DONAT TOPPING COKLAT, MOLEN\n  PISANG KEJU",
+      "price": 76973,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 189,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT RASA :LECI, MELON, MANGGA, JERUK, NANAS, DURIAN, APEL, SIRSAK,\n  BLUEBERRY, STRAWBERRY, ANGGUR",
+      "price": 94531,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 190,
+    "model": "food.food",
+    "fields": {
+      "name": "CUPCAKES, CAKE, KUE KERING, PUDING, ROTI, DONAT",
+      "price": 48549,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 191,
+    "model": "food.food",
+    "fields": {
+      "name": "COOKIES, KUE KERING, BROWNIES, CAKE",
+      "price": 34661,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 192,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING  : SAGU KEJU SPESIAL,\n  NASTAR, KASTENGEL, LIDAH BUAYA, SEMPRIT",
+      "price": 15844,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 193,
+    "model": "food.food",
+    "fields": {
+      "name": "CUANKI INSTAN RASA : (ORIGINAL, KARI AYAM, PEDAS RAMEN, BASO KEJU),\n  SEBLAK AYAM PEDAS ORIGINAL, MIE BAKWAN RASA : (BLACKPAPPER, TOM YAM)",
+      "price": 25109,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 194,
+    "model": "food.food",
+    "fields": {
+      "name": "ULENAK",
+      "price": 11645,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 195,
+    "model": "food.food",
+    "fields": {
+      "name": "PEPES IKAN PATIN,  IKAN MAS, IKAN\n  KAKAP, IKAN BAWAL LAUT",
+      "price": 50777,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 196,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 16225,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 197,
+    "model": "food.food",
+    "fields": {
+      "name": "LUMPIA KRISPY RASA : ASIN, PEDAS, ORIGINAL",
+      "price": 16507,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 198,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK UBI RASA : KEJU, JAGUNG BAKAR, BBQ, PEDAS, COKLAT MANIS, KENCUR\n  PEDAS",
+      "price": 47998,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 199,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KEJU, KUE BLACK IN COOKIES",
+      "price": 55273,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 200,
+    "model": "food.food",
+    "fields": {
+      "name": "ES CAMPUR, ES JERUK, ES KELAPA MUDA, ES KELAPA APUKAT, ES KELAPA NANGKA",
+      "price": 96707,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 201,
+    "model": "food.food",
+    "fields": {
+      "name": "TELUR ASIN",
+      "price": 88013,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 202,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI BUBUK INSTAN",
+      "price": 82641,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 203,
+    "model": "food.food",
+    "fields": {
+      "name": "PEMPEK LENJER, PEMPEK KAPAL SELAM",
+      "price": 74729,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 204,
+    "model": "food.food",
+    "fields": {
+      "name": "MADU MURNI KALIANDRA, MADU MURNI ODENG, MADU MURNI KLANCENG, MADU MURNI\n  PAHIT, MADU MURNI LENGKENG, MADU MURNI CENGKEH, NIPIS MADU, KOPI MADU, SUSU\n  JAHE MADU",
+      "price": 87968,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 205,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK TEMPE, KERIPIK ONCOM",
+      "price": 40353,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 206,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL GOANG",
+      "price": 47749,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 207,
+    "model": "food.food",
+    "fields": {
+      "name": "NASTAR, KASTANGELS, COKLAT, FRUITY, PUTRI SALJU, CANDY COOKIES, GREEN TEA",
+      "price": 94123,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 208,
+    "model": "food.food",
+    "fields": {
+      "name": "DENDENG DAGING SAPI, RENDANG DAGING SAPI",
+      "price": 47355,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 209,
+    "model": "food.food",
+    "fields": {
+      "name": "LOTEK DAN RUJAK",
+      "price": 99278,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 210,
+    "model": "food.food",
+    "fields": {
+      "name": "BANDENG ISI, PEPES IKAN  MAS,\n  PINDANG ECHO",
+      "price": 12196,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 211,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH, KUE KERING",
+      "price": 96378,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 212,
+    "model": "food.food",
+    "fields": {
+      "name": "RISOLES AYAM, RISOLES SAYUR, RISOLES DAGING ASAP",
+      "price": 95585,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 213,
+    "model": "food.food",
+    "fields": {
+      "name": "PIE LONTAR PAPUA",
+      "price": 34071,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 214,
+    "model": "food.food",
+    "fields": {
+      "name": "COKLAT PRALINE",
+      "price": 15004,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 215,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG TELOR BOGOR",
+      "price": 89558,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 216,
+    "model": "food.food",
+    "fields": {
+      "name": "BATAGOR, SIOMAY",
+      "price": 10197,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 217,
+    "model": "food.food",
+    "fields": {
+      "name": "RANGINANG",
+      "price": 55640,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 218,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, KUE BASAH, BROWNIES",
+      "price": 10156,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 219,
+    "model": "food.food",
+    "fields": {
+      "name": "COOKIES",
+      "price": 47273,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 220,
+    "model": "food.food",
+    "fields": {
+      "name": "GRANOLA, TARTLETZ, DRIED FRUIT, CHIPS, COOKIES",
+      "price": 88248,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 221,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK SINGKONG RASA : ASIN, BALADO, ASAM MANIS, KARAMEL, COKLAT",
+      "price": 13277,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 222,
+    "model": "food.food",
+    "fields": {
+      "name": "SEBLAK BACIMAY, SEBLAK CUANKI, SEBLAK CILOK",
+      "price": 64618,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 223,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU SEBLAK, BUMBU PECEL",
+      "price": 68650,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 224,
+    "model": "food.food",
+    "fields": {
+      "name": "BERAS SORGUM PLUS, BERAS SORGUM KASEPUHAN, BERAS HITAM PLUS",
+      "price": 75055,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 225,
+    "model": "food.food",
+    "fields": {
+      "name": "SISTIK",
+      "price": 36101,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 226,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH, BOLU, MARTABAK",
+      "price": 13549,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 227,
+    "model": "food.food",
+    "fields": {
+      "name": "SISTIK KEJU, SISTIK BAWANG, KACANG GORENG BAWANG",
+      "price": 85502,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 228,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG ORIGINAL, BAWANG GORENG PEDAS, BAWANG GORENG TERI, BAWANG\n  GORENG TERI PEDAS",
+      "price": 70286,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 229,
+    "model": "food.food",
+    "fields": {
+      "name": "TEH RUMPUT LAUT, WEDANG TELO",
+      "price": 66461,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 230,
+    "model": "food.food",
+    "fields": {
+      "name": "MADU RUMPUT LAUT",
+      "price": 78182,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 231,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES KUKUS",
+      "price": 72701,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 232,
+    "model": "food.food",
+    "fields": {
+      "name": "CEKER PEDAS, AYAM UNGKEP, NUGGET AYAM, SOSIS AYAM, SEMPOL AYAM, AYAM\n  SAMBAL, AYAM SAUS, SEBLAK CEKER, AYAM KRISPI BUMBU",
+      "price": 55550,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 233,
+    "model": "food.food",
+    "fields": {
+      "name": "PERMEN JELLY RASA : STRAWBERRY, MELON, LECY, ANGGUR, MANGGA, JERUK",
+      "price": 88579,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 234,
+    "model": "food.food",
+    "fields": {
+      "name": "REMPEYEK, OPAK GURILEM",
+      "price": 50922,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 235,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES SANDWICH ICE CREAM",
+      "price": 74347,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 236,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBEL TERI, SAMBEL ONCOM, SERUNDENG KACANG TERI",
+      "price": 97542,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 237,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG BAWANG RASA, CHEESE STICK ABON",
+      "price": 60111,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 238,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, BOLA-BOLA SUSU",
+      "price": 64079,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 239,
+    "model": "food.food",
+    "fields": {
+      "name": "TEH (HIJAU, PUTIH, HITAM, SENCHA)",
+      "price": 35460,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 240,
+    "model": "food.food",
+    "fields": {
+      "name": "MUSTOPA KENTANG RASA : ORIGINAL, PEDAS",
+      "price": 70130,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 241,
+    "model": "food.food",
+    "fields": {
+      "name": "GREENBEAN COFFEE, GREEN COFFEE POWDER, ROASTED COFFEE",
+      "price": 57388,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 242,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK BASRENG, STIK SAYURAN (BROKOLI / SAWIHIJAU / KENTANG / WORTEL)",
+      "price": 29769,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 243,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM SUNGKAI",
+      "price": 92457,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 244,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU UBI CILEMBU, RASA : ORGINAL, KEJU, ALMOND, COKLAT, OREO",
+      "price": 15114,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 245,
+    "model": "food.food",
+    "fields": {
+      "name": "CILOK",
+      "price": 62170,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 246,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO SAPI,  ISI : CINCANG, TELUR,\n  BERANAK, POLOS",
+      "price": 50077,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 247,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU, BROWNIES, PROLL TAPE, PIE",
+      "price": 30200,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 248,
+    "model": "food.food",
+    "fields": {
+      "name": "CHOC GREEN TEA BAR, CHOC COOKIES BAR, CHOC PEANUT BUTTER PRALINE, CHOC\n  STRAWBERRY PRALINE, CHOC GREEN TEA PRALINE, CHOC MINT PRALINE, CHOC GINGER\n  PRALINE, CHOC ORANGE PRALINE, CHOC COFFEE PRALINE, HOT CHOCOLATE POPS\n  CHOCOLATE, HOT CHOCOLATE POPS GREEN TEA",
+      "price": 14382,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 249,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKARONI RASA : ORIGINAL, BAWANG DAUN, DAUN JERUK, BALADO",
+      "price": 36233,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 250,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLEN ISI, CHEESE ROLL",
+      "price": 12596,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 251,
+    "model": "food.food",
+    "fields": {
+      "name": "REMPEYEK, MUSTOPA (KERINGKENTANG), RICANG (TERI KACANG)",
+      "price": 37052,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 252,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKARONI, KERIPIK BOMBAY KORNET",
+      "price": 71073,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 253,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK PANGSIT RASA : ORIGINAL, PEDAS, KEJU, BBQ, BALADO, PIZZA, RUMPUT\n  LAUT",
+      "price": 37915,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 254,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK BASRENG, KERIPIK SINGKONG PEDAS",
+      "price": 28403,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 255,
+    "model": "food.food",
+    "fields": {
+      "name": "KERING KENTANG (MUSTOPA)",
+      "price": 53956,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 256,
+    "model": "food.food",
+    "fields": {
+      "name": "PUDING RASA : (COKLAT HAZELNUT, STRAWBERRY, MELON, MANGO, PASSION FRUIT,\n  TARO, BUBLE GUM, MATCHA, OGURA, CAPPUCINO, TIRAMISU, CARAMEL, COFFEE\n  MATCHIATO, VANILLA)",
+      "price": 96148,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 257,
+    "model": "food.food",
+    "fields": {
+      "name": "GREEN COFFEE BEANS",
+      "price": 99769,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 258,
+    "model": "food.food",
+    "fields": {
+      "name": "IKAN BANDENG  PRESTO",
+      "price": 96434,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 259,
+    "model": "food.food",
+    "fields": {
+      "name": "CHEESTICK (KEJU, KORNEDSAPI), SISTIK, STICK RASA : (UBI, SINGKONG,\n  PISANG, PENYEUM)",
+      "price": 56823,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 260,
+    "model": "food.food",
+    "fields": {
+      "name": "COLENAK",
+      "price": 84023,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 261,
+    "model": "food.food",
+    "fields": {
+      "name": "KALDU BUBUK RASA IKAN BANDENG, SAOS SARI BANDENG, KECAP ASIN RASA IKAN,\n  KECAP RASA IKAN",
+      "price": 82229,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 262,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU, BROWNIES, CAKE",
+      "price": 91672,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 263,
+    "model": "food.food",
+    "fields": {
+      "name": "SISTIK",
+      "price": 70470,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 264,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG DAGING SAPI",
+      "price": 29376,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 265,
+    "model": "food.food",
+    "fields": {
+      "name": "ANGGRI BIRD, DORA EMON, SPONGE BOB, HELLO KITTY, PANDA, KELINCI, PENGUIN,\n  BUNGA, MOBIL, BEBEK, BERUANG, BURUNG, SMILE, PETRIK, SMILE PANJANG, HATI\n  PANJANG",
+      "price": 63270,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 266,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG TEPUNG",
+      "price": 23962,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 267,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLA-BOLA SUSU",
+      "price": 46603,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 268,
+    "model": "food.food",
+    "fields": {
+      "name": "COMRING ORIGINAL, COMRING PEDAS, CISTIK",
+      "price": 90948,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 269,
+    "model": "food.food",
+    "fields": {
+      "name": "CHESSECAKE, BROWNIES, TART",
+      "price": 24391,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 270,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 10713,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 271,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 84022,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 272,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI PIZZA (DOUGH PIZZA), PIZZA",
+      "price": 65033,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 273,
+    "model": "food.food",
+    "fields": {
+      "name": "BIJI KOPI, KOPI BUBUK",
+      "price": 19750,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 274,
+    "model": "food.food",
+    "fields": {
+      "name": "SALE PISANG GORENG",
+      "price": 52163,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 275,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 81723,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 276,
+    "model": "food.food",
+    "fields": {
+      "name": "LONTAR PAPUA, COKLAT PRALIN, EGG TART",
+      "price": 25602,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 277,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN SARI ALMOND",
+      "price": 22240,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 278,
+    "model": "food.food",
+    "fields": {
+      "name": "DENDENG AYAM MERK PURWARASA, ABON AYAM MERK DUA PUTRI, GEPUK AYAM MERK\n  DUA PUTRI",
+      "price": 86135,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 279,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON AYAM, ABON SAPI",
+      "price": 55804,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 280,
+    "model": "food.food",
+    "fields": {
+      "name": "BLACK FOREST, RED VELVET, CHEESE CAKE, TIRAMISU, OPERA, CHOCOLATE\n  TRUFFLE, TRIPLE CHOCOLATE, PINKY LADY, MOCCA NOUGAT ROLL CAKE, CHEESE ROLL\n  CAKE, CHOCO ROLL CAKE, SMOKE BEEF MOZARELA ORIGINAL, SMOKE BEEF MOZARELA\n  SPICY, CHICKEN ONCOM MOZARELA SPICY, CHICKEN RAGOUT, BEEF BLACK PAPER, TUNA\n  MAYO ORIGINAL, TUNA MAYO SPICY, CHEESE PUFF, BLACK AND WHITE CHEESE, CHOCO\n  PEARL CHEESE, NEIMAS (PALM SUIKER, MEDE, CHOCOCHIP), CHOCO BUTTON, COFFEE\n  CRISPY CHEESE, KASTENGEL, CHEESE NASTAR, CHEESE ALMOND",
+      "price": 40442,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 281,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM KODOK, RENDANG DAGING SAPI, RENDANG DAGING AYAM, DENDENG SAPI\n  RAGI",
+      "price": 32184,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 282,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH, KUE KERING",
+      "price": 72363,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 283,
+    "model": "food.food",
+    "fields": {
+      "name": "SIROOP KONSENTRAT JAHE MERAH",
+      "price": 83925,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 284,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKARONI SKUTEL",
+      "price": 88140,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 285,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES, EGGTART, CAKE, BOLU KETAN, PISANG NUGGET",
+      "price": 10855,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 286,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO TAHU & SIOMAY",
+      "price": 25957,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 287,
+    "model": "food.food",
+    "fields": {
+      "name": "TEH HERBAL, MINUMAN JAMU",
+      "price": 94716,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 288,
+    "model": "food.food",
+    "fields": {
+      "name": "KEJU",
+      "price": 92078,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 289,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN",
+      "price": 47617,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 290,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU KALDU SAPI, BUMBU KALDU AYAM, BUMBU KALDU AYAM KAMPUNG, BUMBU KALDU\n  JAMUR",
+      "price": 81281,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 291,
+    "model": "food.food",
+    "fields": {
+      "name": "CILOK, CUANKI",
+      "price": 53398,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 292,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU RUJAK, SAMBAL",
+      "price": 22211,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 293,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, BOLU, BROWNIES, RISOLES",
+      "price": 57640,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 294,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI BUBUK",
+      "price": 33422,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 295,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, PIE",
+      "price": 25409,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 296,
+    "model": "food.food",
+    "fields": {
+      "name": "TELOR GABUS",
+      "price": 46247,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 297,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 59487,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 298,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI, CROISSANT, CAKE, COOKIES",
+      "price": 41287,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 299,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI, BOLU KERING, OMBEKUK, SOES KERING, LAPIS MALANG, BOLU GULUNG, LAPIS\n  LEGIT, BAGELEN MANIS, BAGELEN ASIN, BOLU KETAN",
+      "price": 62312,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 300,
+    "model": "food.food",
+    "fields": {
+      "name": "IKAN ASIN",
+      "price": 94507,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 301,
+    "model": "food.food",
+    "fields": {
+      "name": "ULEN",
+      "price": 40808,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 302,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 26902,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 303,
+    "model": "food.food",
+    "fields": {
+      "name": "IKAN OLAHAN",
+      "price": 42103,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 304,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 44755,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 305,
+    "model": "food.food",
+    "fields": {
+      "name": "PEKMPEK",
+      "price": 15919,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 306,
+    "model": "food.food",
+    "fields": {
+      "name": "PEYE 3 SAUDARA",
+      "price": 42439,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 307,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH DAN KERING",
+      "price": 30842,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 308,
+    "model": "food.food",
+    "fields": {
+      "name": "NUGGET SAYURAN AYAM",
+      "price": 77306,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 309,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK, KERUPUK, MAKARONI, DLL",
+      "price": 30005,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 310,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 41955,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 311,
+    "model": "food.food",
+    "fields": {
+      "name": "KERUPUK TAHU",
+      "price": 94675,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 312,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH DLL",
+      "price": 42706,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 313,
+    "model": "food.food",
+    "fields": {
+      "name": "SELAI PISANG",
+      "price": 36467,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 314,
+    "model": "food.food",
+    "fields": {
+      "name": "SELAI",
+      "price": 49452,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 315,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO, SIOMAY, RENDANG",
+      "price": 43617,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 316,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 91578,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 317,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, KUE BASAH DLL",
+      "price": 27375,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 318,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN THAI TEA",
+      "price": 58450,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 319,
+    "model": "food.food",
+    "fields": {
+      "name": "MUSTOFA",
+      "price": 53095,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 320,
+    "model": "food.food",
+    "fields": {
+      "name": "JUZZ",
+      "price": 47290,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 321,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK PISANG",
+      "price": 27949,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 322,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 52975,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 323,
+    "model": "food.food",
+    "fields": {
+      "name": "PANGSIT",
+      "price": 40419,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 324,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 77350,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 325,
+    "model": "food.food",
+    "fields": {
+      "name": "BAKSO&ICE CREM",
+      "price": 21703,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 326,
+    "model": "food.food",
+    "fields": {
+      "name": "PISANG BOLEN DLL",
+      "price": 36820,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 327,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 57158,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 328,
+    "model": "food.food",
+    "fields": {
+      "name": "CUANKI INSTAN, SEBLAK INSTAN, BATAGOR INSTAN",
+      "price": 48183,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 329,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 61142,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 330,
+    "model": "food.food",
+    "fields": {
+      "name": "-",
+      "price": 44204,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 331,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE & SNACK (KUE BASAH)",
+      "price": 60728,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 332,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT, KEFIR",
+      "price": 59690,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 333,
+    "model": "food.food",
+    "fields": {
+      "name": "KULINER",
+      "price": 91599,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 334,
+    "model": "food.food",
+    "fields": {
+      "name": "SUMPIAH",
+      "price": 97785,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 335,
+    "model": "food.food",
+    "fields": {
+      "name": "KULINER/SOTO INSTAN",
+      "price": 75176,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 336,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH",
+      "price": 76878,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 337,
+    "model": "food.food",
+    "fields": {
+      "name": "RANGGINANG PETIS, REMPEYEK",
+      "price": 88697,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 338,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 37626,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 339,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 16786,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 340,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE, KUE KERING, KUE BASAH",
+      "price": 46845,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 341,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON RENDANG",
+      "price": 93738,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 342,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN/CIRENG KATSU",
+      "price": 96399,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 343,
+    "model": "food.food",
+    "fields": {
+      "name": "IKAN",
+      "price": 56918,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 344,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBEL",
+      "price": 53231,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 345,
+    "model": "food.food",
+    "fields": {
+      "name": "OLAHAN DAGING ( DENDENG )",
+      "price": 84902,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 346,
+    "model": "food.food",
+    "fields": {
+      "name": "COLENAK",
+      "price": 47426,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 347,
+    "model": "food.food",
+    "fields": {
+      "name": "PASTRY DAN ROTI",
+      "price": 20328,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 348,
+    "model": "food.food",
+    "fields": {
+      "name": "ES YOUGHURT",
+      "price": 89932,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 349,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL DLL",
+      "price": 99555,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 350,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 53818,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 351,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBEL GORENG",
+      "price": 19758,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 352,
+    "model": "food.food",
+    "fields": {
+      "name": "GEPUK JUJUT",
+      "price": 43486,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 353,
+    "model": "food.food",
+    "fields": {
+      "name": "KRIPIK PISANG",
+      "price": 44230,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 354,
+    "model": "food.food",
+    "fields": {
+      "name": "KRIPIK PANGSIT,ROTI",
+      "price": 64325,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 355,
+    "model": "food.food",
+    "fields": {
+      "name": "SIOMAY, COOKIES, TUMPENG",
+      "price": 20538,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 356,
+    "model": "food.food",
+    "fields": {
+      "name": "OLAHAN SUSU / YOGURT",
+      "price": 65413,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 357,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG",
+      "price": 65910,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 358,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN PEMPEK",
+      "price": 85141,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 359,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLA BOLA SUSU",
+      "price": 68565,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 360,
+    "model": "food.food",
+    "fields": {
+      "name": "PREMIK TEPUNG PISANG",
+      "price": 20424,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 361,
+    "model": "food.food",
+    "fields": {
+      "name": "SOP DUREN",
+      "price": 98202,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 362,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG",
+      "price": 21230,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 363,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE",
+      "price": 97320,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 364,
+    "model": "food.food",
+    "fields": {
+      "name": "BATAGOR",
+      "price": 23126,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 365,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK BASRENG",
+      "price": 81421,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 366,
+    "model": "food.food",
+    "fields": {
+      "name": "OPAK SINGKONG",
+      "price": 72850,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 367,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 24395,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 368,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN COKELAT ECERAN",
+      "price": 65310,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 369,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU KERING",
+      "price": 54950,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 370,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 74441,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 371,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 95681,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 372,
+    "model": "food.food",
+    "fields": {
+      "name": "KEBAB",
+      "price": 92398,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 373,
+    "model": "food.food",
+    "fields": {
+      "name": "MAMIN",
+      "price": 19254,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 374,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG",
+      "price": 20543,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 375,
+    "model": "food.food",
+    "fields": {
+      "name": "ROLADE",
+      "price": 51654,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 376,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 90627,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 377,
+    "model": "food.food",
+    "fields": {
+      "name": "KRIPIK SINGKONG",
+      "price": 79240,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 378,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI & BAKERY",
+      "price": 11328,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 379,
+    "model": "food.food",
+    "fields": {
+      "name": "RISOLES",
+      "price": 89270,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 380,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 83866,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 381,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING & ROTI",
+      "price": 96923,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 382,
+    "model": "food.food",
+    "fields": {
+      "name": "SURABI DAN KERIPIK SURABI",
+      "price": 19792,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 383,
+    "model": "food.food",
+    "fields": {
+      "name": "DONAT,ROTI&ANEKA KUE",
+      "price": 47250,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 384,
+    "model": "food.food",
+    "fields": {
+      "name": "SEBLAK INSTAN",
+      "price": 12771,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 385,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 99501,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 386,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, LASAGNA, AYAM KODOK DLL",
+      "price": 92313,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 387,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI DLL",
+      "price": 42986,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 388,
+    "model": "food.food",
+    "fields": {
+      "name": "EGGROLL",
+      "price": 19360,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 389,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON/SERUNDENG",
+      "price": 98357,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 390,
+    "model": "food.food",
+    "fields": {
+      "name": "MANISAN",
+      "price": 14593,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 391,
+    "model": "food.food",
+    "fields": {
+      "name": "CILOK",
+      "price": 28463,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 392,
+    "model": "food.food",
+    "fields": {
+      "name": "BASRENG, SUMPIA",
+      "price": 47882,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 393,
+    "model": "food.food",
+    "fields": {
+      "name": "DENDENG SAPI",
+      "price": 72875,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 394,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLEN",
+      "price": 29168,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 395,
+    "model": "food.food",
+    "fields": {
+      "name": "DONAT,ROTI&ANEKA KUE",
+      "price": 17092,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 396,
+    "model": "food.food",
+    "fields": {
+      "name": "KERUOUK",
+      "price": 55525,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 397,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK",
+      "price": 91425,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 398,
+    "model": "food.food",
+    "fields": {
+      "name": "COKLAT",
+      "price": 99817,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 399,
+    "model": "food.food",
+    "fields": {
+      "name": "SUSU + THE",
+      "price": 35363,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 400,
+    "model": "food.food",
+    "fields": {
+      "name": "OLAHAN AYAM (AYAM KODOK)",
+      "price": 31992,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 401,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM BAKAR MADU",
+      "price": 21000,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 402,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 95515,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 403,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH, KUE KERING",
+      "price": 62572,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 404,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO TAHU SIOMAY",
+      "price": 65701,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 405,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBER GORENG",
+      "price": 99014,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 406,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 34213,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 407,
+    "model": "food.food",
+    "fields": {
+      "name": "KOSMETIK",
+      "price": 28615,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 408,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN COKLAT",
+      "price": 92077,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 409,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 44847,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 410,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN",
+      "price": 94278,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 411,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 89348,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 412,
+    "model": "food.food",
+    "fields": {
+      "name": "RENDANG DLL",
+      "price": 24148,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 413,
+    "model": "food.food",
+    "fields": {
+      "name": "OLAHAN SUSU / YOGURT",
+      "price": 45205,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 414,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 63870,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 415,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH",
+      "price": 17156,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 416,
+    "model": "food.food",
+    "fields": {
+      "name": "ANEKA DURIAN",
+      "price": 63830,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 417,
+    "model": "food.food",
+    "fields": {
+      "name": "MINYAK WANGI",
+      "price": 14642,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 418,
+    "model": "food.food",
+    "fields": {
+      "name": "MOCI ICE CREAM",
+      "price": 68046,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 419,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 99567,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 420,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 50438,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 421,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU",
+      "price": 54871,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 422,
+    "model": "food.food",
+    "fields": {
+      "name": "PANGSIT",
+      "price": 21532,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 423,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU DAPUR",
+      "price": 28813,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 424,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK",
+      "price": 10991,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 425,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK",
+      "price": 11713,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 426,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE",
+      "price": 50747,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 427,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN OLAHAN",
+      "price": 89632,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 428,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 49580,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 429,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 31226,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 430,
+    "model": "food.food",
+    "fields": {
+      "name": "MOCHI",
+      "price": 85926,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 431,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG BAWANG",
+      "price": 62579,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 432,
+    "model": "food.food",
+    "fields": {
+      "name": "-",
+      "price": 78461,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 433,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKRONI",
+      "price": 30222,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 434,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU KETAN HIDEUNG",
+      "price": 96586,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 435,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING DAN SNACK",
+      "price": 87061,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 436,
+    "model": "food.food",
+    "fields": {
+      "name": "CIRENG",
+      "price": 26038,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 437,
+    "model": "food.food",
+    "fields": {
+      "name": "FROZEN FOOD",
+      "price": 29913,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 438,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 27449,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 439,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, ROTI",
+      "price": 18054,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 440,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 43117,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 441,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK KENTANG",
+      "price": 44454,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 442,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKUE",
+      "price": 79490,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 443,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON LELE",
+      "price": 37072,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 444,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING & KUE BASAH",
+      "price": 21581,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 445,
+    "model": "food.food",
+    "fields": {
+      "name": "KRIPANG SNACK",
+      "price": 24033,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 446,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK, REMPEYEK",
+      "price": 81209,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 447,
+    "model": "food.food",
+    "fields": {
+      "name": "KERUPUK BUAH2AN",
+      "price": 31014,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 448,
+    "model": "food.food",
+    "fields": {
+      "name": "KULINER",
+      "price": 55058,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 449,
+    "model": "food.food",
+    "fields": {
+      "name": "LUMPIA & BANDENG",
+      "price": 69798,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 450,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE,KUE KERING",
+      "price": 95183,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 451,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO TAHU, SIOMAY, BATAGOR",
+      "price": 45463,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 452,
+    "model": "food.food",
+    "fields": {
+      "name": "SIOMAY, BATAGOR INSTAN",
+      "price": 34423,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 453,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG SELIMUT",
+      "price": 83092,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 454,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 73141,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 455,
+    "model": "food.food",
+    "fields": {
+      "name": "SALE AROMA GULA AREM SEBLAK KERING",
+      "price": 12030,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 456,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL",
+      "price": 53710,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 457,
+    "model": "food.food",
+    "fields": {
+      "name": "RUJAK CIRENG , CIRENG KUAH",
+      "price": 40340,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 458,
+    "model": "food.food",
+    "fields": {
+      "name": "IKAN BANDENG",
+      "price": 33352,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 459,
+    "model": "food.food",
+    "fields": {
+      "name": "TAHU",
+      "price": 59093,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 460,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 15383,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 461,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 23935,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 462,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES",
+      "price": 23748,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 463,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH DAN KERING",
+      "price": 10592,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 464,
+    "model": "food.food",
+    "fields": {
+      "name": "EMPING MELINJO",
+      "price": 81334,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 465,
+    "model": "food.food",
+    "fields": {
+      "name": "JUS BIOLA",
+      "price": 99919,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 466,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG",
+      "price": 86068,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 467,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK UBI CILEMBU",
+      "price": 72425,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 468,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE & ROTI DLL",
+      "price": 87432,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 469,
+    "model": "food.food",
+    "fields": {
+      "name": "CILOK",
+      "price": 88994,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 470,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN KOPI",
+      "price": 45837,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 471,
+    "model": "food.food",
+    "fields": {
+      "name": "BAKERY & PASTRY",
+      "price": 74633,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 472,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING,KUE BASAH,MUFFIN KERING",
+      "price": 69691,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 473,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 84899,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 474,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 71437,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 475,
+    "model": "food.food",
+    "fields": {
+      "name": "BASSO SAPI",
+      "price": 67363,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 476,
+    "model": "food.food",
+    "fields": {
+      "name": "CHOCOLATE",
+      "price": 59023,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 477,
+    "model": "food.food",
+    "fields": {
+      "name": "BAWANG GORENG",
+      "price": 38504,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 478,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK",
+      "price": 80843,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 479,
+    "model": "food.food",
+    "fields": {
+      "name": "KACANG BAWANG, BAWANG GORENG",
+      "price": 23288,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 480,
+    "model": "food.food",
+    "fields": {
+      "name": "KERUPUK",
+      "price": 23261,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 481,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI KUE",
+      "price": 15675,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 482,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 67276,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 483,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK PISANG",
+      "price": 85238,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 484,
+    "model": "food.food",
+    "fields": {
+      "name": "PANGSIT",
+      "price": 46765,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 485,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 15712,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 486,
+    "model": "food.food",
+    "fields": {
+      "name": "SIRUP JAHE",
+      "price": 50099,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 487,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 52912,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 488,
+    "model": "food.food",
+    "fields": {
+      "name": "BATAGOR, SIOMAY KUKUS, LUMPIA",
+      "price": 22060,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 489,
+    "model": "food.food",
+    "fields": {
+      "name": "KEJU",
+      "price": 24882,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 490,
+    "model": "food.food",
+    "fields": {
+      "name": "ANEKA KUE",
+      "price": 87089,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 491,
+    "model": "food.food",
+    "fields": {
+      "name": "KECIMPRING",
+      "price": 69699,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 492,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 48116,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 493,
+    "model": "food.food",
+    "fields": {
+      "name": "COKLAT, KUE, CEMILAN",
+      "price": 33395,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 494,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 99041,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 495,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 64013,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 496,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBEL GORENG",
+      "price": 94333,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 497,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 70838,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 498,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING DAN KUE BASAH",
+      "price": 93332,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 499,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 16213,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 500,
+    "model": "food.food",
+    "fields": {
+      "name": "-",
+      "price": 16448,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 501,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 88307,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 502,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 73474,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 503,
+    "model": "food.food",
+    "fields": {
+      "name": "TEMPE",
+      "price": 10853,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 504,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 12171,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 505,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO SAPI",
+      "price": 16436,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 506,
+    "model": "food.food",
+    "fields": {
+      "name": "RENGGINANG",
+      "price": 53290,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 507,
+    "model": "food.food",
+    "fields": {
+      "name": "SUSU ALMON",
+      "price": 87346,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 508,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 44594,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 509,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG",
+      "price": 99171,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 510,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 22553,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 511,
+    "model": "food.food",
+    "fields": {
+      "name": "KOSMETIK",
+      "price": 37725,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 512,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 29933,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 513,
+    "model": "food.food",
+    "fields": {
+      "name": "KULINER ( SEBLAK FROZEN + BUMBU SEBLAK)",
+      "price": 92768,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 514,
+    "model": "food.food",
+    "fields": {
+      "name": "ES KENYOOT",
+      "price": 45864,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 515,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 69757,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 516,
+    "model": "food.food",
+    "fields": {
+      "name": "PEKMPEK",
+      "price": 36850,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 517,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 52462,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 518,
+    "model": "food.food",
+    "fields": {
+      "name": "CHEESEROLL",
+      "price": 15127,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 519,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING LEBARAN \"RAVANNY\"",
+      "price": 68954,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 520,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG",
+      "price": 31155,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 521,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO",
+      "price": 44132,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 522,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU",
+      "price": 85104,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 523,
+    "model": "food.food",
+    "fields": {
+      "name": "-",
+      "price": 66142,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 524,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN COKLAT",
+      "price": 68906,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 525,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO SINGKONG",
+      "price": 16284,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 526,
+    "model": "food.food",
+    "fields": {
+      "name": "BANDENG ISI",
+      "price": 96811,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 527,
+    "model": "food.food",
+    "fields": {
+      "name": "DODOL",
+      "price": 23884,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 528,
+    "model": "food.food",
+    "fields": {
+      "name": "NUGET&BASO",
+      "price": 15645,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 529,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU TAPE KEJU",
+      "price": 24905,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 530,
+    "model": "food.food",
+    "fields": {
+      "name": "KRIPIK SINGKOG",
+      "price": 41331,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 531,
+    "model": "food.food",
+    "fields": {
+      "name": "SYRUP",
+      "price": 44636,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 532,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE",
+      "price": 50422,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 533,
+    "model": "food.food",
+    "fields": {
+      "name": "NUGGET",
+      "price": 51690,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 534,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE",
+      "price": 23406,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 535,
+    "model": "food.food",
+    "fields": {
+      "name": "RISOULES",
+      "price": 77726,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 536,
+    "model": "food.food",
+    "fields": {
+      "name": "KRIPIK BUAH2AN",
+      "price": 82589,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 537,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON IKAN",
+      "price": 57075,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 538,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 99917,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 539,
+    "model": "food.food",
+    "fields": {
+      "name": "KEJU",
+      "price": 47663,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 540,
+    "model": "food.food",
+    "fields": {
+      "name": "NUGET AYAM / KOPI",
+      "price": 58393,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 541,
+    "model": "food.food",
+    "fields": {
+      "name": "OLAHAN KENTANG",
+      "price": 22764,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 542,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 82875,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 543,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 53560,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 544,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON AYAM",
+      "price": 35222,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 545,
+    "model": "food.food",
+    "fields": {
+      "name": "SIOMAY",
+      "price": 33311,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 546,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 63689,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 547,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 92909,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 548,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 45156,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 549,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK BASRENG \"UL&AL\"",
+      "price": 20252,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 550,
+    "model": "food.food",
+    "fields": {
+      "name": "MILK TEA",
+      "price": 35312,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 551,
+    "model": "food.food",
+    "fields": {
+      "name": "PISANG AROMA",
+      "price": 88408,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 552,
+    "model": "food.food",
+    "fields": {
+      "name": "FROZEN FOOD",
+      "price": 56415,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 553,
+    "model": "food.food",
+    "fields": {
+      "name": "CILOK CUANKI",
+      "price": 86147,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 554,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN (LUMPIA, CEKER KRIBO)",
+      "price": 29483,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 555,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK PISANG",
+      "price": 56736,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 556,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING DAN BASAH",
+      "price": 20620,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 557,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN RINGAN",
+      "price": 67977,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 558,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK MIE SINGKONG",
+      "price": 17660,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 559,
+    "model": "food.food",
+    "fields": {
+      "name": "OLAHAN BEBEK",
+      "price": 64953,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 560,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 72855,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 561,
+    "model": "food.food",
+    "fields": {
+      "name": "KURMA COKELAT & ANEKA OLAHAN COKELAT",
+      "price": 93405,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 562,
+    "model": "food.food",
+    "fields": {
+      "name": "ANEKA PUDING",
+      "price": 94790,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 563,
+    "model": "food.food",
+    "fields": {
+      "name": "KENTANG,UBI,SINGKONG MUSTOFA",
+      "price": 73928,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 564,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN KERING",
+      "price": 55896,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 565,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK/KERIPIK",
+      "price": 95085,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 566,
+    "model": "food.food",
+    "fields": {
+      "name": "SATE",
+      "price": 47990,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 567,
+    "model": "food.food",
+    "fields": {
+      "name": "COKLAT",
+      "price": 73714,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 568,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO TAHU SIOMAY",
+      "price": 88813,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 569,
+    "model": "food.food",
+    "fields": {
+      "name": "JENGKOL KERING",
+      "price": 28505,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 570,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 21526,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 571,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN&MINUMAN",
+      "price": 86190,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 572,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, KUE BASAH DLL",
+      "price": 49470,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 573,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK BELUT",
+      "price": 43018,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 574,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 53962,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 575,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG",
+      "price": 98158,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 576,
+    "model": "food.food",
+    "fields": {
+      "name": "ONCOM",
+      "price": 27814,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 577,
+    "model": "food.food",
+    "fields": {
+      "name": "KARAMEL",
+      "price": 50866,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 578,
+    "model": "food.food",
+    "fields": {
+      "name": "ICE CREAM YOGHURT",
+      "price": 79616,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 579,
+    "model": "food.food",
+    "fields": {
+      "name": "KRIPIK MIE",
+      "price": 53196,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 580,
+    "model": "food.food",
+    "fields": {
+      "name": "BOLU KUKUS",
+      "price": 67050,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 581,
+    "model": "food.food",
+    "fields": {
+      "name": "BUTTEER SCOTCH/         MINUMAN",
+      "price": 62909,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 582,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK",
+      "price": 63243,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 583,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 58615,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 584,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 80932,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 585,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 96865,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 586,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 28454,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 587,
+    "model": "food.food",
+    "fields": {
+      "name": "KULINER KUE KERING",
+      "price": 56128,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 588,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE BASAH",
+      "price": 28275,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 589,
+    "model": "food.food",
+    "fields": {
+      "name": "-",
+      "price": 53237,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 590,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN",
+      "price": 71478,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 591,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 60296,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 592,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 18254,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 593,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN BASAH DAN KERING",
+      "price": 54856,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 594,
+    "model": "food.food",
+    "fields": {
+      "name": "PEPES IKAN",
+      "price": 72043,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 595,
+    "model": "food.food",
+    "fields": {
+      "name": "SIOMAY",
+      "price": 36352,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 596,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 45842,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 597,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU MASAK",
+      "price": 58617,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 598,
+    "model": "food.food",
+    "fields": {
+      "name": "OLAHAN MINUMAN HERBAL / SERBUK",
+      "price": 20303,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 599,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 36105,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 600,
+    "model": "food.food",
+    "fields": {
+      "name": "EMPING MELINJO",
+      "price": 50245,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 601,
+    "model": "food.food",
+    "fields": {
+      "name": "ANEKA SAMBEL",
+      "price": 90081,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 602,
+    "model": "food.food",
+    "fields": {
+      "name": "BAKERY & PASTRY",
+      "price": 16414,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 603,
+    "model": "food.food",
+    "fields": {
+      "name": "KEJU, YOUGHURT,SUSU",
+      "price": 52512,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 604,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN/KUE",
+      "price": 75825,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 605,
+    "model": "food.food",
+    "fields": {
+      "name": "LADA",
+      "price": 22376,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 606,
+    "model": "food.food",
+    "fields": {
+      "name": "PANGSIT AYAM, MINYAK AYAM, DAN GEPUK",
+      "price": 28360,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 607,
+    "model": "food.food",
+    "fields": {
+      "name": "KRP.TEMPE",
+      "price": 52455,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 608,
+    "model": "food.food",
+    "fields": {
+      "name": "PRODUK DURIAN",
+      "price": 19792,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 609,
+    "model": "food.food",
+    "fields": {
+      "name": "SAMBAL",
+      "price": 22538,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 610,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 98001,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 611,
+    "model": "food.food",
+    "fields": {
+      "name": "CHOCOLATE",
+      "price": 26633,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 612,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING, CAKE, KUE BASAH",
+      "price": 23155,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 613,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 75273,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 614,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 71430,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 615,
+    "model": "food.food",
+    "fields": {
+      "name": "KULINER( SIOMAY)",
+      "price": 89707,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 616,
+    "model": "food.food",
+    "fields": {
+      "name": "CAKE/KUE KERING/BOLU",
+      "price": 19839,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 617,
+    "model": "food.food",
+    "fields": {
+      "name": "KERIPIK",
+      "price": 45351,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 618,
+    "model": "food.food",
+    "fields": {
+      "name": "COKELAT",
+      "price": 96388,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 619,
+    "model": "food.food",
+    "fields": {
+      "name": "BUMBU",
+      "price": 87745,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 620,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 66159,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 621,
+    "model": "food.food",
+    "fields": {
+      "name": "CHEESTIK, KUE KERING, RENGGINANG",
+      "price": 23645,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 622,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON JAMUR",
+      "price": 62146,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 623,
+    "model": "food.food",
+    "fields": {
+      "name": "KOPI",
+      "price": 73314,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 624,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING / KUE BASAH",
+      "price": 52522,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 625,
+    "model": "food.food",
+    "fields": {
+      "name": "AYAM GORENG",
+      "price": 20672,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 626,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI & KUE",
+      "price": 20766,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 627,
+    "model": "food.food",
+    "fields": {
+      "name": "SNACK",
+      "price": 62788,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 628,
+    "model": "food.food",
+    "fields": {
+      "name": "MINUMAN",
+      "price": 93872,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 629,
+    "model": "food.food",
+    "fields": {
+      "name": "ABON REMPAH",
+      "price": 72379,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 630,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN RINGAN",
+      "price": 94377,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 631,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 56046,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 632,
+    "model": "food.food",
+    "fields": {
+      "name": "T E H",
+      "price": 86357,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 633,
+    "model": "food.food",
+    "fields": {
+      "name": "PUDING SEBUK",
+      "price": 76335,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 634,
+    "model": "food.food",
+    "fields": {
+      "name": "BASO",
+      "price": 23462,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 635,
+    "model": "food.food",
+    "fields": {
+      "name": "JAMU",
+      "price": 47033,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 636,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 41872,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 637,
+    "model": "food.food",
+    "fields": {
+      "name": "COOKIES & MINUMAN",
+      "price": 60050,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 638,
+    "model": "food.food",
+    "fields": {
+      "name": "CHEESE STICK",
+      "price": 80314,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 639,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 16370,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 640,
+    "model": "food.food",
+    "fields": {
+      "name": "YOGHURT",
+      "price": 31241,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 641,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE KERING",
+      "price": 50294,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 642,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN RINGAN",
+      "price": 80525,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 643,
+    "model": "food.food",
+    "fields": {
+      "name": "ANEKA CAKE, BOLU, KUE KERING, BROWNIES",
+      "price": 87076,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 644,
+    "model": "food.food",
+    "fields": {
+      "name": "BROWNIES",
+      "price": 55431,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 645,
+    "model": "food.food",
+    "fields": {
+      "name": "KUE SEROJA DAN PEYEK",
+      "price": 11629,
+      "promo": "Free Shipping"
+    }
+  },
+  {
+    "id": 646,
+    "model": "food.food",
+    "fields": {
+      "name": "MAKANAN",
+      "price": 94663,
+      "promo": "Discount 10%"
+    }
+  },
+  {
+    "id": 647,
+    "model": "food.food",
+    "fields": {
+      "name": "RISOLES",
+      "price": 94236,
+      "promo": "Cashback 20%"
+    }
+  },
+  {
+    "id": 648,
+    "model": "food.food",
+    "fields": {
+      "name": "COOKIES",
+      "price": 45604,
+      "promo": "No Promo"
+    }
+  },
+  {
+    "id": 649,
+    "model": "food.food",
+    "fields": {
+      "name": "ROTI",
+      "price": 42260,
+      "promo": "Buy 1 Get 1"
+    }
+  },
+  {
+    "id": 650,
+    "model": "food.food",
+    "fields": {
+      "name": "PASTEL",
+      "price": 77589,
+      "promo": "Cashback 20%"
+    }
+  }
+]
