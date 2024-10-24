@@ -542,27 +542,30 @@
     "id": 52,
     "model": "food.food",
     "fields": {
-      "name": "KERIPIK PISANG, SALE PISANG, SUMPIA",
+      "name": "KERIPIK PISANG",
       "price": 67988,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://th.bing.com/th/id/OIP.ZxQcDIkdYNkIUjO0hvzGRQHaE7?rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 53,
     "model": "food.food",
     "fields": {
-      "name": "MINUMAN TEMULAWAK, MINUMAN TEH, MINUMAN TEH TARIK",
+      "name": "MINUMAN TEMULAWAK",
       "price": 13596,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://i1.wp.com/kabartangsel.com/wp-content/uploads/2020/03/4-Resep-Minuman-Temulawak-untuk-Meningkatkan-Daya-Tahan-Tubuh.jpg?fit=1024%2C683&ssl=1"
     }
   },
   {
     "id": 54,
     "model": "food.food",
     "fields": {
-      "name": "CHEESE STICK, KACANG UMPET",
+      "name": "KACANG UMPET",
       "price": 89653,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://img-global.cpcdn.com/recipes/7e2e7ff0327d81e8/680x482cq70/kacang-umpet-kacang-sembunyi-pedas-manis-foto-resep-utama.jpg"
     }
   },
   {
@@ -571,25 +574,28 @@
     "fields": {
       "name": "BAWANG GORENG",
       "price": 48519,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://th.bing.com/th/id/R.90fb3205359663205d2a70c30db09bc6?rik=9BM5ugyXRFC86g&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 56,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING, BROWNIES, CAKE",
+      "name": "KUE KERING",
       "price": 74678,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://2.bp.blogspot.com/-gTi8fmI-XWQ/UnpeyehhyAI/AAAAAAAABNs/GpdDlkHjr7U/s1600/cara+membuat+kue+kering.JPG"
     }
   },
   {
     "id": 57,
     "model": "food.food",
     "fields": {
-      "name": "CAKE, BROWNIES, BOLU",
+      "name": "BROWNIES",
       "price": 31128,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://resepmamiku.com/wp-content/uploads/2022/02/brownies-lumer-rita-siucien-850x1063.jpg"
     }
   },
   {
@@ -598,7 +604,8 @@
     "fields": {
       "name": "PEPES IKAN MAS DURI LUNAK",
       "price": 80644,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://th.bing.com/th/id/OIP.eGp-kU0IdRt-am2oa68PXQHaFj?rs=1&pid=ImgDetMain"
     }
   },
   {
@@ -607,7 +614,8 @@
     "fields": {
       "name": "KIRIHUCI RASA ORIGINAL, KIRIHUCI RASA PEDAS",
       "price": 15046,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://cf.shopee.co.id/file/id-11134207-23010-zcuqmloxnrmv9d"
     }
   },
   {
@@ -616,7 +624,8 @@
     "fields": {
       "name": "BROWNIES",
       "price": 85399,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://resepmamiku.com/wp-content/uploads/2022/02/brownies-lumer-rita-siucien-850x1063.jpg"
     }
   },
   {
@@ -625,70 +634,78 @@
     "fields": {
       "name": "MAKARONI",
       "price": 31978,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://www.topwisata.info/wp-content/uploads/2022/09/Makaroni-Pedas-1.jpg"
     }
   },
   {
     "id": 62,
     "model": "food.food",
     "fields": {
-      "name": "OTAK-OTAK BUMBU RUJAK, CIRENG BUMBU RUJAK RASA ORIGINAL, CIRENG BUMBU  RUJAK RASA REBON, PEMPEK SUTRA, TEKWAN",
+      "name": "OTAK-OTAK BUMBU RUJAK",
       "price": 90535,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://th.bing.com/th/id/OIP.gnAZrcsjx50gRvLmGbxsoQHaF5?rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 63,
     "model": "food.food",
     "fields": {
-      "name": "CAKE, BOLU, BROWNIES, KUE KERING",
+      "name": "KUE KERING",
       "price": 33343,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://2.bp.blogspot.com/-gTi8fmI-XWQ/UnpeyehhyAI/AAAAAAAABNs/GpdDlkHjr7U/s1600/cara+membuat+kue+kering.JPG"
     }
   },
   {
     "id": 64,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING, BROWNIES, BOLU",
+      "name": "BOLU",
       "price": 47388,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://linscakes.com/wp-content/uploads/2021/10/IMG_20210916_184626.jpg"
     }
   },
   {
     "id": 65,
     "model": "food.food",
     "fields": {
-      "name": "ROTI TAWAR, ROTI BAGELEN",
+      "name": "ROTI BAGELEN",
       "price": 44234,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://cdn.idntimes.com/content-images/community/2019/06/photo-adf344f689fd7fceb1606f71f342ed70.jpg"
     }
   },
   {
     "id": 66,
     "model": "food.food",
     "fields": {
-      "name": "YOGHURT, MILK TEA, SNOWHITE DESSERT",
+      "name": "YOGHURT",
       "price": 15860,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://th.bing.com/th/id/R.d20c4022665682bac55d451afc438c19?rik=bgqTlOUuTaQn%2fg&riu=http%3a%2f%2fcdn.ecommercedns.uk%2ffiles%2f5%2f233265%2f9%2f11876389%2fyoghurt-category.jpg&ehk=33mLa4%2bKUsES5hIXh2la04xp98qsrC1n987xNzJWy2Q%3d&risl=&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 67,
     "model": "food.food",
     "fields": {
-      "name": "FRUITY JELLY RASA LECI, FRUITY JELLY RASA STRAWBERRY, FRUITY JELLY RASA MOCCA, FRUITY JELLY RASA MELON",
+      "name": "FRUITY JELLY",
       "price": 19952,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://th.bing.com/th/id/OIP.sLcnQfmObsrzqmjOEEHHlQHaFb?rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 68,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING, CAKE",
+      "name": "KUE KERING",
       "price": 13928,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://2.bp.blogspot.com/-gTi8fmI-XWQ/UnpeyehhyAI/AAAAAAAABNs/GpdDlkHjr7U/s1600/cara+membuat+kue+kering.JPG"
     }
   },
   {
@@ -706,7 +723,8 @@
     "fields": {
       "name": "KUE KERING",
       "price": 43601,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://2.bp.blogspot.com/-gTi8fmI-XWQ/UnpeyehhyAI/AAAAAAAABNs/GpdDlkHjr7U/s1600/cara+membuat+kue+kering.JPG"
     }
   },
   {
@@ -715,52 +733,58 @@
     "fields": {
       "name": "MINUMAN SERBUK",
       "price": 38880,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://cf.shopee.co.id/file/9f2b41a58a7a6864faab8569ffaed61d"
     }
   },
   {
     "id": 72,
     "model": "food.food",
     "fields": {
-      "name": "PISANG KEJU, PISANG AROMA, PISANG COKELAT, PISANG SELIMUT KEJU",
+      "name": "PISANG KEJU",
       "price": 86084,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://live.staticflickr.com/65535/51951892008_737002991c_o.jpg"
     }
   },
   {
     "id": 73,
     "model": "food.food",
     "fields": {
-      "name": "SAMBAL LADA HITAM, SAMBAL IJO, SAMBAL GORENG KENTANG, SAMBAL GORENG TEMPE",
+      "name": "SAMBAL LADA HITAM",
       "price": 18991,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://th.bing.com/th/id/OIP._prk_3UIY45SkO7rm6_rwgHaHa?w=1280&h=1280&rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 74,
     "model": "food.food",
     "fields": {
-      "name": "ROCKET SEBLAK, GAGAL PEDAS, PEDAS MINIMAL, PEDAS MAKSIMAL",
+      "name": "ROCKET SEBLAK",
       "price": 20508,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://th.bing.com/th/id/OIP.DX6jCFwdSMEBVkddKMDdogHaH4?rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 75,
     "model": "food.food",
     "fields": {
-      "name": "BAWANG GORENG (DENGAN TEPUNG), BAWANG GORENG MURNI",
+      "name": "BAWANG GORENG (DENGAN TEPUNG)",
       "price": 22414,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://img-global.cpcdn.com/recipes/6da09e944cd20e03/680x482cq70/bawang-goreng-tepung-renyah-foto-resep-utama.jpg"
     }
   },
   {
     "id": 76,
     "model": "food.food",
     "fields": {
-      "name": "SAMBAL BAWANG, SAMBAL CABE IJO, SAMBAL TERASI, SAMBAL TERI, SAMBAL CUMI",
+      "name": "SAMBAL BAWANG",
       "price": 31865,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://1.bp.blogspot.com/-aeUF9bNiSS8/Vtru5mToADI/AAAAAAAADx8/MyFzFpHL4eo/s1600/Sambel%2Bbawang%2B3.jpg"
     }
   },
   {
@@ -769,16 +793,18 @@
     "fields": {
       "name": "MAKARONI GORENG RASA : SOTO LEVEL 1-3, KARE LEVEL 1-3, RENDANG LEVEL 1-3  DAN BAWANG LEVEL 1-3",
       "price": 85532,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://www.topwisata.info/wp-content/uploads/2022/09/Makaroni-Pedas-1.jpg"
     }
   },
   {
     "id": 78,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING, BROWNIES",
+      "name": "KUE KERING",
       "price": 80931,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://2.bp.blogspot.com/-gTi8fmI-XWQ/UnpeyehhyAI/AAAAAAAABNs/GpdDlkHjr7U/s1600/cara+membuat+kue+kering.JPG"
     }
   },
   {
@@ -787,79 +813,88 @@
     "fields": {
       "name": "KERIPIK TALAS",
       "price": 10863,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://img-global.cpcdn.com/recipes/8c5f4cca25f69e07/680x482cq70/keripik-talas-foto-resep-utama.jpg"
     }
   },
   {
     "id": 80,
     "model": "food.food",
     "fields": {
-      "name": "RED GINGER, JUS BIOLA, MADU MERAH PUTIH, MADU LEMON, MADU KRISTAL",
+      "name": "MADU KRISTAL",
       "price": 98554,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://cf.shopee.co.id/file/a2f70f762554feb614e3abd488522e4c"
     }
   },
   {
     "id": 81,
     "model": "food.food",
     "fields": {
-      "name": "TEPUNG KACANG HIJAU, TEPUNG KACANG KEDELAI, TEPUNG BERAS MERAH",
+      "name": "TEPUNG BERAS MERAH",
       "price": 45866,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://th.bing.com/th/id/R.05c0f946ceea27f0dfe9d20c1183e7e0?rik=vwQyQIVGFp%2bnQw&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 82,
     "model": "food.food",
     "fields": {
-      "name": "PISANG GORENG ACEH, MOLEN PISANG ACEH, SARIKAYA PISANG ACEH",
+      "name": "PISANG GORENG ACEH",
       "price": 81766,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/106/MTA-57719644/no-brand_pisang-sale-goreng-makanan-tradisional-khas-aceh_full01.jpg"
     }
   },
   {
     "id": 83,
     "model": "food.food",
     "fields": {
-      "name": "ULEN, CIRENG BUMBU",
+      "name": "ULEN",
       "price": 62810,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://thumbs.dreamstime.com/b/ulen-ketan-indonesian-traditional-snack-made-steam-sticky-rice-compressed-shaped-then-deep-fried-served-sambal-238674019.jpg"      
     }
   },
   {
     "id": 84,
     "model": "food.food",
     "fields": {
-      "name": "MACARONI SCHOTEL, MACARONI BOLOGNASE, BAKED POTATO, BAKED POTATO,  LASAGNA, SPICY MAC MOZA",
+      "name": "SPICY MAC MOZA",
       "price": 48050,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://img-global.cpcdn.com/recipes/2df7842920df9161/680x482cq70/mac-n-cheese-moza-panggang-foto-resep-utama.jpg"
     }
   },
   {
     "id": 85,
     "model": "food.food",
     "fields": {
-      "name": "PIE PISANG, COKLAT KURMA, BOLU KUKUS, KETAN HITAM, BOLU PISANG, BOLU  PEUYEUM",
+      "name": "PIE PISANG",
       "price": 69672,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://awsimages.detik.net.id/community/media/visual/2017/06/16/d55c2f0f-8b27-41d5-91a3-c40762030fa0.jpg?w=700&q=90"
     }
   },
   {
     "id": 86,
     "model": "food.food",
     "fields": {
-      "name": "TENTENG EMPING, SALE PISANG GORENG",
+      "name": "TENTENG EMPING",
       "price": 26701,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://thumbs.dreamstime.com/b/emping-indonesian-traditional-snacks-melinjo-food-made-usually-special-dish-eid-al-fitr-275112433.jpg"
     }
   },
   {
     "id": 87,
     "model": "food.food",
     "fields": {
-      "name": "EGG ROLL ORIGINAL, EGG ROLL WIJEN",
+      "name": "EGG ROLL",
       "price": 87038,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://th.bing.com/th/id/OIP.9jIw8F41fcbhk20A17mEMgHaHa?rs=1&pid=ImgDetMain"
     }
   },
   {
@@ -868,43 +903,48 @@
     "fields": {
       "name": "ROTI",
       "price": 55721,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://th.bing.com/th/id/OIP.UKMLKzPzGeRf3FjBfTEphAHaE3?rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 89,
     "model": "food.food",
     "fields": {
-      "name": "RENDANG SUIR DAGING SAPI, RENDANG DAGING SAPI, RENDANG PARU SAPI, RENDANG  HATI SAPI, RENDANG DAGING AYAM, RENDANG TELUR",
+      "name": "RENDANG TELUR",
       "price": 51509,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://th.bing.com/th/id/OIP.eeTwrN38lWsnXRfGQIq1gQHaEK?rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 90,
     "model": "food.food",
     "fields": {
-      "name": "BAGELEN ORIGINAL, BAGELEN KEJU, ROTI MANIS KEJU, ROTI MANIS COKLAT, ROTI  MANIS SELAI STRAWBERRY, ROTI MANIS BUTTER CREAM, ROTI MANIS PISANG",
+      "name": "BAGELEN",
       "price": 12962,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://th.bing.com/th/id/R.6974bb72d7a6e4ab896782eb03056f78?rik=TqTyjSdQXz3Eag&riu=http%3a%2f%2foleholehkhasbandung.com%2fwp-content%2fuploads%2f2017%2f10%2fPrima-Rasa-bagelen-butter.jpg&ehk=i%2fVCd6Q%2fank8kRAtAjY90ax3YCD4TweUXt0iSDpoYko%3d&risl=&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 91,
     "model": "food.food",
     "fields": {
-      "name": "ROTI COKLAT, ROTI KEJU, ROTI KELAPA, ROTI KACANG IJO, ROTI GORENG PISANG  COKLAT",
+      "name": "ROTI COKLAT",
       "price": 53800,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://th.bing.com/th/id/R.f0d8d1a89c3734e4319347242dc359b4?rik=NtTxJ84%2bZs8Zlw&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 92,
     "model": "food.food",
     "fields": {
-      "name": "LAPIS LEGIT, BROWNIES, KUE KERING",
+      "name": "LAPIS LEGIT",
       "price": 77030,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://th.bing.com/th/id/OIP.dLY-t4XpB9WfJVO9XMmxPAHaHa?rs=1&pid=ImgDetMain"
     }
   },
   {
@@ -913,23 +953,26 @@
     "fields": {
       "name": "MADU",
       "price": 58494,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://cf.shopee.co.id/file/a01f225ae262f23ac66c15d75f4e4a05"
+      
     }
   },
   {
     "id": 94,
     "model": "food.food",
     "fields": {
-      "name": "DENDENG BALADO BASAH, DENDENG BALADO KERING, SAMBAL BALADO",
+      "name": "DENDENG BALADO",
       "price": 19863,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://th.bing.com/th/id/R.c01e62113790e88296844fcd2af4294f?rik=bfJ1MyWMn636cA&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 95,
     "model": "food.food",
     "fields": {
-      "name": "JAMUR CRISPY RASA : ORIGINAL, KEJU, JAGUNG BAKAR, BARBEQUE, BALADO,  PEDAS, JAGUNG MANIS, MANIS PEDAS",
+      "name": "JAMUR CRISPY",
       "price": 31401,
       "promo": "Free Shipping"
     }
