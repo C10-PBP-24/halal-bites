@@ -14,3 +14,4 @@ def get_foods(request):
     data = Food.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json" )
 
+
