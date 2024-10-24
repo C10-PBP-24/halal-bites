@@ -306,7 +306,7 @@
       "name": "PISANG KRISPI",
       "price": 15971,
       "promo": "Cashback 20%",
-      "image": ""
+      "image": "https://puchong.co/uploads/default/original/1X/c7b81d11821ba8fe7d50f4610a3ff23d620ddff9.jpeg"
     }
   },
   {
@@ -315,34 +315,38 @@
     "fields": {
       "name": "KUE KERING",
       "price": 35012,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://2.bp.blogspot.com/-gTi8fmI-XWQ/UnpeyehhyAI/AAAAAAAABNs/GpdDlkHjr7U/s1600/cara+membuat+kue+kering.JPG"
     }
   },
   {
     "id": 30,
     "model": "food.food",
     "fields": {
-      "name": "ALMOND CRISPY, BOLU, KUE KERING, TIRAMISU CAKE",
+      "name": "TIRAMISU CAKE",
       "price": 17973,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://thefirstyearblog.com/wp-content/uploads/2016/10/Tiramisu-Cake-3.jpg"
     }
   },
   {
     "id": 31,
     "model": "food.food",
     "fields": {
-      "name": "SHA’E BOLSUS, SHA’E BOLSUS GALAXI, BROWNIES LUMER",
+      "name": "BROWNIES LUMER",
       "price": 30906,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://resepmamiku.com/wp-content/uploads/2022/02/brownies-lumer-rita-siucien-850x1063.jpg"
     }
   },
   {
     "id": 32,
     "model": "food.food",
     "fields": {
-      "name": "JAHE INSTAN, BANDREK, BAJIGUR, JAHE, MERAH INSTAN",
+      "name": "BANDREK",
       "price": 10252,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://asset.kompas.com/crops/CAPgYOK6d2jPBKijYFIulsGnYMI=/0x0:1000x667/750x500/data/photo/2021/06/20/60cef105d4c03.jpg"
     }
   },
   {
@@ -351,43 +355,48 @@
     "fields": {
       "name": "TEPUNG PISANG",
       "price": 56088,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://d3enzy0qyo6ts9.cloudfront.net/lemonilo/article/ab3eb1d96440ad0ca0329136ecf5a4aa.jpeg"
     }
   },
   {
     "id": 34,
     "model": "food.food",
     "fields": {
-      "name": "RENDANG DAGING, RENDANG AYAM, RENDANG ATI, RENDANG PARU, DENDENG BALADO",
+      "name": "DENDENG BALADO",
       "price": 41823,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://1.bp.blogspot.com/-3ELNRSwYAg4/YF7Flu2zK-I/AAAAAAAAEWo/qWhWUOmjH5Q_b5rK2TKf0whdNsIxC1s-QCLcBGAsYHQ/w1200-h630-p-k-no-nu/maxresdefault1-768x432.jpg"
     }
   },
   {
     "id": 35,
     "model": "food.food",
     "fields": {
-      "name": "RISOLES, ROTI, CAKE, BROWNIES, MAKRONI, SCHOTEL, LASAGNA, KUE SUS, KUE KERING",
+      "name": "LASAGNA",
       "price": 25510,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://thestayathomechef.com/wp-content/uploads/2017/08/Most-Amazing-Lasagna-2-4272x2848.jpg"
     }
   },
   {
     "id": 36,
     "model": "food.food",
     "fields": {
-      "name": "KERING KENTANG, KERIPIK KENTANG, SAMBEL TERI KACANG",
+      "name": "SAMBEL TERI KACANG",
       "price": 79954,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://img.herstory.co.id/articles/archive_20220720/teri-kacang-20220720-081447.jpg"
     }
   },
   {
     "id": 37,
     "model": "food.food",
     "fields": {
-      "name": "KUNYIT ASAM INSTAN, JAHE INSTAN, BERAS KENCUR INSTAN, UBI UNGU INSTAN",
+      "name": "UBI UNGU INSTAN",
       "price": 64312,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://th.bing.com/th/id/OIP.I2lo9Ie-jPauGuRwV1tgCwAAAA?rs=1&pid=ImgDetMain"
     }
   },
   {
@@ -396,61 +405,68 @@
     "fields": {
       "name": "KOPI",
       "price": 67713,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://th.bing.com/th/id/OIP.R-fY_5NvBklSmHVeWw5zLQAAAA?rs=1&pid=ImgDetMain"
     }
   },
   {
     "id": 39,
     "model": "food.food",
     "fields": {
-      "name": "TAHU BASO ISI AYAM UDANG, TAHU BASO ISI SAPI, CILOK KRISPI MOZARELA, AYAM TANPA TULANG",
+      "name": "AYAM TANPA TULANG",
       "price": 35864,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://img-global.cpcdn.com/recipes/45de86db0fdf2c6c/680x482cq70/ayam-geprek-tanpa-tulang-foto-resep-utama.jpg"
     }
   },
   {
     "id": 40,
     "model": "food.food",
     "fields": {
-      "name": "KREMES, KERING TEMPE",
+      "name": "KERING TEMPE",
       "price": 42931,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://1.bp.blogspot.com/-jAPBD_NTCEk/U4hxxDHF9NI/AAAAAAAACV0/-cq2LLkrKu0/s1600/Menu+Nasi+Tumpeng+Murah+di+Surabaya,+kering+tempe+(2).JPG"
     }
   },
   {
     "id": 41,
     "model": "food.food",
     "fields": {
-      "name": "PEMPEK KAPAL SELAM, PEMPEK LENJER, PEMPEK ADAAN",
+      "name": "PEMPEK KAPAL SELAM",
       "price": 50003,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://th.bing.com/th/id/R.fb073e4a8bff3469c115a639d98ab392?rik=oYznw9nwNQWYoA&riu=http%3a%2f%2fblog.duniamasak.com%2fwp-content%2fuploads%2fimage2-1024x1024.jpeg&ehk=kh7SoF9Xon1%2btr87awXf%2biJWo%2bn0slWiZtGxrT0lZVM%3d&risl=&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 42,
     "model": "food.food",
     "fields": {
-      "name": "NUGET AYAM, NUGET SAYUR, AYAM LAPIS KEJU",
+      "name": "AYAM LAPIS KEJU",
       "price": 30864,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://img-global.cpcdn.com/recipes/1fd62ae919f4edb8/1200x630cq70/photo.jpg"
     }
   },
   {
     "id": 43,
     "model": "food.food",
     "fields": {
-      "name": "GABUS KEJU, SUMPIA",
+      "name": "GABUS KEJU",
       "price": 87404,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://img.freepik.com/premium-photo/widaran-keju-telur-gabus-keju-indonesian-traditional-snack-made-from-flour-egg-cheddar-cheese_583400-4283.jpg?w=2000"
     }
   },
   {
     "id": 44,
     "model": "food.food",
     "fields": {
-      "name": "PROLL TAPE, BOLU KUKUS",
+      "name": "PROLL TAPE",
       "price": 26155,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://img-global.cpcdn.com/recipes/d23033c5730d4eee/680x482cq70/proll-tempe-foto-resep-utama.jpg"
     }
   },
   {
@@ -459,7 +475,8 @@
     "fields": {
       "name": "KOPI",
       "price": 83047,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://ds393qgzrxwzn.cloudfront.net/cat1/img/images/0/wbkna0p8VL.jpg"
     }
   },
   {
@@ -468,7 +485,8 @@
     "fields": {
       "name": "BROWNIES",
       "price": 20717,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://resepmamiku.com/wp-content/uploads/2022/02/brownies-lumer-rita-siucien-850x1063.jpg"
     }
   },
   {
@@ -486,34 +504,38 @@
     "fields": {
       "name": "CUANKIE",
       "price": 97493,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://static.vecteezy.com/system/resources/previews/014/264/947/non_2x/cuanki-is-one-of-the-typical-snacks-of-bandung-free-photo.jpg"
     }
   },
   {
     "id": 49,
     "model": "food.food",
     "fields": {
-      "name": "SUMPIA ORIGINAL, SUMPIA BALADO, SUMPIA PEDAS",
+      "name": "SUMPIA BALADO",
       "price": 76246,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://2.bp.blogspot.com/-SBBwqj4vhvs/WkHTX2PyJnI/AAAAAAAABII/yujyeMZL7aYBG6gPcRnbgegl39z2bRQKgCLcBGAs/s1600/Kulit%2Blumpia%2Bgoreng.jpg"
     }
   },
   {
     "id": 50,
     "model": "food.food",
     "fields": {
-      "name": "KOPI BUBUK ARABICA, KOPI BUBUK ROBUSTA",
+      "name": "KOPI BUBUK ARABICA",
       "price": 69484,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://cf.shopee.co.id/file/3448822a3cd709c322e38bf6586d7afa"
     }
   },
   {
     "id": 51,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING, KERIPIK",
+      "name": "KERIPIK",
       "price": 11698,
-      "promo": "Buy 1 Get 1"
+      "promo": "Buy 1 Get 1",
+      "image": "https://www.rumahmesin.com/wp-content/uploads/2016/05/cara-membuat-keripik-singkong-renyah-asin.png"
     }
   },
   {
