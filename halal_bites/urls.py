@@ -29,6 +29,6 @@ urlpatterns = [
     path('show/', show_rating_form, name='show_rating_form'),
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
-    path('home/', show_main, name='home'),  # Add the URL pattern for 'home'
+    path('home/', show_main, name='home'),
     path('resto/', include('resto.urls')),
 ]

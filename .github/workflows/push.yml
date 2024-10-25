@@ -32,7 +32,10 @@ jobs:
           echo "Creating temporary branch"
           git checkout -b tmp
 
-          # Push to master branch and capture the output
+          echo "Pulling changes from remote"
+          git pull $PWS_URL master
+
+          echo "Pushing changes to remote"
           push_output=$(git push $PWS_URL tmp:master 2>&1)
           if [[ $? -ne 0 ]]; then
             echo "Push failed with output: $push_output"
