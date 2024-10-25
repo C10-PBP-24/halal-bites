@@ -1,1 +1,18 @@
 <h1>HalalBites</h1>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'forum:thread_list' %}">View</a></li>
+        <li><a href="{% url 'forum:create_thread' %}">Create Thread</a></li>
+    </ul>
+</nav>
+
+<h2>Threads</h2>
+<ul>
+    {% for thread in threads %}
+        <li>
+            <a href="{% url 'forum:thread_detail' pk=thread.pk %}">{{ thread.title }}</a>
+            <a href="{% url 'forum:create_post' pk=thread.pk %}">Create Post</a>
+        </li>
+    {% endfor %}
+</ul>

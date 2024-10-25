@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('main.urls')),
     path('rate/<int:food_id>/', create_rating, name='create_rating'),
     path('show/', show_rating_form, name='show_rating_form'),
+    path('forum/', include('forum.urls')),
 ]

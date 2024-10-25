@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>Discussion Threads</h1>
+  
+  {% if object_list %}
+    <ul class="thread-list">
+      {% for thread in object_list %}
+        <li class="thread-item">
+          <a href="{% url 'forum:thread_detail' pk=thread.pk %}" class="thread-title">{{ thread.title }}</a>
+          <p class="thread-meta">Created on {{ thread.created_at|date:"F j, Y, g:i a" }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No threads available yet. Be the first to <a href="{% url 'forum:create_thread' %}">create a thread</a>!</p>
+  {% endif %}
+  
+  <hr>
+  <div class="create-thread-link">
+    <a href="{% url 'forum:create_thread' %}" class="btn btn-primary">Create a New Thread</a>
+  </div>
+</div>
+{% endblock %}
