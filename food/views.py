@@ -3,14 +3,14 @@ from django.shortcuts import redirect, render, get_object_or_404
 from django.core import serializers
 from food.models import Food
 from django.contrib.auth.decorators import login_required
-from authentication.models import UserProfile
+# from authentication.models import UserProfile
 from django.views.decorators.csrf import csrf_exempt
 
 
 @login_required(login_url="authentication:login")
 def show_menu(request):
-    user = request.user
-    user_profile = UserProfile.objects.get(user=user)
+    # user = request.user
+    # user_profile = UserProfile.objects.get(user=user)
 
     foods = Food.objects.all()
 
