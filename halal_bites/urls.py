@@ -21,7 +21,6 @@ from rating.views import create_rating, show_rating_form
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
-    path('menu/', include('food.urls')),
     path('rate/<int:food_id>/', create_rating, name='create_rating'),
     path('show/', show_rating_form, name='show_rating_form'),
 ]
