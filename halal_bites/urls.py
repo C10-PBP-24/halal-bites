@@ -29,4 +29,5 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
     path('home/', show_main, name='home'),  # Add the URL pattern for 'home'
+    path('resto/', include('resto.urls')),
 ]
