@@ -1,17 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- {% include "head.html" %}
-    {% block meta %}
-    {% endblock meta %} -->
-</head>
-
-<body>
-    <!-- {% include "navbar.html" %}
-    {% block content %}
-    {% endblock content %}
-    {% include "footer.html" %} -->
-</body>
-{% block script %}
-{% endblock script %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block meta %} {% endblock meta %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="{% static 'css/global.css' %}"/> -->
+  </head>
+  <body>
+    {% block content %} {% endblock content %}
+  </body>
 </html>

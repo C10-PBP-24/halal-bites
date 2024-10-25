@@ -1,0 +1,146 @@
+/* CSS untuk halaman Menu Halal Bites */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.flex.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.filter-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #45a049;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.max-w-md {
+    max-width: 250px;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.shadow-lg {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.food-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.food-card h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.food-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.see-details-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    background-color: #3992C6;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 0 8px 8px;
+}
+
+.see-details-button:hover {
+    background-color: #247FB8;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.font-inter {
+    font-family: 'Arial', sans-serif;
+}
+
+.text-color-primary {
+    color: #005b9c;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-gray-600 {
+    color: #666;
+}
