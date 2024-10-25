@@ -974,7 +974,8 @@
     "fields": {
       "name": "JAMUR CRISPY",
       "price": 31401,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://th.bing.com/th/id/R.a876ee399ec8591ce98e885dc48d1cf7?rik=uPxbW7SoGdsmYg&pid=ImgRaw&r=0"
     }
   },
   {
@@ -983,25 +984,28 @@
     "fields": {
       "name": "CAKE, BOLU, KUE KERING",
       "price": 28996,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://th.bing.com/th/id/R.25192d32a2af360a6b2bed4123b6be79?rik=NAjtzEGU41YryQ&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 97,
     "model": "food.food",
     "fields": {
-      "name": "KUE KERING, STICK",
+      "name": "STICK",
       "price": 92868,
-      "promo": "Free Shipping"
+      "promo": "Free Shipping",
+      "image": "https://i.pinimg.com/originals/43/b6/c2/43b6c2c4ffc893cbf4ec8393198c5a9c.jpg"
     }
   },
   {
     "id": 98,
     "model": "food.food",
     "fields": {
-      "name": "SUSU PASTEURISASI, YOGHURT",
+      "name": "SUSU PASTEURISASI",
       "price": 78876,
-      "promo": "No Promo"
+      "promo": "No Promo",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcNFqUAscK1Y2u6WIVHtgaZPyElQ6B0Wokls_2Ca08mmYKjR1fhL5oKQ_U_jXNGhPw5TjGJBlt_aAJShFjzYWR8rfiWwnsjjaHzNQ2p-bL_uq-w9koegkCf_Hwfy4kHaCTS_JyzE8OGHNV/s1600/kopi+susu.JPG"
     }
   },
   {
@@ -1010,16 +1014,18 @@
     "fields": {
       "name": "MINUMAN JAHE",
       "price": 58272,
-      "promo": "Discount 10%"
+      "promo": "Discount 10%",
+      "image": "https://th.bing.com/th/id/R.59d86c528a9e14d85da6a36b4a98645f?rik=4nnOHxswJ%2b7yLg&pid=ImgRaw&r=0"
     }
   },
   {
     "id": 100,
     "model": "food.food",
     "fields": {
-      "name": "BROWNIES, BOLU, PASTRY, RISOLES",
+      "name": "RISOLES",
       "price": 99900,
-      "promo": "Cashback 20%"
+      "promo": "Cashback 20%",
+      "image": "https://th.bing.com/th/id/R.926866c11a94c8fa137cded5c226dc87?rik=nR1e74JUdZjxuQ&pid=ImgRaw&r=0"
     }
   }
 ]
