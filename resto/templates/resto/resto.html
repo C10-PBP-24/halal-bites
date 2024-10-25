@@ -16,11 +16,18 @@
             text-align: center;
             color: #333;
         }
+        /* Container for filter and restaurant list side-by-side */
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        /* Styling for the restaurant list */
         .restaurant-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
-            padding: 20px;
+            flex: 1; /* Take remaining space */
         }
         .restaurant-card {
             background-color: #fff;
@@ -43,24 +50,34 @@
             margin: 5px 0;
             color: #666;
         }
+        
         .filter-container {
-            text-align: center;
-            margin-bottom: 20px;
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+            box-sizing: border-box;
         }
         .filter-input {
+            width: 100%;
             padding: 10px;
-            width: 200px;
-            border-radius: 5px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
         button {
-            padding: 10px 20px;
-            margin-left: 10px;
+            width: 100%;
+            padding: 10px;
             background-color: hsl(185, 39%, 49%);
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 10px;
         }
         button:hover {
             background-color: #4582a0;
@@ -103,25 +120,35 @@
 <body>
     <h1>Restaurants</h1>
 
-    <div class="filter-container">
-        <input type="text" id="lokasiInput" class="filter-input" placeholder="Enter location">
-        <button class="filter-button" onclick="filterRestaurants()">Filter</button>
-        <button class="filter-button" id="addRestaurantBtn">Add Restaurant</button>
-    </div>
+    <div class="content-container">
+        <!-- Restaurant List -->
+        <div class="restaurant-list" id="restaurantList">
+            {% if restos %}
+                {% for resto in restos %}
+                    <div class="restaurant-card">
+                        <h2>{{ resto.nama }}</h2>
+                        <p><strong>Lokasi:</strong> {{ resto.lokasi }}</p>
+                        <button onclick="window.location.href='/resto/detail/{{resto.id}}/'">Lihat Detail</button>
+                        <button onclick="confirmDelete('{{ resto.id }}', '{{ resto.nama }}')">Hapus Resto</button>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No restaurants available.</p>
+            {% endif %}
+        </div>
 
-    <div class="restaurant-list" id="restaurantList">
-        {% if restos %}
-            {% for resto in restos %}
-                <div class="restaurant-card">
-                    <h2>{{ resto.nama }}</h2>
-                    <p><strong>Lokasi:</strong> {{ resto.lokasi }}</p>
-                    <button>Lihat Detail</button>
-                    <button onclick="confirmDelete('{{ resto.id }}', '{{ resto.nama }}')">Hapus Resto</button>
+        <!-- Filter Section -->
+         <div>
+             <div class="filter-container">
+                 <h3>Filter Restaurants</h3>
+                 <strong style="margin-bottom: 0; color: #666;">Nama:</strong>
+                 <input type="text" id="namaInput" class="filter-input" placeholder="Enter name" style="color: #666;">
+                 <strong style="margin-bottom: 0; color: #666;">Lokasi:</strong>
+                 <input type="text" id="lokasiInput" class="filter-input" placeholder="Enter location" style="color: #666;">
+                 <button class="filter-button" onclick="filterRestaurants()">Filter</button>
                 </div>
-            {% endfor %}
-        {% else %}
-            <p>No restaurants available.</p>
-        {% endif %}
+                <button class="filter-button" id="addRestaurantBtn">Add Restaurant</button>
+         </div>
     </div>
 
     <!-- Modal for Adding Restaurant -->
@@ -134,10 +161,11 @@
             
             <span class="close" id="closeModal">&times;</span>
             <h2>Add Restaurant</h2>
-            <input type="text" id="namaInput" placeholder="Restaurant Name" required>
+            <input type="text" id="namaRestoInput" placeholder="Restaurant Name" required>
             <input type="text" id="namaMakananInput" placeholder="Food Name" required>
             <input type="text" id="hargaMakananInput" placeholder="Food Price" required>
             <input type="text" id="promoMakananInput" placeholder="Food Promo" required>
+            <input type="url" id="imageMakananInput" placeholder="Food Image" required>
             <input type="text" id="lokasiInputAdd" placeholder="Location" required>
             <br>
             <button class="filter-button" onclick="addRestaurant()" style="margin-top: 10px; margin-left: 0px;">Add Restaurant</button>
@@ -145,82 +173,6 @@
     </div>
 
     <script>
-        // Function to open the modal
-        document.getElementById('addRestaurantBtn').onclick = function() {
-            document.getElementById('addRestoModal').style.display = "block";
-        };
-
-        // Function to close the modal
-        document.getElementById('closeModal').onclick = function() {
-            document.getElementById('addRestoModal').style.display = "none";
-        };
-
-        // Close the modal if the user clicks outside of it
-        window.onclick = function(event) {
-            const modal = document.getElementById('addRestoModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        };
-
-        async function addRestaurant() {
-            console.log("Add Restaurant button clicked");
-            const nama = document.getElementById('namaInput').value;
-            const namaMakanan = document.getElementById('namaMakananInput').value;
-            const hargaMakanan = document.getElementById('hargaMakananInput').value;
-            const promoMakanan = document.getElementById('promoMakananInput').value;
-            const lokasi = document.getElementById('lokasiInputAdd').value;
-
-            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
-
-            try {
-                const response = await fetch('/resto/add-resto/', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                        'X-CSRFToken': csrfToken,
-                    },
-                    body: `nama=${encodeURIComponent(nama)}&nama_makanan=${encodeURIComponent(namaMakanan)}&harga_makanan=${encodeURIComponent(hargaMakanan)}&promo_makanan=${encodeURIComponent(promoMakanan)}&lokasi=${encodeURIComponent(lokasi)}`
-                });
-
-                if (response.status === 201) {
-                    alert('Restaurant added successfully!');
-                    location.reload(); // Refresh the page after successful addition
-                } else {
-                    alert('Failed to add restaurant. Please try again.');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('An error occurred. Please try again.');
-            }
-        }
-
-        async function filterRestaurants() {
-            const lokasi = document.getElementById('lokasiInput').value;
-            const response = await fetch(`/resto/filter-resto/?lokasi=${encodeURIComponent(lokasi)}`);
-            const data = await response.json();
-            const restaurantList = document.getElementById('restaurantList');
-
-            // Clear the current restaurant list
-            restaurantList.innerHTML = '';
-
-            // Populate the filtered restaurants
-            if (data.restos.length > 0) {
-                data.restos.forEach(resto => {
-                    const card = document.createElement('div');
-                    card.className = 'restaurant-card';
-                    card.innerHTML = `
-                        <h2>${resto.nama}</h2>
-                        <p><strong>Lokasi:</strong> ${resto.lokasi}</p>
-                        <button>Lihat Detail</button>
-                        <button onclick="confirmDelete('${resto.pk}', '${resto.nama}')">Hapus Resto</button>
-                    `;
-                    restaurantList.appendChild(card);
-                });
-            } else {
-                restaurantList.innerHTML = '<p>No restaurants available.</p>';
-            }
-        }
 
         // Function to get CSRF token from cookies
         function getCookie(name) {
@@ -240,7 +192,6 @@
 
         // Function to confirm deletion
         function confirmDelete(restoId, restoName) {
-            console.log('Deleting resto with ID:', restoId);
             const userConfirmed = confirm(`Are you sure you want to delete the restaurant "${restoName}"?`);
             
             if (userConfirmed) {
@@ -250,7 +201,7 @@
 
         // Function to send delete request
         async function deleteRestaurant(restoId) {
-            const csrfToken = getCookie('csrftoken');
+            const csrfToken = getCookie('csrftoken'); // Ensure you are getting the CSRF token
 
             try {
                 const response = await fetch(`/resto/delete-resto/${restoId}/`, {
@@ -262,13 +213,92 @@
 
                 if (response.status === 204) {
                     alert('Restaurant deleted successfully!');
-                    filterRestaurants(); // Refresh the page after successful deletion
+                    location.reload(); // Refresh the page after successful deletion
                 } else {
                     alert('Failed to delete restaurant. Please try again.');
                 }
             } catch (error) {
                 console.error('Error:', error);
                 alert('An error occurred. Please try again.');
+            }
+        }
+
+        document.getElementById('addRestaurantBtn').onclick = function() {
+            document.getElementById('addRestoModal').style.display = "block";
+        };
+
+        document.getElementById('closeModal').onclick = function() {
+            document.getElementById('addRestoModal').style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('addRestoModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        async function addRestaurant() {
+            console.log("Add Restaurant button clicked");
+            const nama = document.getElementById('namaRestoInput').value;
+            const namaMakanan = document.getElementById('namaMakananInput').value;
+            const hargaMakanan = document.getElementById('hargaMakananInput').value;
+            const promoMakanan = document.getElementById('promoMakananInput').value;
+            const imageMakanan = document.getElementById('imageMakananInput').value;
+            const lokasi = document.getElementById('lokasiInputAdd').value;
+
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+            try {
+                const response = await fetch('/resto/add-resto/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'X-CSRFToken': csrfToken,
+                    },
+                    body: `nama=${encodeURIComponent(nama)}&nama_makanan=${encodeURIComponent(namaMakanan)}&harga_makanan=${encodeURIComponent(hargaMakanan)}&promo_makanan=${encodeURIComponent(promoMakanan)}&image_makanan=${encodeURIComponent(imageMakanan)}&lokasi=${encodeURIComponent(lokasi)}`
+                });
+
+                if (response.status === 201) {
+                    alert('Restaurant added successfully!');
+                    location.reload();
+                } else {
+                    alert('Failed to add restaurant. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            }
+        }
+
+        async function filterRestaurants() {
+            const lokasi = document.getElementById('lokasiInput').value;
+            const nama = document.getElementById('namaInput').value;
+            const queryParams = new URLSearchParams({
+                lokasi: lokasi,
+                nama: nama
+            });
+
+            const response = await fetch(`/resto/filter-resto/?${queryParams.toString()}`);
+            const data = await response.json();
+            const restaurantList = document.getElementById('restaurantList');
+
+            restaurantList.innerHTML = '';
+
+            if (data.restos.length > 0) {
+                data.restos.forEach(resto => {
+                    const card = document.createElement('div');
+                    card.className = 'restaurant-card';
+                    card.innerHTML = `
+                        <h2>${resto.nama}</h2>
+                        <p><strong>Lokasi:</strong> ${resto.lokasi}</p>
+                        <button onclick="window.location.href='/resto/detail/${resto.pk}/'">Lihat Detail</button>
+                        <button onclick="confirmDelete('${resto.pk}', '${resto.nama}')">Hapus Resto</button>
+                    `;
+                    restaurantList.appendChild(card);
+                });
+            } else {
+                restaurantList.innerHTML = '<p>No restaurants available.</p>';
             }
         }
     </script>
