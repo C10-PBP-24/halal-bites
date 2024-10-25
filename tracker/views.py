@@ -3,6 +3,11 @@ from django.contrib.auth.decorators import login_required
 from .models import Tracker, Food, Rating
 from .forms import AddFoodTrackingForm
 
+app_name = 'tracker'
+
+def show_main(request):
+    return render(request, 'main/main.html')
+
 @login_required
 def food_tracker(request):
     # Mengambil data tracking makanan user

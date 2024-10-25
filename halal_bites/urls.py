@@ -23,6 +23,7 @@ from main.views import show_main
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
+    path('tracker/', include(('tracker.urls', 'tracker'), namespace='tracker')),
     path('menu', include('food.urls')),
     path('rate/<int:food_id>/', create_rating, name='create_rating'),
     path('show/', show_rating_form, name='show_rating_form'),
