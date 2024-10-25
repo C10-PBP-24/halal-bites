@@ -4,5 +4,5 @@ from food.models import Food
 # Create your models here.
 class Resto(models.Model):
     nama = models.CharField(max_length=30)
-    makanan = models.CharField(max_length=100)
+    makanan = models.ForeignKey(Food, on_delete=models.CASCADE)
     lokasi = models.CharField(max_length=30)
