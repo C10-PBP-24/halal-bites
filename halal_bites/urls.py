@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rating.views import create_rating, show_rating_form
+from authentication.views import register, user_login
+from main.views import show_main
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +26,7 @@ urlpatterns = [
     path('menu', include('food.urls')),
     path('rate/<int:food_id>/', create_rating, name='create_rating'),
     path('show/', show_rating_form, name='show_rating_form'),
+    path('register/', register, name='register'),
+    path('login/', user_login, name='login'),
+    path('home/', show_main, name='home'),  # Add the URL pattern for 'home'
 ]

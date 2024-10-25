@@ -1,10 +1,12 @@
 from django.db import models
-from halal_bites import Food, Resto, Forum
+from food.models import Food
+from resto.models import Resto
+from rating.models import Rating
 
 class Tracker(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE)
     restaurant = models.ForeignKey(Resto, on_delete=models.CASCADE)
-    rating = models.ForeignKey(Forum, on_delete=models.CASCADE)
+    rating = models.ForeignKey(Rating, on_delete=models.CASCADE)
     order_at = models.DateTimeField() 
 
     def __str__(self):
