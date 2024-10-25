@@ -306,7 +306,11 @@
       "name": "PISANG KRISPI",
       "price": 15971,
       "promo": "Cashback 20%",
+<<<<<<< HEAD
+      "image": ""
+=======
       "image": "https://puchong.co/uploads/default/original/1X/c7b81d11821ba8fe7d50f4610a3ff23d620ddff9.jpeg"
+>>>>>>> 8dc21f9812e8b87f1afe5749163fba3db808d2ae
     }
   },
   {
@@ -1025,8 +1029,12 @@
     "fields": {
       "name": "RISOLES",
       "price": 99900,
+<<<<<<< HEAD
+      "promo": "Cashback 20%"
+=======
       "promo": "Cashback 20%",
       "image": "https://th.bing.com/th/id/R.926866c11a94c8fa137cded5c226dc87?rik=nR1e74JUdZjxuQ&pid=ImgRaw&r=0"
+>>>>>>> 8dc21f9812e8b87f1afe5749163fba3db808d2ae
     }
   }
 ]
