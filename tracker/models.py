@@ -13,4 +13,4 @@ class Tracker(models.Model):
     order_at = models.DateTimeField() 
 
     def __str__(self):
-        return f"{self.food.name} at {self.restaurant.name} - Rated {self.rating.score} by {self.user.username}"
+        return f"{self.food.name} at {self.restaurant.nama} - Rated {self.rating.rating} by {self.user.username}"
