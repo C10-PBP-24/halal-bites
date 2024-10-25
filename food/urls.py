@@ -10,4 +10,5 @@ urlpatterns = [
     path('get_food/<int:id>/', get_food_by_id, name='get_food_by_id'),
     path('add_food/', add_food, name='add_food'),
     path('filter_food/', filter_food, name='filter_food')
+    
 ]
