@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'resto',
     'rating',
     'forum',
+    'tracker'
 ]
 
 MIDDLEWARE = [
