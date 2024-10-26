@@ -3,8 +3,8 @@
     "pk": 1,
     "model": "resto.resto",
     "fields": {
-      "nama": "B’VEGIEZ, CUPUKEIK",
-      "makanan": "BOLU KEJU, BROWNIES, BOLNIZ, BROLEN, PIE : DURIAN, KEJU, SUSU, NASTAR,\n  KASTANGEL, SEMPRIT, SAGU KEJU, TRIPLE CHOCOLATE CAKE, BOLU PEUYEUM, BANANA\n  BREAD",
+      "nama": "B'VEGIEZ, CUPUKEIK",
+      "makanan": 1,
       "lokasi": "Dago"
     }
   },
@@ -13,7 +13,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BAWANG MANIAK",
-      "makanan": "BAWANG GORENG RASA ORIGINAL DAN\n  PEDAS",
+      "makanan": 2,
       "lokasi": "Cibaduyut"
     }
   },
@@ -22,7 +22,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SNOW MOONCAKE, ONI BOLLI",
-      "makanan": "SNOW MOONCAKE",
+      "makanan": 3,
       "lokasi": "Lembang"
     }
   },
@@ -31,7 +31,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CAHAYA MAS",
-      "makanan": "MINYAK GORENG",
+      "makanan": 4,
       "lokasi": "Dago"
     }
   },
@@ -39,8 +39,8 @@
     "pk": 5,
     "model": "resto.resto",
     "fields": {
-      "nama": "GYWNNE’C BAKERY",
-      "makanan": "BOLU, KUE KERING",
+      "nama": "GYWNNE'C BAKERY",
+      "makanan": 5,
       "lokasi": "Cihampelas"
     }
   },
@@ -49,7 +49,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "MURNI",
-      "makanan": "CINCAU HITAM",
+      "makanan": 6,
       "lokasi": "Lembang"
     }
   },
@@ -57,8 +57,8 @@
     "pk": 7,
     "model": "resto.resto",
     "fields": {
-      "nama": "DING’S BATAGOR",
-      "makanan": "BASO TAHU GORENG DAN SIOMAY",
+      "nama": "DING'S BATAGOR",
+      "makanan": 7,
       "lokasi": "Cibaduyut"
     }
   },
@@ -67,7 +67,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CUMPIAH",
-      "makanan": "SUMPIA ISI, SUMPIA RASA",
+      "makanan": 8,
       "lokasi": "Setiabudi"
     }
   },
@@ -76,7 +76,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KACANG BAWANG PASKO",
-      "makanan": "KACANG GORENG",
+      "makanan": 9,
       "lokasi": "Cihampelas"
     }
   },
@@ -84,8 +84,8 @@
     "pk": 10,
     "model": "resto.resto",
     "fields": {
-      "nama": "D’JAKHAZ",
-      "makanan": "BATAGOR KERING RASA",
+      "nama": "D'JAKHAZ",
+      "makanan": 10,
       "lokasi": "Dago"
     }
   },
@@ -94,7 +94,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "H@I BILIK",
-      "makanan": "KERIPIK",
+      "makanan": 11,
       "lokasi": "Dago"
     }
   },
@@ -103,7 +103,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "TRAPESIUM",
-      "makanan": "KUE SEMPRONG, KUE JEPIT MANIS, SIMPING UDANG",
+      "makanan": 12,
       "lokasi": "Cihampelas"
     }
   },
@@ -112,7 +112,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SAWARGI",
-      "makanan": "ROTI TAWAR BAKAR/KUKUS",
+      "makanan": 13,
       "lokasi": "Braga"
     }
   },
@@ -121,7 +121,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "NYAI",
-      "makanan": "BATAGOR, PEMPEK, LUMPIA, OTAK – OTAK",
+      "makanan": 14,
       "lokasi": "Dago"
     }
   },
@@ -130,7 +130,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SEDAP RASA",
-      "makanan": "CHISTIK BAWANG, KACANG BAWANG",
+      "makanan": 15,
       "lokasi": "Braga"
     }
   },
@@ -139,7 +139,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "LASTRO",
-      "makanan": "FROZEN BARBEQUE",
+      "makanan": 16,
       "lokasi": "Lembang"
     }
   },
@@ -148,7 +148,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "LATUNA",
-      "makanan": "OSENG TUNA",
+      "makanan": 17,
       "lokasi": "Cihampelas"
     }
   },
@@ -157,7 +157,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "PEMPEK EMAK 729",
-      "makanan": "PEMPEK",
+      "makanan": 18,
       "lokasi": "Setiabudi"
     }
   },
@@ -166,7 +166,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "RADJA",
-      "makanan": "PEMPEK",
+      "makanan": 19,
       "lokasi": "Cihampelas"
     }
   },
@@ -175,7 +175,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SARI TEMPE",
-      "makanan": "TEMPE",
+      "makanan": 20,
       "lokasi": "Dago"
     }
   },
@@ -184,7 +184,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ADIN COMRING",
-      "makanan": "COMRING (RASA : ORIGINAL, PEDAS), KERIPIK SINGKONG, SISTIK SINGKONG",
+      "makanan": 21,
       "lokasi": "Braga"
     }
   },
@@ -193,7 +193,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "APRIL",
-      "makanan": "AMDK DEMINERAL",
+      "makanan": 22,
       "lokasi": "Dago"
     }
   },
@@ -202,7 +202,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "MANG EDI TEA",
-      "makanan": "RUJAK ASINAN",
+      "makanan": 23,
       "lokasi": "Cihampelas"
     }
   },
@@ -211,7 +211,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BUNDA",
-      "makanan": "ABON IKAN, BANDENG ISI, OTAK-OTAK, BANDENG PRESTO, NUGGET IKAN",
+      "makanan": 24,
       "lokasi": "Setiabudi"
     }
   },
@@ -220,7 +220,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KULIA 17, KURING 17",
-      "makanan": "KERIPIK, KUE BAWANG",
+      "makanan": 25,
       "lokasi": "Lembang"
     }
   },
@@ -229,7 +229,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BATAGOUS",
-      "makanan": "KERIPIK, SALE PISANG",
+      "makanan": 26,
       "lokasi": "Cibaduyut"
     }
   },
@@ -238,7 +238,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KING RIPIK",
-      "makanan": "KERIPIK",
+      "makanan": 27,
       "lokasi": "Lembang"
     }
   },
@@ -247,7 +247,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "MA ENOK",
-      "makanan": "ALIAGREM, PISANG KRISPI, ULEN KRISPI, SURABI UBI UNGU, BOLU, PUDING, AWUG",
+      "makanan": 28,
       "lokasi": "Lembang"
     }
   },
@@ -256,7 +256,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KOKAH",
-      "makanan": "KUE KERING",
+      "makanan": 29,
       "lokasi": "Dago"
     }
   },
@@ -265,7 +265,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "GALS",
-      "makanan": "ALMOND CRISPY, BOLU, KUE KERING, TIRAMISU CAKE",
+      "makanan": 30,
       "lokasi": "Lembang"
     }
   },
@@ -273,8 +273,8 @@
     "pk": 31,
     "model": "resto.resto",
     "fields": {
-      "nama": "SHA’E COOKIES",
-      "makanan": "SHA’E BOLSUS, SHA’E BOLSUS GALAXI, BROWNIES LUMER",
+      "nama": "SHA'E COOKIES",
+      "makanan": 31,
       "lokasi": "Braga"
     }
   },
@@ -283,7 +283,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SAHE",
-      "makanan": "JAHE INSTAN, BANDREK, BAJIGUR, JAHE, MERAH INSTAN",
+      "makanan": 32,
       "lokasi": "Setiabudi"
     }
   },
@@ -292,7 +292,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "GARIS KUNING TEPUNG INDONESIA",
-      "makanan": "TEPUNG PISANG",
+      "makanan": 33,
       "lokasi": "Dago"
     }
   },
@@ -301,7 +301,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "RENDANG NI ELVI",
-      "makanan": "RENDANG DAGING, RENDANG AYAM, RENDANG ATI, RENDANG PARU, DENDENG BALADO",
+      "makanan": 34,
       "lokasi": "Cihampelas"
     }
   },
@@ -310,7 +310,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CALICO",
-      "makanan": "RISOLES, ROTI, CAKE, BROWNIES, MAKRONI \n  SCHOTEL, LASAGNA, KUE SUS, KUE KERING",
+      "makanan": 35,
       "lokasi": "Lembang"
     }
   },
@@ -319,7 +319,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "AUGIE",
-      "makanan": "KERING KENTANG, KERIPIK KENTANG, \n  SAMBEL TERI KACANG",
+      "makanan": 36,
       "lokasi": "Braga"
     }
   },
@@ -328,7 +328,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "JAVA OMBEN",
-      "makanan": "KUNYIT ASAM INSTAN, JAHE INSTAN, BERAS KENCUR INSTAN, UBI UNGU INSTAN",
+      "makanan": 37,
       "lokasi": "Dago"
     }
   },
@@ -337,7 +337,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SUENDA MOUNTAIN",
-      "makanan": "KOPI",
+      "makanan": 38,
       "lokasi": "Setiabudi"
     }
   },
@@ -346,7 +346,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "TAYO",
-      "makanan": "TAHU BASO ISI AYAM UDANG, TAHU BASO ISI SAPI, CILOK KRISPI MOZARELA, AYAM\n  TANPA TULANG",
+      "makanan": 39,
       "lokasi": "Setiabudi"
     }
   },
@@ -355,7 +355,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BI EPOY DAN GANIS",
-      "makanan": "KREMES, KERING TEMPE",
+      "makanan": 40,
       "lokasi": "Braga"
     }
   },
@@ -364,7 +364,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "PEMPEK BU MAYA",
-      "makanan": "PEMPEK KAPAL SELAM, PEMPEK LENJER, PEMPEK ADAAN",
+      "makanan": 41,
       "lokasi": "Cihampelas"
     }
   },
@@ -373,7 +373,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "RIESTAFOOD",
-      "makanan": "NUGET AYAM, NUGET SAYUR, AYAM LAPIS KEJU",
+      "makanan": 42,
       "lokasi": "Dago"
     }
   },
@@ -382,7 +382,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SUPER",
-      "makanan": "GABUS KEJU, SUMPIA",
+      "makanan": 43,
       "lokasi": "Lembang"
     }
   },
@@ -390,8 +390,8 @@
     "pk": 44,
     "model": "resto.resto",
     "fields": {
-      "nama": "TWIN GILR’S",
-      "makanan": "PROLL TAPE, BOLU KUKUS",
+      "nama": "TWIN GILR'S",
+      "makanan": 44,
       "lokasi": "Lembang"
     }
   },
@@ -400,7 +400,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ZUHAUSE COFFEE",
-      "makanan": "KOPI",
+      "makanan": 45,
       "lokasi": "Cihampelas"
     }
   },
@@ -409,7 +409,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CASSAVA BROWNIES",
-      "makanan": "BROWNIES",
+      "makanan": 46,
       "lokasi": "Lembang"
     }
   },
@@ -418,7 +418,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "MOKIHIMA 15",
-      "makanan": "MUSHROOM OAT COOKIES",
+      "makanan": 47,
       "lokasi": "Setiabudi"
     }
   },
@@ -427,7 +427,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CUANGKIEU BANDUNG",
-      "makanan": "CUANKIE",
+      "makanan": 48,
       "lokasi": "Cibaduyut"
     }
   },
@@ -436,7 +436,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SUMPIA IBU RUM",
-      "makanan": "SUMPIA ORIGINAL, SUMPIA BALADO, SUMPIA PEDAS",
+      "makanan": 49,
       "lokasi": "Dago"
     }
   },
@@ -445,7 +445,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KADATUAN",
-      "makanan": "KOPI BUBUK ARABICA, KOPI BUBUK ROBUSTA",
+      "makanan": 50,
       "lokasi": "Cihampelas"
     }
   },
@@ -453,8 +453,8 @@
     "pk": 51,
     "model": "resto.resto",
     "fields": {
-      "nama": "DHILAH’S",
-      "makanan": "KUE KERING, KERIPIK",
+      "nama": "DHILAH'S",
+      "makanan": 51,
       "lokasi": "Lembang"
     }
   },
@@ -463,7 +463,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "MAWAR BODAS",
-      "makanan": "KERIPIK PISANG, SALE PISANG, SUMPIA",
+      "makanan": 52,
       "lokasi": "Lembang"
     }
   },
@@ -471,8 +471,8 @@
     "pk": 53,
     "model": "resto.resto",
     "fields": {
-      "nama": "NAS’S",
-      "makanan": "MINUMAN TEMULAWAK, MINUMAN TEH, MINUMAN TEH TARIK",
+      "nama": "NAS'S",
+      "makanan": 53,
       "lokasi": "Braga"
     }
   },
@@ -481,7 +481,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ADILABIS",
-      "makanan": "CHEESE STICK, KACANG UMPET",
+      "makanan": 54,
       "lokasi": "Lembang"
     }
   },
@@ -490,7 +490,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "TASTY",
-      "makanan": "BAWANG GORENG",
+      "makanan": 55,
       "lokasi": "Cibaduyut"
     }
   },
@@ -499,7 +499,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ANISHA",
-      "makanan": "KUE KERING, BROWNIES, CAKE",
+      "makanan": 56,
       "lokasi": "Setiabudi"
     }
   },
@@ -508,7 +508,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BELIA",
-      "makanan": "CAKE, BROWNIES, BOLU",
+      "makanan": 57,
       "lokasi": "Cihampelas"
     }
   },
@@ -517,7 +517,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BU DARJAT",
-      "makanan": "PEPES IKAN MAS DURI LUNAK",
+      "makanan": 58,
       "lokasi": "Braga"
     }
   },
@@ -526,7 +526,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KIRIHUCI",
-      "makanan": "KIRIHUCI RASA ORIGINAL, KIRIHUCI RASA PEDAS",
+      "makanan": 59,
       "lokasi": "Lembang"
     }
   },
@@ -534,8 +534,8 @@
     "pk": 60,
     "model": "resto.resto",
     "fields": {
-      "nama": "LIN’S BROWNIES",
-      "makanan": "BROWNIES",
+      "nama": "LIN'S BROWNIES",
+      "makanan": 60,
       "lokasi": "Cibaduyut"
     }
   },
@@ -544,7 +544,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CEUYAH",
-      "makanan": "MAKARONI",
+      "makanan": 61,
       "lokasi": "Dago"
     }
   },
@@ -553,7 +553,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CIRDUD",
-      "makanan": "OTAK-OTAK BUMBU RUJAK, CIRENG BUMBU RUJAK RASA ORIGINAL, CIRENG BUMBU\n  RUJAK RASA REBON, PEMPEK SUTRA, TEKWAN",
+      "makanan": 62,
       "lokasi": "Cibaduyut"
     }
   },
@@ -562,7 +562,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "DEVINS CAKE",
-      "makanan": "CAKE, BOLU, BROWNIES, KUE KERING",
+      "makanan": 63,
       "lokasi": "Braga"
     }
   },
@@ -571,7 +571,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ASMARA SNACK",
-      "makanan": "KUE KERING, BROWNIES, BOLU",
+      "makanan": 64,
       "lokasi": "Setiabudi"
     }
   },
@@ -580,7 +580,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "HIDUP BARU",
-      "makanan": "ROTI TAWAR, ROTI BAGELEN",
+      "makanan": 65,
       "lokasi": "Braga"
     }
   },
@@ -589,7 +589,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "HOMEY",
-      "makanan": "YOGHURT, MILK TEA, SNOWHITE DESSERT",
+      "makanan": 66,
       "lokasi": "Cihampelas"
     }
   },
@@ -598,7 +598,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "JUMANJI",
-      "makanan": "FRUITY JELLY RASA LECI, FRUITY JELLY RASA STRAWBERRY, FRUITY JELLY RASA\n  MOCCA, FRUITY JELLY RASA MELON",
+      "makanan": 67,
       "lokasi": "Setiabudi"
     }
   },
@@ -606,8 +606,8 @@
     "pk": 68,
     "model": "resto.resto",
     "fields": {
-      "nama": "DE’HAY",
-      "makanan": "KUE KERING, CAKE",
+      "nama": "DE'HAY",
+      "makanan": 68,
       "lokasi": "Cibaduyut"
     }
   },
@@ -616,7 +616,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "JUICE THROUGH EAT TOO",
-      "makanan": "APPLE PINEAPPLE LEMON, CARROT ORANGE PEAR LEMON, BEETROOT CARROT  APPLE LEMON, BOKCHOI APPLE PINEAPPLE LEMON,\n  ROMAINE RED DRAGON CUCUMBER APPLE PINRAPPLE LEMON",
+      "makanan": 69,
       "lokasi": "Cihampelas"
     }
   },
@@ -625,7 +625,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BISOU PREMIUM COOKIES",
-      "makanan": "KUE KERING",
+      "makanan": 70,
       "lokasi": "Setiabudi"
     }
   },
@@ -634,7 +634,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "DRINK ME",
-      "makanan": "MINUMAN SERBUK",
+      "makanan": 71,
       "lokasi": "Cihampelas"
     }
   },
@@ -643,7 +643,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "AJ",
-      "makanan": "PISANG KEJU, PISANG AROMA, PISANG COKELAT, PISANG SELIMUT KEJU",
+      "makanan": 72,
       "lokasi": "Dago"
     }
   },
@@ -652,7 +652,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "BUNGBU",
-      "makanan": "SAMBAL LADA HITAM, SAMBAL IJO, SAMBAL GORENG KENTANG, SAMBAL GORENG TEMPE",
+      "makanan": 73,
       "lokasi": "Cibaduyut"
     }
   },
@@ -661,7 +661,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ROCKET SEBLAK",
-      "makanan": "ROCKET SEBLAK, GAGAL PEDAS, PEDAS MINIMAL, PEDAS MAKSIMAL",
+      "makanan": 74,
       "lokasi": "Braga"
     }
   },
@@ -670,7 +670,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KABITA BAWANG GORENG",
-      "makanan": "BAWANG GORENG (DENGAN TEPUNG), BAWANG GORENG MURNI",
+      "makanan": 75,
       "lokasi": "Lembang"
     }
   },
@@ -679,7 +679,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "DAWALAKU",
-      "makanan": "SAMBAL BAWANG, SAMBAL CABE IJO, SAMBAL TERASI, SAMBAL TERI, SAMBAL CUMI",
+      "makanan": 76,
       "lokasi": "Braga"
     }
   },
@@ -688,7 +688,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "CIDATOP",
-      "makanan": "MAKARONI GORENG RASA : SOTO LEVEL 1-3, KARE LEVEL 1-3, RENDANG LEVEL 1-3\n  DAN BAWANG LEVEL 1-3",
+      "makanan": 77,
       "lokasi": "Cihampelas"
     }
   },
@@ -696,8 +696,8 @@
     "pk": 78,
     "model": "resto.resto",
     "fields": {
-      "nama": "TIN’S KUE",
-      "makanan": "KUE KERING, BROWNIES",
+      "nama": "TIN'S KUE",
+      "makanan": 78,
       "lokasi": "Braga"
     }
   },
@@ -706,7 +706,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "TARO CHIPS HM",
-      "makanan": "KERIPIK TALAS",
+      "makanan": 79,
       "lokasi": "Cibaduyut"
     }
   },
@@ -715,7 +715,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "KATLA",
-      "makanan": "RED GINGER, JUS BIOLA, MADU MERAH PUTIH, MADU LEMON, MADU KRISTAL",
+      "makanan": 80,
       "lokasi": "Braga"
     }
   },
@@ -724,7 +724,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ZAYN",
-      "makanan": "TEPUNG KACANG HIJAU, TEPUNG KACANG KEDELAI, TEPUNG BERAS MERAH",
+      "makanan": 81,
       "lokasi": "Setiabudi"
     }
   },
@@ -733,7 +733,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "PISAMALA",
-      "makanan": "PISANG GORENG ACEH, MOLEN PISANG ACEH, SARIKAYA PISANG ACEH",
+      "makanan": 82,
       "lokasi": "Dago"
     }
   },
@@ -742,7 +742,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "PUN BOJO",
-      "makanan": "ULEN, CIRENG BUMBU",
+      "makanan": 83,
       "lokasi": "Cibaduyut"
     }
   },
@@ -751,7 +751,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "SVJ",
-      "makanan": "MACARONI SCHOTEL, MACARONI BOLOGNASE, BAKED POTATO, BAKED POTATO,\n  LASAGNA, SPICY MAC MOZA",
+      "makanan": 84,
       "lokasi": "Braga"
     }
   },
@@ -760,7 +760,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ZHAZAN",
-      "makanan": "PIE PISANG, COKLAT KURMA, BOLU KUKUS, KETAN HITAM, BOLU PISANG, BOLU\n  PEUYEUM",
+      "makanan": 85,
       "lokasi": "Dago"
     }
   },
@@ -769,7 +769,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "OOOOO ENAAAK!!!!",
-      "makanan": "TENTENG EMPING, SALE PISANG GORENG",
+      "makanan": 86,
       "lokasi": "Braga"
     }
   },
@@ -778,7 +778,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "QAISYARA",
-      "makanan": "EGG ROLL ORIGINAL, EGG ROLL WIJEN",
+      "makanan": 87,
       "lokasi": "Cihampelas"
     }
   },
@@ -787,7 +787,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "GRIYA ROTI UNYIL",
-      "makanan": "ROTI",
+      "makanan": 88,
       "lokasi": "Lembang"
     }
   },
@@ -796,7 +796,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ADESHA",
-      "makanan": "RENDANG SUIR DAGING SAPI, RENDANG DAGING SAPI, RENDANG PARU SAPI, RENDANG\n  HATI SAPI, RENDANG DAGING AYAM, RENDANG TELUR",
+      "makanan": 89,
       "lokasi": "Braga"
     }
   },
@@ -805,7 +805,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "AMBUING",
-      "makanan": "BAGELEN ORIGINAL, BAGELEN KEJU, ROTI MANIS KEJU, ROTI MANIS COKLAT, ROTI\n  MANIS SELAI STRAWBERRY, ROTI MANIS BUTTER CREAM, ROTI MANIS PISANG",
+      "makanan": 90,
       "lokasi": "Cihampelas"
     }
   },
@@ -814,7 +814,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "MASKET",
-      "makanan": "ROTI COKLAT, ROTI KEJU, ROTI KELAPA, ROTI KACANG IJO, ROTI GORENG PISANG\n  COKLAT",
+      "makanan": 91,
       "lokasi": "Lembang"
     }
   },
@@ -823,7 +823,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "HALALICIOUS",
-      "makanan": "LAPIS LEGIT, BROWNIES, KUE KERING",
+      "makanan": 92,
       "lokasi": "Cibaduyut"
     }
   },
@@ -832,7 +832,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "ASY SYAUQI",
-      "makanan": "MADU",
+      "makanan": 93,
       "lokasi": "Setiabudi"
     }
   },
@@ -840,8 +840,8 @@
     "pk": 94,
     "model": "resto.resto",
     "fields": {
-      "nama": "BOGA TE’NA",
-      "makanan": "DENDENG BALADO BASAH, DENDENG BALADO KERING, SAMBAL BALADO",
+      "nama": "BOGA TE'NA",
+      "makanan": 94,
       "lokasi": "Braga"
     }
   },
@@ -850,7 +850,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "JAMUR CRISPY QIERA",
-      "makanan": "JAMUR CRISPY RASA : ORIGINAL, KEJU, JAGUNG BAKAR, BARBEQUE, BALADO,\n  PEDAS, JAGUNG MANIS, MANIS PEDAS",
+      "makanan": 95,
       "lokasi": "Lembang"
     }
   },
@@ -859,7 +859,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "AYA RASA",
-      "makanan": "CAKE, BOLU, KUE KERING",
+      "makanan": 96,
       "lokasi": "Dago"
     }
   },
@@ -868,7 +868,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "OMABA",
-      "makanan": "KUE KERING, STICK",
+      "makanan": 97,
       "lokasi": "Cibaduyut"
     }
   },
@@ -877,7 +877,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "NULLA LAC",
-      "makanan": "SUSU PASTEURISASI, YOGHURT",
+      "makanan": 98,
       "lokasi": "Dago"
     }
   },
@@ -886,7 +886,7 @@
     "model": "resto.resto",
     "fields": {
       "nama": "JAHEFIT, SODARA",
-      "makanan": "MINUMAN JAHE",
+      "makanan": 99,
       "lokasi": "Setiabudi"
     }
   },
@@ -895,4958 +895,8 @@
     "model": "resto.resto",
     "fields": {
       "nama": "TAYOCIE",
-      "makanan": "BROWNIES, BOLU, PASTRY, RISOLES",
+      "makanan": 100,
       "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 101,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BANDREK BANDOENG, BAJIGUR LEGIT, TEH ROS, NEST SECRETS, JUCE, CODE,\n  JUCOK, SWEET ME",
-      "makanan": "BANDREK, BAJIGUR, TEH BUNGA ROSELLA, JUS SARANG BURUNG, JUS BUAH\n  CEPLUKAN, MINUMAN AIR KELAPA MUDA, JUS COKLAT, LATTE, TEA FUSSION, MILK TEA",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 102,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LUFU BITES COOKIES",
-      "makanan": "ALMOND CRISPY",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 103,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FIFA - KU",
-      "makanan": "BROWNIES, KUE KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 104,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "METAFIT",
-      "makanan": "KOPI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 105,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "REANG",
-      "makanan": "SUMPIA RASA ORIGINAL & PEDAS, REMPEYEK : KACANG, UDANG, REBON,\n  BASRENG : ORIGINAL & PEDAS",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 106,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PRIMA",
-      "makanan": "KACANG BAWANG, KACANG GORENG, KACANG TELUR",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 107,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MENANTOE",
-      "makanan": "SAMBAL BAWANG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 108,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MACCERONI CRACKERS, GURILEMO’S, CRACKERS, BADRA SNACK",
-      "makanan": "MAKARONI GORENG , KERUPUK GURILEM ,MAKARONI TELOR",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 109,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TANTE BESAR",
-      "makanan": "SAMBAL BAWANG DAN SAMBAL TERI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 110,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SAMKIES STAR",
-      "makanan": "COKLAT JAR",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 111,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AYAM TURANGGA",
-      "makanan": "AYAM GORENG, AYAM BAKAR",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 112,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RAHAYU 261 BOGA",
-      "makanan": "BOLU MAWAR, BOLU RAINBOW, NASTAR, PUDING SUSU, PUDING COKLAT, DONAT TABUR\n  KACANG, DONAT COKLAT, DONAT MEISES, BOLA NUTRISARI, BROWNIES KEJU, BROWNIES\n  COKLAT, BROWNIES MEISES, KASTENGEL, SAGU, KUE KACANG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 113,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JAJANAN BARAYA",
-      "makanan": "REMPEYEK KACANG TANAH, REMPEYEK KACANG KEDELAI,REMPEYEK REBON, SISTIK\n  BAYAM ORIGINAL,SISTIK BAYAM RASA KEJU PEDAS, SISTIK BAYAM RASA SAUS\n  SAMBAL",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 114,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "WINSA",
-      "makanan": "EGG ROLL RASA : WIJEN, PISANG, UBI UNGU, UBI KUNING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 115,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "D’SATARI",
-      "makanan": "STICK SINGKONG RASA : ORIGINAL, KEJU, BALADO",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 116,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DINNIE CAKE & COOKIES",
-      "makanan": "BOLU, DONAT, BROWNIES, KUE BASAH, KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 117,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "QMI",
-      "makanan": "KERIPIK, KACANG GORENG, SISTIK",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 118,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BAKE UN BAKE DAPUR EII",
-      "makanan": "SOES, BROWNIES, CAKE, PIE, LAPIS LEGIT, LAPIS SURABAYA",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 119,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAZOMBA 122",
-      "makanan": "ROTI, BOLU",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 120,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MARTABAK MARRAKESH",
-      "makanan": "MARTABAK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 121,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BORALIA",
-      "makanan": "BOLLEN PISANG, BOLLEN PISANG KEJU, CHEESE ROLL, CHEESE ROLL COKELAT,\n  PISANG ROLL, PISANG ROLL COKELAT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 122,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RENDANG MA UWO",
-      "makanan": "RENDANG, SAMBAL ATI, DENDENG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 123,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KASTA RASA",
-      "makanan": "MAKARONI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 124,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NINALUS63",
-      "makanan": "KUE KERING, KUE BASAH, PUDING, BROWNIES",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 125,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NAY’S",
-      "makanan": "BOLU, KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 126,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NUR HOESO",
-      "makanan": "TAHU BASO, BOLU, KUE KERING, KUE BASAH, KETAN BUMBU",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 127,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GREEN BEAN",
-      "makanan": "KACANG HIJAU GORENG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 128,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DELLA",
-      "makanan": "ROTI, BOLU, BROWNIES, MUFFIN",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 129,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DS YOGHURTKU",
-      "makanan": "YOGHURT RASA LECI, STRAWBERRY, BLUEBERRY, MANGGA, ANGGUR, MELON, SIRSAK,\n  DURIAN, VANILLA, MOCCA, BUBBLE GUM",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 130,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "IBUNDA",
-      "makanan": "KERIPIK, LUMPIA GULUNG, KUE BAWANG, SISTIK, COMRING, SALE PISANG GORENG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 131,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SUSHI HOUSE",
-      "makanan": "SUSHI CHICKEN CRISPY ROLL, SUSHI CHICKEN ROLL, SUSHI SHRIMP ROLL,\n  SALMONIGIRI, TUNA LOVER",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 132,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ENA POTATO CHIPS",
-      "makanan": "KERIPIK KENTANG RASA : BALADO, BALADO PEDAS, BBQ, AYAM BAWANG, RUMPUT\n  LAUT, KEJU ASIN, KEJU MANIS",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 133,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JENONK 17",
-      "makanan": "PUFF PASTRY, BOLU PISANG, BROWNIES, CILOK",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 134,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LANCAR",
-      "makanan": "PIA, SOPIA, NASTAR, BROWNIES BAKAR",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 135,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MEKARSARI",
-      "makanan": "BAWANG GORENG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 136,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "WAROENG SNOEPEN",
-      "makanan": "CAKE, CROISSANT, ÉCLAIR, PASTA, MUFFIN, KUE KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 137,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LUSILA 88",
-      "makanan": "PEMPEK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 138,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PIKTOR",
-      "makanan": "KERIPIK TORTILLA, TORTILLA RASA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 139,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MABIKA ENTEN",
-      "makanan": "MABIKA ENTEN ORIGINAL, MABIKA ENTEN PEDAS, MABIKAN ENTEN SUPER PEDAS",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 140,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MUMUN",
-      "makanan": "SAMBAL JAMBAL, SAMBAL TERI, SAMBAL CUMI, SAMBAL JENGKOL, SAMBAL PEUTEUY",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 141,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RAINBOW  DONUT",
-      "makanan": "DONAT",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 142,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RE-JUICE",
-      "makanan": "JUS, AIR KELAPA MUDA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 143,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ERESA BREAD",
-      "makanan": "ROTI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 144,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ARMALA COOKIES",
-      "makanan": "KUE KERING, COOKIES",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 145,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HER’S MOM",
-      "makanan": "BAWANG GORENG",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 146,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SAMBAL INOHONG",
-      "makanan": "SAMBAL : TERI MERAH, TERI IJO, BAJAK, BALADO MERAH, BALADO IJO",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 147,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPUR SALDAN",
-      "makanan": "BROWNIES MOCAF, KUE KERING MOCAF, KUE BASAH, PUDING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 148,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "VERAMA",
-      "makanan": "KUE PUKIS, KUE KERING, KUE BASAH",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 149,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ABECES COOKIES",
-      "makanan": "KUE KERING, PASTRY, CAKE",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 150,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "IND`RISOL",
-      "makanan": "RISOLES, PASTEL, BITTER BALLEN, PROLL TAPE",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 151,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FLAVIOUS",
-      "makanan": "GREEN TEA, THAI TEA, LIANG TEA",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 152,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TIA SOENARDI PATISSERIE",
-      "makanan": "RISOL SMOKE BEEF REGULER, RISOL SMOKED BEEF MOZARELLA, RISOL CHICKEN\n  ROUGUT MOZARELLA, RISOL SOSIS AYAM MOZARELLA, RISOL SOSIS SAPI MOZARELLA",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 153,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "UNI NOVIDA",
-      "makanan": "RENDANG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 154,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SISTIKKU CRISPY, BANDUNG SNACK",
-      "makanan": "SISTIK, REMPEYEK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 155,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BUSIN FOOD",
-      "makanan": "RESOUL RAGAUT SAYUR, RESOUL RAGOUT AYAM, RESOUL RAGAUT SAYUR TUNA, RESOUL\n  SMOKED BEEF",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 156,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BYWINZ BEER PLETOK",
-      "makanan": "BEER PLETOK CAIR, BEER PLETOK SERBUK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 157,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAUNN",
-      "makanan": "BUMBU MASAK, BAWANG GORENG, SAMBEL",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 158,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHAZ CHUZ",
-      "makanan": "CHEESE STICK, KUE TAMBANG, COOKIES",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 159,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PAPANAYA",
-      "makanan": "KERIPIK PISANG RASA : ORIGINAL, COKLAT, GREEN TEA, JAGUNG MANIS, BALADO,\n  BALADO IJO, KEJU ASIN, BARBEQUE",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 160,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HAYUKA",
-      "makanan": "ABON IKAN",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 161,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DINAR",
-      "makanan": "KERIPIK PISANG RASA ASIN, KERIPIK PISANG RASA MANIS, KERIPIK SINGKONG\n  RASA ASIN, KERIPIK SINGKONG RASA MANIS PEDAS",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 162,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAICA",
-      "makanan": "TEA RASA BUBBLE GUM",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 163,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NIMUT’S",
-      "makanan": "ABON SAPI RASA ORIGINAL, ABON SAPI RASA PEDAS",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 164,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PITALOKA, GLUCOBERRY, GLUCOCOA",
-      "makanan": "MINUMAN SERBUK, KUNIR ASEM, BERAS KENCUR, TEH ROSELLA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 165,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PLOY",
-      "makanan": "BAWANG GORENG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 166,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GANDES",
-      "makanan": "SISTIK BAWANG, CHEESE STICK",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 167,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ROTI MARYAM KING SULTAN",
-      "makanan": "ROTI MARYAM, DONAT PASTRY, COOKIES, BISCOLATO",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 168,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HASANAH",
-      "makanan": "TELUR ASIN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 169,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MANDALA",
-      "makanan": "JELLY",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 170,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ALYSA COOKIES",
-      "makanan": "EGGROLL",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 171,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KATUMBIRI",
-      "makanan": "CILOK, CIRENG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 172,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SOERABI GEULIS",
-      "makanan": "SOERABI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 173,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BADA",
-      "makanan": "SOSIS SAPI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 174,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PONDOK DAUN",
-      "makanan": "KASRENG, KENTANG EBI",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 175,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MEY",
-      "makanan": "BATAGOR, OTAK-OTAK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 176,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BADUY FOREST",
-      "makanan": "MADU HUTAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 177,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAUWEE",
-      "makanan": "ABON AYAM",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 178,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MUTIARA RASA",
-      "makanan": "KACANG MEDE",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 179,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BANG ANGSA",
-      "makanan": "BATAGOR PANGSIT ORIGINAL DAN PEDAS",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 180,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "YATI’S KITCHEN",
-      "makanan": "LENJER, KAPAL SELAM, ADAAN, KULIT, KERITING, TEKWAN, MODEL",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 181,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ZAKY’S",
-      "makanan": "KERIPIK SINGKONG, KERING REBON, MUSTOPA, KERIPIK KENTANG, SISTIK, CHEESE\n  STICK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 182,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ADE’S MADE",
-      "makanan": "KERIPIK BAYAM",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 183,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ANO INO",
-      "makanan": "CAKE, CARABIKANG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 184,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BKKN",
-      "makanan": "BOLU ORIGINAL, BOLU KUKUS, BOLU KETAN, BOLU PEUYEUM, BOLU KEJU, BOLU\n  MEISES, BOLU GULA MERAH",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 185,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MEE MOOIZZA",
-      "makanan": "MIE BASAH",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 186,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TERBANG Q-TA 69",
-      "makanan": "SAMBEL TERI BAWANG, ABON IKAN, BASO IKAN, SISTIK IKAN, BATAGOR IKAN",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 187,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SUMPIKER MANKDUT",
-      "makanan": "SUMPIA, ISI : UDANG ORIGINAL, UDANG PEDAS, ABON SAPI, KEJU, COKLAT",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 188,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TE-YU",
-      "makanan": "ROTI MANIS, ISI : (COKLAT, STRAWBERRY, KEJU), DONAT TOPPING COKLAT, MOLEN\n  PISANG KEJU",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 189,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MOOIZZA YOGHURT",
-      "makanan": "YOGHURT RASA :LECI, MELON, MANGGA, JERUK, NANAS, DURIAN, APEL, SIRSAK,\n  BLUEBERRY, STRAWBERRY, ANGGUR",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 190,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DINI PASTRY & DESSERT",
-      "makanan": "CUPCAKES, CAKE, KUE KERING, PUDING, ROTI, DONAT",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 191,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NY. HIONG",
-      "makanan": "COOKIES, KUE KERING, BROWNIES, CAKE",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 192,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "J N J",
-      "makanan": "KUE KERING  : SAGU KEJU SPESIAL,\n  NASTAR, KASTENGEL, LIDAH BUAYA, SEMPRIT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 193,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHEE-BHOT",
-      "makanan": "CUANKI INSTAN RASA : (ORIGINAL, KARI AYAM, PEDAS RAMEN, BASO KEJU),\n  SEBLAK AYAM PEDAS ORIGINAL, MIE BAKWAN RASA : (BLACKPAPPER, TOM YAM)",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 194,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ULENAK",
-      "makanan": "ULENAK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 195,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PAIS WALAHAR H. MOEL",
-      "makanan": "PEPES IKAN PATIN,  IKAN MAS, IKAN\n  KAKAP, IKAN BAWAL LAUT",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 196,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KERKEZZ",
-      "makanan": "BAWANG GORENG",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 197,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CAN’D AKOE",
-      "makanan": "LUMPIA KRISPY RASA : ASIN, PEDAS, ORIGINAL",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 198,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHIHUI",
-      "makanan": "KERIPIK UBI RASA : KEJU, JAGUNG BAKAR, BBQ, PEDAS, COKLAT MANIS, KENCUR\n  PEDAS",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 199,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DHISA HOUSE",
-      "makanan": "KUE KEJU, KUE BLACK IN COOKIES",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 200,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ES TELLER LOMBOK",
-      "makanan": "ES CAMPUR, ES JERUK, ES KELAPA MUDA, ES KELAPA APUKAT, ES KELAPA NANGKA",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 201,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FMD",
-      "makanan": "TELUR ASIN",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 202,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KOPI KHAS",
-      "makanan": "KOPI BUBUK INSTAN",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 203,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "IBU NUR",
-      "makanan": "PEMPEK LENJER, PEMPEK KAPAL SELAM",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 204,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AL MA’WA",
-      "makanan": "MADU MURNI KALIANDRA, MADU MURNI ODENG, MADU MURNI KLANCENG, MADU MURNI\n  PAHIT, MADU MURNI LENGKENG, MADU MURNI CENGKEH, NIPIS MADU, KOPI MADU, SUSU\n  JAHE MADU",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 205,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RIZKY SNACK",
-      "makanan": "KERIPIK TEMPE, KERIPIK ONCOM",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 206,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SAMBAL MAMAYU",
-      "makanan": "SAMBAL GOANG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 207,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "VITA COOKIES",
-      "makanan": "NASTAR, KASTANGELS, COKLAT, FRUITY, PUTRI SALJU, CANDY COOKIES, GREEN TEA",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 208,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DOA MANDE SPESIAL RENDANG SEJAK 1962",
-      "makanan": "DENDENG DAGING SAPI, RENDANG DAGING SAPI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 209,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "LOTEK DAN RUJAK",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 210,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NAFIZ",
-      "makanan": "BANDENG ISI, PEPES IKAN  MAS,\n  PINDANG ECHO",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 211,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BUNNIES",
-      "makanan": "KUE BASAH, KUE KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 212,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MIRASA",
-      "makanan": "RISOLES AYAM, RISOLES SAYUR, RISOLES DAGING ASAP",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 213,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHIPTA",
-      "makanan": "PIE LONTAR PAPUA",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 214,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BENA",
-      "makanan": "COKLAT PRALINE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 215,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TILU JAPATI",
-      "makanan": "KACANG TELOR BOGOR",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 216,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BATAGOR RIZKY",
-      "makanan": "BATAGOR, SIOMAY",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 217,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TONG RING RANG 17",
-      "makanan": "RANGINANG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 218,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ARNIL",
-      "makanan": "KUE KERING, KUE BASAH, BROWNIES",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 219,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "‘CKO PRODUCTION",
-      "makanan": "COOKIES",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 220,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ESTRATA",
-      "makanan": "GRANOLA, TARTLETZ, DRIED FRUIT, CHIPS, COOKIES",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 221,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SAYAH",
-      "makanan": "KERIPIK SINGKONG RASA : ASIN, BALADO, ASAM MANIS, KARAMEL, COKLAT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 222,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MENIR BUBUHAN",
-      "makanan": "SEBLAK BACIMAY, SEBLAK CUANKI, SEBLAK CILOK",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 223,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BAGJA HEMAN",
-      "makanan": "BUMBU SEBLAK, BUMBU PECEL",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 224,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KEMBANG JATI",
-      "makanan": "BERAS SORGUM PLUS, BERAS SORGUM KASEPUHAN, BERAS HITAM PLUS",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 225,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "C. ANDIKA QUINKO",
-      "makanan": "SISTIK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 226,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CANAAN WARISAN",
-      "makanan": "KUE BASAH, BOLU, MARTABAK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 227,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SNACK WARISAN",
-      "makanan": "SISTIK KEJU, SISTIK BAWANG, KACANG GORENG BAWANG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 228,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAMA ATE",
-      "makanan": "BAWANG GORENG ORIGINAL, BAWANG GORENG PEDAS, BAWANG GORENG TERI, BAWANG\n  GORENG TERI PEDAS",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 229,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TEH KRISTAL ALGA MERAH",
-      "makanan": "TEH RUMPUT LAUT, WEDANG TELO",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 230,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GEL HARMONISA MY V",
-      "makanan": "MADU RUMPUT LAUT",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 231,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AMAYA",
-      "makanan": "BROWNIES KUKUS",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 232,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "UMIUU",
-      "makanan": "CEKER PEDAS, AYAM UNGKEP, NUGGET AYAM, SOSIS AYAM, SEMPOL AYAM, AYAM\n  SAMBAL, AYAM SAUS, SEBLAK CEKER, AYAM KRISPI BUMBU",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 233,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ALMEERA",
-      "makanan": "PERMEN JELLY RASA : STRAWBERRY, MELON, LECY, ANGGUR, MANGGA, JERUK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 234,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ASSASSIN",
-      "makanan": "REMPEYEK, OPAK GURILEM",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 235,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BVJ",
-      "makanan": "BROWNIES SANDWICH ICE CREAM",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 236,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SARDELLE CHILIPASTE",
-      "makanan": "SAMBEL TERI, SAMBEL ONCOM, SERUNDENG KACANG TERI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 237,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SNACK RASA Z 2",
-      "makanan": "KACANG BAWANG RASA, CHEESE STICK ABON",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 238,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LAYYALA",
-      "makanan": "KUE KERING, BOLA-BOLA SUSU",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 239,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HASNA TEA",
-      "makanan": "TEH (HIJAU, PUTIH, HITAM, SENCHA)",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 240,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ABINA",
-      "makanan": "MUSTOPA KENTANG RASA : ORIGINAL, PEDAS",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 241,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAMAH BANDUNG",
-      "makanan": "GREENBEAN COFFEE, GREEN COFFEE POWDER, ROASTED COFFEE",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 242,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TAMBULEUN",
-      "makanan": "KERIPIK BASRENG, STIK SAYURAN (BROKOLI / SAWIHIJAU / KENTANG / WORTEL)",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 243,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "D’SUNGKAI",
-      "makanan": "AYAM SUNGKAI",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 244,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FAMELIN",
-      "makanan": "BOLU UBI CILEMBU, RASA : ORGINAL, KEJU, ALMOND, COKLAT, OREO",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 245,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LC",
-      "makanan": "CILOK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 246,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JS BASO",
-      "makanan": "BASO SAPI,  ISI : CINCANG, TELUR,\n  BERANAK, POLOS",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 247,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAE’S",
-      "makanan": "BOLU, BROWNIES, PROLL TAPE, PIE",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 248,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAREN’S",
-      "makanan": "CHOC GREEN TEA BAR, CHOC COOKIES BAR, CHOC PEANUT BUTTER PRALINE, CHOC\n  STRAWBERRY PRALINE, CHOC GREEN TEA PRALINE, CHOC MINT PRALINE, CHOC GINGER\n  PRALINE, CHOC ORANGE PRALINE, CHOC COFFEE PRALINE, HOT CHOCOLATE POPS\n  CHOCOLATE, HOT CHOCOLATE POPS GREEN TEA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 249,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CIKRUK",
-      "makanan": "MAKARONI RASA : ORIGINAL, BAWANG DAUN, DAUN JERUK, BALADO",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 250,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ULIEEQUE",
-      "makanan": "BOLEN ISI, CHEESE ROLL",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 251,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ESU WENGI RARA",
-      "makanan": "REMPEYEK, MUSTOPA (KERINGKENTANG), RICANG (TERI KACANG)",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 252,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MACARENA MACARONI, KEBO KORNET",
-      "makanan": "MAKARONI, KERIPIK BOMBAY KORNET",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 253,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PADADUNG",
-      "makanan": "KERIPIK PANGSIT RASA : ORIGINAL, PEDAS, KEJU, BBQ, BALADO, PIZZA, RUMPUT\n  LAUT",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 254,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RUPANING RASA",
-      "makanan": "KERIPIK BASRENG, KERIPIK SINGKONG PEDAS",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 255,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TIWI SNACK",
-      "makanan": "KERING KENTANG (MUSTOPA)",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 256,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SUNSHINE SILKY PUDING",
-      "makanan": "PUDING RASA : (COKLAT HAZELNUT, STRAWBERRY, MELON, MANGO, PASSION FRUIT,\n  TARO, BUBLE GUM, MATCHA, OGURA, CAPPUCINO, TIRAMISU, CARAMEL, COFFEE\n  MATCHIATO, VANILLA)",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 257,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SARIBHUMI",
-      "makanan": "GREEN COFFEE BEANS",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 258,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BUNDA BANDENG PRESTO",
-      "makanan": "IKAN BANDENG  PRESTO",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 259,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NUPITE",
-      "makanan": "CHEESTICK (KEJU, KORNEDSAPI), SISTIK, STICK RASA : (UBI, SINGKONG,\n  PISANG, PENYEUM)",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 260,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "COLENAK ABI",
-      "makanan": "COLENAK",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 261,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BUNDA BANDENG PRESTO PUTRI",
-      "makanan": "KALDU BUBUK RASA IKAN BANDENG, SAOS SARI BANDENG, KECAP ASIN RASA IKAN,\n  KECAP RASA IKAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 262,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BURIAN SARI",
-      "makanan": "BOLU, BROWNIES, CAKE",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 263,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BRAGA",
-      "makanan": "SISTIK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 264,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "QUANESHA",
-      "makanan": "RENDANG DAGING SAPI",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 265,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "Q-TA 69",
-      "makanan": "ANGGRI BIRD, DORA EMON, SPONGE BOB, HELLO KITTY, PANDA, KELINCI, PENGUIN,\n  BUNGA, MOBIL, BEBEK, BERUANG, BURUNG, SMILE, PETRIK, SMILE PANJANG, HATI\n  PANJANG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 266,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ORIZ FREID CHICKEN",
-      "makanan": "AYAM GORENG TEPUNG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 267,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ALISHA HOME MADE",
-      "makanan": "BOLA-BOLA SUSU",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 268,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "COMRING ORIGINAL, COMRING PEDAS, CISTIK",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 269,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHEESECAKE N FRIEND BY ALFIRA’S KITCHEN",
-      "makanan": "CHESSECAKE, BROWNIES, TART",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 270,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CEMPAKA COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 271,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MANA RASA",
-      "makanan": "ROTI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 272,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BEBZ FOOD",
-      "makanan": "ROTI PIZZA (DOUGH PIZZA), PIZZA",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 273,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SANGRAI WANGI",
-      "makanan": "BIJI KOPI, KOPI BUBUK",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 274,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BANTALK",
-      "makanan": "SALE PISANG GORENG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 275,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "COOKIES’QU",
-      "makanan": "KUE KERING",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 276,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAYA",
-      "makanan": "LONTAR PAPUA, COKLAT PRALIN, EGG TART",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 277,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "YUMMYLK",
-      "makanan": "MINUMAN SARI ALMOND",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 278,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PURWARASA, DUA PUTRI",
-      "makanan": "DENDENG AYAM MERK PURWARASA, ABON AYAM MERK DUA PUTRI, GEPUK AYAM MERK\n  DUA PUTRI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 279,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LA FURRY",
-      "makanan": "ABON AYAM, ABON SAPI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 280,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "WARISAN MAMA",
-      "makanan": "BLACK FOREST, RED VELVET, CHEESE CAKE, TIRAMISU, OPERA, CHOCOLATE\n  TRUFFLE, TRIPLE CHOCOLATE, PINKY LADY, MOCCA NOUGAT ROLL CAKE, CHEESE ROLL\n  CAKE, CHOCO ROLL CAKE, SMOKE BEEF MOZARELA ORIGINAL, SMOKE BEEF MOZARELA\n  SPICY, CHICKEN ONCOM MOZARELA SPICY, CHICKEN RAGOUT, BEEF BLACK PAPER, TUNA\n  MAYO ORIGINAL, TUNA MAYO SPICY, CHEESE PUFF, BLACK AND WHITE CHEESE, CHOCO\n  PEARL CHEESE, NEIMAS (PALM SUIKER, MEDE, CHOCOCHIP), CHOCO BUTTON, COFFEE\n  CRISPY CHEESE, KASTENGEL, CHEESE NASTAR, CHEESE ALMOND",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 281,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ALADAPUR HAPPY",
-      "makanan": "AYAM KODOK, RENDANG DAGING SAPI, RENDANG DAGING AYAM, DENDENG SAPI\n  RAGI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 282,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ATIK COOKIES",
-      "makanan": "KUE BASAH, KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 283,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "REPVBLIK",
-      "makanan": "SIROOP KONSENTRAT JAHE MERAH",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 284,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAMONESAN",
-      "makanan": "MAKARONI SKUTEL",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 285,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAMIYO",
-      "makanan": "BROWNIES, EGGTART, CAKE, BOLU KETAN, PISANG NUGGET",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 286,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BASO TAHU ATIK",
-      "makanan": "BASO TAHU & SIOMAY",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 287,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SEKAR RANTI",
-      "makanan": "TEH HERBAL, MINUMAN JAMU",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 288,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAZE",
-      "makanan": "KEJU",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 289,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KOKIPRO",
-      "makanan": "MINUMAN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 290,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BU EHAT",
-      "makanan": "BUMBU KALDU SAPI, BUMBU KALDU AYAM, BUMBU KALDU AYAM KAMPUNG, BUMBU KALDU\n  JAMUR",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 291,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MA ENI",
-      "makanan": "CILOK, CUANKI",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 292,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HALTHOY",
-      "makanan": "BUMBU RUJAK, SAMBAL",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 293,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GOOD CAUSE",
-      "makanan": "KUE KERING, BOLU, BROWNIES, RISOLES",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 294,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GOOD CAUSE",
-      "makanan": "KOPI BUBUK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 295,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "IMDY COOKIES",
-      "makanan": "KUE KERING, PIE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 296,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JOYLINDO",
-      "makanan": "TELOR GABUS",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 297,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CEU MERRY",
-      "makanan": "YOGHURT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 298,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MILLENIA",
-      "makanan": "ROTI, CROISSANT, CAKE, COOKIES",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 299,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAMA SWAN RECIPE",
-      "makanan": "ROTI, BOLU KERING, OMBEKUK, SOES KERING, LAPIS MALANG, BOLU GULUNG, LAPIS\n  LEGIT, BAGELEN MANIS, BAGELEN ASIN, BOLU KETAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 300,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAHKOTA",
-      "makanan": "IKAN ASIN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 301,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ULEN AMBU",
-      "makanan": "ULEN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 302,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BROWNIS ENAK BANGET",
-      "makanan": "MAKANAN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 303,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PAPARISA",
-      "makanan": "IKAN OLAHAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 304,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PUN BOJO",
-      "makanan": "KUE KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 305,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PEKMPEK TURBO",
-      "makanan": "PEKMPEK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 306,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "IBRA CATRING",
-      "makanan": "PEYE 3 SAUDARA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 307,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NOVIKASARI",
-      "makanan": "KUE BASAH DAN KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 308,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RIESTA  FOOD",
-      "makanan": "NUGGET SAYURAN AYAM",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 309,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SIMARCO",
-      "makanan": "KERIPIK, KERUPUK, MAKARONI, DLL",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 310,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CAFFE PATH",
-      "makanan": "KOPI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 311,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KERUPUK TAHU",
-      "makanan": "KERUPUK TAHU",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 312,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RAINBOW QUEEN",
-      "makanan": "KUE BASAH DLL",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 313,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PIMAZA",
-      "makanan": "SELAI PISANG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 314,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "REGAR FRUIT",
-      "makanan": "SELAI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 315,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MOJANG BELWUH",
-      "makanan": "BASO, SIOMAY, RENDANG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 316,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ELEN SNACK",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 317,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NUKAMI /DAPUR KREASHE",
-      "makanan": "KUE KERING, KUE BASAH DLL",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 318,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MOUTEA",
-      "makanan": "MINUMAN THAI TEA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 319,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NIMUT'S",
-      "makanan": "MUSTOFA",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 320,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV.ASCA MITRA KENCANA JUZZE",
-      "makanan": "JUZZ",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 321,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SARWA SEDEP",
-      "makanan": "KERIPIK PISANG",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 322,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RAOZAN",
-      "makanan": "MAKANAN",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 323,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MEL'Z",
-      "makanan": "PANGSIT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 324,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BOHEIM",
-      "makanan": "MAKANAN",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 325,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KEDAI BAKSO GOYANG LIDAH",
-      "makanan": "BAKSO&ICE CREM",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 326,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CITA RASA BOLEN & BAKERY",
-      "makanan": "PISANG BOLEN DLL",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 327,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "WNL",
-      "makanan": "KUE KERING",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 328,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHATIBAN",
-      "makanan": "CUANKI INSTAN, SEBLAK INSTAN, BATAGOR INSTAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 329,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LA F9 HOME MADE",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 330,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GVJ-59",
-      "makanan": "-",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 331,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ANE CAKE & COOKIES",
-      "makanan": "CAKE & SNACK (KUE BASAH)",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 332,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NADEC",
-      "makanan": "YOGHURT, KEFIR",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 333,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SEBLAK MELENDOY",
-      "makanan": "KULINER",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 334,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "SUMPIAH",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 335,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ARSY FOOD",
-      "makanan": "KULINER/SOTO INSTAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 336,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "KUE BASAH",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 337,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NEE-DE'RANGU",
-      "makanan": "RANGGINANG PETIS, REMPEYEK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 338,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "UD. LESTARI",
-      "makanan": "BAWANG GORENG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 339,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CITRA SARI",
-      "makanan": "KUE KERING",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 340,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AA COOKIES",
-      "makanan": "CAKE, KUE KERING, KUE BASAH",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 341,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DE'MARTOS",
-      "makanan": "ABON RENDANG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 342,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAHADEA FOOD",
-      "makanan": "MAKANAN/CIRENG KATSU",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 343,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BANDENG LIWET LOSARI HJ ENI",
-      "makanan": "IKAN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 344,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DOSDANDEL",
-      "makanan": "SAMBEL",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 345,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DENDENG THE MAMIH",
-      "makanan": "OLAHAN DAGING ( DENDENG )",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 346,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "COLENAK MURDI",
-      "makanan": "COLENAK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 347,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "I - BITE",
-      "makanan": "PASTRY DAN ROTI",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 348,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FROSTY BIQ",
-      "makanan": "ES YOUGHURT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 349,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LUADA",
-      "makanan": "SAMBAL DLL",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 350,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KICIMIN",
-      "makanan": "KERIPIK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 351,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JENG ROS",
-      "makanan": "SAMBEL GORENG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 352,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPUR MACHIE",
-      "makanan": "GEPUK JUJUT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 353,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CAU BANANA CHIP",
-      "makanan": "KRIPIK PISANG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 354,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SI NGEREKES",
-      "makanan": "KRIPIK PANGSIT,ROTI",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 355,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PAPIRUS",
-      "makanan": "SIOMAY, COOKIES, TUMPENG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 356,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "OWL",
-      "makanan": "OLAHAN SUSU / YOGURT",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 357,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RENDANG UNI RIA",
-      "makanan": "RENDANG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 358,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MPEK-MPEK BOYAS",
-      "makanan": "MAKANAN PEMPEK",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 359,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ALISHA HOME-MADE",
-      "makanan": "BOLA BOLA SUSU",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 360,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KOKIPRO",
-      "makanan": "PREMIK TEPUNG PISANG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 361,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LAKSITA",
-      "makanan": "SOP DUREN",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 362,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RANTANG MANDE",
-      "makanan": "RENDANG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 363,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KINIMA",
-      "makanan": "KUE",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 364,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV, MITRA SAWARGI INVESTAMA",
-      "makanan": "BATAGOR",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 365,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MBAH WAJI",
-      "makanan": "KERIPIK BASRENG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 366,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "OPAK SANGKURIANG",
-      "makanan": "OPAK SINGKONG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 367,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAMEUMEUT SISTIK",
-      "makanan": "KUE KERING",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 368,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "COKO GROUP",
-      "makanan": "MINUMAN COKELAT ECERAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 369,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BOLKER DINADINE",
-      "makanan": "BOLU KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 370,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MY YOUGURT",
-      "makanan": "YOGHURT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 371,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NUABDI",
-      "makanan": "YOGHURT",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 372,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DY'S",
-      "makanan": "KEBAB",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 373,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BUNDEE.KITCHEN",
-      "makanan": "MAMIN",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 374,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AYAM GEPUK JUARA",
-      "makanan": "AYAM GORENG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 375,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "YANI'S FOOD",
-      "makanan": "ROLADE",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 376,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAMPOENG ROTI",
-      "makanan": "ROTI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 377,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PICK ME",
-      "makanan": "KRIPIK SINGKONG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 378,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PD.SAWARGI",
-      "makanan": "ROTI & BAKERY",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 379,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RISOLES IBU",
-      "makanan": "RISOLES",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 380,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MISS MARLENETJIE",
-      "makanan": "KOPI",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 381,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ABROGIO PATISSERIE",
-      "makanan": "KUE KERING & ROTI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 382,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "SURABI DAN KERIPIK SURABI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 383,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MA'DONNUT",
-      "makanan": "DONAT,ROTI&ANEKA KUE",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 384,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LESEHAN REBORN",
-      "makanan": "SEBLAK INSTAN",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 385,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NENEK COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 386,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPOER AISYAH",
-      "makanan": "KUE KERING, LASAGNA, AYAM KODOK DLL",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 387,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "ROTI DLL",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 388,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ZAMAY",
-      "makanan": "EGGROLL",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 389,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KANAMA",
-      "makanan": "ABON/SERUNDENG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 390,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CANGKALENG",
-      "makanan": "MANISAN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 391,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CILOK BAPRI",
-      "makanan": "CILOK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 392,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ARFAH SNACK",
-      "makanan": "BASRENG, SUMPIA",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 393,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ALA N'DEN2",
-      "makanan": "DENDENG SAPI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 394,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BOLEN UNYIL",
-      "makanan": "BOLEN",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 395,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "EPHAY-PON BAKERY",
-      "makanan": "DONAT,ROTI&ANEKA KUE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 396,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HD KERUPUK JENGKOL",
-      "makanan": "KERUOUK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 397,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DIVANO SNACK / YOMACHE",
-      "makanan": "SNACK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 398,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DEOLIN",
-      "makanan": "COKLAT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 399,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KICK",
-      "makanan": "SUSU + THE",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 400,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ERNI KASRENG",
-      "makanan": "OLAHAN AYAM (AYAM KODOK)",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 401,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "C-MEONG",
-      "makanan": "AYAM BAKAR MADU",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 402,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GEMARI PUSPITA",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 403,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NDA",
-      "makanan": "KUE BASAH, KUE KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 404,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RAGAWANGI",
-      "makanan": "BASO TAHU SIOMAY",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 405,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "EBI CHILI",
-      "makanan": "SAMBER GORENG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 406,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LA TAMBOE",
-      "makanan": "MAKANAN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 407,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV. PRANATA GUMIANG",
-      "makanan": "KOSMETIK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 408,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV.ELYAN KARYA",
-      "makanan": "MINUMAN COKLAT",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 409,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BOGANA COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 410,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MINUMAN",
-      "makanan": "MINUMAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 411,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SERAYA",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 412,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SYAKIRA",
-      "makanan": "RENDANG DLL",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 413,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MOOSCIOUS",
-      "makanan": "OLAHAN SUSU / YOGURT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 414,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "MAKANAN",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 415,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TOKUNI",
-      "makanan": "KUE BASAH",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 416,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ABIE DURIAN CORNER",
-      "makanan": "ANEKA DURIAN",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 417,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "POTENZIE",
-      "makanan": "MINYAK WANGI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 418,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SMOOCHI",
-      "makanan": "MOCI ICE CREAM",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 419,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "YUWAFU",
-      "makanan": "KUE KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 420,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AF. PRODUCTION",
-      "makanan": "MAKANAN",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 421,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SARASA BOLU TIWUL",
-      "makanan": "BOLU",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 422,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CIZ BITE",
-      "makanan": "PANGSIT",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 423,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PT GEMILANG PRATAMA POLYKEM",
-      "makanan": "BUMBU DAPUR",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 424,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BAGUS SNACK",
-      "makanan": "SNACK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 425,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PT.TAKARANJAYA NIRWAST=ITA",
-      "makanan": "SNACK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 426,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "CAKE",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 427,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ISMIAH",
-      "makanan": "MAKANAN OLAHAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 428,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HARS'24",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 429,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HASTI PUTRA MANDIRI",
-      "makanan": "KERIPIK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 430,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "W.I.S.H FOOD",
-      "makanan": "MOCHI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 431,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SARI MANIS SNACK",
-      "makanan": "KACANG BAWANG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 432,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "EKA RASA",
-      "makanan": "-",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 433,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAKARONI SD",
-      "makanan": "MAKRONI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 434,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "BOLU KETAN HIDEUNG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 435,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PELAGE TERANG INDAH",
-      "makanan": "KUE KERING DAN SNACK",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 436,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HR",
-      "makanan": "CIRENG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 437,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ZAVALOVA",
-      "makanan": "FROZEN FOOD",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 438,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SHANDY RASA",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 439,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CIRDUD",
-      "makanan": "KUE KERING, ROTI",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 440,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KOPI DIAWAN",
-      "makanan": "KOPI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 441,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MISTER DULL",
-      "makanan": "KERIPIK KENTANG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 442,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CAKBUN",
-      "makanan": "CAKUE",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 443,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ROSA FISH HOUSE",
-      "makanan": "ABON LELE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 444,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RANCANI PATTISSERIES",
-      "makanan": "KUE KERING & KUE BASAH",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 445,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MATRA",
-      "makanan": "KRIPANG SNACK",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 446,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JS FOOD",
-      "makanan": "KERIPIK, REMPEYEK",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 447,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "KERUPUK BUAH2AN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 448,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LAFIZAN",
-      "makanan": "KULINER",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 449,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DELISH",
-      "makanan": "LUMPIA & BANDENG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 450,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KIYOMI KARAMEL",
-      "makanan": "CAKE,KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 451,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CAKIAL",
-      "makanan": "BASO TAHU, SIOMAY, BATAGOR",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 452,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NGARUY",
-      "makanan": "SIOMAY, BATAGOR INSTAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 453,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "INA CATERING",
-      "makanan": "AYAM GORENG SELIMUT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 454,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NAY'LA COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 455,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CEKAS",
-      "makanan": "SALE AROMA GULA AREM SEBLAK KERING",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 456,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SAMBAL OM NDUT",
-      "makanan": "SAMBAL",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 457,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HITZ UP FOOD",
-      "makanan": "RUJAK CIRENG , CIRENG KUAH",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 458,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DANG DENG DUNG",
-      "makanan": "IKAN BANDENG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 459,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TAHU YUN YI",
-      "makanan": "TAHU",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 460,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PT.ORIYANE",
-      "makanan": "KUE KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 461,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MARINO COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 462,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "D'BROWNIES",
-      "makanan": "BROWNIES",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 463,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KUHATE",
-      "makanan": "KUE BASAH DAN KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 464,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ABAH ADUN",
-      "makanan": "EMPING MELINJO",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 465,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ZAYN",
-      "makanan": "JUS BIOLA",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 466,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPUR AUFA",
-      "makanan": "AYAM GORENG",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 467,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KIRIHUCI",
-      "makanan": "KERIPIK UBI CILEMBU",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 468,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ANATA CAKE & BAKERY",
-      "makanan": "CAKE & ROTI DLL",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 469,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LESEHAN REBORN",
-      "makanan": "CILOK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 470,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAHVA COFFE",
-      "makanan": "MINUMAN KOPI",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 471,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PRIMA RASA",
-      "makanan": "BAKERY & PASTRY",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 472,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MUNARA",
-      "makanan": "KUE KERING,KUE BASAH,MUFFIN KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 473,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DUA SAUDARA KERKEZZ",
-      "makanan": "BAWANG GORENG",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 474,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SARIBANON",
-      "makanan": "ROTI",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 475,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JJ BASO",
-      "makanan": "BASSO SAPI",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 476,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JON'S CHOCOMADE",
-      "makanan": "CHOCOLATE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 477,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPUR BAWANG INDONESIA",
-      "makanan": "BAWANG GORENG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 478,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SINAR GUNA MAKMUR",
-      "makanan": "SNACK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 479,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ELDINA",
-      "makanan": "KACANG BAWANG, BAWANG GORENG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 480,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ANUGRAH ABDI",
-      "makanan": "KERUPUK",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 481,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SETIA BAKERY",
-      "makanan": "ROTI KUE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 482,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SILIWANGI SARI FOOD",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 483,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KERIPIK ILIL",
-      "makanan": "KERIPIK PISANG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 484,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "PANGSIT",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 485,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AFWANE",
-      "makanan": "ROTI",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 486,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BDG REPUBLIK JAHE",
-      "makanan": "SIRUP JAHE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 487,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DELFIZA",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 488,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BATAGOR HANHAN",
-      "makanan": "BATAGOR, SIOMAY KUKUS, LUMPIA",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 489,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GORA CHEESE",
-      "makanan": "KEJU",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 490,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "THARY CAKE & COOKIES",
-      "makanan": "ANEKA KUE",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 491,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AZALIA",
-      "makanan": "KECIMPRING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 492,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LIMA ARTHA FOOD",
-      "makanan": "MAKANAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 493,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AL-MIRA BERKAH",
-      "makanan": "COKLAT, KUE, CEMILAN",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 494,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GUSNAFF COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 495,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "QUALITA",
-      "makanan": "KUE KERING",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 496,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "WL33 (WARAY LILIS 33)",
-      "makanan": "SAMBEL GORENG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 497,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NURYATIE",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 498,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KANGENIN RIDWANALLOH",
-      "makanan": "KUE KERING DAN KUE BASAH",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 499,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV. HERMADERA PRIMA",
-      "makanan": "KOPI",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 500,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PD. KARYA MULYA",
-      "makanan": "-",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 501,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LULU-YOUGURT",
-      "makanan": "YOGHURT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 502,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "N3",
-      "makanan": "KUE KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 503,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AREMA",
-      "makanan": "TEMPE",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 504,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NEKO PANDA COFFEE",
-      "makanan": "KOPI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 505,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BASO RESTO BREKELE",
-      "makanan": "BASO SAPI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 506,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MALIA'S CEMILAN",
-      "makanan": "RENGGINANG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 507,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KIRA ALMOND",
-      "makanan": "SUSU ALMON",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 508,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FANNY FUN",
-      "makanan": "KERIPIK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 509,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "AYAM GORENG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 510,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SATU ATAPRUMAH PRODUKSI",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 511,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TAMESEWA",
-      "makanan": "KOSMETIK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 512,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RUMAH PANGSIT",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 513,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MENIR BUBUHAN",
-      "makanan": "KULINER ( SEBLAK FROZEN + BUMBU SEBLAK)",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 514,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DM PRODUKTION",
-      "makanan": "ES KENYOOT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 515,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FLAVIA CAKE & COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 516,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PEKMPEK BIK M",
-      "makanan": "PEKMPEK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 517,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "FIRU COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 518,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "CHEESEROLL",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 519,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "KUE KERING LEBARAN \"RAVANNY\"",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 520,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV.AYUNA NUSANTARA",
-      "makanan": "AYAM GORENG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 521,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BMW BOEMENT",
-      "makanan": "BASO",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 522,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SOLEBRAND",
-      "makanan": "BUMBU",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 523,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RANGKAYOO",
-      "makanan": "-",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 524,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHOCOPENA",
-      "makanan": "MINUMAN COKLAT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 525,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NAUFAL N TILUAN",
-      "makanan": "BASO SINGKONG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 526,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PAPUYU",
-      "makanan": "BANDENG ISI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 527,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DODOL",
-      "makanan": "DODOL",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 528,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SO NYUS NUGET&BASO",
-      "makanan": "NUGET&BASO",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 529,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TENDA BIRU FOODSTALL / TAKETY",
-      "makanan": "BOLU TAPE KEJU",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 530,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KS GROUP",
-      "makanan": "KRIPIK SINGKOG",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 531,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LEZIGANO",
-      "makanan": "SYRUP",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 532,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SENNIA MOIST",
-      "makanan": "KUE",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 533,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NUGGETKU",
-      "makanan": "NUGGET",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 534,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LUMERS",
-      "makanan": "CAKE",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 535,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DASENG FOOD",
-      "makanan": "RISOULES",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 536,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAMEUMEUT",
-      "makanan": "KRIPIK BUAH2AN",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 537,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MYELINNS",
-      "makanan": "ABON IKAN",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 538,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KOFFIE LUCKY  (KOFLUCK)",
-      "makanan": "KOPI",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 539,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "O'CIZZ",
-      "makanan": "KEJU",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 540,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAGEN GROUP",
-      "makanan": "NUGET AYAM / KOPI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 541,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KATEBU",
-      "makanan": "OLAHAN KENTANG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 542,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SWEET NATA",
-      "makanan": "KUE KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 543,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NOES'Z COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 544,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BONYAMMY",
-      "makanan": "ABON AYAM",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 545,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KATUJUH",
-      "makanan": "SIOMAY",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 546,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GOLDEN FOREST",
-      "makanan": "KOPI",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 547,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPUR FIA",
-      "makanan": "MAKANAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 548,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NUZULA",
-      "makanan": "KUE KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 549,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KA UI DE AL",
-      "makanan": "KERIPIK BASRENG \"UL&AL\"",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 550,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NAPLE",
-      "makanan": "MILK TEA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 551,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "C & C",
-      "makanan": "PISANG AROMA",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 552,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DOUBLE KITCHEN",
-      "makanan": "FROZEN FOOD",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 553,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MA'ENI",
-      "makanan": "CILOK CUANKI",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 554,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ESKA 14",
-      "makanan": "MAKANAN (LUMPIA, CEKER KRIBO)",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 555,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV. WARAS",
-      "makanan": "KERIPIK PISANG",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 556,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PURNA RASA",
-      "makanan": "KUE KERING DAN BASAH",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 557,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV.VANAZTRAL TELAGA NIEMALA",
-      "makanan": "MAKANAN RINGAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 558,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "UNINGA FOOD",
-      "makanan": "SNACK MIE SINGKONG",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 559,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JIFAST",
-      "makanan": "OLAHAN BEBEK",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 560,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AMANI",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 561,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KOERMAKOE CHOCOLATE",
-      "makanan": "KURMA COKELAT & ANEKA OLAHAN COKELAT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 562,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ERDENA",
-      "makanan": "ANEKA PUDING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 563,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ANUGRAH RASA MANDIRI",
-      "makanan": "KENTANG,UBI,SINGKONG MUSTOFA",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 564,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KAGUMI FOOD",
-      "makanan": "MAKANAN KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 565,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SUGI RASA CIPTA MANDIRI",
-      "makanan": "SNACK/KERIPIK",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 566,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MERANGGI PVJ",
-      "makanan": "SATE",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 567,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RECHOCS",
-      "makanan": "COKLAT",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 568,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KARAI",
-      "makanan": "BASO TAHU SIOMAY",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 569,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JEKER LEKKER",
-      "makanan": "JENGKOL KERING",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 570,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LAN'S COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 571,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAMIYO DESSERT",
-      "makanan": "MAKANAN&MINUMAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 572,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RATNA SNACK & COOKIES",
-      "makanan": "KUE KERING, KUE BASAH DLL",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 573,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "D'CRUNCHY MARSEL16",
-      "makanan": "KERIPIK BELUT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 574,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RR.PANONOBAN BY R&D FAMILY",
-      "makanan": "KERIPIK",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 575,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MUARARASA",
-      "makanan": "AYAM GORENG",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 576,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BONCOM",
-      "makanan": "ONCOM",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 577,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KARAMELO",
-      "makanan": "KARAMEL",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 578,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "YOJELATO",
-      "makanan": "ICE CREAM YOGHURT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 579,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "WONAMIE",
-      "makanan": "KRIPIK MIE",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 580,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BILABU",
-      "makanan": "BOLU KUKUS",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 581,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "OMANANA",
-      "makanan": "BUTTEER SCOTCH/         MINUMAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 582,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PISLI SNAC",
-      "makanan": "SNACK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 583,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "AFGANDI FOOD",
-      "makanan": "MAKANAN",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 584,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DIRS@PASTRIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 585,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KREATIF INSAN TAMIR",
-      "makanan": "YOGHURT",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 586,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GUNUNG MANGLAYANG",
-      "makanan": "KERIPIK",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 587,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CAHAYA RASA",
-      "makanan": "KULINER KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 588,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ARSYA",
-      "makanan": "KUE BASAH",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 589,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ROMANSA BAKERY",
-      "makanan": "-",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 590,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RASA SENTOSA",
-      "makanan": "MINUMAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 591,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DISHO YOGHURT",
-      "makanan": "YOGHURT",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 592,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "YOREKA",
-      "makanan": "YOGHURT",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 593,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JENGANTIN",
-      "makanan": "MAKANAN BASAH DAN KERING",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 594,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PEPES IKAN DL",
-      "makanan": "PEPES IKAN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 595,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SIONAH",
-      "makanan": "SIOMAY",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 596,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "NANAMIE",
-      "makanan": "KUE KERING",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 597,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "LA VARISSA",
-      "makanan": "BUMBU MASAK",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 598,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KOPEL ENTEN",
-      "makanan": "OLAHAN MINUMAN HERBAL / SERBUK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 599,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DWIPA",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 600,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "D'OPIE",
-      "makanan": "EMPING MELINJO",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 601,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JENG ROS",
-      "makanan": "ANEKA SAMBEL",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 602,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DABUCHAN",
-      "makanan": "BAKERY & PASTRY",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 603,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ALMEERA DAIRY FOOD",
-      "makanan": "KEJU, YOUGHURT,SUSU",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 604,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ANGEL HEART (SUGI RASA CIPTA MANDIRI)",
-      "makanan": "MAKANAN/KUE",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 605,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PD.USAHA ATOK",
-      "makanan": "LADA",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 606,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PRIMA",
-      "makanan": "PANGSIT AYAM, MINYAK AYAM, DAN GEPUK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 607,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SULIHIM SNACK",
-      "makanan": "KRP.TEMPE",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 608,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CITRA RASA",
-      "makanan": "PRODUK DURIAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 609,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RAWACHILI",
-      "makanan": "SAMBAL",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 610,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HALIMAN BOULANGERI",
-      "makanan": "ROTI",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 611,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SWEET MOMENT CHOCOLATE",
-      "makanan": "CHOCOLATE",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 612,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TAYOCI",
-      "makanan": "KUE KERING, CAKE, KUE BASAH",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 613,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MAWLAH",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 614,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ETTY FOOD",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 615,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV. CAHAYA BINTANG GEMILANG",
-      "makanan": "KULINER( SIOMAY)",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 616,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PAPA BEARS",
-      "makanan": "CAKE/KUE KERING/BOLU",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 617,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV.CAWANG",
-      "makanan": "KERIPIK",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 618,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HISOHI",
-      "makanan": "COKELAT",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 619,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BUDISARI RAYA NO.2",
-      "makanan": "BUMBU",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 620,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TINA COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 621,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TIN'S COOKIES",
-      "makanan": "CHEESTIK, KUE KERING, RENGGINANG",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 622,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HANDTRI FOOD",
-      "makanan": "ABON JAMUR",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 623,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BELGARETI",
-      "makanan": "KOPI",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 624,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "KUE KERING / KUE BASAH",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 625,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MISTER TROY'76",
-      "makanan": "AYAM GORENG",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 626,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "ONE SWEET DELIGHT",
-      "makanan": "ROTI & KUE",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 627,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CHIRROS",
-      "makanan": "SNACK",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 628,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CO. DRINKS",
-      "makanan": "MINUMAN",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 629,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "CV.KARYA KIRANA RAYA",
-      "makanan": "ABON REMPAH",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 630,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KMRUYUK",
-      "makanan": "MAKANAN RINGAN",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 631,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "M'JIE",
-      "makanan": "MAKANAN",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 632,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "313 FOOD",
-      "makanan": "T E H",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 633,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HANDY CUP",
-      "makanan": "PUDING SEBUK",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 634,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "BASOQU",
-      "makanan": "BASO",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 635,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "HEKEUKUN",
-      "makanan": "JAMU",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 636,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "-",
-      "makanan": "KUE KERING",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 637,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "TJILIAN",
-      "makanan": "COOKIES & MINUMAN",
-      "lokasi": "Braga"
-    }
-  },
-  {
-    "pk": 638,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPUR AZ ZAHRA - ZAHIRA",
-      "makanan": "CHEESE STICK",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 639,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "MEYLINDA COOKIES",
-      "makanan": "KUE KERING",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 640,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RINDIVA19",
-      "makanan": "YOGHURT",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 641,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "GYNONE",
-      "makanan": "KUE KERING",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 642,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "RAHMIA",
-      "makanan": "MAKANAN RINGAN",
-      "lokasi": "Lembang"
-    }
-  },
-  {
-    "pk": 643,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "KEABX",
-      "makanan": "ANEKA CAKE, BOLU, KUE KERING, BROWNIES",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 644,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SONTREE",
-      "makanan": "BROWNIES",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 645,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DIATY 17",
-      "makanan": "KUE SEROJA DAN PEYEK",
-      "lokasi": "Cibaduyut"
-    }
-  },
-  {
-    "pk": 646,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "SIRENG",
-      "makanan": "MAKANAN",
-      "lokasi": "Setiabudi"
-    }
-  },
-  {
-    "pk": 647,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DE'MOUN RISOLES",
-      "makanan": "RISOLES",
-      "lokasi": "Cihampelas"
-    }
-  },
-  {
-    "pk": 648,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "JULIE COOKIES",
-      "makanan": "COOKIES",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 649,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "DAPUR ULLIE",
-      "makanan": "ROTI",
-      "lokasi": "Dago"
-    }
-  },
-  {
-    "pk": 650,
-    "model": "resto.resto",
-    "fields": {
-      "nama": "PASTEL MAMALIA",
-      "makanan": "PASTEL",
-      "lokasi": "Cibaduyut"
     }
   }
 ]

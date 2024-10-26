@@ -21,6 +21,7 @@ from main.views import show_main
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
+    path('tracker/', include(('tracker.urls', 'tracker'), namespace='tracker')),
     path('menu', include('food.urls')),
     path('rating/', include('rating.urls')),
     path('auth/', include('authentication.urls')),

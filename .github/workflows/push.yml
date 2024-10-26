@@ -4,11 +4,11 @@ on:
   push:
     branches: [ main, master ]
     paths-ignore:
-        - '**.md'
+      - '**.md'
   pull_request:
     branches: [ main, master ]
     paths-ignore:
-        - '**.md'
+      - '**.md'
 
 jobs:
   build-and-push:
@@ -25,18 +25,17 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-    - name: Check PWS remote, pull, merge, and push
+    - name: Pull from remote and merge
       env:
         PWS_URL: ${{ secrets.PWS_URL }}
       run: |
-          echo "Creating temporary branch"
-          git checkout -b tmp
+        git remote add pws $PWS_URL
+        git fetch pws
+        git checkout main
+        git merge pws/master --no-edit
 
-          # Push to master branch and capture the output
-          push_output=$(git push $PWS_URL tmp:master 2>&1)
-          if [[ $? -ne 0 ]]; then
-            echo "Push failed with output: $push_output"
-            echo "Error: Unable to push changes. Please check the error message above and resolve any conflicts manually."
-            exit 1
-          fi
-          echo "Push successful with output: $push_output"
+    - name: Push changes to remote
+      env:
+        PWS_URL: ${{ secrets.PWS_URL }}
+      run: |
+        git push pws main:master
