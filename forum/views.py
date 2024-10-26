@@ -66,13 +66,30 @@ class CreatePostView(CreateView):
 
 @csrf_exempt
 @require_POST
+def create_thread_ajax(request):
+    title = strip_tags(request.POST.get("title"))
+    user = request.user
+
+    # Create a new thread
+    new_thread = Thread(title=title, user=user)
+    new_thread.save()
+
+    return JsonResponse({
+        "status": "success",
+        "message": "Thread created successfully",
+        "thread_id": new_thread.id
+    }, status=201)
+
+
+@csrf_exempt
+@require_POST
 def create_post_ajax(request, pk):
     # Get the thread based on its pk
     thread = get_object_or_404(Thread, pk=pk)
 
     # Extract form data from the request
     content = strip_tags(request.POST.get("content"))
-    # user = request.user  # Get the current user
+    user = request.user  # Get the current user
 
     # Create a new post
     new_post = Post(thread=thread, content=content,)# user=user)
