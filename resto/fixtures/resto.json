@@ -3,7 +3,7 @@
     "pk": 1,
     "model": "resto.resto",
     "fields": {
-      "nama": "B'VEGIEZ, CUPUKEIK",
+      "nama": "BVEGIEZ, CUPUKEIK",
       "makanan": 1,
       "lokasi": "Dago"
     }
@@ -39,7 +39,7 @@
     "pk": 5,
     "model": "resto.resto",
     "fields": {
-      "nama": "GYWNNE'C BAKERY",
+      "nama": "GYWNNEC BAKERY",
       "makanan": 5,
       "lokasi": "Cihampelas"
     }
@@ -57,7 +57,7 @@
     "pk": 7,
     "model": "resto.resto",
     "fields": {
-      "nama": "DING'S BATAGOR",
+      "nama": "DINGS BATAGOR",
       "makanan": 7,
       "lokasi": "Cibaduyut"
     }
@@ -84,7 +84,7 @@
     "pk": 10,
     "model": "resto.resto",
     "fields": {
-      "nama": "D'JAKHAZ",
+      "nama": "DJAKHAZ",
       "makanan": 10,
       "lokasi": "Dago"
     }
@@ -93,7 +93,7 @@
     "pk": 11,
     "model": "resto.resto",
     "fields": {
-      "nama": "H@I BILIK",
+      "nama": "HAI BILIK",
       "makanan": 11,
       "lokasi": "Dago"
     }
@@ -273,7 +273,7 @@
     "pk": 31,
     "model": "resto.resto",
     "fields": {
-      "nama": "SHA'E COOKIES",
+      "nama": "SHAE COOKIES",
       "makanan": 31,
       "lokasi": "Braga"
     }
@@ -390,7 +390,7 @@
     "pk": 44,
     "model": "resto.resto",
     "fields": {
-      "nama": "TWIN GILR'S",
+      "nama": "TWIN GILRS",
       "makanan": 44,
       "lokasi": "Lembang"
     }
@@ -453,7 +453,7 @@
     "pk": 51,
     "model": "resto.resto",
     "fields": {
-      "nama": "DHILAH'S",
+      "nama": "DHILAHS",
       "makanan": 51,
       "lokasi": "Lembang"
     }
@@ -471,7 +471,7 @@
     "pk": 53,
     "model": "resto.resto",
     "fields": {
-      "nama": "NAS'S",
+      "nama": "NASS",
       "makanan": 53,
       "lokasi": "Braga"
     }
@@ -534,7 +534,7 @@
     "pk": 60,
     "model": "resto.resto",
     "fields": {
-      "nama": "LIN'S BROWNIES",
+      "nama": "LINS BROWNIES",
       "makanan": 60,
       "lokasi": "Cibaduyut"
     }
@@ -606,7 +606,7 @@
     "pk": 68,
     "model": "resto.resto",
     "fields": {
-      "nama": "DE'HAY",
+      "nama": "DEHAY",
       "makanan": 68,
       "lokasi": "Cibaduyut"
     }
@@ -696,7 +696,7 @@
     "pk": 78,
     "model": "resto.resto",
     "fields": {
-      "nama": "TIN'S KUE",
+      "nama": "TINS KUE",
       "makanan": 78,
       "lokasi": "Braga"
     }
@@ -840,7 +840,7 @@
     "pk": 94,
     "model": "resto.resto",
     "fields": {
-      "nama": "BOGA TE'NA",
+      "nama": "BOGA TENA",
       "makanan": 94,
       "lokasi": "Braga"
     }

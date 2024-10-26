@@ -4,45 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ resto.nama }} - Details</title>
-    <style>
-        /* Basic styles */
-        .food-card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            margin: 10px;
-            text-align: center;
-        }
-        button {
-            padding: 10px;
-            background-color: hsl(185, 39%, 49%);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #4582a0;
-        }
-    </style>
+    <!-- Include Tailwind CSS (make sure you have it set up in your project) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body style="font-family: Arial, sans-serif;">
-    <h1>{{ resto.nama }}</h1>
-    <p><strong>Location:</strong> {{ resto.lokasi }}</p>
+<body class="font-sans">
+    <div class="max-w-4xl mx-auto p-4">
+        <h1 class="text-3xl font-bold">{{ resto.nama }}</h1>
+        <p class="mt-2 text-lg"><strong>Location:</strong> {{ resto.lokasi }}</p>
 
-    <h2>Food Items</h2>
-    <div class="food-card">
-        <h3>{{ resto.makanan.name }}</h3>
-        <p>Price: Rp{{ resto.makanan.price }}</p>
-        <p>Promo: {{ resto.makanan.promo }}</p>
-        <img src="{{ resto.makanan.image }}" alt="{{ resto.makanan.name }}" style="width: 200px; height: auto;">
+        <h2 class="text-2xl font-semibold mt-4">Food Items</h2>
+        <div class="food-card bg-white border border-gray-300 rounded-lg shadow-md p-4 mt-2">
+            <h3 class="text-xl font-semibold">{{ resto.makanan.name }}</h3>
+            <p class="mt-1">Price: Rp{{ resto.makanan.price }}</p>
+            <p class="mt-1">Promo: {{ resto.makanan.promo }}</p>
+            <img src="{{ resto.makanan.image }}" alt="{{ resto.makanan.name }}" class="mt-2 w-48 h-auto rounded-lg">
+        </div>
+
+        <a href="/resto/" class="mt-4 inline-block">
+            <button class="w-full py-2 px-4 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-900 transition duration-200">Back to Restaurant List</button>
+        </a>
     </div>
-
-    <a href="/resto/">
-        <Button>Back to Restaurant List</Button>
-    </a>
 </body>
 </html>
