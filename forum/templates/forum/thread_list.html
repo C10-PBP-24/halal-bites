@@ -7,6 +7,14 @@
         <h1 class="text-3xl font-bold">Discussion Threads</h1>
     </div>
 
+    <!-- Search Bar -->
+    <div class="my-4">
+      <form method="GET" action="{% url 'forum:thread_list' %}" class="flex">
+        <input type="text" name="q" id="search" class="w-full p-2 border border-gray-300 rounded-l-md" placeholder="Search for threads..." value="{{ request.GET.q|default:'' }}">
+        <button type="submit" class="bg-indigo-700 hover:bg-indigo-600 text-white px-4 py-2 rounded-r-md">Search</button>
+      </form>
+    </div>
+
     <!-- List of Threads -->
     <div class="thread-list">
         {% if threads %}
@@ -15,11 +23,18 @@
                     <li class="thread-item mb-4 p-4 bg-gray-100 rounded-lg shadow-md">
                         <a href="{% url 'forum:thread_detail' thread.pk %}" class="text-indigo-600 hover:underline text-xl font-semibold">{{ thread.title }}</a>
                         <p class="text-gray-500 text-sm mt-2">Created at: {{ thread.created_at }}</p>
+
+                        {% if thread.user == request.user %}
+                        <div class="mt-2">
+                            <a href="{% url 'forum:edit_thread' thread.id %}" class="text-yellow-500 hover:underline">Edit</a> |
+                            <a href="{% url 'forum:delete_thread' thread.id %}" class="text-red-500 hover:underline" onclick="return confirm('Are you sure you want to delete this thread?');">Delete</a>
+                        </div>
+                        {% endif %}
                     </li>
                 {% endfor %}
             </ul>
         {% else %}
-            <p>No threads available. Be the first to create one!</p>
+            <p>No threads found. Try a different search term.</p>
         {% endif %}
     </div>
 

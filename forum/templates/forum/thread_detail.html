@@ -18,6 +18,14 @@
                     <div class="post mb-4 p-4 bg-gray-100 rounded-lg shadow-md">
                         <p>{{ post.content }}</p>
                         <p class="text-gray-500 text-sm mt-2">Posted at: {{ post.created_at }}</p>
+
+                        <!-- Edit and Delete buttons (visible only to post owner) -->
+                        {% if post.user == request.user %}
+                        <div class="mt-2">
+                            <a href="{% url 'forum:edit_post' post.id %}" class="text-yellow-500 hover:underline">Edit</a> |
+                            <a href="{% url 'forum:delete_post' post.id %}" class="text-red-500 hover:underline" onclick="return confirm('Are you sure you want to delete this post?');">Delete</a>
+                        </div>
+                        {% endif %}
                     </div>
                 {% endfor %}
             {% else %}
