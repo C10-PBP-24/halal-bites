@@ -5,175 +5,73 @@
     <meta name="csrf-token" content="{{ csrf_token }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurants</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        /* Container for filter and restaurant list side-by-side */
-        .content-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-        /* Styling for the restaurant list */
-        .restaurant-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            flex: 1; /* Take remaining space */
-        }
-        .restaurant-card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .restaurant-card:hover {
-            transform: scale(1.05);
-        }
-        .restaurant-card h2 {
-            font-size: 1.5em;
-            margin: 0;
-            color: #333;
-        }
-        .restaurant-card p {
-            margin: 5px 0;
-            color: #666;
-        }
-        
-        .filter-container {
-            width: 300px;
-            padding: 20px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            height: fit-content;
-            box-sizing: border-box;
-        }
-        .filter-input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: hsl(185, 39%, 49%);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #4582a0;
-        }
-        
-        /* Modal styles */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% include 'navbar.html' %}
 </head>
-<body>
-    <h1>Restaurants</h1>
+<body class="font-sans bg-gray-100">
 
-    <div class="content-container">
-        <!-- Restaurant List -->
-        <div class="restaurant-list" id="restaurantList">
-            {% if restos %}
-                {% for resto in restos %}
-                    <div class="restaurant-card">
-                        <h2>{{ resto.nama }}</h2>
-                        <p><strong>Lokasi:</strong> {{ resto.lokasi }}</p>
-                        <button onclick="window.location.href='/resto/detail/{{resto.id}}/'">Lihat Detail</button>
-                        <button onclick="confirmDelete('{{ resto.id }}', '{{ resto.nama }}')">Hapus Resto</button>
-                    </div>
-                {% endfor %}
-            {% else %}
-                <p>No restaurants available.</p>
-            {% endif %}
-        </div>
-
-        <!-- Filter Section -->
-         <div>
-             <div class="filter-container">
-                 <h3>Filter Restaurants</h3>
-                 <strong style="margin-bottom: 0; color: #666;">Nama:</strong>
-                 <input type="text" id="namaInput" class="filter-input" placeholder="Enter name" style="color: #666;">
-                 <strong style="margin-bottom: 0; color: #666;">Lokasi:</strong>
-                 <input type="text" id="lokasiInput" class="filter-input" placeholder="Enter location" style="color: #666;">
-                 <button class="filter-button" onclick="filterRestaurants()">Filter</button>
+    <div class="p-6">
+        <h1 class="text-3xl font-bold text-center text-yellow-500 mb-8 p-6">Restaurants</h1>
+        <!-- Main Content Wrapper -->
+        <div class="content-container flex flex-col lg:flex-row lg:gap-5 gap-5">
+            <!-- Filter Section -->
+            <div class="filter-container lg:w-1/4 w-full">
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Filter Restaurants</h3>
+                    <label class="block text-gray-700 font-semibold mb-2">Nama:</label>
+                    <input type="text" id="namaInput" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 mb-4" placeholder="Enter name">
+                    
+                    <label class="block text-gray-700 font-semibold mb-2">Lokasi:</label>
+                    <input type="text" id="lokasiInput" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 mb-4" placeholder="Enter location">
+                    
+                    <button class="w-full bg-gray-800 text-white py-2 rounded-md font-semibold hover:bg-gray-900 transition duration-200" onclick="filterRestaurants()">Filter</button>
                 </div>
-                <button class="filter-button" id="addRestaurantBtn">Add Restaurant</button>
-         </div>
-    </div>
-
-    <!-- Modal for Adding Restaurant -->
-    <div id="addRestoModal" class="modal">
-        <div class="modal-content">
-            <form>
-                {% csrf_token %}
-                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-            </form>
-            
-            <span class="close" id="closeModal">&times;</span>
-            <h2>Add Restaurant</h2>
-            <input type="text" id="namaRestoInput" placeholder="Restaurant Name" required>
-            <input type="text" id="namaMakananInput" placeholder="Food Name" required>
-            <input type="text" id="hargaMakananInput" placeholder="Food Price" required>
-            <input type="text" id="promoMakananInput" placeholder="Food Promo" required>
-            <input type="url" id="imageMakananInput" placeholder="Food Image" required>
-            <input type="text" id="lokasiInputAdd" placeholder="Location" required>
-            <br>
-            <button class="filter-button" onclick="addRestaurant()" style="margin-top: 10px; margin-left: 0px;">Add Restaurant</button>
+    
+                <button class="w-full mt-4 py-2 px-4 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition duration-200" id="addRestaurantBtn">Add Restaurant</button>
+            </div>
+    
+            <!-- Restaurant List Section -->
+            <div class="restaurant-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full" id="restaurantList">
+                {% if restos %}
+                    {% for resto in restos %}
+                        <div class="restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">{{ resto.nama }}</h2>
+                            <p class="text-gray-600 mb-4"><strong>Lokasi:</strong> {{ resto.lokasi }}</p>
+                            <button onclick="window.location.href='/resto/detail/{{resto.id}}/'" class="w-full py-2 px-4 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-900 transition duration-200">Lihat Detail</button>
+                            <button onclick="confirmDelete('{{ resto.id }}', '{{ resto.nama }}')" class="w-full mt-2 py-2 px-4 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition duration-200">Hapus Resto</button>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="text-center text-gray-600">No restaurants available.</p>
+                {% endif %}
+            </div>
+        </div>
+    
+    
+        <!-- Modal for Adding Restaurant -->
+        <div id="addRestoModal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="modal-content bg-white p-6 rounded-lg w-full max-w-lg">
+                <form>
+                    {% csrf_token %}
+                    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                </form>
+    
+                <span class="close absolute top-4 right-4 text-2xl font-bold cursor-pointer" id="closeModal">&times;</span>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Add Restaurant</h2>
+    
+                <input type="text" id="namaRestoInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Restaurant Name" required>
+                <input type="text" id="namaMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Name" required>
+                <input type="text" id="hargaMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Price" required>
+                <input type="text" id="promoMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Promo" required>
+                <input type="url" id="imageMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Image" required>
+                <input type="text" id="lokasiInputAdd" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Location" required>
+                
+                <button class="w-full py-2 px-4 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition duration-200" onclick="addRestaurant()">Add Restaurant</button>
+            </div>
         </div>
     </div>
 
     <script>
-
         // Function to get CSRF token from cookies
         function getCookie(name) {
             let cookieValue = null;
@@ -193,7 +91,6 @@
         // Function to confirm deletion
         function confirmDelete(restoId, restoName) {
             const userConfirmed = confirm(`Are you sure you want to delete the restaurant "${restoName}"?`);
-            
             if (userConfirmed) {
                 deleteRestaurant(restoId);
             }
@@ -201,8 +98,7 @@
 
         // Function to send delete request
         async function deleteRestaurant(restoId) {
-            const csrfToken = getCookie('csrftoken'); // Ensure you are getting the CSRF token
-
+            const csrfToken = getCookie('csrftoken');
             try {
                 const response = await fetch(`/resto/delete-resto/${restoId}/`, {
                     method: 'DELETE',
@@ -213,7 +109,7 @@
 
                 if (response.status === 204) {
                     alert('Restaurant deleted successfully!');
-                    location.reload(); // Refresh the page after successful deletion
+                    location.reload();
                 } else {
                     alert('Failed to delete restaurant. Please try again.');
                 }
@@ -224,7 +120,7 @@
         }
 
         document.getElementById('addRestaurantBtn').onclick = function() {
-            document.getElementById('addRestoModal').style.display = "block";
+            document.getElementById('addRestoModal').style.display = "flex";
         };
 
         document.getElementById('closeModal').onclick = function() {
@@ -239,7 +135,6 @@
         };
 
         async function addRestaurant() {
-            console.log("Add Restaurant button clicked");
             const nama = document.getElementById('namaRestoInput').value;
             const namaMakanan = document.getElementById('namaMakananInput').value;
             const hargaMakanan = document.getElementById('hargaMakananInput').value;
@@ -288,13 +183,13 @@
             if (data.restos.length > 0) {
                 data.restos.forEach(resto => {
                     const card = document.createElement('div');
-                    card.className = 'restaurant-card';
+                    card.classList.add('restaurant-card', 'bg-white', 'border', 'border-gray-200', 'rounded-lg', 'shadow-lg', 'p-6', 'text-center', 'transform', 'transition', 'duration-300', 'hover:scale-105');
                     card.innerHTML = `
-                        <h2>${resto.nama}</h2>
-                        <p><strong>Lokasi:</strong> ${resto.lokasi}</p>
-                        <button onclick="window.location.href='/resto/detail/${resto.pk}/'">Lihat Detail</button>
-                        <button onclick="confirmDelete('${resto.pk}', '${resto.nama}')">Hapus Resto</button>
-                    `;
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">${resto.nama}</h2>
+                    <p class="text-gray-600 mb-4"><strong>Lokasi:</strong> ${resto.lokasi}</p>
+                    <button onclick="window.location.href='/resto/detail/${resto.pk}/'" class="w-full py-2 px-4 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition duration-200">Lihat Detail</button>
+                    <button onclick="confirmDelete('${resto.pk}', '${resto.nama}')" class="w-full mt-2 py-2 px-4 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition duration-200">Hapus Resto</button>
+                `;
                     restaurantList.appendChild(card);
                 });
             } else {

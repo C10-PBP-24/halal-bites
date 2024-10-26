@@ -1,0 +1,47 @@
+<!-- Navbar -->
+<nav class="bg-white shadow-lg sticky top-0 left-0 z-40 w-screen">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center">
+            <div class="flex space-x-4">
+                <!-- Logo -->
+                <div>
+                    <a href="#" class="flex items-center py-5 px-2 text-yellow-500">
+                        <span class="font-bold text-2xl">HalalBites</span>
+                    </a>
+                </div>
+                <!-- Primary Nav -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="{% url 'resto:show_resto' %}" class="py-5 px-3 text-gray-700 hover:text-yellow-500">Resto</a>
+                    <a href="{% url 'tracker:food_tracker' %}" class="py-5 px-3 text-gray-700 hover:text-yellow-500">Food Tracker</a>
+                    <a href="#" class="py-5 px-3 text-gray-700 hover:text-yellow-500">Review</a>
+                </div>
+            </div>
+            <!-- Hamburger Icon -->
+            <div class="md:hidden">
+                <button id="hamburger" class="flex flex-col items-center justify-center w-10 h-10 rounded focus:outline-none">
+                    <span class="block w-8 h-1 bg-yellow-500 mb-1"></span>
+                    <span class="block w-8 h-1 bg-yellow-500 mb-1"></span>
+                    <span class="block w-8 h-1 bg-yellow-500"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="menu" class="hidden md:hidden mt-2">
+            <div class="flex flex-col space-y-1">
+                <a href="{% url 'resto:show_resto' %}" class="block py-2 px-3 text-gray-700 bg-gray-100 rounded hover:bg-yellow-500 hover:text-white">Resto</a>
+                <a href="{% url 'tracker:food_tracker' %}" class="block py-2 px-3 text-gray-700 bg-gray-100 rounded hover:bg-yellow-500 hover:text-white">Food Tracker</a>
+                <a href="#" class="block py-2 px-3 text-gray-700 bg-gray-100 rounded hover:bg-yellow-500 hover:text-white">Review</a>
+                <a href="{% url 'logout' %}" class="block py-2 px-3 text-gray-700 bg-gray-100 rounded hover:bg-yellow-500 hover:text-white">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
