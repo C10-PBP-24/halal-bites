@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ resto.nama }} - Details</title>
+    <style>
+        /* Basic styles */
+        .food-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            background-color: hsl(185, 39%, 49%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #4582a0;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif;">
+    <h1>{{ resto.nama }}</h1>
+    <p><strong>Location:</strong> {{ resto.lokasi }}</p>
+
+    <h2>Food Items</h2>
+    <div class="food-card">
+        <h3>{{ resto.makanan.name }}</h3>
+        <p>Price: Rp{{ resto.makanan.price }}</p>
+        <p>Promo: {{ resto.makanan.promo }}</p>
+        <img src="{{ resto.makanan.image }}" alt="{{ resto.makanan.name }}" style="width: 200px; height: auto;">
+    </div>
+
+    <a href="/resto/">
+        <Button>Back to Restaurant List</Button>
+    </a>
+</body>
+</html>
