@@ -20,7 +20,13 @@ def get_resto(request):
 @login_required(login_url='auth/login')
 def show_resto(request):
     data = Resto.objects.all()
-    return render(request, 'resto/resto.html', {'restos': data})
+    user = request.user
+    if(user.role=="user"):
+        return render(request, 'resto/resto_user.html', {'restos': data})
+    else:
+        return render(request, 'resto/resto_admin.html', {'restos': data})
+
+        
 
 def resto_detail(request, pk):
     resto = get_object_or_404(Resto, pk=pk)
