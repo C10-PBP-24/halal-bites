@@ -59,6 +59,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'halal_bites.urls'
 
+LOGIN_URL = '/'
+
+LOGIN_REDIRECT_URL = '/home/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

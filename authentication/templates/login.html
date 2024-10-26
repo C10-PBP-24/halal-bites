@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HalalBites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2>Login</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-yellow-500 text-center">HalalBites</h1>
+        <p class="text-xl font-semibold text-yellow-500 text-center mt-2">Finding Halal Foods for People in Bandung</p>
+        <p class="text-gray-600 text-center mt-4">Welcome back! Please login to your account.</p>
+        
+        <form method="post" class="mt-6">
+            {% csrf_token %}
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-semibold mb-2">Username</label>
+                <input type="text" id="username" name="username" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+                <input type="password" id="password" name="password" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+            </div>
+
+            <div class="flex items-center justify-between mb-4">
+                <label class="flex items-center">
+                    <input type="checkbox" id="remember_me" name="remember_me" class="h-4 w-4 text-yellow-500 focus:ring-yellow-500 border-gray-300 rounded">
+                    <span class="ml-2 text-gray-700">Remember Me</span>
+                </label>
+                <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="w-full bg-gray-800 text-white py-2 rounded-md font-semibold hover:bg-gray-900 transition duration-200">Login</button>
+        </form>
+
+        <div class="mt-4 text-center">
+            <p class="text-gray-600">Don't have an account?</p>
+            <a href="{% url 'register' %}" class="text-blue-500 hover:underline font-semibold">Sign Up</a>
+        </div>
+    </div>
 </body>
 </html>
