@@ -4,6 +4,7 @@ from django.core import serializers
 import json
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
+from django.contrib.auth.decorators import login_required
 from django.utils.html import strip_tags
 from food.models import Food
 from django.http import HttpResponseRedirect
@@ -16,7 +17,7 @@ def get_resto(request):
     data = Resto.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
-
+@login_required(login_url='auth/login')
 def show_resto(request):
     data = Resto.objects.all()
     return render(request, 'resto/resto.html', {'restos': data})
@@ -76,3 +77,11 @@ def delete_resto(request, id):
     resto = Resto.objects.get(pk=id)
     resto.delete()
     return HttpResponse(status=204)
+
+def show_xml(request):
+    data = Resto.objects.all()
+    return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
+
+def show_json(request):
+    data = Resto.objects.all()
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
