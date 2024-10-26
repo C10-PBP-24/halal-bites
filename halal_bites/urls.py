@@ -16,12 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rating.views import create_rating, show_rating_form
+from main.views import show_main
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('menu', include('food.urls')),
-    path('rate/<int:food_id>/', create_rating, name='create_rating'),
-    path('show/', show_rating_form, name='show_rating_form'),
+    path('rating/', include('rating.urls')),
+    path('auth/', include('authentication.urls')),
+    path('resto/', include('resto.urls')),
+    path('home/', show_main, name='home'),
 ]
