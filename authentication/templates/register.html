@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - HalalBites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2>Register</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Register</button>
-    </form>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-yellow-500 text-center">HalalBites</h1>
+        <p class="text-xl font-semibold text-yellow-500 text-center mt-2">Finding Halal Foods for People in Bandung</p>
+        <p class="text-gray-600 text-center mt-4">Create your account</p>
+        
+        <form method="post" class="mt-6">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-semibold mb-2">Username</label>
+                {{ form.username }}
+                {{ form.username.errors }}
+            </div>
+
+            <div class="mb-4">
+                <label for="password1" class="block text-gray-700 font-semibold mb-2">Password</label>
+                {{ form.password1 }}
+                {{ form.password1.errors }}
+            </div>
+
+            <div class="mb-4">
+                <label for="password2" class="block text-gray-700 font-semibold mb-2">Confirm Password</label>
+                {{ form.password2 }}
+                {{ form.password2.errors }}
+            </div>
+
+            <div class="mb-4">
+                <label for="role" class="block text-gray-700 font-semibold mb-2">Role</label>
+                {{ form.role }}
+                {{ form.role.errors }}
+            </div>
+
+            <div class="mb-4">
+                <label for="city" class="block text-gray-700 font-semibold mb-2">City</label>
+                {{ form.city }}
+                {{ form.city.errors }}
+            </div>
+
+            <button type="submit" class="w-full bg-gray-800 text-white py-2 rounded-md font-semibold hover:bg-gray-900 transition duration-200">Register</button>
+        </form>
+
+        <div class="mt-4 text-center">
+            <p class="text-gray-600">Already have an account?</p>
+            <a href="{% url 'login' %}" class="text-blue-500 hover:underline font-semibold">Login</a>
+        </div>
+    </div>
 </body>
 </html>
