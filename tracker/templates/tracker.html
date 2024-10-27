@@ -20,36 +20,9 @@
                 <h2>Food Tracker is Empty 😢</h2>
                 <p>Track your orders now!</p>
             {% endif %}
-            <button id="add-tracking-btn">+ Add Food Tracking</button>
+            <a href="{% url 'tracker:add_food_tracking' %}"id="add-tracking-btn" class="btn btn-primary">+ Add Food Tracking</a>
         </div>
-
-        <!-- Form to Add Food Tracking -->
-        <div id="add-tracking-form" class="hidden">
-            <h2>Add Food Tracking</h2>
-            <form method="post" action="{% url 'tracker:add_food_tracking' %}">
-                {% csrf_token %}
-                <label for="food">Food Title:</label>
-                <select name="food" id="food" required>
-                    {% for food in ordered_foods %}
-                        <option value="{{ food.id }}">{{ food.name }}</option>
-                    {% endfor %}
-                </select>
-
-                <label for="rating">Rating:</label>
-                <select name="rating" id="rating" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-
-                <label for="order_at">Order Date:</label>
-                <input type="date" name="order_at" id="order_at" required>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        
     </main>
 </div>
 {% endblock content %}

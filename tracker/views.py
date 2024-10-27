@@ -24,14 +24,10 @@ def add_food_tracking(request):
             food_tracking = form.save(commit=False)
             food_tracking.user = request.user
             food_tracking.save()
-            return redirect('food_tracker')
+            return redirect('tracker:food_tracker')
     else:
-        ordered_foods = Food.objects.filter(tracker__user=request.user)
-        user_ratings = Rating.objects.filter(tracker__user=request.user)
         form = AddFoodTrackingForm()
 
-    return render(request, 'add_tracking.html', {
+    return render(request, 'foodtracker.html', {
         'form': form,
-        'ordered_foods': ordered_foods,
-        'user_ratings': user_ratings
     })
