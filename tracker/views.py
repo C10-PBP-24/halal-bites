@@ -1,8 +1,7 @@
-# views.py
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from .models import Tracker, Food, Rating
-from django.urls import reverse
+from .forms import AddFoodTrackingForm
 
 @login_required
 def food_tracker(request):
@@ -19,11 +18,12 @@ def food_tracker(request):
 @login_required
 def add_food_tracking(request):
     if request.method == 'POST':
-        user = request.user
-        food_id = request.POST.get('food')
-        order_at = request.POST.get('order_at')
-        food = Food.objects.get(id=food_id)
-        Tracker.objects.create(user=user, food=food, order_at=order_at)
-        return redirect(reverse('tracker:food_tracker'))
+        form = AddFoodTrackingForm(request.POST)
+        if form.is_valid():
+            food = form.cleaned_data['food']
+            order_at = form.cleaned_data['order_at']
+            rating = Rating.objects.get(user=request.user, food=food)
+            Tracker.objects.create(user=request.user, food=food, order_at=order_at, rating=rating)
+            return redirect(reverse('tracker:food_tracker'))
 
     return redirect(reverse('tracker:food_tracker'))
