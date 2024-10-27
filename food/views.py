@@ -52,7 +52,7 @@ def food_detail(request, food_id):
     return render(request, 'food_detail.html', context)
 
 @csrf_exempt
-def add_food(request, instance):
+def add_food(request):
     form = FoodEntryForm(request.POST or None)
 
     if form.is_valid() and request.method == "POST":

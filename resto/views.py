@@ -12,7 +12,6 @@ from django.http import HttpResponseRedirect
 
 from resto.models import Resto
 
-# Create your views here.
 def get_resto(request):
     data = Resto.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
@@ -68,11 +67,11 @@ def add_resto(request):
     image_makanan = strip_tags(request.POST.get("image_makanan"))
     lokasi = strip_tags(request.POST.get("lokasi"))
 
-    # Create the Food object first
+    # Create the Food object
     new_food = Food(name=nama_makanan, price=harga_makanan, image=image_makanan, promo=promo_makanan)
     new_food.save()
 
-    # Now create the Resto object with the new Food's ID
+    # Create the Resto object with the new Food's ID
     new_resto = Resto(nama=nama, makanan=new_food, lokasi=lokasi)
     new_resto.save()
 
