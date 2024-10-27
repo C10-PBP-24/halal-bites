@@ -8,7 +8,6 @@
 <div class="flex flex-col items-center container mx-auto py-8">
     <div class="mb-8 text-center">
         <input type="text" id="budgetInput" class="p-2 border border-gray-300 rounded-md w-48" placeholder="Enter budget">
-        <button class="ml-2 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600" onclick="filterBudget()">Filter</button>
         <a href="{% url 'main:add_food' %}" class="relative ml-auto bg-gradient-to-r from-green-800 to-black text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 overflow-hidden">
             Add Food
         </a>
@@ -30,10 +29,10 @@
                 <div class="text-sm text-gray-600">
                     Promo: {{ food.promo }}
                     <div class="flex space-x-2">
-                        <a href="/edit-product/${food.pk}" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
+                        <a href="/edit_product/{{ food.pk }}" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
                             Edit
                         </a>
-                        <a href="/delete/${food.pk}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
+                        <a href="/delete/{{ food.pk }}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
                             Hapus
                         </a>
                     </div>
@@ -43,30 +42,4 @@
     {% endfor %}
     </div>
 </div>
-
-<script>
-    async function filterBudget() {
-        const budget = document.getElementById('budgetInput').value;
-        const response = await fetch(`/foods/filter-food/?price=${encodeURIComponent(budget)}`);
-        const data = await response.json();
-        const foodList = document.getElementById('foodList');
-        
-        foodList.innerHTML = '';
-
-        if (data.length > 0) {
-            data.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'max-w-xs rounded-lg overflow-hidden shadow-lg bg-white border border-gray-200 p-4 text-center';
-                card.innerHTML = `
-                    <h2 class="text-lg font-bold text-blue-800">${item.fields.name}</h2>
-                    <p class="text-sm text-gray-600"><strong>Price:</strong> ${item.fields.price}</p>
-                    <p class="text-sm text-gray-600"><strong>Promo:</strong> ${item.fields.promo}</p>
-                `;
-                foodList.appendChild(card);
-            });
-        } else {
-            foodList.innerHTML = '<p class="text-center text-gray-600">No foods available within budget.</p>';
-        }
-    }
-</script>
 {% endblock content %}

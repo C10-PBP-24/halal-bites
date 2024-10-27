@@ -36,7 +36,7 @@
 <script>
     async function filterBudget() {
         const budget = document.getElementById('budgetInput').value;
-        const response = await fetch(`/foods/filter-food/?price=${encodeURIComponent(budget)}`);
+        const response = await fetch(`/foods/filter-food/?${encodeURIComponent(budget)}`);
         const data = await response.json();
         const foodList = document.getElementById('foodList');
         

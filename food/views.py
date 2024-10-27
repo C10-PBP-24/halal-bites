@@ -2,10 +2,20 @@ from django.http import HttpResponse, HttpResponseNotFound, JsonResponse, HttpRe
 from django.shortcuts import redirect, render, get_object_or_404
 from django.core import serializers
 from food.models import Food
+from food.form import FoodEntryForm
 from django.urls import reverse
+import json
 from django.contrib.auth.decorators import login_required
 from authentication.models import UserProfile
 from django.views.decorators.csrf import csrf_exempt
+
+def get_food(request):
+    data = Food.objects.all()
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+def get_food_by_id(request, id):
+    data = Food.objects.filter(pk=id)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 
 @login_required(login_url="authentication:login")
@@ -18,39 +28,24 @@ def show_menu(request):
         food_list = serializers.deserialize('json', food_list)
         food_list = [food.object for food in food_list]
 
-        return render(request, 'owner_menu.html', {'foods': food_list})
+        return render(request, 'menu_owner.html', {'foods': food_list})
     foods = Food.objects.all()
     context = {
         'foods' : foods
     }
     return render(request, 'menu.html', context)
 
-# @login_required(login_url="authentication:login")
-# def food_detail(requets, food_id):
-#     food = get_object_or_404(Food, food_id)
-#     context = {'food': food}
-#     return render(requets, 'food_detail.html', context)
-
-@csrf_exempt
 def add_food(request):
-    if request.method == "POST":
-        name = request.POST.get('name')
-        price = request.POST.get('price')
-        image = request.POST.get('image')
-        promo = request.POST.get('promo')
+    form = FoodEntryForm(request.POST or None)
 
-        new_food = Food(name=name, price=price, image=image, promo=promo)
-        new_food.save()
-        return HttpResponse(b"CREATED", status=201)
-    return HttpResponseNotFound()
+    if form.is_valid() and request.method == "POST":
+        food = form.save(commit=False)
+        food.user =request.user
+        food.save()
+        return redirect('main:show_menu')
 
-def get_food(request):
-    data = Food.objects.all()
-    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
-
-def get_food_by_id(request, id):
-    data = Food.objects.filter(pk=id)
-    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+    context = {'form': form}
+    return render(request, "add_food.html", context)
 
 @csrf_exempt
 def filter_food(request):
