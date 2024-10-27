@@ -7,7 +7,6 @@ from django.conf import settings
 class Tracker(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     food = models.ForeignKey(Food, on_delete=models.CASCADE)
-    restaurant = models.ForeignKey(Resto, on_delete=models.CASCADE)
     rating = models.ForeignKey(Rating, on_delete=models.CASCADE)
     order_at = models.DateTimeField() 
 
