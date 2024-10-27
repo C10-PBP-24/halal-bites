@@ -32,7 +32,7 @@ jobs:
         git remote add pws $PWS_URL
         git fetch pws
         git checkout main
-        git merge pws/master --no-edit
+        git merge pws/master --strategy-option theirs --no-edit
 
     - name: Push changes to remote
       env:

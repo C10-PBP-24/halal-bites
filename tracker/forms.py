@@ -6,7 +6,7 @@ from food.models import Food
 class AddFoodTrackingForm(forms.ModelForm):
     class Meta:
         model = Tracker
-        fields = ['restaurant','order_at']
+        fields = ['food', 'order_at']
         widgets = {
             'order_at': forms.DateInput(attrs={'type': 'date'}),
         }
