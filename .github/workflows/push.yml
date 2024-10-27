@@ -24,6 +24,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git config --global http.postBuffer 157286400  # Increase buffer size to 150MB
 
     - name: Pull from remote and reset
       env:
@@ -37,4 +38,6 @@ jobs:
       env:
         PWS_URL: ${{ secrets.PWS_URL }}
       run: |
-        git push pws main:master --force
+        for i in {1..5}; do
+          git push pws main:master --force && break || sleep 15
+        done
