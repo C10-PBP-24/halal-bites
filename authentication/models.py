@@ -16,9 +16,8 @@ class CustomUser(AbstractUser):
 class UserProfile(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    full_name = models.CharField(max_length=100)
     rated_foods = models.ManyToManyField('rating.Rating', related_name="rated_foods")
     tracked_foods = models.ManyToManyField('tracker.Tracker', related_name="tracked_foods")
 
     def __str__(self):
-        return self.full_name
+        return self.user.username
