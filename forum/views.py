@@ -3,7 +3,7 @@ from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse_lazy, reverse
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, JsonResponse, HttpResponseNotFound, HttpResponseRedirect
-from .models import Thread, Post
+from .models import Thread, Post, Food  # Pastikan untuk mengimpor model Food
 from .forms import ThreadForm, PostForm  # Assuming you have forms for creating threads and posts
 import json
 from django.views.decorators.csrf import csrf_exempt
@@ -26,6 +26,7 @@ class ThreadDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['posts'] = Post.objects.filter(thread=self.object)
+        context['foods'] = Food.objects.filter(thread=self.object)  # Menampilkan makanan yang terkait dengan thread
         return context
 
 # Create a new thread (similar to asking a question)
@@ -66,10 +67,18 @@ class CreatePostView(CreateView):
 @require_POST
 def create_thread_ajax(request):
     title = strip_tags(request.POST.get("title"))
+    food_name = strip_tags(request.POST.get("food"))  # Ambil nama makanan dari request
 
-    # Create a new thread
+    # Buat thread baru
     new_thread = Thread(title=title, user=request.user)
     new_thread.save()
+
+    # Simpan makanan yang terkait dengan thread jika ada
+    if food_name:  # Cek jika food_name tidak kosong
+        foods = Food.objects.filter(name=food_name)  # Ambil semua objek Food berdasarkan nama
+        if foods.exists():
+            food = foods.first()  # Ambil objek pertama
+            new_thread.foods.add(food)  # Pastikan ini sesuai dengan relasi di model
 
     return JsonResponse({
         "status": "success",
@@ -159,13 +168,15 @@ def delete_post(request, post_id):
 def thread_list(request):
     query = request.GET.get('q')  # Get the search term from the query string
     if query:
-        # Filter threads by title containing the query (case-insensitive)
         threads = Thread.objects.filter(Q(title__icontains=query))
     else:
-        # Show all threads if no search term is provided
         threads = Thread.objects.all()
+
+    # Ambil semua makanan untuk dropdown
+    foods = Food.objects.all()
 
     context = {
         'threads': threads,
+        'foods': foods,  # Tambahkan foods ke dalam konteks
     }
-    return render(request, 'forum/thread_list.html', context)  # Correct path for the template
+    return render(request, 'forum/thread_list.html', context)

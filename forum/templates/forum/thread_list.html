@@ -25,6 +25,9 @@
           <li class="thread-item mb-4 p-4 bg-[#F5F5DC] rounded-lg shadow-md">
             <a href="{% url 'forum:thread_detail' thread.pk %}" class="text-[#455A64] hover:underline text-xl font-semibold">{{ thread.title }}</a>
             <p class="text-[#455A64] text-sm mt-2">Created at: {{ thread.created_at }} by: {{ thread.user.username }}</p> <!-- Added username here -->
+            {% if thread.foods.all %}
+            <p class="text-[#455A64] text-sm mt-2">Food: {{ thread.foods.first.name }}</p>
+            {% endif %}
 
             <!-- Display post count button -->
             <div class="flex items-center space-x-2 mt-2">
@@ -112,6 +115,15 @@
             <label for="title" class="block text-sm font-medium text-gray-700">Thread Title</label>
             <input type="text" id="title" name="title" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-indigo-700" placeholder="Enter the thread title" required>
           </div>
+          <div class="mb-4">
+            <label for="food" class="block text-sm font-medium text-gray-700">Select Food</label>
+            <select id="food" name="food" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-indigo-700" required>
+                <option value="">-- Select Food --</option> <!-- Opsi kosong -->
+                {% for food in foods %}
+                    <option value="{{ food.name }}">{{ food.name }}</option>
+                {% endfor %}
+            </select>
+          </div>
         </form>
       </div>
 
@@ -185,5 +197,30 @@
             modal.classList.add('hidden');
         }, 150);
     }
+
+    // Function to fetch food suggestions
+    document.getElementById('food').addEventListener('input', function() {
+        const query = this.value;
+        if (query.length > 2) {
+            fetch(`/api/food/search?q=${query}`) // Ganti dengan URL API yang sesuai
+                .then(response => response.json())
+                .then(data => {
+                    const suggestions = document.getElementById('foodSuggestions');
+                    suggestions.innerHTML = '';
+                    data.forEach(food => {
+                        const suggestionItem = document.createElement('div');
+                        suggestionItem.textContent = food.name;
+                        suggestionItem.classList.add('p-2', 'cursor-pointer');
+                        suggestionItem.onclick = () => {
+                            document.getElementById('food').value = food.name;
+                            suggestions.classList.add('hidden');
+                        };
+                        suggestions.appendChild(suggestionItem);
+                    });
+                    suggestions.classList.remove('hidden');
+                });
+        }
+    });
 </script>
 {% endblock content %}
+
