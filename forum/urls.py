@@ -20,5 +20,5 @@ urlpatterns = [
     # New routes for post management
     path('posts/<int:post_id>/edit/', edit_post, name='edit_post'),
     path('posts/<int:post_id>/delete/', delete_post, name='delete_post'),\
-    path('threads/', thread_list, name='thread_list'),  
+    path('threads/', thread_list, name='thread_list'), 
 ]

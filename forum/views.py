@@ -122,12 +122,12 @@ def edit_thread(request, thread_id):
     if request.method == "POST":
         thread.title = request.POST.get('title')
         thread.save()
-        return redirect('forum:thread_detail', thread_id=thread.id)
+        return redirect('forum:thread_list')  # Mengarahkan kembali ke daftar thread setelah penyimpanan
 
     context = {
         'thread': thread
     }
-    return render(request, 'edit_thread.html', context)
+    return render(request, 'forum/thread_list.html', context)  # Mengarahkan kembali ke thread_list.html
 
 @login_required
 def delete_thread(request, thread_id):
@@ -142,18 +142,18 @@ def edit_post(request, post_id):
     if request.method == "POST":
         post.content = request.POST.get('content')
         post.save()
-        return redirect('forum:thread_detail', thread_id=post.thread.id)
+        return redirect('forum:thread_detail', pk=post.thread.id)  # Redirect to thread detail page
 
     context = {
         'post': post
     }
-    return render(request, 'edit_post.html', context)
+    return render(request, 'edit_post.html', context)  # This line can be removed if not used
 
 @login_required
 def delete_post(request, post_id):
     post = get_object_or_404(Post, id=post_id, user=request.user)
     post.delete()
-    return redirect('forum:thread_detail', thread_id=post.thread.id)
+    return redirect('forum:thread_detail', pk=post.thread.id)
 
 @login_required
 def thread_list(request):
