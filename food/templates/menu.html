@@ -2,6 +2,7 @@
 
 {% block meta %}
     <title>Menu | Halal Bites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 {% endblock meta %}
 
 {% block content %}
@@ -11,11 +12,13 @@
         <button class="ml-2 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600" onclick="filterBudget()">Filter</button>
     </div>
 
-    <div id="foodList" class="grid grid-cols-2 md:grid-cols-5 gap-4 px-4 md:px-0">
+    <div id="foodList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
     {% for food in foods %}
-        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white border border-gray-200 relative">
+        <div class="restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105">
             <div class="relative">
-                <img class="w-full h-64 object-cover" src="{{ food.image }}" alt="{{ food.name }}">
+                <a href="{% url 'food:food_detail' food.id %}">
+                    <img class="w-full h-64 object-cover" src="{{ food.image }}" alt="{{ food.name }}">
+                </a>
             </div>
             <div class="p-4">
                 <div class="text-blue-800 font-bold text-lg mb-2">
@@ -24,8 +27,11 @@
                 <div class="text-sm text-gray-600 mb-2">
                     Price: {{ food.price }}
                 </div>
-                <div class="text-sm text-gray-600">
+                <div class="text-sm text-gray-600 mb-2">
                     Promo: {{ food.promo }}
+                </div>
+                <div class="text-sm text-gray-600">
+                    Average Rating: {{ food.get_average_rating }}
                 </div>
             </div>
         </div>
@@ -45,11 +51,19 @@
         if (data.length > 0) {
             data.forEach(item => {
                 const card = document.createElement('div');
-                card.className = 'max-w-xs rounded-lg overflow-hidden shadow-lg bg-white border border-gray-200 p-4 text-center';
+                card.className = 'restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105';
                 card.innerHTML = `
-                    <h2 class="text-lg font-bold text-blue-800">${item.fields.name}</h2>
-                    <p class="text-sm text-gray-600"><strong>Price:</strong> ${item.fields.price}</p>
-                    <p class="text-sm text-gray-600"><strong>Promo:</strong> ${item.fields.promo}</p>
+                    <div class="relative">
+                        <a href="/food/${item.id}/">
+                            <img class="w-full h-64 object-cover" src="${item.image}" alt="${item.name}">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-blue-800 font-bold text-lg mb-2">${item.name}</div>
+                        <div class="text-sm text-gray-600 mb-2"><strong>Price:</strong> ${item.price}</div>
+                        <div class="text-sm text-gray-600 mb-2"><strong>Promo:</strong> ${item.promo}</div>
+                        <div class="text-sm text-gray-600"><strong>Average Rating:</strong> ${item.average_rating}</div>
+                    </div>
                 `;
                 foodList.appendChild(card);
             });

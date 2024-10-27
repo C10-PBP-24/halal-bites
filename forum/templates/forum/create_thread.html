@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="center-container">
+  <div class="center-content">
+    <h1>Create New Thread</h1>
+
+    <form method="post" action="{% url 'forum:create_thread' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

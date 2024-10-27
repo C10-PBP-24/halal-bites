@@ -2,14 +2,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block meta %}{% endblock meta %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
 
-<body>
+    .center-content {
+        max-width: 1000px; /* max-width is adjustable */
+        width: 100%;
+    }
+</style>
+<body class="bg-gray-100 min-h-screen flex flex-col">
     {% include "navbar.html" %}
     {% block content %}
     {% endblock content %}
     {% include "footer.html" %}
+    {% block script %}
+    {% endblock script %}
 </body>
-{% block script %}
-{% endblock script %}
 </html>
