@@ -25,17 +25,11 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-    - name: Pull from remote and merge
+    - name: Force push to PWS
       env:
         PWS_URL: ${{ secrets.PWS_URL }}
       run: |
         git remote add pws $PWS_URL
         git fetch pws
-        git checkout main
-        git merge pws/master --strategy-option theirs --no-edit
-
-    - name: Push changes to remote
-      env:
-        PWS_URL: ${{ secrets.PWS_URL }}
-      run: |
-        git push pws main:master
+        git reset --hard origin/main
+        git push pws main:master --force
