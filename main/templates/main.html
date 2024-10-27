@@ -5,34 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main - HalalBites</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    {% include 'navbar.html' %}
+
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-4">
-                    <!-- Logo -->
-                    <div>
-                        <a href="#" class="flex items-center py-5 px-2 text-yellow-500">
-                            <span class="font-bold text-2xl">HalalBites</span>
-                        </a>
-                    </div>
-                    <!-- Primary Nav -->
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-yellow-500">Resto</a>
-                        <a href="{% url 'tracker:food_tracker' %}" class="py-5 px-3 text-gray-700 hover:text-yellow-500">Food Tracker</a>
-                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-yellow-500">Review</a>
-                    </div>
-                </div>
-                <!-- Secondary Nav -->
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="{% url 'logout' %}" class="py-5 px-3 text-gray-700 hover:text-yellow-500">Logout</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <!-- Main Content -->
     <div class="flex-grow flex items-center justify-center">
         <div class="max-w-md w-full bg-white p-8 rounded-lg shadow-lg text-center">
