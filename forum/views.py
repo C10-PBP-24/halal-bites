@@ -7,18 +7,15 @@ from .models import Thread, Post
 from .forms import ThreadForm, PostForm  # Assuming you have forms for creating threads and posts
 import json
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse
 from django.utils.html import strip_tags
 from django.views.decorators.http import require_POST
 from django.db.models import Q
-
 
 # List all threads
 class ThreadListView(ListView):
     model = Thread
     template_name = 'forum/thread_list.html'
     context_object_name = 'threads'
-
 
 # View details of a specific thread and its posts
 class ThreadDetailView(DetailView):
@@ -31,7 +28,6 @@ class ThreadDetailView(DetailView):
         context['posts'] = Post.objects.filter(thread=self.object)
         return context
 
-
 # Create a new thread (similar to asking a question)
 class CreateThreadView(CreateView):
     model = Thread
@@ -43,7 +39,6 @@ class CreateThreadView(CreateView):
         form.instance.user = self.request.user  # Associate the thread with the current user
         return super().form_valid(form)
 
-
 # Create a new post (similar to answering a question)
 class CreatePostView(CreateView):
     model = Post
@@ -54,6 +49,7 @@ class CreatePostView(CreateView):
         # Get the thread object based on the thread's primary key (pk) from the URL
         thread = get_object_or_404(Thread, pk=self.kwargs['pk'])
         form.instance.thread = thread  # Associate the post with the thread
+        form.instance.user = self.request.user  # Associate the post with the current user
         return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
@@ -72,7 +68,7 @@ def create_thread_ajax(request):
     title = strip_tags(request.POST.get("title"))
 
     # Create a new thread
-    new_thread = Thread(title=title, )
+    new_thread = Thread(title=title, user=request.user)
     new_thread.save()
 
     return JsonResponse({
@@ -80,7 +76,6 @@ def create_thread_ajax(request):
         "message": "Thread created successfully",
         "thread_id": new_thread.id
     }, status=201)
-
 
 @csrf_exempt
 @require_POST
@@ -93,7 +88,7 @@ def create_post_ajax(request, pk):
     user = request.user  # Get the current user
 
     # Create a new post
-    new_post = Post(thread=thread, content=content,)# user=user)
+    new_post = Post(thread=thread, content=content, user=user)
     new_post.save()
 
     # Return a JSON response indicating success
@@ -140,7 +135,6 @@ def delete_thread(request, thread_id):
     thread.delete()
     return redirect('forum:thread_list')
 
-
 @login_required
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id, user=request.user)
@@ -161,7 +155,7 @@ def delete_post(request, post_id):
     post.delete()
     return redirect('forum:thread_detail', thread_id=post.thread.id)
 
-# @login_required
+@login_required
 def thread_list(request):
     query = request.GET.get('q')  # Get the search term from the query string
     if query:
