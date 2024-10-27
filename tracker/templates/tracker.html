@@ -23,26 +23,17 @@
             <button id="add-tracking-btn" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md">+ Add Food Tracking</button>
         </div>
 
-                <!-- Form to Add Food Tracking -->
+        <!-- Form to Add Food Tracking -->
         <div id="add-tracking-form" class="hidden bg-white rounded-lg shadow-lg p-6 mt-8">
             <h2 class="text-2xl font-bold mb-4">Add Food Tracking</h2>
             <form method="post" action="{% url 'tracker:add_food_tracking' %}">
                 {% csrf_token %}
                 <label for="food" class="block mb-2">Food Title:</label>
                 <select name="food" id="food" class="block w-full mb-4 p-2 border border-gray-300 rounded-md">
-                    {% for food in ordered_foods %}
+                    {% for food in rated_foods %}
                         <option value="{{ food.id }}">{{ food.name }}</option>
                     {% empty %}
                         <option disabled>No foods available</option>
-                    {% endfor %}
-                </select>
-        
-                <label for="rating" class="block mb-2">Rating:</label>
-                <select name="rating" id="rating" class="block w-full mb-4 p-2 border border-gray-300 rounded-md">
-                    {% for rating in user_ratings %}
-                        <option value="{{ rating.id }}">Rated {{ rating.rating }} - {{ rating.description }}</option>
-                    {% empty %}
-                        <option disabled>No ratings available</option>
                     {% endfor %}
                 </select>
         
