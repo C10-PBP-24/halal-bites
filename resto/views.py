@@ -43,26 +43,25 @@ def filter_resto(request):
 
     filtered_restos = Resto.objects.all()
     if lokasi:
-        filtered_restos = Resto.objects.filter(lokasi__icontains=lokasi)  # Filter by location (case-insensitive)
+        filtered_restos = Resto.objects.filter(lokasi__icontains=lokasi)  # Filter by location
     if nama:
-        filtered_restos = filtered_restos.filter(nama__icontains=nama)  # Filter by location (case-insensitive)
+        filtered_restos = filtered_restos.filter(nama__icontains=nama)  # Filter by name
 
     data = [
         {
-            'pk': resto.pk,      # Include the primary key
+            'pk': resto.pk,
             'nama': resto.nama,
             'lokasi': resto.lokasi
         }
         for resto in filtered_restos
     ]
     
-    return JsonResponse({'restos': data})  # Use JsonResponse to return the data
+    return JsonResponse({'restos': data})
 
 @csrf_exempt 
 @require_POST
 def add_resto(request):
     nama = strip_tags(request.POST.get("nama"))
-    print("nama "+ nama)
     nama_makanan = strip_tags(request.POST.get("nama_makanan"))
     harga_makanan = strip_tags(request.POST.get("harga_makanan"))
     promo_makanan = strip_tags(request.POST.get("promo_makanan"))

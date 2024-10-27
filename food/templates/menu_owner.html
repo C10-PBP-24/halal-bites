@@ -10,7 +10,7 @@
     <div class="mb-8 text-center">
         <input type="text" id="budgetInput" class="p-2 border border-gray-300 rounded-md w-48" placeholder="Enter budget">
         <button class="ml-2 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600" onclick="filterBudget()">Filter</button>
-        <a href="{% url 'main:add_food' %}" class="relative ml-auto bg-gradient-to-r from-green-800 to-black text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 overflow-hidden">
+        <a href="{% url 'food:add_food' %}" class="relative ml-auto bg-gradient-to-r from-green-800 to-black text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 overflow-hidden">
             Add Food
         </a>
     </div>
@@ -32,10 +32,10 @@
                     Promo: {{ food.promo }}
                 </div>
                 <div class="flex space-x-2">
-                    <a href="/edit-product/{{food.pk}}" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
+                    <a href="edit-product/{{ food.pk }}" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
                         Edit
                     </a>
-                    <a href="/delete/{{food.pk}}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
+                    <a href="/delete/{{ food.pk }}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
                         Hapus
                     </a>
                 </div>
@@ -48,7 +48,7 @@
 <script>
     async function filterBudget() {
         const budget = document.getElementById('budgetInput').value;
-        const response = await fetch(`/foods/filter-food/?price=${encodeURIComponent(budget)}`);
+        const response = await fetch("{% url 'food:filter_food' %}?price=" + encodeURIComponent(budget));
         const data = await response.json();
         const foodList = document.getElementById('foodList');
         
@@ -59,9 +59,17 @@
                 const card = document.createElement('div');
                 card.className = 'restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105';
                 card.innerHTML = `
-                    <h2 class="text-lg font-bold text-blue-800">${item.fields.name}</h2>
-                    <p class="text-sm text-gray-600"><strong>Price:</strong> ${item.fields.price}</p>
-                    <p class="text-sm text-gray-600"><strong>Promo:</strong> ${item.fields.promo}</p>
+                    <div class="relative">
+                        <a href="/food/${item.id}/">
+                            <img class="w-full h-64 object-cover" src="${item.image}" alt="${item.name}">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-blue-800 font-bold text-lg mb-2">${item.name}</div>
+                        <div class="text-sm text-gray-600 mb-2"><strong>Price:</strong> ${item.price}</div>
+                        <div class="text-sm text-gray-600 mb-2"><strong>Promo:</strong> ${item.promo}</div>
+                        <div class="text-sm text-gray-600"><strong>Average Rating:</strong> ${item.average_rating}</div>
+                    </div>
                 `;
                 foodList.appendChild(card);
             });
