@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Tracker</title>
-    <link rel="stylesheet" href="{% static 'css/tracker.css' %}">
+    
 </head>
 <body>
     <div class="container">
@@ -28,7 +28,7 @@
             <!-- Form to Add Food Tracking -->
             <div id="add-tracking-form" class="hidden">
                 <h2>Add Food Tracking</h2>
-                <form method="post" action="{% url 'add_food_tracking' %}">
+                <form method="post" action="{% url 'tracker:add_food_tracking' %}">
                     {% csrf_token %}
                     <label for="food">Food Title:</label>
                     <select name="food" id="food">

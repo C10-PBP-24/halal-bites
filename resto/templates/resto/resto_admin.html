@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% include 'navbar.html' %}
+</head>
+<body class="font-sans bg-gray-100">
+
+    <div class="p-6">
+        <h1 class="text-3xl font-bold text-center text-yellow-500 mb-8 p-6">Restaurants</h1>
+        <!-- Main Content Wrapper -->
+        <div class="content-container flex flex-col lg:flex-row lg:gap-5 gap-5">
+            <!-- Filter Section -->
+            <div class="filter-container lg:w-1/4 w-full">
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Filter Restaurants</h3>
+                    <label class="block text-gray-700 font-semibold mb-2">Nama:</label>
+                    <input type="text" id="namaInput" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 mb-4" placeholder="Enter name">
+                    
+                    <label class="block text-gray-700 font-semibold mb-2">Lokasi:</label>
+                    <input type="text" id="lokasiInput" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 mb-4" placeholder="Enter location">
+                    
+                    <button class="w-full bg-gray-800 text-white py-2 rounded-md font-semibold hover:bg-gray-900 transition duration-200" onclick="filterRestaurants()">Filter</button>
+                </div>
+    
+                <button class="w-full mt-4 py-2 px-4 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition duration-200" id="addRestaurantBtn">Add Restaurant</button>
+            </div>
+    
+            <!-- Restaurant List Section -->
+            <div class="restaurant-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full" id="restaurantList">
+                {% if restos %}
+                    {% for resto in restos %}
+                        <div class="restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">{{ resto.nama }}</h2>
+                            <p class="text-gray-600 mb-4"><strong>Lokasi:</strong> {{ resto.lokasi }}</p>
+                            <button onclick="window.location.href='/resto/detail/{{resto.id}}/'" class="w-full py-2 px-4 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-900 transition duration-200">Lihat Detail</button>
+                            <button onclick="confirmDelete('{{ resto.id }}', '{{ resto.nama }}')" class="w-full mt-2 py-2 px-4 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition duration-200">Hapus Resto</button>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="text-center text-gray-600">No restaurants available.</p>
+                {% endif %}
+            </div>
+        </div>
+    
+    
+        <!-- Modal for Adding Restaurant -->
+        <div id="addRestoModal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="modal-content bg-white p-6 rounded-lg w-full max-w-lg">
+                <form>
+                    {% csrf_token %}
+                    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                </form>
+    
+                <span class="close absolute top-4 right-4 text-2xl font-bold cursor-pointer" id="closeModal">&times;</span>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Add Restaurant</h2>
+    
+                <input type="text" id="namaRestoInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Restaurant Name" required>
+                <input type="text" id="namaMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Name" required>
+                <input type="text" id="hargaMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Price" required>
+                <input type="text" id="promoMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Promo" required>
+                <input type="url" id="imageMakananInput" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Food Image (Image URL)" required>
+                <input type="text" id="lokasiInputAdd" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Location" required>
+                
+                <button class="w-full py-2 px-4 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition duration-200" onclick="addRestaurant()">Add Restaurant</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        // Function to confirm deletion
+        function confirmDelete(restoId, restoName) {
+            const userConfirmed = confirm(`Are you sure you want to delete the restaurant "${restoName}"?`);
+            if (userConfirmed) {
+                deleteRestaurant(restoId);
+            }
+        }
+
+        // Function to send delete request
+        async function deleteRestaurant(restoId) {
+            const csrfToken = getCookie('csrftoken');
+            try {
+                const response = await fetch(`/resto/delete-resto/${restoId}/`, {
+                    method: 'DELETE',
+                    headers: {
+                        'X-CSRFToken': csrfToken,
+                    }
+                });
+
+                if (response.status === 204) {
+                    alert('Restaurant deleted successfully!');
+                    location.reload();
+                } else {
+                    alert('Failed to delete restaurant. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            }
+        }
+
+        document.getElementById('addRestaurantBtn').onclick = function() {
+            document.getElementById('addRestoModal').style.display = "flex";
+        };
+
+        document.getElementById('closeModal').onclick = function() {
+            document.getElementById('addRestoModal').style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('addRestoModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        async function addRestaurant() {
+            const nama = document.getElementById('namaRestoInput').value;
+            const namaMakanan = document.getElementById('namaMakananInput').value;
+            const hargaMakanan = document.getElementById('hargaMakananInput').value;
+            const promoMakanan = document.getElementById('promoMakananInput').value;
+            const imageMakanan = document.getElementById('imageMakananInput').value;
+            const lokasi = document.getElementById('lokasiInputAdd').value;
+
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+            try {
+                const response = await fetch('/resto/add-resto/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'X-CSRFToken': csrfToken,
+                    },
+                    body: `nama=${encodeURIComponent(nama)}&nama_makanan=${encodeURIComponent(namaMakanan)}&harga_makanan=${encodeURIComponent(hargaMakanan)}&promo_makanan=${encodeURIComponent(promoMakanan)}&image_makanan=${encodeURIComponent(imageMakanan)}&lokasi=${encodeURIComponent(lokasi)}`
+                });
+
+                if (response.status === 201) {
+                    alert('Restaurant added successfully!');
+                    location.reload();
+                } else {
+                    alert('Failed to add restaurant. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            }
+        }
+
+        async function filterRestaurants() {
+            const lokasi = document.getElementById('lokasiInput').value;
+            const nama = document.getElementById('namaInput').value;
+            const queryParams = new URLSearchParams({
+                lokasi: lokasi,
+                nama: nama
+            });
+
+            const response = await fetch(`/resto/filter-resto/?${queryParams.toString()}`);
+            const data = await response.json();
+            const restaurantList = document.getElementById('restaurantList');
+
+            restaurantList.innerHTML = '';
+
+            if (data.restos.length > 0) {
+                data.restos.forEach(resto => {
+                    const card = document.createElement('div');
+                    card.classList.add('restaurant-card', 'bg-white', 'border', 'border-gray-200', 'rounded-lg', 'shadow-lg', 'p-6', 'text-center', 'transform', 'transition', 'duration-300', 'hover:scale-105');
+                    card.innerHTML = `
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">${resto.nama}</h2>
+                    <p class="text-gray-600 mb-4"><strong>Lokasi:</strong> ${resto.lokasi}</p>
+                    <button onclick="window.location.href='/resto/detail/${resto.pk}/'" class="w-full py-2 px-4 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition duration-200">Lihat Detail</button>
+                    <button onclick="confirmDelete('${resto.pk}', '${resto.nama}')" class="w-full mt-2 py-2 px-4 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition duration-200">Hapus Resto</button>
+                `;
+                    restaurantList.appendChild(card);
+                });
+            } else {
+                restaurantList.innerHTML = '<p>No restaurants available.</p>';
+            }
+        }
+    </script>
+</body>
+</html>

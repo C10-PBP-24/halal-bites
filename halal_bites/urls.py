@@ -28,4 +28,5 @@ urlpatterns = [
     path('auth/', include('authentication.urls')),
     path('resto/', include('resto.urls')),
     path('home/', show_main, name='home'),
+    path('forum/', include('forum.urls')),
 ]
