@@ -1,0 +1,902 @@
+[
+  {
+    "pk": 1,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BVEGIEZ, CUPUKEIK",
+      "makanan": 1,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BAWANG MANIAK",
+      "makanan": 2,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SNOW MOONCAKE, ONI BOLLI",
+      "makanan": 3,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CAHAYA MAS",
+      "makanan": 4,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "GYWNNEC BAKERY",
+      "makanan": 5,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "MURNI",
+      "makanan": 6,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "DINGS BATAGOR",
+      "makanan": 7,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CUMPIAH",
+      "makanan": 8,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KACANG BAWANG PASKO",
+      "makanan": 9,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "DJAKHAZ",
+      "makanan": 10,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "HAI BILIK",
+      "makanan": 11,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "TRAPESIUM",
+      "makanan": 12,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SAWARGI",
+      "makanan": 13,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "NYAI",
+      "makanan": 14,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SEDAP RASA",
+      "makanan": 15,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "LASTRO",
+      "makanan": 16,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "LATUNA",
+      "makanan": 17,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "PEMPEK EMAK 729",
+      "makanan": 18,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "RADJA",
+      "makanan": 19,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SARI TEMPE",
+      "makanan": 20,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ADIN COMRING",
+      "makanan": 21,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "APRIL",
+      "makanan": 22,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "MANG EDI TEA",
+      "makanan": 23,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BUNDA",
+      "makanan": 24,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KULIA 17, KURING 17",
+      "makanan": 25,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BATAGOUS",
+      "makanan": 26,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KING RIPIK",
+      "makanan": 27,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "MA ENOK",
+      "makanan": 28,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KOKAH",
+      "makanan": 29,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "GALS",
+      "makanan": 30,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SHAE COOKIES",
+      "makanan": 31,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SAHE",
+      "makanan": 32,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "GARIS KUNING TEPUNG INDONESIA",
+      "makanan": 33,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "RENDANG NI ELVI",
+      "makanan": 34,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CALICO",
+      "makanan": 35,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "AUGIE",
+      "makanan": 36,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "JAVA OMBEN",
+      "makanan": 37,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SUENDA MOUNTAIN",
+      "makanan": 38,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "TAYO",
+      "makanan": 39,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BI EPOY DAN GANIS",
+      "makanan": 40,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "PEMPEK BU MAYA",
+      "makanan": 41,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "RIESTAFOOD",
+      "makanan": 42,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SUPER",
+      "makanan": 43,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "TWIN GILRS",
+      "makanan": 44,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ZUHAUSE COFFEE",
+      "makanan": 45,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CASSAVA BROWNIES",
+      "makanan": 46,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "MOKIHIMA 15",
+      "makanan": 47,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CUANGKIEU BANDUNG",
+      "makanan": 48,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SUMPIA IBU RUM",
+      "makanan": 49,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KADATUAN",
+      "makanan": 50,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "DHILAHS",
+      "makanan": 51,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "MAWAR BODAS",
+      "makanan": 52,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "NASS",
+      "makanan": 53,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ADILABIS",
+      "makanan": 54,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "TASTY",
+      "makanan": 55,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ANISHA",
+      "makanan": 56,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 57,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BELIA",
+      "makanan": 57,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 58,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BU DARJAT",
+      "makanan": 58,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 59,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KIRIHUCI",
+      "makanan": 59,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 60,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "LINS BROWNIES",
+      "makanan": 60,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 61,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CEUYAH",
+      "makanan": 61,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 62,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CIRDUD",
+      "makanan": 62,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 63,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "DEVINS CAKE",
+      "makanan": 63,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 64,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ASMARA SNACK",
+      "makanan": 64,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 65,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "HIDUP BARU",
+      "makanan": 65,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 66,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "HOMEY",
+      "makanan": 66,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 67,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "JUMANJI",
+      "makanan": 67,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 68,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "DEHAY",
+      "makanan": 68,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 69,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "JUICE THROUGH EAT TOO",
+      "makanan": 69,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 70,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BISOU PREMIUM COOKIES",
+      "makanan": 70,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 71,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "DRINK ME",
+      "makanan": 71,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 72,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "AJ",
+      "makanan": 72,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 73,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BUNGBU",
+      "makanan": 73,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 74,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ROCKET SEBLAK",
+      "makanan": 74,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 75,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KABITA BAWANG GORENG",
+      "makanan": 75,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 76,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "DAWALAKU",
+      "makanan": 76,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 77,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "CIDATOP",
+      "makanan": 77,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 78,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "TINS KUE",
+      "makanan": 78,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 79,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "TARO CHIPS HM",
+      "makanan": 79,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 80,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "KATLA",
+      "makanan": 80,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 81,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ZAYN",
+      "makanan": 81,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 82,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "PISAMALA",
+      "makanan": 82,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 83,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "PUN BOJO",
+      "makanan": 83,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 84,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "SVJ",
+      "makanan": 84,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 85,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ZHAZAN",
+      "makanan": 85,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 86,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "OOOOO ENAAAK!!!!",
+      "makanan": 86,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 87,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "QAISYARA",
+      "makanan": 87,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 88,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "GRIYA ROTI UNYIL",
+      "makanan": 88,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 89,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ADESHA",
+      "makanan": 89,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 90,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "AMBUING",
+      "makanan": 90,
+      "lokasi": "Cihampelas"
+    }
+  },
+  {
+    "pk": 91,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "MASKET",
+      "makanan": 91,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 92,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "HALALICIOUS",
+      "makanan": 92,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 93,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "ASY SYAUQI",
+      "makanan": 93,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 94,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "BOGA TENA",
+      "makanan": 94,
+      "lokasi": "Braga"
+    }
+  },
+  {
+    "pk": 95,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "JAMUR CRISPY QIERA",
+      "makanan": 95,
+      "lokasi": "Lembang"
+    }
+  },
+  {
+    "pk": 96,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "AYA RASA",
+      "makanan": 96,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 97,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "OMABA",
+      "makanan": 97,
+      "lokasi": "Cibaduyut"
+    }
+  },
+  {
+    "pk": 98,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "NULLA LAC",
+      "makanan": 98,
+      "lokasi": "Dago"
+    }
+  },
+  {
+    "pk": 99,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "JAHEFIT, SODARA",
+      "makanan": 99,
+      "lokasi": "Setiabudi"
+    }
+  },
+  {
+    "pk": 100,
+    "model": "resto.resto",
+    "fields": {
+      "nama": "TAYOCIE",
+      "makanan": 100,
+      "lokasi": "Lembang"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ resto.nama }} - Details</title>
+    <!-- Include Tailwind CSS (make sure you have it set up in your project) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <div class="max-w-4xl mx-auto p-4">
+        <h1 class="text-3xl font-bold">{{ resto.nama }}</h1>
+        <p class="mt-2 text-lg"><strong>Location:</strong> {{ resto.lokasi }}</p>
+
+        <h2 class="text-2xl font-semibold mt-4">Food Items</h2>
+        <div class="food-card bg-white border border-gray-300 rounded-lg shadow-md p-4 mt-2">
+            <h3 class="text-xl font-semibold">{{ resto.makanan.name }}</h3>
+            <p class="mt-1">Price: Rp{{ resto.makanan.price }}</p>
+            <p class="mt-1">Promo: {{ resto.makanan.promo }}</p>
+            <img src="{{ resto.makanan.image }}" alt="{{ resto.makanan.name }}" class="mt-2 w-48 h-auto rounded-lg">
+        </div>
+
+        <a href="/resto/" class="mt-4 inline-block">
+            <button class="w-full py-2 px-4 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-900 transition duration-200">Back to Restaurant List</button>
+        </a>
+    </div>
+</body>
+</html>
