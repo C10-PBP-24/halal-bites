@@ -16,7 +16,9 @@
     {% for food in foods %}
         <div class="restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105">
             <div class="relative">
-                <img class="w-full h-64 object-cover" src="{{ food.image }}" alt="{{ food.name }}">
+                <a href="{% url 'food:food_detail' food.id %}">
+                    <img class="w-full h-64 object-cover" src="{{ food.image }}" alt="{{ food.name }}">
+                </a>
             </div>
             <div class="p-4">
                 <div class="text-blue-800 font-bold text-lg mb-2">
@@ -25,8 +27,11 @@
                 <div class="text-sm text-gray-600 mb-2">
                     Price: {{ food.price }}
                 </div>
-                <div class="text-sm text-gray-600">
+                <div class="text-sm text-gray-600 mb-2">
                     Promo: {{ food.promo }}
+                </div>
+                <div class="text-sm text-gray-600">
+                    Average Rating: {{ food.get_average_rating }}
                 </div>
             </div>
         </div>
@@ -37,7 +42,7 @@
 <script>
     async function filterBudget() {
         const budget = document.getElementById('budgetInput').value;
-        const response = await fetch(`/foods/filter-food/?price=${encodeURIComponent(budget)}`);
+        const response = await fetch("{% url 'food:filter_food' %}?price=" + encodeURIComponent(budget));
         const data = await response.json();
         const foodList = document.getElementById('foodList');
         
@@ -48,9 +53,17 @@
                 const card = document.createElement('div');
                 card.className = 'restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105';
                 card.innerHTML = `
-                    <h2 class="text-lg font-bold text-blue-800">${item.fields.name}</h2>
-                    <p class="text-sm text-gray-600"><strong>Price:</strong> ${item.fields.price}</p>
-                    <p class="text-sm text-gray-600"><strong>Promo:</strong> ${item.fields.promo}</p>
+                    <div class="relative">
+                        <a href="/food/${item.id}/">
+                            <img class="w-full h-64 object-cover" src="${item.image}" alt="${item.name}">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-blue-800 font-bold text-lg mb-2">${item.name}</div>
+                        <div class="text-sm text-gray-600 mb-2"><strong>Price:</strong> ${item.price}</div>
+                        <div class="text-sm text-gray-600 mb-2"><strong>Promo:</strong> ${item.promo}</div>
+                        <div class="text-sm text-gray-600"><strong>Average Rating:</strong> ${item.average_rating}</div>
+                    </div>
                 `;
                 foodList.appendChild(card);
             });

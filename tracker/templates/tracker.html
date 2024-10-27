@@ -1,66 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Tracker</title>
-    
-</head>
-<body>
-    <div class="container">
- 
-        <main>
-            <div class="tracker-section">
-                {% if food_tracker %}
-                    <h2>Your Food Tracker</h2>
-                    <ul>
-                        {% for track in food_tracker %}
-                            <li>{{ track.food.name }} at {{ track.restaurant.name }} - Rated {{ track.rating.score }} by you on {{ track.order_at|date:"F j, Y" }}</li>
-                        {% endfor %}
-                    </ul>
-                {% else %}
-                    <h2>Food Tracker is Empty 😢</h2>
-                    <p>Track your orders now!</p>
-                {% endif %}
-                <button id="add-tracking-btn">+ Add Food Tracking</button>
-            </div>
+{% extends "base.html" %}
 
-            <!-- Form to Add Food Tracking -->
-            <div id="add-tracking-form" class="hidden">
-                <h2>Add Food Tracking</h2>
-                <form method="post" action="{% url 'tracker:add_food_tracking' %}">
-                    {% csrf_token %}
-                    <label for="food">Food Title:</label>
-                    <select name="food" id="food">
-                        {% for food in ordered_foods %}
-                            <option value="{{ food.id }}">{{ food.name }}</option>
-                        {% endfor %}
-                    </select>
+{% block meta %}
+    <title>Food Tracker | Halal Bites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+{% endblock meta %}
 
-                    <label for="rating">Rating:</label>
-                    <select name="rating" id="rating">
-                        {% for rating in user_ratings %}
-                            <option value="{{ rating.id }}">Rated {{ rating.score }} - {{ rating.comment }}</option>
-                        {% endfor %}
-                    </select>
+{% block content %}
+<div class="container mx-auto py-8">
+    <main>
+        <div class="tracker-section bg-white rounded-lg shadow-lg p-6">
+            {% if food_tracker %}
+                <h2 class="text-2xl font-bold mb-4">Your Food Tracker</h2>
+                <ul class="list-disc pl-5">
+                    {% for track in food_tracker %}
+                        <li class="mb-2">{{ track.food.name }} at {{ track.restaurant.name }} - Rated {{ track.rating.rating }} by you on {{ track.order_at|date:"F j, Y" }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <h2 class="text-2xl font-bold mb-4">Food Tracker is Empty 😢</h2>
+                <p>Track your orders now!</p>
+            {% endif %}
+            <button id="add-tracking-btn" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md">+ Add Food Tracking</button>
+        </div>
 
-                    <label for="order_at">Order Date:</label>
-                    <input type="date" name="order_at" id="order_at" required>
+        <!-- Form to Add Food Tracking -->
+        <div id="add-tracking-form" class="hidden bg-white rounded-lg shadow-lg p-6 mt-8">
+            <h2 class="text-2xl font-bold mb-4">Add Food Tracking</h2>
+            <form method="post" action="{% url 'tracker:add_food_tracking' %}">
+                {% csrf_token %}
+                <label for="food" class="block mb-2">Food Title:</label>
+                <select name="food" id="food" class="block w-full mb-4 p-2 border border-gray-300 rounded-md">
+                    {% for food in ordered_foods %}
+                        <option value="{{ food.id }}">{{ food.name }}</option>
+                    {% endfor %}
+                </select>
 
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </main>
+                <label for="rating" class="block mb-2">Rating:</label>
+                <select name="rating" id="rating" class="block w-full mb-4 p-2 border border-gray-300 rounded-md">
+                    {% for rating in user_ratings %}
+                        <option value="{{ rating.id }}">Rated {{ rating.rating }} - {{ rating.description }}</option>
+                    {% endfor %}
+                </select>
 
-    </div>
+                <label for="order_at" class="block mb-2">Order Date:</label>
+                <input type="date" name="order_at" id="order_at" class="block w-full mb-4 p-2 border border-gray-300 rounded-md" required>
 
-    <script>
-        const addTrackingBtn = document.getElementById('add-tracking-btn');
-        const addTrackingForm = document.getElementById('add-tracking-form');
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Submit</button>
+            </form>
+        </div>
+    </main>
+</div>
+{% endblock content %}
 
-        addTrackingBtn.addEventListener('click', () => {
-            addTrackingForm.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
+{% block script %}
+<script>
+    const addTrackingBtn = document.getElementById('add-tracking-btn');
+    const addTrackingForm = document.getElementById('add-tracking-form');
+
+    addTrackingBtn.addEventListener('click', () => {
+        addTrackingForm.classList.toggle('hidden');
+    });
+</script>
+{% endblock script %}

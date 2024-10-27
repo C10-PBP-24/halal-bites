@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
-from .forms import CustomUserCreationForm, CustomAuthenticationForm
-from .models import UserProfile
+from authentication.forms import CustomUserCreationForm, CustomAuthenticationForm
+from authentication.models import UserProfile
 
 def register(request):
     if request.method == 'POST':

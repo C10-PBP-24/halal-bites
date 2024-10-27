@@ -6,6 +6,7 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from authentication.models import UserProfile
 from django.views.decorators.csrf import csrf_exempt
+from rating.forms import RatingForm
 
 
 @login_required(login_url="authentication:login")
@@ -25,11 +26,30 @@ def show_menu(request):
     }
     return render(request, 'menu.html', context)
 
-# @login_required(login_url="authentication:login")
-# def food_detail(requets, food_id):
-#     food = get_object_or_404(Food, food_id)
-#     context = {'food': food}
-#     return render(requets, 'food_detail.html', context)
+@login_required(login_url="authentication:login")
+def food_detail(request, food_id):
+    food = get_object_or_404(Food, id=food_id)
+    ratings = food.ratings.all()
+    average_rating = food.get_average_rating()
+
+    if request.method == 'POST':
+        form = RatingForm(request.POST)
+        if form.is_valid():
+            rating = form.save(commit=False)
+            rating.food = food
+            rating.user = request.user
+            rating.save()
+            return redirect('food:food_detail', food_id=food.id)
+    else:
+        form = RatingForm()
+
+    context = {
+        'food': food,
+        'ratings': ratings,
+        'average_rating': average_rating,
+        'form': form,
+    }
+    return render(request, 'food_detail.html', context)
 
 @csrf_exempt
 def add_food(request):
@@ -54,12 +74,19 @@ def get_food_by_id(request, id):
 
 @csrf_exempt
 def filter_food(request):
-    price = request.GET.get('price', '')
-    foods = Food.objects.all()
-    if price:
-        foods = foods.filter(price__lte=price)
-    foods_json = serializers.serialize('json', foods)
-    return JsonResponse(foods_json, safe=False)
+    price = request.GET.get('price')
+    foods = Food.objects.filter(price__lte=price)
+    data = []
+    for food in foods:
+        data.append({
+            'id': food.id,
+            'name': food.name,
+            'price': food.price,
+            'promo': food.promo,
+            'image': food.image,
+            'average_rating': food.get_average_rating(),
+        })
+    return JsonResponse(data, safe=False)
 
 def edit_product(request, id):
     food = Food.objects.get(pk = id)

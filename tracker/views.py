@@ -1,16 +1,13 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .models import Tracker, Food, Rating
+from .models import Tracker
+from food.models import Food
+from rating.models import Rating
 from .forms import AddFoodTrackingForm
-
-app_name = 'tracker'
-
-def show_main(request):
-    return render(request, 'main/main.html')
 
 @login_required
 def food_tracker(request):
-    # Mengambil data tracking makanan user
+    # Get the user's food tracking data
     food_tracker = Tracker.objects.filter(user=request.user)
     return render(request, 'tracker.html', {
         'food_tracker': food_tracker,
@@ -24,13 +21,13 @@ def add_food_tracking(request):
             food_tracking = form.save(commit=False)
             food_tracking.user = request.user
             food_tracking.save()
-            return redirect('food_tracker')
+            return redirect('tracker:food_tracker')
     else:
-        ordered_foods = Food.objects.filter(tracker__user=request.user)
-        user_ratings = Rating.objects.filter(tracker__user=request.user)
+        ordered_foods = Food.objects.filter(ratings__user=request.user)
+        user_ratings = Rating.objects.filter(user=request.user)
         form = AddFoodTrackingForm()
 
-    return render(request, 'add_tracking.html', {
+    return render(request, 'tracker.html', {
         'form': form,
         'ordered_foods': ordered_foods,
         'user_ratings': user_ratings
