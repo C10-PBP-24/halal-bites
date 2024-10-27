@@ -13,7 +13,7 @@ def show_menu(request):
     user = request.user
     user_profile = UserProfile.objects.get(user=user)
 
-    if user_profile.user_type.casefold() == "admin":
+    if user_profile.user.role.casefold() == "admin":
         food_list = serializers.serialize('json', Food.objects.all())
         food_list = serializers.deserialize('json', food_list)
         food_list = [food.object for food in food_list]
