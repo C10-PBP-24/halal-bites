@@ -8,26 +8,28 @@
 
 {% block content %}
     <div class="container">
- 
         <main>
             <div class="tracker-section">
                 {% if food_tracker %}
                     <h2>Your Food Tracker</h2>
                     <ul>
-                        {% for track in food_tracker %}
-                            <li>{{ track.food.name }} at {{ track.restaurant.name }} - Rated {{ track.rating.score }} by you on {{ track.order_at|date:"F j, Y" }}</li>
+                        {% for item in food_tracker %}
+                            <li>
+                                {{ item.tracker.restaurant.makanan.name }} at {{ item.tracker.restaurant.nama }}
+                                - Rated {{ item.rating }} by you on {{ item.tracker.order_at|date:"F j, Y" }}
+                            </li>
                         {% endfor %}
                     </ul>
                 {% else %}
                     <h2>Food Tracker is Empty 😢</h2>
                     <p>Track your orders now!</p>
                 {% endif %}
-                <button id="add-tracking-btn">+ Add Food Tracking</button>
+                <a href="{% url 'tracker:add_food_tracking' %}" id="add-tracking-btn" class="btn btn-primary">+ Add Food Tracking</a>
             </div>
         </main>
-
     </div>
-{% endblock content%}
+{% endblock content %}
+
 
 {% block script %}
 <script>

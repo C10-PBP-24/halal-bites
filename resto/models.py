@@ -5,3 +5,6 @@ class Resto(models.Model):
     nama = models.CharField(max_length=30)
     makanan = models.ForeignKey(Food, on_delete=models.CASCADE)
     lokasi = models.CharField(max_length=30)
+
+    def __str__(self):
+        return f"{self.makanan} - {self.nama}"
