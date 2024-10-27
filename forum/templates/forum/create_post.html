@@ -1,9 +1,12 @@
-<script>
-  // Handle form submission via AJAX
-  const postForm = document.getElementById('postForm');
-  postForm.addEventListener('submit', function(e) {
-      e.preventDefault();  // Prevent default form submission
+<div class="center-container">
+    <div class="center-content">
+        <script>
+            // Handle form submission via AJAX
+            const postForm = document.getElementById('postForm');
+            postForm.addEventListener('submit', function(e) {
+                e.preventDefault();  // Prevent default form submission
 
+<<<<<<< HEAD
       const content = postForm.querySelector('textarea[name="content"]').value; // Ambil konten dari textarea
 
       fetch(postForm.action, {
@@ -35,3 +38,36 @@
   </div>
   <button type="submit">Submit</button>
 </form>
+=======
+                const formData = new FormData(postForm);
+                const url = postForm.action;  // The form action URL
+
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+                    },
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        alert('Post created successfully!');
+                        // Optionally, reload or update the page content
+                        location.reload();  // You can replace this with a more user-friendly update
+                    } else {
+                        alert('Failed to create post');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        </script>
+
+        <form id="postForm" method="post" action="{% url 'forum:create_post_ajax' pk=thread.pk %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+>>>>>>> ec2155c50816f744bdd27a2d1f2d71a956d9e1ee

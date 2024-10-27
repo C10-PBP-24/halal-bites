@@ -24,16 +24,11 @@ def add_food_tracking(request):
             food_tracking.save()
             return redirect('tracker:food_tracker')
     else:
-        ordered_foods = Food.objects.filter(ratings__user=request.user).distinct()
-        user_ratings = Rating.objects.filter(user=request.user)
+        # Get foods rated by the user
+        rated_foods = Food.objects.filter(ratings__user=request.user).distinct()
         form = AddFoodTrackingForm()
-
-    # Print statements for debugging
-    print("Ordered Foods:", ordered_foods)
-    print("User Ratings:", user_ratings)
 
     return render(request, 'tracker.html', {
         'form': form,
-        'ordered_foods': ordered_foods,
-        'user_ratings': user_ratings
+        'rated_foods': rated_foods,
     })
