@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block meta %}
+    <title>{{ food.name }} | Halal Bites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+{% endblock meta %}
+
+{% block content %}
+<div class="container mx-auto py-8">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="flex flex-col items-center">
+            <img class="w-full h-64 object-cover mb-4" src="{{ food.image }}" alt="{{ food.name }}">
+            <h1 class="text-3xl font-bold text-blue-800 mb-2">{{ food.name }}</h1>
+            <p class="text-xl text-gray-600 mb-2">Price: {{ food.price }}</p>
+            <p class="text-xl text-gray-600 mb-2">Promo: {{ food.promo }}</p>
+            <p class="text-xl text-gray-600 mb-2">Average Rating: {{ average_rating }}</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 mt-8">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">Add a Rating</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="bg-green-500 text-white rounded-md px-4 py-2 hover:bg-green-600">Submit</button>
+        </form>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 mt-8">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">Ratings</h2>
+        {% for rating in ratings %}
+            <div class="border-b border-gray-200 py-4">
+                <p class="text-lg text-gray-800">{{ rating.user.username }}: {{ rating.rating }} stars</p>
+                <p class="text-gray-600">{{ rating.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

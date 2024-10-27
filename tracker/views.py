@@ -1,28 +1,14 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import Tracker
+from food.models import Food
 from rating.models import Rating
 from .forms import AddFoodTrackingForm
 
-app_name = 'tracker'
-
-def show_main(request):
-    return render(request, 'main/main.html')
-
 @login_required
 def food_tracker(request):
-    # Mengambil data tracking makanan user
-    food_tracker = Tracker.objects.filter(user=request.user).select_related('restaurant', 'restaurant__makanan')
-    
-    # Including ratings for each food item in the tracker
-    tracker_with_ratings = []
-    for track in food_tracker:
-        rating = Rating.objects.filter(food=track.restaurant.makanan, user=request.user).first()
-        tracker_with_ratings.append({
-            'tracker': track,
-            'rating': rating.rating if rating else 'No rating',
-        })
-        
+    # Get the user's food tracking data
+    food_tracker = Tracker.objects.filter(user=request.user)
     return render(request, 'tracker.html', {
         'food_tracker': tracker_with_ratings,
     })
@@ -34,11 +20,20 @@ def add_food_tracking(request):
         if form.is_valid():
             food_tracking = form.save(commit=False)
             food_tracking.user = request.user
+            food_tracking.restaurant = food_tracking.food.resto  # Assuming each food has a related restaurant
             food_tracking.save()
             return redirect('tracker:food_tracker')
     else:
-        form = AddFoodTrackingForm(user=request.user)
+        ordered_foods = Food.objects.filter(ratings__user=request.user).distinct()
+        user_ratings = Rating.objects.filter(user=request.user)
+        form = AddFoodTrackingForm()
 
-    return render(request, 'foodtracker.html', {  # Ensure this template name matches your actual template file
+    # Print statements for debugging
+    print("Ordered Foods:", ordered_foods)
+    print("User Ratings:", user_ratings)
+
+    return render(request, 'tracker.html', {
         'form': form,
+        'ordered_foods': ordered_foods,
+        'user_ratings': user_ratings
     })
