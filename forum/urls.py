@@ -9,7 +9,7 @@ urlpatterns = [
     path('create/', CreateThreadView.as_view(), name='create_thread'),
     path('<int:pk>/create_post/', CreatePostView.as_view(), name='create_post'),
     path('add_post/', add_post, name='add_post'),  # Endpoint for adding posts via API
-    path('<int:pk>/create_post_ajax/', create_post_ajax, name='create_post_ajax'),
+    path('create_post_ajax/<int:thread_id>/', create_post_ajax, name='create_post_ajax'),
     path('<int:pk>/delete_thread/', delete_thread, name='delete_thread'),
     path('<int:pk>/delete_post/', delete_post, name='delete_post'),
     path('create_thread_ajax/', create_thread_ajax, name='create_thread_ajax'),
@@ -22,3 +22,4 @@ urlpatterns = [
     path('posts/<int:post_id>/delete/', delete_post, name='delete_post'),\
     path('threads/', thread_list, name='thread_list'), 
 ]
+

@@ -87,26 +87,21 @@ def create_thread_ajax(request):
     }, status=201)
 
 @csrf_exempt
-@require_POST
-def create_post_ajax(request, pk):
-    # Get the thread based on its pk
-    thread = get_object_or_404(Thread, pk=pk)
+def create_post_ajax(request, thread_id):
+    if request.method == 'POST':
+        post_content = request.POST.get('content')
+        user = request.user
 
-    # Extract form data from the request
-    content = strip_tags(request.POST.get("content"))
-    user = request.user  # Get the current user
+        if not post_content:
+            return JsonResponse({"status": "Content cannot be empty"}, status=400)
 
-    # Create a new post
-    new_post = Post(thread=thread, content=content, user=user)
-    new_post.save()
+        thread = get_object_or_404(Thread, id=thread_id)
+        new_post = Post(thread=thread, content=post_content, user=user)
+        new_post.save()
 
-    # Return a JSON response indicating success
-    return JsonResponse({
-        "status": "success",
-        "message": "Post created successfully",
-        "post_id": new_post.id,
-        "thread_id": thread.id
-    }, status=201)
+        return JsonResponse({"status": "Post added", "post_id": new_post.id}, status=201)
+    return JsonResponse({"status": "Invalid request"}, status=400)
+
 
 # CSRF-exempt API for adding posts via AJAX or mobile
 @csrf_exempt
@@ -156,7 +151,7 @@ def edit_post(request, post_id):
     context = {
         'post': post
     }
-    return render(request, 'edit_post.html', context)  # This line can be removed if not used
+    return redirect('forum:thread_detail', pk=post.thread.id)
 
 @login_required
 def delete_post(request, post_id):

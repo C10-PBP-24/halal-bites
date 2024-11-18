@@ -6,6 +6,39 @@
             postForm.addEventListener('submit', function(e) {
                 e.preventDefault();  // Prevent default form submission
 
+<<<<<<< HEAD
+      const content = postForm.querySelector('textarea[name="content"]').value; // Ambil konten dari textarea
+
+      fetch(postForm.action, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',  // Mengatur header untuk JSON
+              'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+          },
+          body: JSON.stringify({ content: content })  // Mengirim data dalam format JSON
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.status === 'success') {
+              alert('Post created successfully!');
+              location.reload();  // Reload halaman untuk melihat pos baru
+          } else {
+              alert('Failed to create post');
+          }
+      })
+      .catch(error => console.error('Error:', error));
+  });
+</script>
+
+<form id="postForm" method="post" action="{% url 'forum:create_post_ajax' thread.id %}">
+  {% csrf_token %}
+  <div>
+    <label for="content">Post Content</label>
+    <textarea id="content" name="content" required></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+=======
                 const formData = new FormData(postForm);
                 const url = postForm.action;  // The form action URL
 
@@ -37,3 +70,4 @@
         </form>
     </div>
 </div>
+>>>>>>> ec2155c50816f744bdd27a2d1f2d71a956d9e1ee
