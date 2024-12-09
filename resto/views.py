@@ -12,7 +12,6 @@ from django.http import HttpResponseRedirect
 
 from resto.models import Resto
 
-# Create your views here.
 def get_resto(request):
     data = Resto.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
@@ -43,37 +42,36 @@ def filter_resto(request):
 
     filtered_restos = Resto.objects.all()
     if lokasi:
-        filtered_restos = Resto.objects.filter(lokasi__icontains=lokasi)  # Filter by location (case-insensitive)
+        filtered_restos = Resto.objects.filter(lokasi__icontains=lokasi)  # Filter by location
     if nama:
-        filtered_restos = filtered_restos.filter(nama__icontains=nama)  # Filter by location (case-insensitive)
+        filtered_restos = filtered_restos.filter(nama__icontains=nama)  # Filter by name
 
     data = [
         {
-            'pk': resto.pk,      # Include the primary key
+            'pk': resto.pk,
             'nama': resto.nama,
             'lokasi': resto.lokasi
         }
         for resto in filtered_restos
     ]
     
-    return JsonResponse({'restos': data})  # Use JsonResponse to return the data
+    return JsonResponse({'restos': data})
 
 @csrf_exempt 
 @require_POST
 def add_resto(request):
     nama = strip_tags(request.POST.get("nama"))
-    print("nama "+ nama)
     nama_makanan = strip_tags(request.POST.get("nama_makanan"))
     harga_makanan = strip_tags(request.POST.get("harga_makanan"))
     promo_makanan = strip_tags(request.POST.get("promo_makanan"))
     image_makanan = strip_tags(request.POST.get("image_makanan"))
     lokasi = strip_tags(request.POST.get("lokasi"))
 
-    # Create the Food object first
+    # Create the Food object
     new_food = Food(name=nama_makanan, price=harga_makanan, image=image_makanan, promo=promo_makanan)
     new_food.save()
 
-    # Now create the Resto object with the new Food's ID
+    # Create the Resto object with the new Food's ID
     new_resto = Resto(nama=nama, makanan=new_food, lokasi=lokasi)
     new_resto.save()
 
@@ -91,3 +89,24 @@ def show_xml(request):
 def show_json(request):
     data = Resto.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@csrf_exempt
+def create_resto_flutter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        new_food = Food.objects.create(
+            name=data["name_makanan"],
+            price=data["price"],
+            image=data["image"],
+            promo=data["promo"],
+        )
+        new_food.save()
+        new_resto = Resto.objects.create(
+            nama=data["name"],
+            makanan=new_food,
+            lokasi=data["lokasi"],
+        )
+        new_resto.save()
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)

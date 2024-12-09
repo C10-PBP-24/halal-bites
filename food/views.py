@@ -7,19 +7,19 @@ from django.contrib.auth.decorators import login_required
 from authentication.models import UserProfile
 from django.views.decorators.csrf import csrf_exempt
 from rating.forms import RatingForm
+from food.form import FoodEntryForm
 
 
 @login_required(login_url="authentication:login")
 def show_menu(request):
     user = request.user
-    user_profile = UserProfile.objects.get(user=user)
 
-    if user_profile.user.role.casefold() == "admin":
+    if user.role.casefold() == "admin":
         food_list = serializers.serialize('json', Food.objects.all())
         food_list = serializers.deserialize('json', food_list)
         food_list = [food.object for food in food_list]
 
-        return render(request, 'owner_menu.html', {'foods': food_list})
+        return render(request, 'menu_owner.html', {'foods': food_list})
     foods = Food.objects.all()
     context = {
         'foods' : foods
@@ -53,16 +53,16 @@ def food_detail(request, food_id):
 
 @csrf_exempt
 def add_food(request):
-    if request.method == "POST":
-        name = request.POST.get('name')
-        price = request.POST.get('price')
-        image = request.POST.get('image')
-        promo = request.POST.get('promo')
+    form = FoodEntryForm(request.POST or None)
 
-        new_food = Food(name=name, price=price, image=image, promo=promo)
-        new_food.save()
-        return HttpResponse(b"CREATED", status=201)
-    return HttpResponseNotFound()
+    if form.is_valid() and request.method == "POST":
+        food = form.save(commit=False)
+        food.user =request.user
+        food.save()
+        return redirect('main:show_menu')
+
+    context = {'form': form}
+    return render(request, "add_food.html", context)
 
 def get_food(request):
     data = Food.objects.all()
