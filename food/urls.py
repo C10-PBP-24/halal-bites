@@ -1,6 +1,7 @@
 from django.urls import path
 from food.views import show_menu, add_food, get_food, get_food_by_id, filter_food, food_detail, edit_food, delete_food
 
+
 app_name = 'food'
 
 urlpatterns = [

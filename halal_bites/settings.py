@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!xa8_x71d@4hnh5wup5+eot!dma+ckacisa%lgl--9c%7^91-2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "erdafa-andikri-halalbites.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "erdafa-andikri-halalbites.pbp.cs.ui.ac.id", "10.0.2.2"]
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'forum',
     'tracker',
     'authentication',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -55,8 +56,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
 
 ROOT_URLCONF = 'halal_bites.urls'
 
@@ -131,16 +139,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Change this to 'staticfiles' to avoid conflict
 
-if DEBUG:
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')  # This is where your development static files are
-    ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://erdafa-andikri-halalbites.pbp.cs.ui.ac.id", "https://erdafa-andikri-halalbites.pbp.cs.ui.ac.id"]
