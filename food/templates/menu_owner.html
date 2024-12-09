@@ -19,7 +19,9 @@
     {% for food in foods %}
         <div class="restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105">
             <div class="relative">
-                <img class="w-full h-64 object-cover" src="{{ food.image }}" alt="{{ food.name }}">
+                <a href="{% url 'food:food_detail' food.id %}">
+                    <img class="w-full h-64 object-cover" src="{{ food.image }}" alt="{{ food.name }}">
+                </a>
             </div>
             <div class="p-4">
                 <div class="text-blue-800 font-bold text-lg mb-2">
@@ -32,10 +34,10 @@
                     Promo: {{ food.promo }}
                 </div>
                 <div class="flex space-x-2">
-                    <a href="edit-product/{{ food.pk }}" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
+                    <a href="{% url 'food:edit_food' food.id %}" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
                         Edit
                     </a>
-                    <a href="/delete/{{ food.pk }}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
+                    <a href="{% url 'food:delete_food' food.id %}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 shadow-md">
                         Hapus
                     </a>
                 </div>
@@ -44,7 +46,6 @@
     {% endfor %}
     </div>
 </div>
-
 <script>
     async function filterBudget() {
         const budget = document.getElementById('budgetInput').value;

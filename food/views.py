@@ -3,6 +3,7 @@ from django.shortcuts import redirect, render, get_object_or_404
 from django.core import serializers
 from food.models import Food
 from django.urls import reverse
+from food.form import FoodEntryForm
 from django.contrib.auth.decorators import login_required
 from authentication.models import UserProfile
 from django.views.decorators.csrf import csrf_exempt
@@ -51,15 +52,14 @@ def food_detail(request, food_id):
     }
     return render(request, 'food_detail.html', context)
 
-@csrf_exempt
 def add_food(request):
     form = FoodEntryForm(request.POST or None)
 
     if form.is_valid() and request.method == "POST":
         food = form.save(commit=False)
-        food.user =request.user
+        food.user = request.user
         food.save()
-        return redirect('main:show_menu')
+        return HttpResponseRedirect(reverse('food:show_menu'))  # Updated line
 
     context = {'form': form}
     return render(request, "add_food.html", context)
@@ -88,18 +88,18 @@ def filter_food(request):
         })
     return JsonResponse(data, safe=False)
 
-def edit_product(request, id):
+def edit_food(request, id):
     food = Food.objects.get(pk = id)
-    form = add_food(request.POST or None, instance=food)
+    form = FoodEntryForm(request.POST or None, instance=food)
 
     if form.is_valid() and request.method == "POST":
         form.save()
         return HttpResponseRedirect(reverse('food:show_menu'))
 
     context = {'form': form}
-    return render(request, "edit_food.html", context)
+    return render(request, "edit_menu.html", context)
 
-def delete_product(request, id):
+def delete_food(request, id):
     food = Food.objects.get(pk = id)
     food.delete()
     return HttpResponseRedirect(reverse('food:show_menu'))
