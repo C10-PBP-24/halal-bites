@@ -1,7 +1,9 @@
 from django.urls import path
 from resto.views import get_resto, show_resto, filter_resto, add_resto
 from resto.views import delete_resto, resto_detail, show_json, get_resto, show_xml
+from resto.views import create_resto_flutter
 from django.contrib.auth.decorators import login_required
+
 
 
 app_name = "resto"
@@ -14,5 +16,6 @@ urlpatterns = [
     path('delete-resto/<int:id>/', delete_resto, name="delete_resto"),
     path('detail/<int:pk>/', resto_detail, name="resto_detail"),
     path('json/', show_json, name='show_json'), 
-    path('xml/', show_xml, name='show_xml'), 
+    path('xml/', show_xml, name='show_xml'),
+    path('create-flutter/', create_resto_flutter, name="create_resto_flutter"),
 ]

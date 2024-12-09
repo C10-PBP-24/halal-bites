@@ -89,3 +89,24 @@ def show_xml(request):
 def show_json(request):
     data = Resto.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@csrf_exempt
+def create_resto_flutter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        new_food = Food.objects.create(
+            name=data["name_makanan"],
+            price=data["price"],
+            image=data["image"],
+            promo=data["promo"],
+        )
+        new_food.save()
+        new_resto = Resto.objects.create(
+            nama=data["name"],
+            makanan=new_food,
+            lokasi=data["lokasi"],
+        )
+        new_resto.save()
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
