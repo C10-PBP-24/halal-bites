@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import ThreadListView, ThreadDetailView, CreateThreadView, CreatePostView, add_post, create_post_ajax, delete_thread, delete_post, create_thread_ajax, edit_thread, edit_post, thread_list
+from .views import ThreadListView, ThreadDetailView, CreateThreadView, CreatePostView, add_post, create_post_ajax, delete_thread, delete_post, create_thread_ajax, edit_thread, edit_post, thread_list,show_json
 
 app_name = 'forum'
 
@@ -21,5 +21,6 @@ urlpatterns = [
     path('posts/<int:post_id>/edit/', edit_post, name='edit_post'),
     path('posts/<int:post_id>/delete/', delete_post, name='delete_post'),\
     path('threads/', thread_list, name='thread_list'), 
+    path('threads/<int:thread_id>/json/', show_json, name='show_json'),
 ]
 
