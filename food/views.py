@@ -1,3 +1,4 @@
+import json
 from django.http import HttpResponse, HttpResponseNotFound, JsonResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render, get_object_or_404
 from django.core import serializers
@@ -104,3 +105,17 @@ def delete_food(request, id):
     food.delete()
     return HttpResponseRedirect(reverse('food:show_menu'))
 
+@csrf_exempt
+def create_food_flutter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        new_food = Food.objects.create(
+            name=data["name_makanan"],
+            price=data["price"],
+            image=data["image"],
+            promo=data["promo"]
+        )
+        new_food.save()
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
