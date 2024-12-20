@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!xa8_x71d@4hnh5wup5+eot!dma+ckacisa%lgl--9c%7^91-2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "erdafa-andikri-halalbites.pbp.cs.ui.ac.id", "10.0.2.2"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "erdafa-andikri-halalbites.pbp.cs.ui.ac.id", "10.0.2.2", "localhost:57203",]
 
 
 # Application definition
@@ -65,6 +65,13 @@ CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
 SESSION_COOKIE_SAMESITE = 'None'
+# settings.py
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+    'http://localhost:57203',  # Add your frontend origin here
+]
 
 ROOT_URLCONF = 'halal_bites.urls'
 
