@@ -48,9 +48,11 @@ def login(request):
     if user is not None:
         if user.is_active:
             auth_login(request, user)
+            role = user.role
             # Status login sukses.
             return JsonResponse({
                 "username": user.username,
+                "role": role,
                 "status": True,
                 "message": "Login sukses!"
                 # Tambahkan data lainnya jika ingin mengirim data ke Flutter.
