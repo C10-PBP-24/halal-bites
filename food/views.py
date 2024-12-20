@@ -119,3 +119,24 @@ def create_food_flutter(request):
         return JsonResponse({"status": "success"}, status=200)
     else:
         return JsonResponse({"status": "error"}, status=401)
+    
+@csrf_exempt
+def edit_food_flutter(request, id):
+    try:
+        food = Food.objects.get(pk=id)
+    except Food.DoesNotExist:
+        return JsonResponse({"status": "error", "message": "Food not found"}, status=404)
+
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            food.name = data.get("name", food.name)
+            food.price = data.get("price", food.price)
+            food.image = data.get("image", food.image)
+            food.promo = data.get("promo", food.promo)
+            food.save()
+            return JsonResponse({"status": "success"}, status=200)
+        except (KeyError, ValueError) as e:
+            return JsonResponse({"status": "error", "message": str(e)}, status=400)
+    else:
+        return JsonResponse({"status": "error", "message": "Invalid request method"}, status=401)
