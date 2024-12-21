@@ -90,14 +90,12 @@ def show_xml(request):
 
 def show_json(request):
     data = Resto.objects.all()
-    print(serializers.serialize("json", data))
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 @csrf_exempt
 def create_resto_flutter(request):
     if request.method == 'POST':
         data = json.loads(request.body)
-        print(data)
         required_fields = ["name", "name_makanan", "price", "image", "promo", "lokasi"]
         for field in required_fields:
             if not data.get(field):
