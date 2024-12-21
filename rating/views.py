@@ -54,15 +54,46 @@ def show_json(request):
 @csrf_exempt
 def create_rating_flutter(request):
     if request.method == 'POST':
-        data = json.loads(request.body)
-        new_rating = Rating.objects.create(
-            user=request.user,
-            rating=int(data["rating"]),
-            description=data["description"],
-            food_id=data["food_id"],
-            created_at=datetime.now()
-        )
-        new_rating.save()
-        return JsonResponse({"status": "success"}, status=200)
-    else:
-        return JsonResponse({"status": "error"}, status=401)
+        if not request.user.is_authenticated:
+            return JsonResponse({
+                "status": False,
+                "message": "User not authenticated."
+            }, status=401)
+        try:
+            data = json.loads(request.body)
+            food_id = data.get("food_id")
+            rating_value = int(data.get("rating"))
+            description = data.get("description", "")
+            
+            if not all([food_id, rating_value]):
+                return JsonResponse({
+                    "status": False,
+                    "message": "Missing required fields."
+                }, status=400)
+            
+            food = Food.objects.get(pk=food_id)
+            new_rating = Rating.objects.create(
+                user=request.user,
+                rating=rating_value,
+                description=description,
+                food=food,
+                created_at=datetime.now()
+            )
+            return JsonResponse({
+                "status": "success",
+                "message": "Review created successfully!"
+            }, status=200)
+        except Food.DoesNotExist:
+            return JsonResponse({
+                "status": False,
+                "message": "Food not found."
+            }, status=404)
+        except Exception as e:
+            return JsonResponse({
+                "status": False,
+                "message": f"Error creating review: {str(e)}"
+            }, status=400)
+    return JsonResponse({
+        "status": False,
+        "message": "Only POST method is allowed."
+    }, status=405)
