@@ -10,6 +10,54 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.html import strip_tags
 from django.views.decorators.http import require_POST
 from django.db.models import Q
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+from .models import Thread, Post
+from django.core.serializers import serialize
+from food.models import Food
+
+def show_post_json(request, thread_id):
+    thread = get_object_or_404(Thread, id=thread_id)
+    posts = Post.objects.filter(thread=thread)
+    return HttpResponse(serialize("json", posts), content_type="application/json")
+
+def show_json(request):
+    data = Thread.objects.all()
+    return HttpResponse(serialize("json", data), content_type="application/json")
+
+
+# def show_json(request, thread_id):
+#     # Fetch the thread by its ID, or return a 404 error if it does not exist
+#     thread = get_object_or_404(Thread, id=thread_id)
+    
+#     # Serialize the thread data
+#     thread_data = {
+#         'id': thread.id,
+#         'title': thread.title,
+#         'created_at': thread.created_at,
+#         'user': thread.user.username,  # Assuming the user has a 'username' attribute
+#         'foods': [food.name for food in thread.foods.all()],  # Assuming Food model has a 'name' attribute
+#     }
+    
+#     # Fetch the posts related to the thread
+#     posts = Post.objects.filter(thread=thread)
+#     posts_data = []
+    
+#     for post in posts:
+#         posts_data.append({
+#             'id': post.id,
+#             'content': post.content,
+#             'created_at': post.created_at,
+#             'user': post.user.username,  # Assuming the user has a 'username' attribute
+#         })
+    
+#     # Combine the thread data and posts data into one response
+#     response_data = {
+#         'thread': thread_data,
+#         'posts': posts_data,
+#     }
+    
+#     return JsonResponse(response_data)
 
 # List all threads
 class ThreadListView(ListView):
