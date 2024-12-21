@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.html import strip_tags
 from food.models import Food
 from django.http import HttpResponseRedirect
+from django.middleware.csrf import get_token
 
 
 from resto.models import Resto
@@ -77,6 +78,7 @@ def add_resto(request):
 
     return HttpResponse(b"CREATED", status=201)
 
+@csrf_exempt
 def delete_resto(request, id):
     resto = Resto.objects.get(pk=id)
     resto.delete()
@@ -88,12 +90,19 @@ def show_xml(request):
 
 def show_json(request):
     data = Resto.objects.all()
+    print(serializers.serialize("json", data))
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 @csrf_exempt
 def create_resto_flutter(request):
     if request.method == 'POST':
         data = json.loads(request.body)
+        print(data)
+        required_fields = ["name", "name_makanan", "price", "image", "promo", "lokasi"]
+        for field in required_fields:
+            if not data.get(field):
+                return JsonResponse({"status": "error", "message": f"Missing field: {field}"}, status=400)
+
         new_food = Food.objects.create(
             name=data["name_makanan"],
             price=data["price"],
@@ -110,3 +119,8 @@ def create_resto_flutter(request):
         return JsonResponse({"status": "success"}, status=200)
     else:
         return JsonResponse({"status": "error"}, status=401)
+    
+
+def get_csrf_token(request):
+    csrf_token = get_token(request)
+    return JsonResponse({"status": "success", "csrfToken": csrf_token})
