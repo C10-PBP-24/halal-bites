@@ -8,5 +8,5 @@ urlpatterns = [
     path('rated-foods/', rated_foods, name='rated_foods'),
     path('json/', show_json, name='get_json'),
     path('xml/', show_xml, name='get_xml'),
-    path('create-rating/', create_rating_flutter, name='create_rating_flutter'),
+    path('create_rating_flutter/', create_rating_flutter, name='create_rating_flutter'),
 ]

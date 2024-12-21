@@ -70,8 +70,13 @@ def get_food(request):
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def get_food_by_id(request, id):
-    data = Food.objects.filter(pk=id)
-    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+    try:
+        data = Food.objects.filter(pk=id)
+        if not data.exists():
+            return JsonResponse({"error": f"Food with ID {id} not found"}, status=404)
+        return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
 
 @csrf_exempt
 def filter_food(request):
