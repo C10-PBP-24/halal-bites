@@ -29,6 +29,12 @@
                     <div class="text-sm text-gray-600">
                         Average Rating: {{ food.get_average_rating }}
                     </div>
+                    {% if food.user_rating %}
+                        <div class="mt-2">
+                            <a href="{% url 'rating:edit_rating' food.user_rating.id %}" class="text-blue-500 underline">Edit Rating</a>
+                            <a href="{% url 'rating:delete_rating' food.user_rating.id %}" class="text-red-500 underline ml-2">Delete Rating</a>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         {% endfor %}
