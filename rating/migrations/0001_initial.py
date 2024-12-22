@@ -27,5 +27,8 @@ class Migration(migrations.Migration):
                 ('food', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='ratings', to='food.food')),
                 ('user', models.ForeignKey(default=uuid.uuid4, on_delete=django.db.models.deletion.CASCADE, related_name='ratings', to=settings.AUTH_USER_MODEL)),
             ],
+            options={
+                'constraints': [models.UniqueConstraint(fields=('user', 'food'), name='unique_user_food_rating')],
+            },
         ),
     ]
