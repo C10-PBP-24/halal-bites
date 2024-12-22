@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import ThreadListView, ThreadDetailView, CreateThreadView, CreatePostView, add_post, create_post_ajax, delete_thread, delete_post, create_thread_ajax, edit_thread, edit_post, thread_list,show_json, show_post_json, create_post_flutter, edit_post_flutter, edit_thread_flutter
+from .views import ThreadListView, ThreadDetailView, CreateThreadView, CreatePostView, add_post, create_post_ajax, delete_thread, delete_post, create_thread_ajax, edit_thread, edit_post, thread_list,show_json, show_post_json, create_post_flutter, edit_post_flutter, edit_thread_flutter, delete_post_flutter, delete_thread_flutter
 
 app_name = 'forum'
 
@@ -27,5 +27,7 @@ urlpatterns = [
     path('create-post-flutter/', create_post_flutter, name='create_post_flutter'),
     path('edit-post-flutter/<int:post_id>/', edit_post_flutter, name='edit_post_flutter'),
     path('edit-thread-flutter/<int:thread_id>/', edit_thread_flutter, name='edit_thread_flutter'),
+    path('delete-post-flutter/<int:post_id>/', delete_post_flutter, name='delete_post_flutter'),
+    path('delete-thread-flutter/<int:thread_id>/', delete_thread_flutter, name='delete_thread_flutter'),
 ]
 

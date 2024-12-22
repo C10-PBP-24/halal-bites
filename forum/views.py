@@ -355,3 +355,43 @@ def edit_thread_flutter(request, thread_id):
         "status": "error",
         "message": "Invalid request method"
     }, status=405)
+
+@csrf_exempt
+def delete_post_flutter(request, post_id):
+    try:
+        post = Post.objects.get(pk=post_id, user=request.user)
+        post.delete()
+        return JsonResponse({
+            "status": "success",
+            "message": "Post deleted successfully"
+        }, status=200)
+    except Post.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Post not found or unauthorized"
+        }, status=404)
+    except Exception as e:
+        return JsonResponse({
+            "status": "error",
+            "message": str(e)
+        }, status=400)
+
+@csrf_exempt
+def delete_thread_flutter(request, thread_id):
+    try:
+        thread = Thread.objects.get(pk=thread_id, user=request.user)
+        thread.delete()
+        return JsonResponse({
+            "status": "success",
+            "message": "Thread deleted successfully"
+        }, status=200)
+    except Thread.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Thread not found or unauthorized"
+        }, status=404)
+    except Exception as e:
+        return JsonResponse({
+            "status": "error",
+            "message": str(e)
+        }, status=400)
