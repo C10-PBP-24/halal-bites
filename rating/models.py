@@ -12,5 +12,10 @@ class Rating(models.Model):
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['user', 'food'], name='unique_user_food_rating')
+        ]
+
     def __str__(self):
         return f"{self.food.name} - {self.rating} by {self.user.username}"

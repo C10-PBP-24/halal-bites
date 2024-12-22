@@ -15,6 +15,9 @@ def create_rating(request, food_id):
     food = get_object_or_404(Food, id=food_id)
     
     if request.method == 'POST':
+        existing_rating = Rating.objects.filter(user=request.user, food=food).first()
+        if existing_rating:
+            return redirect('rating:rated_foods')
         form = RatingForm(request.POST)
         if form.is_valid():
             rating = form.save(commit=False)
@@ -27,8 +30,31 @@ def create_rating(request, food_id):
     
     return render(request, 'rating_form.html', {'form': form, 'food': food})
 
+@login_required
+def edit_rating(request, rating_id):
+    rating = get_object_or_404(Rating, id=rating_id, user=request.user)
+    if request.method == 'POST':
+        form = RatingForm(request.POST, instance=rating)
+        if form.is_valid():
+            form.save()
+            return redirect('rating:rated_foods')
+    else:
+        form = RatingForm(instance=rating)
+    return render(request, 'rating_edit_form.html', {'form': form, 'food': rating.food})
+
+@login_required
+def delete_rating(request, rating_id):
+    rating = get_object_or_404(Rating, id=rating_id, user=request.user)
+    if request.method == 'POST':
+        rating.delete()
+        return redirect('rating:rated_foods')
+    return render(request, 'rating_delete_confirm.html', {'rating': rating})
+
 def rated_foods(request):
     foods = Food.objects.filter(ratings__isnull=False).distinct()
+    for f in foods:
+        user_rating = f.ratings.filter(user=request.user).first()
+        f.user_rating = user_rating
     context = {
         'foods': foods,
     }

@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+
+{% block meta %}
+    <title>Delete Rating | Halal Bites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+{% endblock meta %}
+
+{% block content %}
+<div class="container mx-auto py-8">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-blue-800 mb-4">Delete Rating</h1>
+        <p class="mb-4">Are you sure you want to delete this rating?</p>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit" class="bg-red-500 text-white rounded-md px-4 py-2 hover:bg-red-600">Delete</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}
