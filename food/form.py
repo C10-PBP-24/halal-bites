@@ -5,4 +5,4 @@ from django.utils.html import strip_tags
 class FoodEntryForm(ModelForm):
     class Meta:
         model = Food
-        fields = ["name", "price", "image_url", "price"]
+        fields = ["name", "price", "image", "promo"]
