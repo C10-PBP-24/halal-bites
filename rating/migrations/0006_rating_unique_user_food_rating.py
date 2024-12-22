@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('food', '0002_alter_food_image'),
-        ('rating', '0005_alter_rating_user'),
+        ('rating', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
