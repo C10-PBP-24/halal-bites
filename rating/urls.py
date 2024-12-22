@@ -1,6 +1,6 @@
 from django.urls import path
 from rating.views import create_rating, rated_foods, show_json, show_xml, create_rating_flutter, edit_rating, delete_rating, edit_rating_flutter, delete_rating_flutter
-from .views import get_rating_ajax, edit_rating_ajax, delete_rating_ajax
+from .views import get_rating_ajax, edit_rating_ajax, delete_rating_ajax, rated_foods
 
 app_name = 'rating'
 

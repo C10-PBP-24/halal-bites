@@ -12,6 +12,7 @@ from datetime import datetime
 from django.contrib import messages
 from django.db import IntegrityError
 from django.views.decorators.http import require_POST, require_GET
+from django.db.models import Avg, Q
 
 @login_required
 def create_rating(request, food_id):
@@ -54,15 +55,45 @@ def delete_rating(request, rating_id):
         return redirect('rating:rated_foods')
     return render(request, 'rating_delete_confirm.html', {'rating': rating})
 
+@login_required
 def rated_foods(request):
-    foods = Food.objects.filter(ratings__isnull=False).distinct()
+    # Start with all foods that have at least one rating
+    foods = Food.objects.filter(ratings__isnull=False).annotate(average_rating=Avg('ratings__rating')).distinct()
+    
+    rating_filter = request.GET.get('rating', '').strip()
+    user_filter = request.GET.get('user_filter', '').strip()
+
+    # Handle rating filter
+    if rating_filter in ['1', '2', '3', '4', '5']:
+        min_rating = int(rating_filter)
+        max_rating = min_rating + 1
+        if min_rating < 5:
+            foods = foods.filter(
+                average_rating__gte=min_rating,
+                average_rating__lt=max_rating
+            )
+        else:
+            # rating_filter == '5'
+            foods = foods.filter(
+                average_rating__gte=min_rating
+            )
+
+    # Handle user-specific filter
+    if user_filter == 'my_reviews':
+        foods = foods.filter(ratings__user=request.user)
+    
+    # Attach the user's own rating to each Food if it exists
     for f in foods:
         user_rating = f.ratings.filter(user=request.user).first()
         f.user_rating = user_rating
+    
     context = {
         'foods': foods,
+        'rating_filter': rating_filter,  # Added
+        'user_filter': user_filter,      # Added
     }
     return render(request, 'rated_foods.html', context)
+
 
 def show_xml(request):
     data = Rating.objects.all()
