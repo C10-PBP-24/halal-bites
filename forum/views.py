@@ -19,11 +19,35 @@ from food.models import Food
 def show_post_json(request, thread_id):
     thread = get_object_or_404(Thread, id=thread_id)
     posts = Post.objects.filter(thread=thread)
-    return HttpResponse(serialize("json", posts), content_type="application/json")
+    posts_data = []
+    
+    for post in posts:
+        post_dict = {
+            'id': post.id,
+            'content': post.content,
+            'created_at': post.created_at,
+            'user': post.user.username,  # Mengembalikan username bukan id
+            'thread': post.thread.id
+        }
+        posts_data.append(post_dict)
+    
+    return JsonResponse(posts_data, safe=False)
 
 def show_json(request):
-    data = Thread.objects.all()
-    return HttpResponse(serialize("json", data), content_type="application/json")
+    threads = Thread.objects.all()
+    threads_data = []
+    
+    for thread in threads:
+        thread_dict = {
+            'id': thread.id,
+            'title': thread.title,
+            'created_at': thread.created_at,
+            'user': thread.user.username,  # Mengembalikan username bukan id
+            'foods': [food.name for food in thread.foods.all()]
+        }
+        threads_data.append(thread_dict)
+    
+    return JsonResponse(threads_data, safe=False)
 
 
 # def show_json(request, thread_id):
@@ -223,3 +247,151 @@ def thread_list(request):
         'foods': foods,  # Tambahkan foods ke dalam konteks
     }
     return render(request, 'forum/thread_list.html', context)
+
+@csrf_exempt
+def create_post_flutter(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            thread_id = data.get('thread_id')
+            content = data.get('content')
+            
+            if not all([thread_id, content]):
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Missing required fields"
+                }, status=400)
+                
+            thread = Thread.objects.get(pk=thread_id)
+            new_post = Post.objects.create(
+                thread=thread,
+                content=content,
+                user=request.user
+            )
+            
+            return JsonResponse({
+                "status": "success",
+                "post_id": new_post.id
+            }, status=201)
+            
+        except Thread.DoesNotExist:
+            return JsonResponse({
+                "status": "error",
+                "message": "Thread not found"
+            }, status=404)
+        except Exception as e:
+            return JsonResponse({
+                "status": "error",
+                "message": str(e)
+            }, status=400)
+    return JsonResponse({
+        "status": "error",
+        "message": "Invalid request method"
+    }, status=405)
+
+@csrf_exempt
+def edit_post_flutter(request, post_id):
+    try:
+        post = Post.objects.get(pk=post_id, user=request.user)
+    except Post.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Post not found or unauthorized"
+        }, status=404)
+
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            post.content = data.get("content", post.content)
+            post.save()
+            return JsonResponse({
+                "status": "success",
+                "message": "Post updated successfully"
+            }, status=200)
+        except Exception as e:
+            return JsonResponse({
+                "status": "error",
+                "message": str(e)
+            }, status=400)
+    return JsonResponse({
+        "status": "error",
+        "message": "Invalid request method"
+    }, status=405)
+
+@csrf_exempt
+def edit_thread_flutter(request, thread_id):
+    try:
+        thread = Thread.objects.get(pk=thread_id, user=request.user)
+    except Thread.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Thread not found or unauthorized"
+        }, status=404)
+
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            thread.title = data.get("title", thread.title)
+            
+            # Update foods if provided
+            food_name = data.get("food")
+            if food_name:
+                foods = Food.objects.filter(name=food_name)
+                if foods.exists():
+                    thread.foods.clear()
+                    thread.foods.add(foods.first())
+            
+            thread.save()
+            return JsonResponse({
+                "status": "success",
+                "message": "Thread updated successfully"
+            }, status=200)
+        except Exception as e:
+            return JsonResponse({
+                "status": "error",
+                "message": str(e)
+            }, status=400)
+    return JsonResponse({
+        "status": "error",
+        "message": "Invalid request method"
+    }, status=405)
+
+@csrf_exempt
+def delete_post_flutter(request, post_id):
+    try:
+        post = Post.objects.get(pk=post_id, user=request.user)
+        post.delete()
+        return JsonResponse({
+            "status": "success",
+            "message": "Post deleted successfully"
+        }, status=200)
+    except Post.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Post not found or unauthorized"
+        }, status=404)
+    except Exception as e:
+        return JsonResponse({
+            "status": "error",
+            "message": str(e)
+        }, status=400)
+
+@csrf_exempt
+def delete_thread_flutter(request, thread_id):
+    try:
+        thread = Thread.objects.get(pk=thread_id, user=request.user)
+        thread.delete()
+        return JsonResponse({
+            "status": "success",
+            "message": "Thread deleted successfully"
+        }, status=200)
+    except Thread.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Thread not found or unauthorized"
+        }, status=404)
+    except Exception as e:
+        return JsonResponse({
+            "status": "error",
+            "message": str(e)
+        }, status=400)

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Food Tracking</title>
+</head>
+<body>
+    <h1>Add a New Food Tracking Entry</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+    <h2>Your Ordered Foods</h2>
+    <ul>
+        {% for food in ordered_foods %}
+            <li>{{ food.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Your Ratings</h2>
+    <ul>
+        {% for rating in user_ratings %}
+            <li>{{ rating.score }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
