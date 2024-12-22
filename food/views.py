@@ -10,6 +10,7 @@ from authentication.models import UserProfile
 from django.views.decorators.csrf import csrf_exempt
 from rating.forms import RatingForm
 from food.form import FoodEntryForm
+from rating.models import Rating
 
 
 @login_required(login_url="authentication:login")
@@ -35,6 +36,9 @@ def food_detail(request, food_id):
     average_rating = food.get_average_rating()
 
     if request.method == 'POST':
+        existing_rating = Rating.objects.filter(user=request.user, food=food).first()
+        if existing_rating:
+            return redirect('rating:rated_foods')
         form = RatingForm(request.POST)
         if form.is_valid():
             rating = form.save(commit=False)

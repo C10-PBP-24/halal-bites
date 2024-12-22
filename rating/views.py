@@ -9,12 +9,18 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 from django.http import JsonResponse
 from datetime import datetime
+from django.contrib import messages
+from django.db import IntegrityError
 
 @login_required
 def create_rating(request, food_id):
     food = get_object_or_404(Food, id=food_id)
     
     if request.method == 'POST':
+        existing_rating = Rating.objects.filter(user=request.user, food=food).first()
+        if existing_rating:
+            messages.error(request, "You have already reviewed this food.")
+            return redirect('rating:rated_foods')
         form = RatingForm(request.POST)
         if form.is_valid():
             rating = form.save(commit=False)
@@ -27,8 +33,31 @@ def create_rating(request, food_id):
     
     return render(request, 'rating_form.html', {'form': form, 'food': food})
 
+@login_required
+def edit_rating(request, rating_id):
+    rating = get_object_or_404(Rating, id=rating_id, user=request.user)
+    if request.method == 'POST':
+        form = RatingForm(request.POST, instance=rating)
+        if form.is_valid():
+            form.save()
+            return redirect('rating:rated_foods')
+    else:
+        form = RatingForm(instance=rating)
+    return render(request, 'rating_edit_form.html', {'form': form, 'food': rating.food})
+
+@login_required
+def delete_rating(request, rating_id):
+    rating = get_object_or_404(Rating, id=rating_id, user=request.user)
+    if request.method == 'POST':
+        rating.delete()
+        return redirect('rating:rated_foods')
+    return render(request, 'rating_delete_confirm.html', {'rating': rating})
+
 def rated_foods(request):
     foods = Food.objects.filter(ratings__isnull=False).distinct()
+    for f in foods:
+        user_rating = f.ratings.filter(user=request.user).first()
+        f.user_rating = user_rating
     context = {
         'foods': foods,
     }
@@ -72,6 +101,15 @@ def create_rating_flutter(request):
                 }, status=400)
             
             food = Food.objects.get(pk=food_id)
+            
+            # Check for existing rating
+            existing_rating = Rating.objects.filter(user=request.user, food=food).first()
+            if existing_rating:
+                return JsonResponse({
+                    "status": False,
+                    "message": "You have already reviewed this food."
+                }, status=400)
+            
             new_rating = Rating.objects.create(
                 user=request.user,
                 rating=rating_value,
@@ -88,10 +126,82 @@ def create_rating_flutter(request):
                 "status": False,
                 "message": "Food not found."
             }, status=404)
+        except IntegrityError:
+            return JsonResponse({
+                "status": False,
+                "message": "You have already reviewed this food."
+            }, status=400)
         except Exception as e:
             return JsonResponse({
                 "status": False,
                 "message": f"Error creating review: {str(e)}"
+            }, status=400)
+    return JsonResponse({
+        "status": False,
+        "message": "Only POST method is allowed."
+    }, status=405)
+
+@csrf_exempt
+def edit_rating_flutter(request, rating_id):
+    if request.method == 'POST':
+        if not request.user.is_authenticated:
+            return JsonResponse({
+                "status": False,
+                "message": "User not authenticated."
+            }, status=401)
+        try:
+            rating = Rating.objects.get(pk=rating_id, user=request.user)
+            data = json.loads(request.body)
+            rating_value = int(data.get("rating"))
+            description = data.get("description", "")
+            
+            rating.rating = rating_value
+            rating.description = description
+            rating.save()
+            
+            return JsonResponse({
+                "status": "success",
+                "message": "Review updated successfully!"
+            }, status=200)
+        except Rating.DoesNotExist:
+            return JsonResponse({
+                "status": False,
+                "message": "Rating not found."
+            }, status=404)
+        except Exception as e:
+            return JsonResponse({
+                "status": False,
+                "message": f"Error updating review: {str(e)}"
+            }, status=400)
+    return JsonResponse({
+        "status": False,
+        "message": "Only POST method is allowed."
+    }, status=405)
+
+@csrf_exempt
+def delete_rating_flutter(request, rating_id):
+    if request.method == 'POST':
+        if not request.user.is_authenticated:
+            return JsonResponse({
+                "status": False,
+                "message": "User not authenticated."
+            }, status=401)
+        try:
+            rating = Rating.objects.get(pk=rating_id, user=request.user)
+            rating.delete()
+            return JsonResponse({
+                "status": "success",
+                "message": "Review deleted successfully!"
+            }, status=200)
+        except Rating.DoesNotExist:
+            return JsonResponse({
+                "status": False,
+                "message": "Rating not found."
+            }, status=404)
+        except Exception as e:
+            return JsonResponse({
+                "status": False,
+                "message": f"Error deleting review: {str(e)}"
             }, status=400)
     return JsonResponse({
         "status": False,
