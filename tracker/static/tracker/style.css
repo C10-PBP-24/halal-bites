@@ -1,0 +1,120 @@
+/* Tambahkan ini di dalam block style atau di file CSS terpisah */
+
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tracker Section */
+.tracker-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tracker-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tracker-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tracker-section li:last-child {
+    border-bottom: none;
+}
+
+#add-tracking-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#add-tracking-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Formulir Add Food Tracking */
+#add-tracking-form {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#add-tracking-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#add-tracking-form select,
+#add-tracking-form input[type="date"],
+#add-tracking-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#add-tracking-form select:focus,
+#add-tracking-form input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#add-tracking-form button[type="submit"] {
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#add-tracking-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    #add-tracking-form select,
+    #add-tracking-form input[type="date"],
+    #add-tracking-form button[type="submit"] {
+        font-size: 14px;
+    }
+}

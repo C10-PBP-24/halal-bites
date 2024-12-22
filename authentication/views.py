@@ -7,8 +7,10 @@ from django.contrib.auth import authenticate, login as auth_login
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
+from django.contrib.auth import logout as auth_logout
 import json
 from .models import CustomUser
+from django.contrib.auth.decorators import login_required
 
 def register(request):
     if request.method == 'POST':
@@ -108,3 +110,29 @@ def register_flutter(request):
             "status": False,
             "message": "Invalid request method."
         }, status=400)
+    
+@csrf_exempt
+def logout_flutter(request):
+    username = request.user.username
+    try:
+        auth_logout(request)
+        return JsonResponse({
+            "username": username,
+            "status": True,
+            "message": "Logout berhasil!"
+        }, status=200)
+    except:
+        return JsonResponse({
+        "status": False,
+        "message": "Logout gagal."
+        }, status=401)
+
+@login_required
+def get_user_info(request):
+    user = request.user
+    data = {
+        'id': user.id,
+        'username': user.username,
+        # Add other fields if necessary
+    }
+    return JsonResponse(data)

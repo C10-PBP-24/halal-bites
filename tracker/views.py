@@ -18,7 +18,7 @@ def food_tracker(request):
 @login_required
 def add_food_tracking(request):
     if request.method == 'POST':
-        form = AddFoodTrackingForm(request.POST)
+        form = AddFoodTrackingForm(request.POST, user=request.user)
         if form.is_valid():
             food = form.cleaned_data['food']
             order_at = form.cleaned_data['order_at']
