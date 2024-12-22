@@ -11,6 +11,7 @@ from django.http import JsonResponse
 from datetime import datetime
 from django.contrib import messages
 from django.db import IntegrityError
+from django.views.decorators.http import require_POST, require_GET
 
 @login_required
 def create_rating(request, food_id):
@@ -207,3 +208,51 @@ def delete_rating_flutter(request, rating_id):
         "status": False,
         "message": "Only POST method is allowed."
     }, status=405)
+
+@login_required
+@require_GET
+def get_rating_ajax(request, rating_id):
+    try:
+        rating = Rating.objects.get(pk=rating_id, user=request.user)
+        data = {
+            "id": str(rating.id),
+            "rating": rating.rating,
+            "description": rating.description,
+        }
+        return JsonResponse({"success": True, "data": data})
+    except Rating.DoesNotExist:
+        return JsonResponse({"success": False, "error": "Rating not found"}, status=404)
+
+@csrf_exempt
+@login_required
+@require_POST
+def edit_rating_ajax(request):
+    try:
+        req_data = json.loads(request.body)
+        rating_id = req_data.get("rating_id")
+        rating_value = req_data.get("rating")
+        description = req_data.get("description", "")
+        rating_obj = Rating.objects.get(pk=rating_id, user=request.user)
+        rating_obj.rating = rating_value
+        rating_obj.description = description
+        rating_obj.save()
+        return JsonResponse({"success": True, "message": "Rating updated successfully"})
+    except Rating.DoesNotExist:
+        return JsonResponse({"success": False, "error": "Rating not found"}, status=404)
+    except Exception as e:
+        return JsonResponse({"success": False, "error": str(e)}, status=400)
+
+@csrf_exempt
+@login_required
+@require_POST
+def delete_rating_ajax(request):
+    try:
+        req_data = json.loads(request.body)
+        rating_id = req_data.get("rating_id")
+        rating_obj = Rating.objects.get(pk=rating_id, user=request.user)
+        rating_obj.delete()
+        return JsonResponse({"success": True, "message": "Rating deleted successfully"})
+    except Rating.DoesNotExist:
+        return JsonResponse({"success": False, "error": "Rating not found"}, status=404)
+    except Exception as e:
+        return JsonResponse({"success": False, "error": str(e)}, status=400)
