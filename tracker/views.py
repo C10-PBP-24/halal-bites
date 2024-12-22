@@ -1,37 +1,29 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from .models import Tracker, Food, Rating
 from .forms import AddFoodTrackingForm
 
-app_name = 'tracker'
-
-def show_main(request):
-    return render(request, 'main/main.html')
-
 @login_required
 def food_tracker(request):
-    # Mengambil data tracking makanan user
-    food_tracker = Tracker.objects.filter(user=request.user)
-    return render(request, 'tracker.html', {
+    user = request.user
+    food_tracker = Tracker.objects.filter(user=user)
+    rated_foods = Food.objects.filter(ratings__user=user).distinct()
+
+    context = {
         'food_tracker': food_tracker,
-    })
+        'rated_foods': rated_foods,
+    }
+    return render(request, 'tracker.html', context)
 
 @login_required
 def add_food_tracking(request):
     if request.method == 'POST':
-        form = AddFoodTrackingForm(request.POST)
+        form = AddFoodTrackingForm(request.POST, user=request.user)
         if form.is_valid():
-            food_tracking = form.save(commit=False)
-            food_tracking.user = request.user
-            food_tracking.save()
-            return redirect('food_tracker')
-    else:
-        ordered_foods = Food.objects.filter(tracker__user=request.user)
-        user_ratings = Rating.objects.filter(tracker__user=request.user)
-        form = AddFoodTrackingForm()
+            food = form.cleaned_data['food']
+            order_at = form.cleaned_data['order_at']
+            rating = Rating.objects.get(user=request.user, food=food)
+            Tracker.objects.create(user=request.user, food=food, order_at=order_at, rating=rating)
+            return redirect(reverse('tracker:food_tracker'))
 
-    return render(request, 'add_tracking.html', {
-        'form': form,
-        'ordered_foods': ordered_foods,
-        'user_ratings': user_ratings
-    })
+    return redirect(reverse('tracker:food_tracker'))

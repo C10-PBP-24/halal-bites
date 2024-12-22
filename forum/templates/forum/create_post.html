@@ -1,25 +1,26 @@
-<script>
-  // Handle form submission via AJAX
-  const postForm = document.getElementById('postForm');
-  postForm.addEventListener('submit', function(e) {
-      e.preventDefault();  // Prevent default form submission
+<div class="center-container">
+    <div class="center-content">
+        <script>
+            // Handle form submission via AJAX
+            const postForm = document.getElementById('postForm');
+            postForm.addEventListener('submit', function(e) {
+                e.preventDefault();  // Prevent default form submission
 
-      const formData = new FormData(postForm);
-      const url = postForm.action;  // The form action URL
+      const content = postForm.querySelector('textarea[name="content"]').value; // Ambil konten dari textarea
 
-      fetch(url, {
+      fetch(postForm.action, {
           method: 'POST',
           headers: {
+              'Content-Type': 'application/json',  // Mengatur header untuk JSON
               'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
           },
-          body: formData
+          body: JSON.stringify({ content: content })  // Mengirim data dalam format JSON
       })
       .then(response => response.json())
       .then(data => {
           if (data.status === 'success') {
               alert('Post created successfully!');
-              // Optionally, reload or update the page content
-              location.reload();  // You can replace this with a more user-friendly update
+              location.reload();  // Reload halaman untuk melihat pos baru
           } else {
               alert('Failed to create post');
           }
@@ -28,8 +29,11 @@
   });
 </script>
 
-<form id="postForm" method="post" action="{% url 'forum:create_post_ajax' pk=thread.pk %}">
+<form id="postForm" method="post" action="{% url 'forum:create_post_ajax' thread.id %}">
   {% csrf_token %}
-  {{ form.as_p }}
+  <div>
+    <label for="content">Post Content</label>
+    <textarea id="content" name="content" required></textarea>
+  </div>
   <button type="submit">Submit</button>
 </form>

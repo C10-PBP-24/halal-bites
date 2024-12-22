@@ -5,15 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main - HalalBites</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
     {% include 'navbar.html' %}
-
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
     <!-- Main Content -->
-    <div class="flex-grow flex items-center justify-center">
-        <div class="max-w-md w-full bg-white p-8 rounded-lg shadow-lg text-center">
-            <h1 class="text-3xl font-bold text-yellow-500">HalalBites</h1>
-            <p class="text-xl font-semibold text-yellow-500 mt-2">Finding Halal Foods for People in Bandung</p>
+    <div class="center-container mt-8 mb-8">
+        <div class="center-content bg-white p-8 rounded-lg shadow-lg text-center">
+            <h1 class="text-4xl font-bold text-yellow-500">HalalBites</h1>
+            <p class="text-2xl font-semibold text-yellow-500 mt-2">Finding Halal Foods for People in Bandung</p>
+            <div class="mt-4 text-left">
+                <h2 class="text-3xl font-bold text-gray-800">About Bandung</h2>
+                <img src="{% static 'images/gedung-sate.jpeg' %}" alt="Bandung" class="w-full h-64 object-cover rounded-lg mt-2">
+                <p class="mt-2 text-gray-600">
+                    Bandung, the capital of West Java province in Indonesia, is known for its vibrant culture, beautiful landscapes, and delicious cuisine. With a rich history and a blend of traditional and modern influences, Bandung offers a unique culinary experience.
+                </p>
+                <h2 class="text-3xl font-bold text-gray-800 mt-4">Halal Food in Bandung</h2>
+                <img src="{% static 'images/halal.jpg' %}" alt="Halal Food" class="w-full h-64 object-cover rounded-lg mt-2">
+                <p class="mt-2 text-gray-600">
+                    HalalBites is dedicated to helping you find the best halal food options in Bandung. Whether you're looking for traditional Indonesian dishes or international cuisine, we ensure that all the food options listed on our platform are halal-certified.
+                </p>
+                <h2 class="text-3xl font-bold text-gray-800 mt-4">What We Offer</h2>
+                <img src="{% static 'images/flambe.jpg' %}" alt="Interesting Graphics" class="w-full h-64 object-cover rounded-lg mt-2">
+                <p class="mt-2 text-gray-600">
+                    At HalalBites, we offer a comprehensive guide to halal food in Bandung. Our platform includes:
+                </p>
+                <ul class="list-disc list-inside mt-2 text-gray-600">
+                    <li>Detailed restaurant reviews and ratings</li>
+                    <li>Curated lists of the best halal eateries</li>
+                    <li>Exclusive deals and promotions</li>
+                    <li>User-generated content and recommendations</li>
+                </ul>
+                <p class="mt-2 text-gray-600">
+                    Join our community and explore the diverse and delicious halal food options that Bandung has to offer. Whether you're a local or a visitor, HalalBites is your go-to source for finding the best halal food in the city.
+                </p>
+            </div>
         </div>
     </div>
 </body>

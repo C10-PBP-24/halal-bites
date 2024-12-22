@@ -1,0 +1,12 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.center-content {
+    max-width: 1000px; /* max-width is adjustable */
+    width: 100%;
+}

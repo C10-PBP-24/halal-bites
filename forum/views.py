@@ -3,22 +3,91 @@ from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse_lazy, reverse
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, JsonResponse, HttpResponseNotFound, HttpResponseRedirect
-from .models import Thread, Post
+from .models import Thread, Post, Food  # Pastikan untuk mengimpor model Food
 from .forms import ThreadForm, PostForm  # Assuming you have forms for creating threads and posts
 import json
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse
 from django.utils.html import strip_tags
 from django.views.decorators.http import require_POST
 from django.db.models import Q
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+from .models import Thread, Post
+from django.core.serializers import serialize
+from food.models import Food
 
+def show_post_json(request, thread_id):
+    thread = get_object_or_404(Thread, id=thread_id)
+    posts = Post.objects.filter(thread=thread)
+    posts_data = []
+    
+    for post in posts:
+        post_dict = {
+            'id': post.id,
+            'content': post.content,
+            'created_at': post.created_at,
+            'user': post.user.username,  # Mengembalikan username bukan id
+            'thread': post.thread.id
+        }
+        posts_data.append(post_dict)
+    
+    return JsonResponse(posts_data, safe=False)
+
+def show_json(request):
+    threads = Thread.objects.all()
+    threads_data = []
+    
+    for thread in threads:
+        thread_dict = {
+            'id': thread.id,
+            'title': thread.title,
+            'created_at': thread.created_at,
+            'user': thread.user.username,  # Mengembalikan username bukan id
+            'foods': [food.name for food in thread.foods.all()]
+        }
+        threads_data.append(thread_dict)
+    
+    return JsonResponse(threads_data, safe=False)
+
+
+# def show_json(request, thread_id):
+#     # Fetch the thread by its ID, or return a 404 error if it does not exist
+#     thread = get_object_or_404(Thread, id=thread_id)
+    
+#     # Serialize the thread data
+#     thread_data = {
+#         'id': thread.id,
+#         'title': thread.title,
+#         'created_at': thread.created_at,
+#         'user': thread.user.username,  # Assuming the user has a 'username' attribute
+#         'foods': [food.name for food in thread.foods.all()],  # Assuming Food model has a 'name' attribute
+#     }
+    
+#     # Fetch the posts related to the thread
+#     posts = Post.objects.filter(thread=thread)
+#     posts_data = []
+    
+#     for post in posts:
+#         posts_data.append({
+#             'id': post.id,
+#             'content': post.content,
+#             'created_at': post.created_at,
+#             'user': post.user.username,  # Assuming the user has a 'username' attribute
+#         })
+    
+#     # Combine the thread data and posts data into one response
+#     response_data = {
+#         'thread': thread_data,
+#         'posts': posts_data,
+#     }
+    
+#     return JsonResponse(response_data)
 
 # List all threads
 class ThreadListView(ListView):
     model = Thread
     template_name = 'forum/thread_list.html'
     context_object_name = 'threads'
-
 
 # View details of a specific thread and its posts
 class ThreadDetailView(DetailView):
@@ -29,8 +98,8 @@ class ThreadDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['posts'] = Post.objects.filter(thread=self.object)
+        context['foods'] = Food.objects.filter(thread=self.object)  # Menampilkan makanan yang terkait dengan thread
         return context
-
 
 # Create a new thread (similar to asking a question)
 class CreateThreadView(CreateView):
@@ -43,7 +112,6 @@ class CreateThreadView(CreateView):
         form.instance.user = self.request.user  # Associate the thread with the current user
         return super().form_valid(form)
 
-
 # Create a new post (similar to answering a question)
 class CreatePostView(CreateView):
     model = Post
@@ -54,6 +122,7 @@ class CreatePostView(CreateView):
         # Get the thread object based on the thread's primary key (pk) from the URL
         thread = get_object_or_404(Thread, pk=self.kwargs['pk'])
         form.instance.thread = thread  # Associate the post with the thread
+        form.instance.user = self.request.user  # Associate the post with the current user
         return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
@@ -70,10 +139,18 @@ class CreatePostView(CreateView):
 @require_POST
 def create_thread_ajax(request):
     title = strip_tags(request.POST.get("title"))
+    food_name = strip_tags(request.POST.get("food"))  # Ambil nama makanan dari request
 
-    # Create a new thread
-    new_thread = Thread(title=title, )
+    # Buat thread baru
+    new_thread = Thread(title=title, user=request.user)
     new_thread.save()
+
+    # Simpan makanan yang terkait dengan thread jika ada
+    if food_name:  # Cek jika food_name tidak kosong
+        foods = Food.objects.filter(name=food_name)  # Ambil semua objek Food berdasarkan nama
+        if foods.exists():
+            food = foods.first()  # Ambil objek pertama
+            new_thread.foods.add(food)  # Pastikan ini sesuai dengan relasi di model
 
     return JsonResponse({
         "status": "success",
@@ -81,28 +158,22 @@ def create_thread_ajax(request):
         "thread_id": new_thread.id
     }, status=201)
 
-
 @csrf_exempt
-@require_POST
-def create_post_ajax(request, pk):
-    # Get the thread based on its pk
-    thread = get_object_or_404(Thread, pk=pk)
+def create_post_ajax(request, thread_id):
+    if request.method == 'POST':
+        post_content = request.POST.get('content')
+        user = request.user
 
-    # Extract form data from the request
-    content = strip_tags(request.POST.get("content"))
-    user = request.user  # Get the current user
+        if not post_content:
+            return JsonResponse({"status": "Content cannot be empty"}, status=400)
 
-    # Create a new post
-    new_post = Post(thread=thread, content=content,)# user=user)
-    new_post.save()
+        thread = get_object_or_404(Thread, id=thread_id)
+        new_post = Post(thread=thread, content=post_content, user=user)
+        new_post.save()
 
-    # Return a JSON response indicating success
-    return JsonResponse({
-        "status": "success",
-        "message": "Post created successfully",
-        "post_id": new_post.id,
-        "thread_id": thread.id
-    }, status=201)
+        return JsonResponse({"status": "Post added", "post_id": new_post.id}, status=201)
+    return JsonResponse({"status": "Invalid request"}, status=400)
+
 
 # CSRF-exempt API for adding posts via AJAX or mobile
 @csrf_exempt
@@ -127,19 +198,18 @@ def edit_thread(request, thread_id):
     if request.method == "POST":
         thread.title = request.POST.get('title')
         thread.save()
-        return redirect('forum:thread_detail', thread_id=thread.id)
+        return redirect('forum:thread_list')  # Mengarahkan kembali ke daftar thread setelah penyimpanan
 
     context = {
         'thread': thread
     }
-    return render(request, 'edit_thread.html', context)
+    return render(request, 'forum/thread_list.html', context)  # Mengarahkan kembali ke thread_list.html
 
 @login_required
 def delete_thread(request, thread_id):
     thread = get_object_or_404(Thread, id=thread_id, user=request.user)
     thread.delete()
     return redirect('forum:thread_list')
-
 
 @login_required
 def edit_post(request, post_id):
@@ -148,30 +218,180 @@ def edit_post(request, post_id):
     if request.method == "POST":
         post.content = request.POST.get('content')
         post.save()
-        return redirect('forum:thread_detail', thread_id=post.thread.id)
+        return redirect('forum:thread_detail', pk=post.thread.id)  # Redirect to thread detail page
 
     context = {
         'post': post
     }
-    return render(request, 'edit_post.html', context)
+    return redirect('forum:thread_detail', pk=post.thread.id)
 
 @login_required
 def delete_post(request, post_id):
     post = get_object_or_404(Post, id=post_id, user=request.user)
     post.delete()
-    return redirect('forum:thread_detail', thread_id=post.thread.id)
+    return redirect('forum:thread_detail', pk=post.thread.id)
 
-# @login_required
+@login_required
 def thread_list(request):
     query = request.GET.get('q')  # Get the search term from the query string
     if query:
-        # Filter threads by title containing the query (case-insensitive)
         threads = Thread.objects.filter(Q(title__icontains=query))
     else:
-        # Show all threads if no search term is provided
         threads = Thread.objects.all()
+
+    # Ambil semua makanan untuk dropdown
+    foods = Food.objects.all()
 
     context = {
         'threads': threads,
+        'foods': foods,  # Tambahkan foods ke dalam konteks
     }
-    return render(request, 'forum/thread_list.html', context)  # Correct path for the template
+    return render(request, 'forum/thread_list.html', context)
+
+@csrf_exempt
+def create_post_flutter(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            thread_id = data.get('thread_id')
+            content = data.get('content')
+            
+            if not all([thread_id, content]):
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Missing required fields"
+                }, status=400)
+                
+            thread = Thread.objects.get(pk=thread_id)
+            new_post = Post.objects.create(
+                thread=thread,
+                content=content,
+                user=request.user
+            )
+            
+            return JsonResponse({
+                "status": "success",
+                "post_id": new_post.id
+            }, status=201)
+            
+        except Thread.DoesNotExist:
+            return JsonResponse({
+                "status": "error",
+                "message": "Thread not found"
+            }, status=404)
+        except Exception as e:
+            return JsonResponse({
+                "status": "error",
+                "message": str(e)
+            }, status=400)
+    return JsonResponse({
+        "status": "error",
+        "message": "Invalid request method"
+    }, status=405)
+
+@csrf_exempt
+def edit_post_flutter(request, post_id):
+    try:
+        post = Post.objects.get(pk=post_id, user=request.user)
+    except Post.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Post not found or unauthorized"
+        }, status=404)
+
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            post.content = data.get("content", post.content)
+            post.save()
+            return JsonResponse({
+                "status": "success",
+                "message": "Post updated successfully"
+            }, status=200)
+        except Exception as e:
+            return JsonResponse({
+                "status": "error",
+                "message": str(e)
+            }, status=400)
+    return JsonResponse({
+        "status": "error",
+        "message": "Invalid request method"
+    }, status=405)
+
+@csrf_exempt
+def edit_thread_flutter(request, thread_id):
+    try:
+        thread = Thread.objects.get(pk=thread_id, user=request.user)
+    except Thread.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Thread not found or unauthorized"
+        }, status=404)
+
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            thread.title = data.get("title", thread.title)
+            
+            # Update foods if provided
+            food_name = data.get("food")
+            if food_name:
+                foods = Food.objects.filter(name=food_name)
+                if foods.exists():
+                    thread.foods.clear()
+                    thread.foods.add(foods.first())
+            
+            thread.save()
+            return JsonResponse({
+                "status": "success",
+                "message": "Thread updated successfully"
+            }, status=200)
+        except Exception as e:
+            return JsonResponse({
+                "status": "error",
+                "message": str(e)
+            }, status=400)
+    return JsonResponse({
+        "status": "error",
+        "message": "Invalid request method"
+    }, status=405)
+
+@csrf_exempt
+def delete_post_flutter(request, post_id):
+    try:
+        post = Post.objects.get(pk=post_id, user=request.user)
+        post.delete()
+        return JsonResponse({
+            "status": "success",
+            "message": "Post deleted successfully"
+        }, status=200)
+    except Post.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Post not found or unauthorized"
+        }, status=404)
+    except Exception as e:
+        return JsonResponse({
+            "status": "error",
+            "message": str(e)
+        }, status=400)
+
+@csrf_exempt
+def delete_thread_flutter(request, thread_id):
+    try:
+        thread = Thread.objects.get(pk=thread_id, user=request.user)
+        thread.delete()
+        return JsonResponse({
+            "status": "success",
+            "message": "Thread deleted successfully"
+        }, status=200)
+    except Thread.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Thread not found or unauthorized"
+        }, status=404)
+    except Exception as e:
+        return JsonResponse({
+            "status": "error",
+            "message": str(e)
+        }, status=400)
