@@ -9,6 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 from django.http import JsonResponse
 from datetime import datetime
+from django.contrib import messages
 
 @login_required
 def create_rating(request, food_id):
@@ -17,6 +18,7 @@ def create_rating(request, food_id):
     if request.method == 'POST':
         existing_rating = Rating.objects.filter(user=request.user, food=food).first()
         if existing_rating:
+            messages.error(request, "You have already reviewed this food.")
             return redirect('rating:rated_foods')
         form = RatingForm(request.POST)
         if form.is_valid():
