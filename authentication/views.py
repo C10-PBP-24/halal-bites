@@ -95,7 +95,7 @@ def register_flutter(request):
             }, status=400)
         
         # Create the new user
-        user = CustomUser.objects.create_user(username=username, password=password1)
+        user = CustomUser.objects.create_user(username=username, role=role, password=password1)
         user.save()
         
         return JsonResponse({
