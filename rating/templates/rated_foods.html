@@ -8,7 +8,35 @@
 {% block content %}
 <div class="container mx-auto py-8">
     <h1 class="text-3xl font-bold text-blue-800 mb-8">Rated Foods</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+    <!-- Filters Section -->
+    <div class="mb-6 flex flex-col md:flex-row items-start md:items-center">
+        <!-- Rating Filter -->
+        <div class="mr-4 mb-4 md:mb-0">
+            <label for="rating-filter" class="mr-2 font-semibold">Filter by Rating:</label>
+            <!-- Rating Filter -->
+            <select id="rating-filter" class="border px-2 py-1 rounded">
+                <option value="" {% if not rating_filter %}selected{% endif %}>All</option>
+                <option value="1" {% if rating_filter == '1' %}selected{% endif %}>1 Star</option>
+                <option value="2" {% if rating_filter == '2' %}selected{% endif %}>2 Stars</option>
+                <option value="3" {% if rating_filter == '3' %}selected{% endif %}>3 Stars</option>
+                <option value="4" {% if rating_filter == '4' %}selected{% endif %}>4 Stars</option>
+                <option value="5" {% if rating_filter == '5' %}selected{% endif %}>5 Stars</option>
+            </select>
+        </div>
+
+        <!-- User-Specific Filter -->
+        <div>
+            <label for="user-filter" class="mr-2 font-semibold">Filter by Reviews:</label>
+            <!-- User-Specific Filter -->
+            <select id="user-filter" class="border px-2 py-1 rounded">
+                <option value="" {% if not user_filter %}selected{% endif %}>All Reviews</option>
+                <option value="my_reviews" {% if user_filter == 'my_reviews' %}selected{% endif %}>My Reviews</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="foods-container">
         {% for food in foods %}
             <div class="restaurant-card bg-white border border-gray-200 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105">
                 <div class="relative">
@@ -21,18 +49,18 @@
                         {{ food.name }}
                     </div>
                     <div class="text-sm text-gray-600 mb-2">
-                        Price: {{ food.price }}
+                        Price: ${{ food.price }}
                     </div>
                     <div class="text-sm text-gray-600">
                         Promo: {{ food.promo }}
                     </div>
                     <div class="text-sm text-gray-600">
-                        Average Rating: {{ food.get_average_rating }}
+                        Average Rating: {{ food.average_rating|floatformat:1 }}
                     </div>
                     {% if food.user_rating %}
                         <div class="mt-2">
-                            <a href="{% url 'rating:edit_rating' food.user_rating.id %}" class="text-blue-500 underline">Edit Rating</a>
-                            <a href="{% url 'rating:delete_rating' food.user_rating.id %}" class="text-red-500 underline ml-2">Delete Rating</a>
+                            <a href="#" data-id="{{ food.user_rating.id }}" class="edit-link text-blue-500 underline">Edit Rating</a>
+                            <a href="#" data-id="{{ food.user_rating.id }}" class="delete-link text-red-500 underline ml-2">Delete Rating</a>
                         </div>
                     {% endif %}
                 </div>
@@ -40,4 +68,166 @@
         {% endfor %}
     </div>
 </div>
+
+<div id="edit-modal" class="fixed inset-0 hidden bg-black bg-opacity-30 flex items-center justify-center">
+  <div class="bg-white p-6 rounded shadow-md w-1/2">
+    <h2 class="text-xl font-bold mb-4">Edit Rating</h2>
+    <input type="hidden" id="edit-rating-id">
+    <label class="block mb-2">Rating (1-5):</label>
+    <input type="number" id="edit-rating" min="1" max="5" class="border rounded w-full mb-4 p-2">
+    <label class="block mb-2">Description:</label>
+    <textarea id="edit-description" class="border rounded w-full mb-4 p-2"></textarea>
+    <div class="flex justify-end">
+      <button id="cancel-edit-btn" class="bg-gray-400 text-white px-4 py-2 rounded mr-2">Cancel</button>
+      <button id="save-edit-btn" class="bg-blue-500 text-white px-4 py-2 rounded">Save</button>
+    </div>
+  </div>
+</div>
+
+<div id="delete-modal" class="fixed inset-0 hidden bg-black bg-opacity-30 flex items-center justify-center">
+  <div class="bg-white p-6 rounded shadow-md w-1/3 text-center">
+    <h2 class="text-xl font-bold mb-4 text-red-500">Delete Rating</h2>
+    <p>Are you sure you want to delete this rating?</p>
+    <input type="hidden" id="delete-rating-id">
+    <div class="flex justify-center mt-4">
+      <button id="cancel-delete-btn" class="bg-gray-400 text-white px-4 py-2 rounded mr-2">Cancel</button>
+      <button id="confirm-delete-btn" class="bg-red-600 text-white px-4 py-2 rounded">Delete</button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const editModal = document.getElementById("edit-modal");
+  const deleteModal = document.getElementById("delete-modal");
+  const editRatingId = document.getElementById("edit-rating-id");
+  const editRatingInput = document.getElementById("edit-rating");
+  const editDescriptionInput = document.getElementById("edit-description");
+
+  // Function to attach event listeners to edit and delete links
+  function attachEventListeners() {
+    document.querySelectorAll(".edit-link").forEach(link => {
+      link.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const id = link.getAttribute("data-id");
+        try {
+          const res = await fetch(`/rating/get_rating_ajax/${id}/`);
+          const result = await res.json();
+          if (!result.success) {
+            alert(result.error || "Failed to fetch rating data!");
+            return;
+          }
+          editRatingId.value = result.data.id;
+          editRatingInput.value = result.data.rating;
+          editDescriptionInput.value = result.data.description;
+          editModal.classList.remove("hidden");
+        } catch (err) {
+          alert("Error loading rating: " + err);
+        }
+      });
+    });
+
+    document.querySelectorAll(".delete-link").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const id = link.getAttribute("data-id");
+        document.getElementById("delete-rating-id").value = id;
+        deleteModal.classList.remove("hidden");
+      });
+    });
+  }
+
+  // Initial attachment of event listeners
+  attachEventListeners();
+
+  // Edit Modal Handlers
+  document.getElementById("cancel-edit-btn").addEventListener("click", () => {
+    editModal.classList.add("hidden");
+  });
+
+  document.getElementById("save-edit-btn").addEventListener("click", async () => {
+    const ratingId = editRatingId.value;
+    const ratingVal = editRatingInput.value;
+    const descVal = editDescriptionInput.value;
+    try {
+      const res = await fetch("/rating/edit_rating_ajax/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRFToken": "{{ csrf_token }}",
+        },
+        body: JSON.stringify({
+          rating_id: ratingId,
+          rating: ratingVal,
+          description: descVal
+        }),
+      });
+      const result = await res.json();
+      if (result.success) {
+        alert(result.message);
+        location.reload(); // or dynamically update without full reload
+      } else {
+        alert(result.error || "Failed to edit rating!");
+      }
+    } catch (err) {
+      alert("Error editing rating: " + err);
+    }
+  });
+
+  // Delete Modal Handlers
+  document.getElementById("cancel-delete-btn").addEventListener("click", () => {
+    deleteModal.classList.add("hidden");
+  });
+
+  document.getElementById("confirm-delete-btn").addEventListener("click", async () => {
+    const ratingId = document.getElementById("delete-rating-id").value;
+    try {
+      const res = await fetch("/rating/delete_rating_ajax/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRFToken": "{{ csrf_token }}",
+        },
+        body: JSON.stringify({ rating_id: ratingId }),
+      });
+      const result = await res.json();
+      if (result.success) {
+        alert(result.message);
+        location.reload(); // or dynamically update
+      } else {
+        alert(result.error || "Failed to delete rating!");
+      }
+    } catch (err) {
+      alert("Error deleting rating: " + err);
+    }
+  });
+
+  // Rating Filter Handlers
+  const ratingFilter = document.getElementById("rating-filter");
+  const userFilter = document.getElementById("user-filter");
+
+  function applyFilters() {
+    const ratingValue = ratingFilter.value;
+    const userValue = userFilter.value;
+    const params = new URLSearchParams();
+
+    if (ratingValue) {
+      params.append('rating', ratingValue);
+    } else {
+      params.delete('rating');
+    }
+
+    if (userValue) {
+      params.append('user_filter', userValue);
+    } else {
+      params.delete('user_filter');
+    }
+
+    window.location.search = params.toString();
+  }
+
+  ratingFilter.addEventListener("change", applyFilters);
+  userFilter.addEventListener("change", applyFilters);
+});
+</script>
 {% endblock content %}

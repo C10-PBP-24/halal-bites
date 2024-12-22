@@ -1,7 +1,7 @@
 from django.urls import path
 from resto.views import get_resto, show_resto, filter_resto, add_resto
 from resto.views import delete_resto, resto_detail, show_json, get_resto, show_xml
-from resto.views import create_resto_flutter, get_csrf_token
+from resto.views import create_resto_flutter, get_csrf_token, edit_resto_flutter
 from django.contrib.auth.decorators import login_required
 
 
@@ -19,4 +19,5 @@ urlpatterns = [
     path('xml/', show_xml, name='show_xml'),
     path('create-flutter/', create_resto_flutter, name="create_resto_flutter"),
     path('get-csrf-token/', get_csrf_token, name='get_csrf_token'),
+    path('edit-flutter/<int:id>/', edit_resto_flutter, name='edit_resto_flutter'),
 ]

@@ -118,6 +118,24 @@ def create_resto_flutter(request):
     else:
         return JsonResponse({"status": "error"}, status=401)
     
+@csrf_exempt
+def edit_resto_flutter(request, id):
+    try:
+        resto = Resto.objects.get(pk=id)
+    except Resto.DoesNotExist:
+        return JsonResponse({"status": "error", "message": "Restaurant not found"}, status=404)
+
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            resto.nama = data.get("nama", resto.nama)
+            resto.lokasi = data.get("lokasi", resto.lokasi)
+            resto.save()
+            return JsonResponse({"status": "success"}, status=200)
+        except (KeyError, ValueError) as e:
+            return JsonResponse({"status": "error", "message": str(e)}, status=400)
+    else:
+        return JsonResponse({"status": "error", "message": "Invalid request method"}, status=401)
 
 def get_csrf_token(request):
     csrf_token = get_token(request)
