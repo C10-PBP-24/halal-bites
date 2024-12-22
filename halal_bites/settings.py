@@ -70,8 +70,7 @@ SESSION_COOKIE_SAMESITE = 'None'
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'http://localhost:57203',
-    'https://emanuella-abygail-halalbites.pbp.cs.ui.ac.id',
+    'http://localhost:65258',
 ]
 
 ROOT_URLCONF = 'halal_bites.urls'
