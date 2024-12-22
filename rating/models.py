@@ -9,7 +9,7 @@ class Rating(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='ratings')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=uuid.uuid4, related_name='ratings')
     rating = models.PositiveSmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
-    description = models.TextField()
+    description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
