@@ -70,45 +70,66 @@ def login(request):
             "message": "Login gagal, periksa kembali email atau kata sandi."
         }, status=401)
     
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+import json
+from .models import CustomUser
+
 @csrf_exempt
 def register_flutter(request):
     if request.method == 'POST':
-        data = json.loads(request.body)
-        username = data['username']
-        password1 = data['password1']
-        password2 = data['password2']
-        role = data.get('role', 'user')
+        try:
+            data = json.loads(request.body)
+            username = data.get('username')
+            password1 = data.get('password1')
+            password2 = data.get('password2')
+            role = data.get('role')
 
-        # Check if the passwords match
-        if password1 != password2:
+            # Validasi data
+            if not username or not password1 or not password2:
+                return JsonResponse({
+                    "status": False,
+                    "message": "All fields are required."
+                }, status=400)
+
+            # Check if the passwords match
+            if password1 != password2:
+                return JsonResponse({
+                    "status": False,
+                    "message": "Passwords do not match."
+                }, status=400)
+            
+            # Check if the username is already taken
+            if CustomUser.objects.filter(username=username).exists():
+                return JsonResponse({
+                    "status": False,
+                    "message": "Username already exists."
+                }, status=400)
+            
+            # Create the new user
+            user = CustomUser.objects.create_user(username=username, password=password1, role=role)
+            user.save()
+            
+            return JsonResponse({
+                "username": user.username,
+                "role": user.role,
+                "status": 'success',
+                "message": "User created successfully!"
+            }, status=201)
+
+        except json.JSONDecodeError:
             return JsonResponse({
                 "status": False,
-                "message": "Passwords do not match."
+                "message": "Invalid JSON format."
             }, status=400)
-        
-        # Check if the username is already taken
-        if CustomUser.objects.filter(username=username).exists():
-            return JsonResponse({
-                "status": False,
-                "message": "Username already exists."
-            }, status=400)
-        
-        # Create the new user
-        user = CustomUser.objects.create_user(username=username, password=password1)
-        user.save()
-        
-        return JsonResponse({
-            "username": user.username,
-            "role": user.role,
-            "status": 'success',
-            "message": "User created successfully!"
-        }, status=200)
-    
+
     else:
         return JsonResponse({
             "status": False,
             "message": "Invalid request method."
-        }, status=400)
+        }, status=405)
+
     
 @csrf_exempt
 def logout_flutter(request):
