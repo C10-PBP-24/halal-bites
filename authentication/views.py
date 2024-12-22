@@ -10,6 +10,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import logout as auth_logout
 import json
 from .models import CustomUser
+from django.contrib.auth.decorators import login_required
 
 def register(request):
     if request.method == 'POST':
@@ -125,3 +126,13 @@ def logout_flutter(request):
         "status": False,
         "message": "Logout gagal."
         }, status=401)
+
+@login_required
+def get_user_info(request):
+    user = request.user
+    data = {
+        'id': user.id,
+        'username': user.username,
+        # Add other fields if necessary
+    }
+    return JsonResponse(data)
